@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 import numpy as np
 
 from keras.layers import Input, Dense

@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 import numpy as np
 import gudhi as gd
 import pandas as pd
@@ -9,8 +10,6 @@ from matplotlib import pyplot as plt
 from ripser import Rips, plot_dgms
 from sklearn.linear_model import LinearRegression
 from sklearn.preprocessing import PolynomialFeatures
-from numpy import genfromtxt
-from sys import platform as sys_pf
 
 def read_data(path: str, columns: int, delimiter: str = ",") -> np.ndarray:
     """
@@ -21,9 +20,9 @@ def read_data(path: str, columns: int, delimiter: str = ",") -> np.ndarray:
     """
     try:
         if rows == 1:
-            data = genfromtxt(path, delimiter = delimiter)
+            data = np.genfromtxt(path, delimiter = delimiter)
         else:
-            data = genfromtxt(path, delimiter = delimiter)[0:,:columns]
+            data = np.genfromtxt(path, delimiter = delimiter)[0:,:columns]
 
         return data
     except Exception as e:
@@ -54,7 +53,7 @@ def plot_vr_complex(path: str, delimiter: str = ",", thresh: float = 1.0,
     :return: Data for a persistence diagram of a Vietoris Rips complex.
     """
     rips = Rips(maxdim = maxdim, coeff = coeff, do_cocycles = True)
-    data = genfromtxt(path, delimiter=delimiter)
+    data = np.genfromtxt(path, delimiter=delimiter)
     diagrams = rips.fit_transform(data, distance_matrix=False)
     rips.plot(diagrams)
     return diagrams

@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4baeb8a6-4dd2-4888-8f4b-65a1e1dcde3b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/visu/zigzag_persistence.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/antcolony.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/autoencoder.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/autoencoder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/clusterlayer.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/clusterlayer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/helper.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/helper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ica_neural.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ica_neural.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/kohonen.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/kohonen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/rmspropnatgrad.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/visu/simcomplex.py" beforeDir="false" afterPath="$PROJECT_DIR$/visu/simcomplex.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,7 +23,8 @@
       <file leaf-file-name="kohonen.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/kohonen.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1073">
+            <state>
+              <caret column="21" selection-start-column="21" selection-end-column="21" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -26,18 +32,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="antcolony.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/antcolony.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4260" />
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="autoencoder.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/autoencoder.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="16" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="16" />
+            <state>
+              <caret column="21" selection-start-column="21" selection-end-column="21" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -45,14 +44,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="simcomplex.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="simcomplex.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/visu/simcomplex.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="772">
-              <caret line="131" lean-forward="true" selection-start-line="131" selection-end-line="131" />
+            <state>
+              <caret column="21" selection-start-column="21" selection-end-column="21" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="antcolony.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/opt/antcolony.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="21" selection-start-column="21" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -61,9 +69,31 @@
         <entry file="file://$PROJECT_DIR$/lib/ica_neural.py">
           <provider selected="true" editor-type-id="text-editor">
             <state>
+              <caret column="21" selection-start-column="21" selection-end-column="21" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="helper.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/helper.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="21" selection-start-column="21" selection-end-column="21" />
+              <folding>
+                <element signature="e#0#31#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="clusterlayer.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/clusterlayer.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="21" selection-start-column="21" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -77,6 +107,14 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>genfromtxt</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>np.genfromtxt</replace>
+    </replaceStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -84,7 +122,14 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/visu/kohomology.oy.py" />
+        <option value="$PROJECT_DIR$/opt/rmspropnatgrad.py" />
+        <option value="$PROJECT_DIR$/opt/antcolony.py" />
         <option value="$PROJECT_DIR$/visu/simcomplex.py" />
+        <option value="$PROJECT_DIR$/lib/ica_neural.py" />
+        <option value="$PROJECT_DIR$/lib/autoencoder.py" />
+        <option value="$PROJECT_DIR$/lib/kohonen.py" />
+        <option value="$PROJECT_DIR$/lib/helper.py" />
+        <option value="$PROJECT_DIR$/lib/clusterlayer.py" />
       </list>
     </option>
   </component>
@@ -110,6 +155,16 @@
               <item name="SIML" type="b2602c69:ProjectViewProjectNode" />
               <item name="SIML" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SIML" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SIML" type="462c0819:PsiDirectoryNode" />
+              <item name="opt" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SIML" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SIML" type="462c0819:PsiDirectoryNode" />
+              <item name="visu" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -175,53 +230,11 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lib/helper.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/rmspropnatgrad.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
             <element signature="e#0#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/antcolony.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4260" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/autoencoder.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="16" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/ica_neural.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/kohonen.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1073">
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -241,13 +254,80 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/antcolony.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/opt/rmspropnatgrad.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="62" column="77" selection-start-line="62" selection-start-column="77" selection-end-line="62" selection-end-column="77" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/opt/antcolony.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="21" selection-start-column="21" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/visu/simcomplex.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="772">
-          <caret line="131" lean-forward="true" selection-start-line="131" selection-end-line="131" />
+        <state>
+          <caret column="21" selection-start-column="21" selection-end-column="21" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/ica_neural.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="21" selection-start-column="21" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/autoencoder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="21" selection-start-column="21" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/kohonen.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="21" selection-start-column="21" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/helper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="21" selection-start-column="21" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/clusterlayer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="21" selection-start-column="21" selection-end-column="21" />
         </state>
       </provider>
     </entry>

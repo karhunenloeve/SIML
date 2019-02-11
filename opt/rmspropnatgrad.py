@@ -50,17 +50,17 @@ class RMSprop_and_natGrad(Optimizer):
 
             if ('natGrad' in param.name):
                 if ('natGradRMS' in param.name):
-                    # apply RMSprop rule to gradient before natural gradient step
+                    # Apply RMSprop rule to gradient before natural gradient step.
                     new_accum = self.rho * accum + (1. - self.rho) * K.square(grad)
                     self.updates.append(K.update(accum, new_accum))
                     grad = grad / (K.sqrt(new_accum) + self.epsilon)
                 elif ('unitaryAug' in param.name):
-                    # we don't care about the accumulated RMS for the natural gradient step
+                    # We don't care about the accumulated RMS for the natural gradient step.
                     self.updates.append(K.update(accum, accum))
 
-                # do a natural gradient step
+                # Do a natural gradient step.
                 if ('unitaryAug' in param.name):
-                    # unitary natural gradient step on augmented ReIm matrix
+                    # Unitary natural gradient step on augmented ReIm matrix.
                     j = K.cast(1j, 'complex64')
                     A = K.cast(K.transpose(param[:shape[1] / 2, :shape[1] / 2]), 'complex64')
                     B = K.cast(K.transpose(param[:shape[1] / 2, shape[1] / 2:]), 'complex64')

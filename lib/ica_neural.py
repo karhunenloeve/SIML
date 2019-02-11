@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 from keras.datasets import cifar100
 from keras.models import Model
 from keras.layers import Input, merge, ZeroPadding2D
