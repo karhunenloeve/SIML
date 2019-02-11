@@ -12,6 +12,24 @@ from sklearn.preprocessing import PolynomialFeatures
 from numpy import genfromtxt
 from sys import platform as sys_pf
 
+def read_data(path: str, columns: int, delimiter: str = ",") -> np.ndarray:
+    """
+    Reads a certain amount of columns from a .csv-file.
+    :param path: Path to the .csv file.
+    :param delimiter: Delimiter of the columns within .csv-file. (default: ",")
+    :return: Numpy ndarray with columns.
+    """
+    try:
+        if rows == 1:
+            data = genfromtxt(path, delimiter = delimiter)
+        else:
+            data = genfromtxt(path, delimiter = delimiter)[0:,:columns]
+
+        return data
+    except Exception as e:
+        raise e
+
+
 def makeSparseDM(X, thresh):
     """
     Helper function to make a sparse distance matrix.
@@ -42,7 +60,7 @@ def plot_vr_complex(path: str, delimiter: str = ",", thresh: float = 1.0,
     return diagrams
 
 def gudhi_rips_persistence(path: str,
-                           rows: int = 1,
+                           columns: int = 1,
                            delimiter: str = ",",
                            max_edge_length: int = 500,
                            max_dimension: int = 4,
@@ -53,21 +71,16 @@ def gudhi_rips_persistence(path: str,
     Computes the Vietoris-Rips complex and persistent homology.
     Further it can either plot the barcode, or the persistence diagram.
     :param path: Path to the desired .csv file.
-    :param rows: Number of rows to be selected. (default: all)
+    :param columns: Number of columns to be selected. (default: all)
     :param max_edge_length: Maximal length of an edge within the filtration.
     :param max_dimension: Maximal dimension of a simplex.
     :param delimiter: The delimiter of the .csv-columns.
     :param barcode: Whether plot a barcode diagram or not. (default: True)
-    :param barcode: Whether plot a barcode diagram or not. (default: False)
+    :param persistence: Whether plot a persistence diagram or not. (default: False)
     :param plot: Whether to make a plot or to return values.
     :return: Vietoris-Rips filtration.
     """
-
-    if rows == 1:
-        data = genfromtxt(path, delimiter = delimiter)
-    else:
-        data = genfromtxt(path, delimiter = delimiter)[0:,:rows]
-
+    data = read_data(path, columns)
     Rips_complex_sample = gd.RipsComplex(points = data, max_edge_length = max_edge_length)
     Rips_simplex_tree_sample = Rips_complex_sample.create_simplex_tree(max_dimension = max_dimension)
     diag_Rips = Rips_simplex_tree_sample.persistence()
@@ -83,13 +96,38 @@ def gudhi_rips_persistence(path: str,
     if not plot:
         return diag_Rips
 
-def gudhi_alpha_persistence():
-    pass
+def gudhi_alpha_persistence(path: str,
+                            max_alpha_square: float = 0.3,
+                            barcode: bool = True,
+                            persistence: bool = False,
+                            plot: bool = True):
+    """
+    Computes the Alpha-Complex and persistent homology.
+    Further it can either plot the barcode, or the persistence diagram.
+    :param max_alpha_square: For each real number n define the concept of a generalized disk of radius 1/n as follow:
+                             - If n = 0, it is a closed half-plane;
+                             - If n > 0, it is a closed disk of radius 1/n;
+                             - If n < 0, it is the closure of the complement of a disk of radius -1/n;
+    :param barcode: Whether to create and plot a barcode diagram or not. (default: True)
+    :param persistence: Whether plot a persistence diagram or not. (default: False)
+    :param plot: Whether to make a plot or to return values.
+    :return: Alpha-filtration.
+    """
+    data = read_data(path, columns)
+    Alpha_complex_sample = gd.AlphaComplex(points = data)
+    Alpha_simplex_tree_sample = Alpha_complex_sample.create_simplex_tree(max_alpha_square=0.3)
+    diag_Alpha = Alpha_simplex_tree_sample.persistence()
+
+    if barcode and plot:
+        gd.plot_persistence_barcode(diag_Alpha)
+        plt.show()
+
+    if persistence and plot:
+        gd.plot_persistence_diagram(diag_Alpha)
+        plt.show()
+
+    if not plot:
+        return diag_Alpha
+
 
 gudhi_rips_persistence("../../data/MOBISIG/USER1/SIGN_FOR_USER1_USER2_1.csv", rows = 2)
-"""
-Alpha_complex_sample = gd.AlphaComplex(points = data)
-Alpha_simplex_tree_sample = Alpha_complex_sample.create_simplex_tree(max_alpha_square=0.3)
-diag_Alpha = Alpha_simplex_tree_sample.persistence()
-gd.plot_persistence_diagram((diag_Alpha))
-"""
