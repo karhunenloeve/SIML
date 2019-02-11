@@ -1,2 +1,2 @@
-# SIML
-Schema Inference and Machine Learning
+# ∂SIML
+Schema Inference and Machine Learning Library.
