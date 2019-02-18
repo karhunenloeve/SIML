@@ -153,3 +153,6 @@ def check_linear_dependence(matrix: np.ndarray) -> boolean:
                 else:
                     print('Independent')
                     return False
+
+def merge_csv():
+    pass

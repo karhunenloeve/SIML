@@ -11,7 +11,7 @@ from ripser import Rips, plot_dgms
 from sklearn.linear_model import LinearRegression
 from sklearn.preprocessing import PolynomialFeatures
 
-def read_data(path: str, columns: int, delimiter: str = ",") -> np.ndarray:
+def read_data(path: str, columns: int = 1, delimiter: str = ",") -> np.ndarray:
     """
     Reads a certain amount of columns from a .csv-file.
     :param path: Path to the .csv file.
@@ -19,7 +19,7 @@ def read_data(path: str, columns: int, delimiter: str = ",") -> np.ndarray:
     :return: Numpy ndarray with columns.
     """
     try:
-        if rows == 1:
+        if columns == 1:
             data = np.genfromtxt(path, delimiter = delimiter)
         else:
             data = np.genfromtxt(path, delimiter = delimiter)[0:,:columns]
@@ -27,6 +27,75 @@ def read_data(path: str, columns: int, delimiter: str = ",") -> np.ndarray:
         return data
     except Exception as e:
         raise e
+
+def plot_data(path: str, columns: int = 1, delimiter: str = ",") -> np.ndarray:
+    """
+    Reads a certain amount of columns from a .csv-file.
+    :param path: Path to the .csv file.
+    :param delimiter: Delimiter of the columns within .csv-file. (default: ",")
+    :return: Numpy ndarray with columns.
+    """
+    try:
+        if columns == 1:
+            data = np.genfromtxt(path, delimiter = delimiter)
+        else:
+            data = np.genfromtxt(path, delimiter = delimiter)[0:,:columns]
+            x, y = [], []
+            for i in data:
+                x.append(i[0])
+                y.append(i[1])
+            plt.scatter(x,y)
+            plt.show()
+
+        return data
+    except Exception as e:
+        raise e
+
+def sunburst_plot(nodes, total=np.pi * 2, offset=0, level=0, ax=None):
+    """
+    Plots a sunburst diagram of the data.
+    :param nodes: Nodes as a python dict organized hierarchically.
+    :param total: Radius of the diagram.
+    :param offset: Offset between each of the classes.
+    :param level: Level of hierarchy.
+    :param ax: Parameter for axes.
+    :proc: Plots sunburst diagram, no return value.
+    """
+    ax = ax or plt.subplot(111, projection='polar')
+
+    if level == 0 and len(nodes) == 1:
+        label, value, subnodes = nodes[0]
+        ax.bar([0], [0.5], [np.pi * 2])
+        ax.text(0, 0, label, ha='center', va='center')
+        sunburst(subnodes, total=value, level=level + 1, ax=ax)
+    elif nodes:
+        d = np.pi * 2 / total
+        labels = []
+        widths = []
+        local_offset = offset
+        for label, value, subnodes in nodes:
+            labels.append(label)
+            widths.append(value * d)
+            sunburst(subnodes, total=total, offset=local_offset,
+                     level=level + 1, ax=ax)
+            local_offset += value
+        values = np.cumsum([offset * d] + widths[:-1])
+        heights = [1] * len(nodes)
+        bottoms = np.zeros(len(nodes)) + level - 0.5
+        rects = ax.bar(values, heights, widths, bottoms, linewidth=1,
+                       edgecolor='white', align='edge')
+        for rect, label in zip(rects, labels):
+            x = rect.get_x() + rect.get_width() / 2
+            y = rect.get_y() + rect.get_height() / 2
+            rotation = (90 + (360 - np.degrees(x) % 180)) % 360
+            ax.text(x, y, label, rotation=rotation, ha='center', va='center')
+
+    if level == 0:
+        ax.set_theta_direction(-1)
+        ax.set_theta_zero_location('N')
+        ax.set_axis_off()
+
+    plt.show()
 
 
 def makeSparseDM(X, thresh):
@@ -62,7 +131,7 @@ def gudhi_rips_persistence(path: str,
                            columns: int = 1,
                            delimiter: str = ",",
                            max_edge_length: int = 500,
-                           max_dimension: int = 4,
+                           max_dimension: int = 3,
                            barcode: bool = True,
                            persistence: bool = False,
                            plot: bool = True):
@@ -129,4 +198,30 @@ def gudhi_alpha_persistence(path: str,
         return diag_Alpha
 
 
-gudhi_rips_persistence("../../data/MOBISIG/USER1/SIGN_FOR_USER1_USER2_1.csv", rows = 2)
+#plot_data("../../data/MOBISIG/USER31/SIGN_FOR_USER31_USER33_10.csv",columns=2)
+"""
+../../data/MOBISIG/USER1/SIGN_FOR_USER1_USER2_2.csv
+../../data/MOBISIG/USER2/SIGN_FOR_USER2_USER5_14.csv
+../../data/MOBISIG/USER16/SIGN_FOR_USER16_USER18_9.csv
+../../data/MOBISIG/USER31/SIGN_FOR_USER31_USER33_10.csv
+"""
+
+
+
+import numpy as np
+import matplotlib.cm as cm
+from matplotlib.pyplot import figure, show, rc
+
+fig = plt.figure(figsize=(8,8))
+ax = fig.add_axes([0.1, 0.1, 0.8, 0.8], polar=True)
+
+N = 20
+theta = np.arange(0.0, 2*np.pi, 2*np.pi/N)
+radii = 10*np.random.rand(N)
+width = np.pi/4*np.random.rand(N)
+bars = ax.bar(theta, radii, width=width, bottom=0.4, edgecolor=(0,0,0))
+for r,bar in zip(radii, bars):
+    bar.set_facecolor(cm.jet(r/10.))
+
+plt.axis('off')
+plt.show()
