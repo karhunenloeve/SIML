@@ -198,6 +198,7 @@ def gudhi_alpha_persistence(path: str,
         return diag_Alpha
 
 
+#gudhi_rips_persistence("../../data/MOBISIG/USER31/SIGN_FOR_USER31_USER33_10.csv",columns=2, persistence=True)
 #plot_data("../../data/MOBISIG/USER31/SIGN_FOR_USER31_USER33_10.csv",columns=2)
 """
 ../../data/MOBISIG/USER1/SIGN_FOR_USER1_USER2_2.csv
@@ -205,6 +206,7 @@ def gudhi_alpha_persistence(path: str,
 ../../data/MOBISIG/USER16/SIGN_FOR_USER16_USER18_9.csv
 ../../data/MOBISIG/USER31/SIGN_FOR_USER31_USER33_10.csv
 """
+
 
 
 

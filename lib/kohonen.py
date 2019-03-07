@@ -3,6 +3,13 @@ import tensorflow as tf
 import numpy as np
 from numpy import genfromtxt
 
+"""
+Example of usage:
+som = SOM(x_data, y_data (may be left empty), input_dim, learning_rate, radius, iterations)
+data = genfromtxt(csv_path, delimiter=delimiter)
+som.train(data)
+"""
+
 class SOM(object):
     def __init__(self, x, y, input_dim, learning_rate, radius, num_iter=111):
         """
@@ -120,6 +127,3 @@ class SOM(object):
                 yield np.array([i, j])
 
 
-som = SOM(6, 6, 9, 0.5, 0.5, 100)
-data = genfromtxt('../data/abalone.csv', delimiter=',')
-som.train(data)

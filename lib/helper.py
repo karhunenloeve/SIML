@@ -15,25 +15,25 @@ def findCounts(arr: np.ndarray) -> np.ndarray:
     :return: numpy ndarray.
     """
     array_shape = arr.shape
-    # check if array is empty, if it is, return 0
-    # this is the trivial case
+    # Check if array is empty, if it is, return 0.
+    # This is the trivial case.
     if len(arr) == 0:
         return arr
 
-    # check if the array is more then two dimensional
-    # if it is, then raise an error
+    # Check if the array is more then two dimensional.
+    # If it is, then raise an error.
     if len(array_shape) > 2:
         print("Dimension of ndarray must be exactly two.")
         return False
     else:
-        # init the output list
+        # Init the output list.
         frequencies = np.empty(shape = array_shape, dtype = float)
-        # calculate the statistics for each row
+        # Calculate the statistics for each row.
         for i in range(0, array_shape[1]):
             res = stats.relfreq(arr[:,i], len(arr[:,i]))
             print(res.frequency)
             np.append(frequencies, res.frequency)
-    #returns numpy array with frequencies
+    # Returns numpy array with frequencies.
     return frequencies
 
 
@@ -52,7 +52,7 @@ def standardize(X: np.ndarray) -> np.ndarray:
     :param X: An ndarray with the data.
     :return: np.ndarray.
     """
-    # Standardize data along the first axis of the tuples
+    # Standardize data along the first axis of the tuples.
     X /= X.std(axis=0)
     return X
 
@@ -65,9 +65,9 @@ def compute_ica(S: np.ndarray, n: int) -> dict:
     :return: {"Signals": S_, "MixingMatrix": A_, "UnmixingMatrix": U_}
     """
     ica = FastICA(n_components = n)
-    S_ = ica.fit_transform(S)  # Reconstruct signals / computes ICA
-    A_ = ica.mixing_  # Get estimated mixing matrix
-    U_ = ica.components_  # Get the unmixing matrix
+    S_ = ica.fit_transform(S)  # Reconstruct signals / computes ICA.
+    A_ = ica.mixing_  # Get estimated mixing matrix.
+    U_ = ica.components_  # Get the unmixing matrix.
 
     # We can `prove` that the ICA model applies by reverting the unmixing.
     assert np.allclose(S, np.dot(S_, A_.T) + ica.mean_)
@@ -95,14 +95,14 @@ def plot_ica(path: str, n: int):
     :param n: number of components to be found.
     """
     try:
-        X = read_data_csv(path) # reads the path into an np.ndarray
-        s_X = standardize(X) # standardizes the data
-        ica_dict = compute_ica(s_X, n) # gets a dict with Data, Signals, MixingMatrix and UnmixingMatrix
-        pca_dict = compute_pca(s_X, n) # gets a dict with Data, Components and SingularValues
+        X = read_data_csv(path) # Reads the path into an np.ndarray.
+        s_X = standardize(X) # Standardizes the data.
+        ica_dict = compute_ica(s_X, n) # Gets a dict with Data, Signals, MixingMatrix and UnmixingMatrix.
+        pca_dict = compute_pca(s_X, n) # Gets a dict with Data, Components and SingularValues.
 
-        # create the plotting object
+        # Create the plotting object.
         plt.figure()
-        models = [] # here is specified what should be plotted
+        models = [] # Here is specified what should be plotted.
 
         models = [ica_dict["Components"], ica_dict["MixingMatrix"], ica_dict["Signals"], pca_dict["Signals"], X]
         names = ['Components',
@@ -118,7 +118,7 @@ def plot_ica(path: str, n: int):
             for sig, color in zip(model.T, colors):
                 plt.plot(sig, color=color)
 
-        # adjust the plots to have a nice look
+        # Adjust the plots to have a nice look.
         plt.subplots_adjust(0.09, 0.04, 0.94, 0.94, 0.26, 0.46)
         plt.show()
     except ValueError:
@@ -155,4 +155,9 @@ def check_linear_dependence(matrix: np.ndarray) -> boolean:
                     return False
 
 def merge_csv():
+    """
+    Functions merges two csv files according two columns or rows.
+    :return:
+    """
+    # Todo: Implement the csv merge function
     pass
