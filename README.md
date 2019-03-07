@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # ∂SIML
 In addition to topological data analysis, unsupervised and supervised learning, the project ∂SIML also uses basics of algebraic topology to identify successful schemes. Currently under construction and constantly expanded. A documentation with the description and the corresponding functionality is also created here.
 
