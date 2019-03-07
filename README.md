@@ -1,7 +1,7 @@
 # ∂SIML
 In addition to topological data analysis, unsupervised and supervised learning, the project ∂SIML also uses basics of algebraic topology to identify successful schemes. Currently under construction and constantly expanded. A documentation with the description and the corresponding functionality is also created here.
 
-Schema Inference and Machine Learning Library.
+The Machine Learning Library
 =======
 This repository provides a library for data analysis using clustering algorithms and algorithms for processing functional dependencies in the context of database technologies.
 The aim is to create a library that enables the development of a prototype for the implementation of automatic or semi-automatic schema inference.
@@ -11,5 +11,5 @@ When we talk about schema inference, we think of a data stream, or a data set, t
 - Coricos TDAToolbox, [https://github.com/Coricos/TdaToolbox](https://github.com/Coricos/TdaToolbox).
 - Nabihach Tane & CTane, [https://github.com/nabihach/FD_CFD_extraction](https://github.com/nabihach/FD_CFD_extraction).
 - P. Fränti and S. Sieranoja: Clustering Basic Benchmarks, [http://cs.joensuu.fi/sipu/datasets/](http://cs.joensuu.fi/sipu/datasets/).
-- PPoffice: Ant-Colony TSP-Solver, [https://github.com/ppoffice/ant-colony-tsp](https://github.com/ppoffice/ant-colony-tsp)
+- PPoffice: Ant-Colony TSP-Solver, [https://github.com/ppoffice/ant-colony-tsp](https://github.com/ppoffice/ant-colony-tsp).
 - Submanifolds Neural Persistence, [https://github.com/BorgwardtLab/Neural-Persistence).
