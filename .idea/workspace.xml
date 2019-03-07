@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4baeb8a6-4dd2-4888-8f4b-65a1e1dcde3b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/tomato.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SIML/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/data/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/helper.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/helper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/kohonen.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/kohonen.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/opt/antcolony.py" beforeDir="false" afterPath="$PROJECT_DIR$/opt/antcolony.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/visu/simcomplex.py" beforeDir="false" afterPath="$PROJECT_DIR$/visu/simcomplex.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,7 +13,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="kohonen.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="kohonen.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/kohonen.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-1329">
@@ -109,11 +102,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="71" selection-start-line="11" selection-start-column="71" selection-end-line="11" selection-end-column="71" />
+            <state relative-caret-position="90">
+              <caret line="6" column="155" lean-forward="true" selection-start-line="6" selection-start-column="155" selection-end-line="6" selection-end-column="155" />
             </state>
           </provider>
         </entry>
@@ -155,9 +148,9 @@
         <option value="$PROJECT_DIR$/lib/kohonen.py" />
         <option value="$PROJECT_DIR$/lib/helper.py" />
         <option value="$PROJECT_DIR$/opt/antcolony.py" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/visu/simcomplex.py" />
         <option value="$PROJECT_DIR$/lib/curvature.py" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -246,7 +239,7 @@
     <frame x="0" y="23" width="1920" height="1008" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info anchor="bottom" id="TODO" order="6" visible="true" weight="0.26673985" />
+      <window_info anchor="bottom" id="TODO" order="6" visible="true" weight="0.27442372" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
@@ -497,13 +490,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="71" selection-start-line="11" selection-start-column="71" selection-end-line="11" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/tomato.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -552,6 +538,13 @@
           <folding>
             <element signature="e#22#45#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="155" lean-forward="true" selection-start-line="6" selection-start-column="155" selection-end-line="6" selection-end-column="155" />
         </state>
       </provider>
     </entry>

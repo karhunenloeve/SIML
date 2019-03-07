@@ -2,10 +2,9 @@
 # ∂SIML
 Schema Inference and Machine Learning Library.
 =======
-# Schema Inference
-
-Preparations and discussions for the schema inference project. Topics: Functional dependencies, fundamental groups, machine learning, unsupervised learning, weekly meetings with Prof. Lenz.
->>>>>>> 3f4af21939f1ab4b24170f878b1b7911b86530c9
+This repository provides a library for data analysis using clustering algorithms and algorithms for processing functional dependencies in the context of database technologies.
+The aim is to create a library that enables the development of a prototype for the implementation of automatic or semi-automatic schema intference.
+When we talk about schema inference, we think of a data stream, or a data set, that initially exists without relations. From this, we would like to obtain a suitable schema using clustering techniques in combination with functional dependencies and normalization in order to support the database user.
 
 ## References
 - Coricos TDAToolbox, [https://github.com/Coricos/TdaToolbox](https://github.com/Coricos/TdaToolbox).
