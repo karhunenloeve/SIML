@@ -9,8 +9,9 @@ When we talk about schema inference, we think of a data stream, or a data set, t
 
 ## References
 - Coricos TDAToolbox, [https://github.com/Coricos/TdaToolbox](https://github.com/Coricos/TdaToolbox).
+- Indoor WIFI Dataset: UJIIndoorLoc, [https://archive.ics.uci.edu/ml/datasets/UJIIndoorLoc](https://archive.ics.uci.edu/ml/datasets/UJIIndoorLoc).
 - Nabihach Tane & CTane, [https://github.com/nabihach/FD_CFD_extraction](https://github.com/nabihach/FD_CFD_extraction).
 - P. Fränti and S. Sieranoja: Clustering Basic Benchmarks, [http://cs.joensuu.fi/sipu/datasets/](http://cs.joensuu.fi/sipu/datasets/).
 - PPoffice: Ant-Colony TSP-Solver, [https://github.com/ppoffice/ant-colony-tsp](https://github.com/ppoffice/ant-colony-tsp).
+- Stwisdom: Optimizers, [https://github.com/stwisdom/urnn/blob/master/](https://github.com/stwisdom/urnn/blob/master/).
 - Submanifolds Neural Persistence, [https://github.com/BorgwardtLab/Neural-Persistence](https://github.com/BorgwardtLab/Neural-Persistence).
-- Indoor WIFI Dataset: UJIIndoorLoc, [https://archive.ics.uci.edu/ml/datasets/UJIIndoorLoc](https://archive.ics.uci.edu/ml/datasets/UJIIndoorLoc).
