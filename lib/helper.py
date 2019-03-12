@@ -2,6 +2,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 import typing
+import itertools
 
 from sklearn.utils import shuffle
 from sklearn.metrics import mutual_info_score
@@ -153,6 +154,26 @@ def check_linear_dependence(matrix: np.ndarray) -> boolean:
                 else:
                     print('Independent')
                     return False
+
+def read_columns_to_dict(path, d=","):
+    """
+    Write the correlation matrix into a dictionary of nodes.
+    :path: fixed path to a csv file.
+    :d: delimiter is set to , as default.
+    :return: dictionary.
+    """
+    reader1, reader2 = itertools.tee(csv.reader(path, delimiter=d))
+    columns = len(next(reader1))
+    rows = len(next(reader2))
+    counter_columns, counter_rows = 0, 0
+
+    for i in reader1:
+        counter_columns += 1
+    for i in reader2:
+        counter_rows += 1
+
+    del reader1, reader2
+    return counter_columns
 
 def merge_csv():
     """

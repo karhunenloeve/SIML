@@ -12,4 +12,5 @@ When we talk about schema inference, we think of a data stream, or a data set, t
 - Nabihach Tane & CTane, [https://github.com/nabihach/FD_CFD_extraction](https://github.com/nabihach/FD_CFD_extraction).
 - P. Fränti and S. Sieranoja: Clustering Basic Benchmarks, [http://cs.joensuu.fi/sipu/datasets/](http://cs.joensuu.fi/sipu/datasets/).
 - PPoffice: Ant-Colony TSP-Solver, [https://github.com/ppoffice/ant-colony-tsp](https://github.com/ppoffice/ant-colony-tsp).
-- Submanifolds Neural Persistence, [https://github.com/BorgwardtLab/Neural-Persistence).
+- Submanifolds Neural Persistence, [https://github.com/BorgwardtLab/Neural-Persistence](https://github.com/BorgwardtLab/Neural-Persistence).
+- Indoor WIFI Dataset: UJIIndoorLoc, [https://archive.ics.uci.edu/ml/datasets/UJIIndoorLoc](https://archive.ics.uci.edu/ml/datasets/UJIIndoorLoc).

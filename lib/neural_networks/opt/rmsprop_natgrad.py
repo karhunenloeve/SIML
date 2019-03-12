@@ -17,8 +17,22 @@ class RMSprop_and_natGrad(Optimizer):
     :param decay: float >= 0. Learning rate decay over each update.
     """
 
-    def __init__(self, lr=0.001, rho=0.9, epsilon=1e-8,
-                 decay=0., lr_natGrad=None, **kwargs):
+    def __init__(self,
+                 lr=0.001,
+                 rho=0.9,
+                 epsilon=1e-8,
+                 decay=0.,
+                 lr_natGrad=None,
+                 **kwargs):
+        """
+        Initialize natural gradient descent with parameters.
+        :param lr: Learning rate.
+        :param rho: RMSProp parametrization (i.e. momentum).
+        :param epsilon: RMSProp parametrization (i.e. momentum).
+        :param decay: Decay term.
+        :param lr_natGrad: Optional lr for natural gradient.
+        :param kwargs: Additional arguments.
+        """
         super(RMSprop_and_natGrad, self).__init__(**kwargs)
         self.__dict__.update(locals())
         self.lr = K.variable(lr)
@@ -34,6 +48,13 @@ class RMSprop_and_natGrad(Optimizer):
         self.iterations = K.variable(0.)
 
     def get_updates(self, params, constraints, loss):
+        """
+        Update gradient step and parameter set.
+        :param params: Parameterset to be optimized.
+        :param constraints: List of constraints.
+        :param loss: Loss functions of keras models.
+        :return: A self update.
+        """
         grads = self.get_gradients(loss, params)
         shapes = [K.get_variable_shape(p) for p in params]
         accumulators = [K.zeros(shape) for shape in shapes]
@@ -67,10 +88,8 @@ class RMSprop_and_natGrad(Optimizer):
                     C = K.cast(K.transpose(grad[:shape[1] / 2, :shape[1] / 2]), 'complex64')
                     D = K.cast(K.transpose(grad[:shape[1] / 2, shape[1] / 2:]), 'complex64')
 
-                    """
-                    Build skew-Hermitian matrix A from equation (8) of
-                    GX^H = CA^T + DB^T + jDA^T - jCB^T.
-                    """
+                    # This part builds the skew Hermitian matrix.
+                    # One can denote this as GX^H = CA^T + DB^T + jDA^T - jCB^T.
                     GXH = K.dot(C, K.transpose(A)) + K.dot(D, K.transpose(B)) \
                           + j * K.dot(D, K.transpose(A)) - j * K.dot(C, K.transpose(B))
                     Askew = GXH - K.transpose(T.conj(GXH))
@@ -94,6 +113,7 @@ class RMSprop_and_natGrad(Optimizer):
                     new_param = param - self.lr_natGrad * grad / (K.sqrt(new_accum) + self.epsilon)
             else:
                 # Do the usual RMSprop update.
+                # Applies changes to vector parametrizations.
                 # Update accumulator.
                 new_accum = self.rho * accum + (1. - self.rho) * K.square(grad)
                 self.updates.append(K.update(accum, new_accum))
@@ -107,6 +127,10 @@ class RMSprop_and_natGrad(Optimizer):
         return self.updates
 
     def get_config(self):
+        """
+        Function returns the configurations of the current running algorithms.
+        :return: Dictionary.s
+        """
         config = {'lr': float(K.get_value(self.lr)),
                   'lr_natGrad': float(K.get_value(self.lr_natGrad)),
                   'rho': float(K.get_value(self.rho)),
