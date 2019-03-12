@@ -125,5 +125,3 @@ class SOM(object):
         for i in range(x):
             for j in range(y):
                 yield np.array([i, j])
-
-

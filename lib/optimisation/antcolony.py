@@ -120,4 +120,4 @@ class _Ant(object):
                 # noinspection PyTypeChecker
                 self.pheromone_delta[i][j] = self.colony.Q / self.graph.matrix[i][j]
             else:  # ant-cycle system
-self.pheromone_delta[i][j] = self.colony.Q / self.total_cost
+                self.pheromone_delta[i][j] = self.colony.Q / self.total_cost

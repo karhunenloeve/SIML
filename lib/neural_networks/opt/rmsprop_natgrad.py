@@ -11,7 +11,6 @@ class RMSprop_and_natGrad(Optimizer):
     It is recommended to leave the parameters of this optimizer
     at their default values (except the learning rate, which can be freely tuned).
     This optimizer is usually a good choice for recurrent neural networks.
-
     :param lr: float >= 0. Learning rate.
     :param rho: float >= 0.
     :param epsilon: float >= 0. Fuzzy factor.

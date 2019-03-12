@@ -5,11 +5,9 @@ class ClusteringLayer(Layer):
     """
     Clustering layer converts input sample (feature) to soft label.
     Example: model.add(ClusteringLayer(n_clusters=10))
-
     :param n_clusters: Number of clusters.
     :param weights: List of Numpy array with shape (n_clusters, n_features) witch represents the initial cluster centers.
     :param alpha: Degrees of freedom parameter in Student's T-distribution. Default to 1.0.
-
     Input shape: 2D tensor with shape: `(n_samples, n_features)`.
     Output shape: 2D tensor with shape: `(n_samples, n_clusters)`.
     """
