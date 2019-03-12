@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4baeb8a6-4dd2-4888-8f4b-65a1e1dcde3b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/neural_networks/opt/vanilla_gradesc.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/neural_networks/opt/vanilla_gradesc.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/neural_networks/opt/vanilla_gradesc.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,26 +16,17 @@
       <file leaf-file-name="metrics.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/metrics.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="735">
+              <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="140" selection-start-line="16" selection-start-column="140" selection-end-line="16" selection-end-column="140" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="vanilla_gradesc.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="vanilla_gradesc.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/neural_networks/opt/vanilla_gradesc.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="225">
+              <caret line="15" column="59" lean-forward="true" selection-start-line="15" selection-start-column="59" selection-end-line="15" selection-end-column="59" />
             </state>
           </provider>
         </entry>
@@ -124,8 +113,8 @@
         <option value="$PROJECT_DIR$/lib/helper.py" />
         <option value="$PROJECT_DIR$/exp_fds.py" />
         <option value="$PROJECT_DIR$/lib/neural_networks/opt/rmsprop_natgrad.py" />
-        <option value="$PROJECT_DIR$/lib/neural_networks/opt/vanilla_gradesc.py" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/lib/neural_networks/opt/vanilla_gradesc.py" />
       </list>
     </option>
   </component>
@@ -554,13 +543,6 @@
     <entry file="file://$PROJECT_DIR$/data/UJIIndoorLoc-Mag/UJIIndoorLoc-Mag/tests/tt02.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/neural_networks/opt/vanilla_gradesc.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/helper.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="534">
@@ -568,6 +550,13 @@
           <folding>
             <element signature="e#22#53#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="140" selection-start-line="16" selection-start-column="140" selection-end-line="16" selection-end-column="140" />
         </state>
       </provider>
     </entry>
@@ -590,15 +579,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/metrics.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="735">
+          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/lib/neural_networks/opt/vanilla_gradesc.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="140" selection-start-line="16" selection-start-column="140" selection-end-line="16" selection-end-column="140" />
+        <state relative-caret-position="225">
+          <caret line="15" column="59" lean-forward="true" selection-start-line="15" selection-start-column="59" selection-end-line="15" selection-end-column="59" />
         </state>
       </provider>
     </entry>
