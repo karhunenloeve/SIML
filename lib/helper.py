@@ -175,6 +175,22 @@ def read_columns_to_dict(path, d=","):
     del reader1, reader2
     return counter_columns
 
+def get_power_set(s):
+    """
+    Computes the powerset lattice of a set.
+    :param s: A set.
+    :return: A powerset.
+    """
+    power_set = [set()]
+
+    for element in s:
+        new_sets = []
+        for subset in power_set:
+            new_sets.append(subset | {element})
+        power_set.extend(new_sets)
+
+    return power_set
+
 def merge_csv():
     """
     Functions merges two csv files according two columns or rows.

@@ -107,7 +107,7 @@ class RMSprop_and_natGrad(Optimizer):
                     new_param = K.concatenate((K.concatenate((XnewRe, XnewIm), axis=1), K.concatenate(((-1) * XnewIm, XnewRe), axis=1)),axis=0)
                 else:
                     # Do the usual RMSprop update using lr_natGrad as learning rate.
-                    # Update Accumulator.
+                    # Update accumulator.
                     new_accum = self.rho * accum + (1. - self.rho) * K.square(grad)
                     self.updates.append(K.update(accum, new_accum))
                     new_param = param - self.lr_natGrad * grad / (K.sqrt(new_accum) + self.epsilon)
@@ -129,7 +129,7 @@ class RMSprop_and_natGrad(Optimizer):
     def get_config(self):
         """
         Function returns the configurations of the current running algorithms.
-        :return: Dictionary.s
+        :return: Dictionary.
         """
         config = {'lr': float(K.get_value(self.lr)),
                   'lr_natGrad': float(K.get_value(self.lr_natGrad)),
