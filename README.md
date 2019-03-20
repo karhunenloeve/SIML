@@ -9,6 +9,7 @@ When we talk about schema inference, we think of a data stream, or a data set, t
 
 ## References
 - Coricos TDAToolbox, [https://github.com/Coricos/TdaToolbox](https://github.com/Coricos/TdaToolbox).
+- Hirosm: Time Contrastive Learning, [https://github.com/hirosm/TCL](https://github.com/hirosm/TCL).
 - Indoor WIFI Dataset: UJIIndoorLoc, [https://archive.ics.uci.edu/ml/datasets/UJIIndoorLoc](https://archive.ics.uci.edu/ml/datasets/UJIIndoorLoc).
 - Nabihach Tane & CTane, [https://github.com/nabihach/FD_CFD_extraction](https://github.com/nabihach/FD_CFD_extraction).
 - P. Fränti and S. Sieranoja: Clustering Basic Benchmarks, [http://cs.joensuu.fi/sipu/datasets/](http://cs.joensuu.fi/sipu/datasets/).

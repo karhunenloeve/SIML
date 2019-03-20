@@ -12,7 +12,7 @@ def gaussian_curvature(data: np.ndarray) -> np.ndarray:
     Zxy, Zxx = np.gradient(Zx)
     Zyy, _ = np.gradient(Zy)
     K = (Zxx * Zyy - (Zxy ** 2)) /  (1 + (Zx ** 2) + (Zy **2)) ** 2
-    
+
     return K
 
 def mean_curvature(data: np.ndarray) -> np.ndarray:
