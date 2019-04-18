@@ -4,19 +4,30 @@ import random
 
 
 class Graph(object):
+    """
+    Graph object for the ant-colony optimization procedure.
+    """
+
     def __init__(self, cost_matrix: list, rank: int):
         """
-        :param cost_matrix:
-        :param rank: rank of the cost matrix
+        Initialize graph object.
+        :param cost_matrix: Adjacency matrix with the corresponding costs.
+        :param rank: Rank of the cost matrix.
         """
         self.matrix = cost_matrix
         self.rank = rank
-        # noinspection PyUnusedLocal
+        # Set the pheromone trail.
         self.pheromone = [[1 / (rank * rank) for j in range(rank)] for i in range(rank)]
 
 
 class ACO(object):
-    def __init__(self, ant_count: int, generations: int, alpha: float, beta: float, rho: float, q: int,
+    def __init__(self,
+                 ant_count: int,
+                 generations: int,
+                 alpha: float,
+                 beta: float,
+                 rho: float,
+                 q: int,
                  strategy: int):
         """
         :param ant_count:
