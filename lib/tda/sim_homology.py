@@ -5,11 +5,15 @@ import pandas as pd
 import pickle as pickle
 import matplotlib
 import typing
+import config
+import matplotlib.cm as cm
+import matplotlib.colors as mcolors
 
 from matplotlib import pyplot as plt
 from ripser import Rips, plot_dgms
 from sklearn.linear_model import LinearRegression
 from sklearn.preprocessing import PolynomialFeatures
+
 
 def read_data(path: str, columns: int = 1, delimiter: str = ",") -> np.ndarray:
     """
@@ -27,6 +31,7 @@ def read_data(path: str, columns: int = 1, delimiter: str = ",") -> np.ndarray:
         return data
     except Exception as e:
         raise e
+
 
 def plot_data(path: str, columns: int = 1, delimiter: str = ",") -> np.ndarray:
     """
@@ -50,6 +55,7 @@ def plot_data(path: str, columns: int = 1, delimiter: str = ",") -> np.ndarray:
         return data
     except Exception as e:
         raise e
+
 
 def sunburst_plot(nodes, total=np.pi * 2, offset=0, level=0, ax=None):
     """
@@ -113,6 +119,7 @@ def makeSparseDM(X, thresh):
     V = D[D <= thresh]
     return sparse.coo_matrix((V, (I, J)), shape=(N, N)).tocsr()
 
+
 def plot_vr_complex(path: str, delimiter: str = ",", thresh: float = 1.0,
                     maxdim: int = 3, coeff = 3, barcode: bool = True) -> np.ndarray:
     """
@@ -126,6 +133,7 @@ def plot_vr_complex(path: str, delimiter: str = ",", thresh: float = 1.0,
     diagrams = rips.fit_transform(data, distance_matrix=False)
     rips.plot(diagrams)
     return diagrams
+
 
 def gudhi_rips_persistence(path: str,
                            columns: int = 1,
@@ -164,6 +172,7 @@ def gudhi_rips_persistence(path: str,
     if not plot:
         return diag_Rips
 
+
 def gudhi_alpha_persistence(path: str,
                             max_alpha_square: float = 0.3,
                             barcode: bool = True,
@@ -198,32 +207,94 @@ def gudhi_alpha_persistence(path: str,
         return diag_Alpha
 
 
-#gudhi_rips_persistence("../../data/MOBISIG/USER31/SIGN_FOR_USER31_USER33_10.csv",columns=2, persistence=True)
-#plot_data("../../data/MOBISIG/USER31/SIGN_FOR_USER31_USER33_10.csv",columns=2)
-"""
+def make_colormap(seq: float):
+    """
+    Returns a LinearSegmentedColormap.
+    :param seq: A sequence of floats and RGB-tuples. The floats should be increasing and in the interval [0,1].
+    :return: LinearSegmentedColormap.
+    """
+    seq = [(None,) * 3, 0.0] + list(seq) + [1.0, (None,) * 3]
+    cdict = {'red': [], 'green': [], 'blue': []}
+
+    for i, item in enumerate(seq):
+        if isinstance(item, float):
+            r1, g1, b1 = seq[i - 1]
+            r2, g2, b2 = seq[i + 1]
+            cdict['red'].append([item, r1, r2])
+            cdict['green'].append([item, g1, g2])
+            cdict['blue'].append([item, b1, b2])
+
+    return mcolors.LinearSegmentedColormap('CustomMap', cdict)
+
+
+def persistence_ring_diagram(path: str,
+                             figsize: tuple = (8,8),
+                             axes: list = [0.1, 0.1, 0.8, 0.8],
+                             sorted: bool = False):
+    """
+    Plots a persistence ring of some data.
+    :param data: N-dimensional numpy array representing any data.
+    :param figsize: A tuple with the figure size according to Matplotlib standards.
+    :param axes: Position of the polar axes according to Matplotlib.
+    :return: Plots a persistence ring diagram (no return value, procedure).
+    """
+
+    fig = plt.figure(figsize = figsize)
+    ax = fig.add_axes(axes, polar=True)
+
+    # Compute evolution of persistent homology of the dataset as persistence diagram.
+    persistence = gudhi_rips_persistence(path, columns = 2, plot = False)
+    death, birth = [], []
+
+    for homgroup in persistence:
+        if homgroup[1][1] != float("inf"):
+            birth.append(homgroup[1][0])
+            death.append(homgroup[1][1])
+        else:
+            pass
+
+    # Sorting the persistence, to yield a suitable representation. (optional)
+    if sorted:
+        death, birth = zip(* sorted(zip(death, birth)))
+        death, birth = (list(t) for t in zip(*sorted(zip(death, birth))))
+
+    N = len(death)
+    bottom = birth
+    width = 2 * np.pi * np.array(death) / np.sum(death)
+
+    # How many parts does the world of the circle has?
+    theta = []
+    for i in range(0, len(width)):
+        sum = np.sum(width[0:i])
+        theta.append(sum)
+
+    # Where should one start with the persistence?
+    radii = np.array(death)
+    bars = ax.bar(theta, radii, width = width, bottom = bottom, edgecolor = 'black',
+                  linewidth=1, align="edge")
+
+    purples = make_colormap(config.HOMOLOGY['colormap']['AvengersEndgame'])
+    colorarray = purples(np.linspace(0, 2 * np.pi, N))
+
+    for n,bar in zip(np.arange(N), bars):
+        bar.set_facecolor(colorarray[n])
+
+    plt.axis('off')
+    plt.show()
+
+
+########################################################################################################################
+""" EXAMPLE OF USAGE
+gudhi_rips_persistence("../../data/MOBISIG/USER31/SIGN_FOR_USER31_USER33_10.csv",columns=2, persistence=True)
+plot_data("../../data/MOBISIG/USER31/SIGN_FOR_USER31_USER33_10.csv", columns=2)
+persistence_ring_diagram("../../data/MOBISIG/USER1/SIGN_FOR_USER1_USER2_2.csv")
+
+Good example Files:
 ../../data/MOBISIG/USER1/SIGN_FOR_USER1_USER2_2.csv
 ../../data/MOBISIG/USER2/SIGN_FOR_USER2_USER5_14.csv
 ../../data/MOBISIG/USER16/SIGN_FOR_USER16_USER18_9.csv
 ../../data/MOBISIG/USER31/SIGN_FOR_USER31_USER33_10.csv
 """
+########################################################################################################################
 
-
-
-
-import numpy as np
-import matplotlib.cm as cm
-from matplotlib.pyplot import figure, show, rc
-
-fig = plt.figure(figsize=(8,8))
-ax = fig.add_axes([0.1, 0.1, 0.8, 0.8], polar=True)
-
-N = 20
-theta = np.arange(0.0, 2*np.pi, 2*np.pi/N)
-radii = 10*np.random.rand(N)
-width = np.pi/4*np.random.rand(N)
-bars = ax.bar(theta, radii, width=width, bottom=0.4, edgecolor=(0,0,0))
-for r,bar in zip(radii, bars):
-    bar.set_facecolor(cm.jet(r/10.))
-
-plt.axis('off')
-plt.show()
+persistence_ring_diagram("../../data/MOBISIG/USER1/SIGN_FOR_USER1_USER2_2.csv")
