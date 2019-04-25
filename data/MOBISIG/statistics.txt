@@ -1,0 +1,8 @@
+Statistics
+
+All: 83
+Male: 49
+Female: 34
+
+Age: 26.03 (9.84)
+

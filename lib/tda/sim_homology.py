@@ -289,12 +289,10 @@ gudhi_rips_persistence("../../data/MOBISIG/USER31/SIGN_FOR_USER31_USER33_10.csv"
 plot_data("../../data/MOBISIG/USER31/SIGN_FOR_USER31_USER33_10.csv", columns=2)
 persistence_ring_diagram("../../data/MOBISIG/USER1/SIGN_FOR_USER1_USER2_2.csv")
 
-Good example Files:
+Good example files:
 ../../data/MOBISIG/USER1/SIGN_FOR_USER1_USER2_2.csv
 ../../data/MOBISIG/USER2/SIGN_FOR_USER2_USER5_14.csv
 ../../data/MOBISIG/USER16/SIGN_FOR_USER16_USER18_9.csv
 ../../data/MOBISIG/USER31/SIGN_FOR_USER31_USER33_10.csv
 """
 ########################################################################################################################
-
-persistence_ring_diagram("../../data/MOBISIG/USER1/SIGN_FOR_USER1_USER2_2.csv")
