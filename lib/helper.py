@@ -8,6 +8,72 @@ from sklearn.utils import shuffle
 from sklearn.metrics import mutual_info_score
 from sklearn.decomposition import FastICA, PCA
 from scipy import stats, signal
+from sklearn.neighbors import KernelDensity
+from scipy.stats import gaussian_kde
+from statsmodels.nonparametric.kde import KDEUnivariate
+from statsmodels.nonparametric.kernel_density import KDEMultivariate
+from scipy.stats.distributions import norm
+
+
+def kde_scipy(x, x_grid, bandwidth=0.2, **kwargs):
+    """
+    Kernel Density Estimation with Scipy.
+    :param x: Data points on the x-axis.
+    :param x_grid: Either a grid or the y-axis.
+    :param bandwidth: Bandwidth of period.
+    :param **kwargs: Type of interpolation.
+    :return: Kernel density estimation.
+    """
+    # Note that scipy weights its bandwidth by the covariance of the
+    # input data.  To make the results comparable to the other methods,
+    # we divide the bandwidth by the sample standard deviation here.
+    kde = gaussian_kde(x, bw_method=bandwidth / x.std(ddof=1), **kwargs)
+    return kde.evaluate(x_grid)
+
+
+def kde_statsmodels_u(x, x_grid, bandwidth=0.2, **kwargs):
+    """
+    Univariate Kernel Density Estimation with Statsmodels.
+    :param x: Data points on the x-axis.
+    :param x_grid: Either a grid or the y-axis.
+    :param bandwidth: Bandwidth of period.
+    :param **kwargs: Type of interpolation.
+    :return: Kernel density estimation.
+    """
+    kde = KDEUnivariate(x)
+    kde.fit(bw=bandwidth, **kwargs)
+    return kde.evaluate(x_grid)
+
+
+def kde_statsmodels_m(x, x_grid, bandwidth=0.2, **kwargs):
+    """
+    Multivariate Kernel Density Estimation with Statsmodels
+    :param x: Data points on the x-axis.
+    :param x_grid: Either a grid or the y-axis.
+    :param bandwidth: Bandwidth of period.
+    :param **kwargs: Type of interpolation.
+    :return: Kernel density estimation.
+    """
+    kde = KDEMultivariate(x, bw=bandwidth * np.ones_like(x),
+                          var_type='c', **kwargs)
+    return kde.pdf(x_grid)
+
+
+def kde_sklearn(x, x_grid, bandwidth=0.2, **kwargs):
+    """
+    Kernel Density Estimation with Scikit-learn.
+    :param x: Data points on the x-axis.
+    :param x_grid: Either a grid or the y-axis.
+    :param bandwidth: Bandwidth of period.
+    :param **kwargs: Type of interpolation.
+    :return: Kernel density estimation.
+    """
+    kde_skl = KernelDensity(bandwidth=bandwidth, **kwargs)
+    kde_skl.fit(x[:, np.newaxis])
+    # score_samples() returns the log-likelihood of the samples
+    log_pdf = kde_skl.score_samples(x_grid[:, np.newaxis])
+    return np.exp(log_pdf)
+
 
 def findCounts(arr: np.ndarray) -> np.ndarray:
     """
@@ -36,6 +102,24 @@ def findCounts(arr: np.ndarray) -> np.ndarray:
             np.append(frequencies, res.frequency)
     # Returns numpy array with frequencies.
     return frequencies
+
+
+def read_data(path: str, columns: int = 1, delimiter: str = ",") -> np.ndarray:
+    """
+    Reads a certain amount of columns from a .csv-file.
+    :param path: Path to the .csv file.
+    :param delimiter: Delimiter of the columns within .csv-file. (default: ",")
+    :return: Numpy ndarray with columns.
+    """
+    try:
+        if columns == 1:
+            data = np.genfromtxt(path, delimiter = delimiter)
+        else:
+            data = np.genfromtxt(path, delimiter = delimiter)[0:,:columns]
+
+        return data
+    except Exception as e:
+        raise e
 
 
 def read_data_csv(path: str, sep: str = ",") -> np.ndarray:
@@ -126,7 +210,7 @@ def plot_ica(path: str, n: int):
         print("Oops!  That was no valid number.  Try again...")
 
 
-def check_linear_dependence(matrix: np.ndarray) -> boolean:
+def check_linear_dependence(matrix: np.ndarray) -> bool:
     """
     Functions checks by Cauchy-Schwartz inqeuality whether two matrices are linear dependent or not.
     :param matrix: 2x2 matrix to be processed.

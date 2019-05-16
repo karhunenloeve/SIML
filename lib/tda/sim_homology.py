@@ -5,7 +5,6 @@ import pandas as pd
 import pickle as pickle
 import matplotlib
 import typing
-import config
 import matplotlib.cm as cm
 import matplotlib.colors as mcolors
 
@@ -13,6 +12,16 @@ from matplotlib import pyplot as plt
 from ripser import Rips, plot_dgms
 from sklearn.linear_model import LinearRegression
 from sklearn.preprocessing import PolynomialFeatures
+
+
+c = mcolors.ColorConverter().to_rgb
+
+HOMOLOGY = {
+    'colormap': {
+        'AvengersEndgame': [c('#0B0930'), c('#1A1A64'), c('#2C2A89'), c('#453AA4'), c('#5C49C6'), c('#7B6FDE')],
+        'IronMan': [c('#AA0505'), c('#6A0C0B'), c('#B97D10'), c('#FBCA03'), c('#67C7EB')]
+    }
+}
 
 
 def read_data(path: str, columns: int = 1, delimiter: str = ",") -> np.ndarray:
@@ -160,6 +169,7 @@ def gudhi_rips_persistence(path: str,
     Rips_complex_sample = gd.RipsComplex(points = data, max_edge_length = max_edge_length)
     Rips_simplex_tree_sample = Rips_complex_sample.create_simplex_tree(max_dimension = max_dimension)
     diag_Rips = Rips_simplex_tree_sample.persistence()
+    print(diag_Rips)
 
     if barcode and plot:
         gd.plot_persistence_barcode(diag_Rips)
@@ -174,6 +184,7 @@ def gudhi_rips_persistence(path: str,
 
 
 def gudhi_alpha_persistence(path: str,
+                            columns: int = 1,
                             max_alpha_square: float = 0.3,
                             barcode: bool = True,
                             persistence: bool = False,
@@ -273,7 +284,7 @@ def persistence_ring_diagram(path: str,
     bars = ax.bar(theta, radii, width = width, bottom = bottom, edgecolor = 'black',
                   linewidth=1, align="edge")
 
-    purples = make_colormap(config.HOMOLOGY['colormap']['AvengersEndgame'])
+    purples = make_colormap(HOMOLOGY['colormap']['AvengersEndgame'])
     colorarray = purples(np.linspace(0, 2 * np.pi, N))
 
     for n,bar in zip(np.arange(N), bars):
@@ -282,6 +293,21 @@ def persistence_ring_diagram(path: str,
     plt.axis('off')
     plt.show()
 
+
+def bottleneck_distance(path1: str,
+                        path2: str,
+                        columns: int=1,
+                        filtration: ['alpha','rips','witness']='rips') -> float:
+    """
+
+    :param path1:
+    :param path2:
+    :param columns: Columns to be spanned inside the filtration.
+    :param filtration: Which filtration has to be choosen.
+    :return: The bottleneck distance between two diagrams.
+    """
+
+    return np.ndarray
 
 ########################################################################################################################
 """ EXAMPLE OF USAGE
