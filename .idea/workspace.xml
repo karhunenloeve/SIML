@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4baeb8a6-4dd2-4888-8f4b-65a1e1dcde3b" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/exp_signatures.py" beforeDir="false" afterPath="$PROJECT_DIR$/exp_signatures.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/tda/sim_homology.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/tda/sim_homology.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -50,8 +49,8 @@
       <file leaf-file-name="exp_signatures.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/exp_signatures.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="44" column="20" selection-start-line="44" selection-start-column="20" selection-end-line="44" selection-end-column="20" />
+            <state relative-caret-position="240">
+              <caret line="16" column="63" selection-start-line="16" selection-start-column="63" selection-end-line="16" selection-end-column="63" />
             </state>
           </provider>
         </entry>
@@ -588,8 +587,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/exp_signatures.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="44" column="20" selection-start-line="44" selection-start-column="20" selection-end-line="44" selection-end-column="20" />
+        <state relative-caret-position="240">
+          <caret line="16" column="63" selection-start-line="16" selection-start-column="63" selection-end-line="16" selection-end-column="63" />
         </state>
       </provider>
     </entry>

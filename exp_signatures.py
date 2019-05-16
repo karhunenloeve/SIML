@@ -14,6 +14,7 @@ from scipy.interpolate import Rbf, interp1d, interp2d
 def top_nat_neighbors(path: str, column: int=2) -> np.ndarray:
     """
     Nearest neighbor interoplation.
+    Returns the original data with augmented nearest neighbors.
     :param path: Path to the desired CSV-file.
     :param column: Columns to be processed, beginning from the first.
     :return:
@@ -33,6 +34,7 @@ def top_nat_neighbors(path: str, column: int=2) -> np.ndarray:
 
     for i in range(0,len(xx)):
         new_data.append([xx[i], f(xx[i])])
+        new_data.append([x[i], y[i]])
 
     return np.array(new_data)
 
