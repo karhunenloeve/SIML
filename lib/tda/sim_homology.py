@@ -169,7 +169,6 @@ def gudhi_rips_persistence(path: str,
     Rips_complex_sample = gd.RipsComplex(points = data, max_edge_length = max_edge_length)
     Rips_simplex_tree_sample = Rips_complex_sample.create_simplex_tree(max_dimension = max_dimension)
     diag_Rips = Rips_simplex_tree_sample.persistence()
-    print(diag_Rips)
 
     if barcode and plot:
         gd.plot_persistence_barcode(diag_Rips)
@@ -296,18 +295,48 @@ def persistence_ring_diagram(path: str,
 
 def bottleneck_distance(path1: str,
                         path2: str,
-                        columns: int=1,
+                        delimiter: str=",",
+                        columns: int=2,
+                        max_edge_length: int = 500,
+                        max_dimension: int = 3,
                         filtration: ['alpha','rips','witness']='rips') -> float:
     """
 
-    :param path1:
-    :param path2:
+    :param path1: Path of the first csv file.
+    :param path2: Path of the second csv file.
+    :param max_edge_length: Maximal length of an edge within the filtration.
+    :param max_dimension: Maximal dimension of a simplex.
     :param columns: Columns to be spanned inside the filtration.
     :param filtration: Which filtration has to be choosen.
     :return: The bottleneck distance between two diagrams.
     """
+    data1 = read_data(path1, columns)
+    data2 = read_data(path2, columns)
+    diag_1, diag_2 = [],[]
 
-    return np.ndarray
+    Rips_complex_sample_1 = gd.RipsComplex(points = data1, max_edge_length = max_edge_length)
+    Rips_simplex_tree_sample_1 = Rips_complex_sample_1.create_simplex_tree(max_dimension = max_dimension)
+    diag_Rips_1 = Rips_simplex_tree_sample_1.persistence()
+
+
+    Rips_complex_sample_2 = gd.RipsComplex(points = data2, max_edge_length = max_edge_length)
+    Rips_simplex_tree_sample_2 = Rips_complex_sample_2.create_simplex_tree(max_dimension = max_dimension)
+    diag_Rips_2 = Rips_simplex_tree_sample_2.persistence()
+
+    for i in range(1, max(len(diag_Rips_1),len(diag_Rips_2))):
+        if i < len(diag_Rips_1):
+            element1 = [diag_Rips_1[i][1][0], diag_Rips_1[i][1][1]]
+            diag_1.append(element1)
+        if i < len(diag_Rips_2):
+            element2 = [diag_Rips_2[i][1][0], diag_Rips_2[i][1][1]]
+            diag_2.append(element2)
+
+    distance = gd.bottleneck_distance(diag_1, diag_2, 0.1)
+    print("The diagrams distance is: " + str(distance) + " bttlnck.")
+    return distance
+
+
+
 
 ########################################################################################################################
 """ EXAMPLE OF USAGE
