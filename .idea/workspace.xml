@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4baeb8a6-4dd2-4888-8f4b-65a1e1dcde3b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/exp_signatures.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/helper.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/helper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/tda/config.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/tda/sim_homology.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/tda/sim_homology.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -29,7 +26,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sim_homology.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="sim_homology.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/tda/sim_homology.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="284">
@@ -37,6 +34,15 @@
               <folding>
                 <element signature="e#22#40#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
@@ -140,7 +146,6 @@
         <option value="$PROJECT_DIR$/exp_graphs.py" />
         <option value="$PROJECT_DIR$/lib/metrics.py" />
         <option value="$PROJECT_DIR$/lib/neural_networks/tf_time_contrastive_learning.py" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$USER_HOME$/Downloads/plot_cluster_comparison.py" />
         <option value="$PROJECT_DIR$/lib/optimisation/antcolony.py" />
         <option value="$PROJECT_DIR$/exp_clusters.py" />
@@ -152,6 +157,7 @@
         <option value="$PROJECT_DIR$/lib/tda/config.py" />
         <option value="$PROJECT_DIR$/exp_signatures.py" />
         <option value="$PROJECT_DIR$/lib/tda/sim_homology.py" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -388,13 +394,6 @@
         <state relative-caret-position="-3315" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="100" selection-start-line="11" selection-start-column="100" selection-end-line="11" selection-end-column="100" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/neural_networks/opt/vanilla_gradesc.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -578,6 +577,13 @@
           <folding>
             <element signature="e#22#40#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
