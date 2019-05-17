@@ -10,19 +10,29 @@ from matplotlib import cm
 from lib import helper as hp
 from lib.tda import sim_homology
 from scipy.interpolate import Rbf, interp1d, interp2d
+from typing import List, Set, Dict, Tuple, Optional
 
-def top_nat_neighbors(path: str, column: int=2) -> np.ndarray:
+
+def top_nat_neighbors(path: str="",
+                      array: np.ndarray=np.empty(1),
+                      columns: int=88) -> np.ndarray:
     """
-    Nearest neighbor interoplation.
+    Nearest neighbor interpolation.
     Returns the original data with augmented nearest neighbors.
     :param path: Path to the desired CSV-file.
     :param column: Columns to be processed, beginning from the first.
     :return:
     """
+    try:
+        if len(path) > 0:
+            data = hp.read_data(path, columns)
+        else:
+            data = array
+    except ValueError:
+        print("Oops! That was no valid number. Try again ...")
 
-    data = hp.read_data(path, column)
     x,y=np.empty(0),np.empty(0)
-
+    print(data)
     for i in data:
         if np.isfinite(i[0]) and np.isfinite(i[1]):
             x = np.append(x,i[0])
@@ -39,11 +49,14 @@ def top_nat_neighbors(path: str, column: int=2) -> np.ndarray:
     return np.array(new_data)
 
 
-def proc_signatures(dir: str):
+def proc_signatures(dir: str,
+                    delimiter: str=",",
+                    iterations: int=5):
     """
     Processes the experiment for the signature dataset.
     Insert the directory to the MOBISID dataset: https://ms.sapientia.ro/~manyi/mobisig.html.
     :param dir: Path to the directory.
+    :param delimiter: Delimiter used to save the csv file.
     :proc: Directory.
     """
     subdirectories = os.listdir(dir)
@@ -54,14 +67,11 @@ def proc_signatures(dir: str):
             filepaths = os.listdir(path)
 
             for file in filepaths:
-                data = top_nat_neighbors(dir + "/" + user_folder + "/" + file, 2)
-                print(data)
-                exit(1)
+                temp_data = top_nat_neighbors(path = dir + "/" + user_folder + "/" + file, columns = 2)
+
+                for j in range(0,iterations):
+                    temp_data = top_nat_neighbors(array = temp_data, columns = 2)
+                    np.savetxt(dir + "/" + "natneighbor" + "/" + user_folder + "/" + "it_" + str(j) + "_" + file, temp_data, delimiter=delimiter)
 
 
 proc_signatures("data/MOBISIG")
-#sim_homology.gudhi_rips_persistence("data/MOBISIG/USER16/SIGN_FOR_USER16_USER18_9.csv",2)
-#sim_homology.bottleneck_distance("data/MOBISIG/USER16/SIGN_FOR_USER16_USER18_9.csv", "data/MOBISIG/USER31/SIGN_FOR_USER31_USER33_10.csv")
-
-
-#gudhi_rips_persistence("data/MOBISIG/USER16/SIGN_FOR_USER16_USER18_9.csv",2)
