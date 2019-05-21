@@ -96,34 +96,29 @@ def create_bttlnck_file(orig_path: str, interpol_path: str, savefile: bool=True)
     original_data, interpolated_data, files_to_ignore = [], [], []
 
     for dirpath, dirnames, filenames in os.walk(orig_path):
-        files_to_ignore.extend(filenames)
+        for filename in filenames:
+            files_to_ignore.append(os.path.join(dirpath, filename))
         break
-
     for dirpath, dirnames, filenames in os.walk(orig_path):
-        original_data.extend(filenames)
-
+        for filename in filenames:
+            original_data.append(os.path.join(dirpath, filename))
     for dirpath, dirnames, filenames in os.walk(interpol_path):
-        interpolated_data.extend(filenames)
+        for filename in filenames:
+            interpolated_data.append(os.path.join(dirpath, filename))
 
     original_data = diff(original_data, files_to_ignore)
     interpolated_data = diff(interpolated_data, files_to_ignore)
 
     for i in original_data:
-        matching = [s for s in interpolated_data if i in s]
+        matching = [s for s in interpolated_data if i[20:] in s]
         matching.sort()
 
         for j in matching:
-            sim_homology.bottleneck_distance("data/MOBISIG/")
+            bottleneck = sim_homology.bottleneck_distance(i,j)
+            with open('results_bottleneck.csv', 'a') as fd:
+                fd.write(myCsvRow)
 
-        with open('document.csv', 'a') as fd:
-            fd.write(myCsvRow)
-
-        print("File with name " + i + " has been queried. Bottleneck distance is " + + ".")
-        print(matching)
-        exit(1)
-
-    print(original_data)
-    print(len(interpolated_data))
+            print("File with name " + j + " has been compared to " + i + ". Bottleneck distance is " + bottleneck + ".")
 
 
 create_bttlnck_file("data/MOBISIG/", "data/MOBISIG_natneighbor/")
