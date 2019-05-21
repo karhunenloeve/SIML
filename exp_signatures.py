@@ -82,6 +82,17 @@ def create_bttlnck_file(orig_path: str, interpol_path: str, savefile: bool=True)
     :param savefile: Whether to save the bottleneck distances into a file or not (npy-format).
     :return: np.ndarray with bottleneck distances.
     """
+
+    def diff(first, second):
+        """
+        Computes the difference of two list objects.
+        :param first: First list.
+        :param second: Second list.
+        :return: List difference.
+        """
+        second = set(second)
+        return [item for item in first if item not in second]
+
     original_data, interpolated_data, files_to_ignore = [], [], []
 
     for dirpath, dirnames, filenames in os.walk(orig_path):
@@ -89,14 +100,29 @@ def create_bttlnck_file(orig_path: str, interpol_path: str, savefile: bool=True)
         break
 
     for dirpath, dirnames, filenames in os.walk(orig_path):
-        if not filenames in files_to_ignore:
-            original_data.extend(filenames)
+        original_data.extend(filenames)
 
     for dirpath, dirnames, filenames in os.walk(interpol_path):
-        if not filenames in files_to_ignore:
-            interpolated_data.extend(filenames)
+        interpolated_data.extend(filenames)
 
-    print(len(original_data))
+    original_data = diff(original_data, files_to_ignore)
+    interpolated_data = diff(interpolated_data, files_to_ignore)
+
+    for i in original_data:
+        matching = [s for s in interpolated_data if i in s]
+        matching.sort()
+
+        for j in matching:
+            sim_homology.bottleneck_distance("data/MOBISIG/")
+
+        with open('document.csv', 'a') as fd:
+            fd.write(myCsvRow)
+
+        print("File with name " + i + " has been queried. Bottleneck distance is " + + ".")
+        print(matching)
+        exit(1)
+
+    print(original_data)
     print(len(interpolated_data))
 
 
