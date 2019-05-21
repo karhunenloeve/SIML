@@ -297,7 +297,7 @@ def bottleneck_distance(path1: str,
                         path2: str,
                         delimiter: str=",",
                         columns: int=2,
-                        max_edge_length: int = 500,
+                        max_edge_length: int = 50,
                         max_dimension: int = 3,
                         filtration: ['alpha','rips','witness']='rips') -> float:
     """
@@ -331,7 +331,7 @@ def bottleneck_distance(path1: str,
             element2 = [diag_Rips_2[i][1][0], diag_Rips_2[i][1][1]]
             diag_2.append(element2)
 
-    distance = gd.bottleneck_distance(diag_1, diag_2, 0.1)
+    distance = gd.bottleneck_distance(diag_1, diag_2, 0.2)
     print("The diagrams distance is: " + str(distance) + " bttlnck.")
     return distance
 
@@ -351,3 +351,4 @@ Good example files:
 ../../data/MOBISIG/USER31/SIGN_FOR_USER31_USER33_10.csv
 """
 ########################################################################################################################
+

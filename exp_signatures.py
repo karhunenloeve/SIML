@@ -74,4 +74,30 @@ def proc_signatures(dir: str,
                     np.savetxt(dir + "/" + "natneighbor" + "/" + user_folder + "/" + "it_" + str(j) + "_" + file, temp_data, delimiter=delimiter)
 
 
-proc_signatures("data/MOBISIG")
+def create_bttlnck_file(orig_path: str, interpol_path: str, savefile: bool=True) -> np.ndarray:
+    """
+    Creates from two directories with corresponding named CSV-files a bottleneck-distance comparison.
+    :param orig_path: Path to the original MOBISIG-files.
+    :param interpol_path: Path tot the interpolated MOBISIG-files.
+    :param savefile: Whether to save the bottleneck distances into a file or not (npy-format).
+    :return: np.ndarray with bottleneck distances.
+    """
+    original_data, interpolated_data, files_to_ignore = [], [], []
+
+    for dirpath, dirnames, filenames in os.walk(orig_path):
+        files_to_ignore.extend(filenames)
+        break
+
+    for dirpath, dirnames, filenames in os.walk(orig_path):
+        if not filenames in files_to_ignore:
+            original_data.extend(filenames)
+
+    for dirpath, dirnames, filenames in os.walk(interpol_path):
+        if not filenames in files_to_ignore:
+            interpolated_data.extend(filenames)
+
+    print(len(original_data))
+    print(len(interpolated_data))
+
+
+create_bttlnck_file("data/MOBISIG/", "data/MOBISIG_natneighbor/")
