@@ -297,9 +297,10 @@ def bottleneck_distance(path1: str,
                         path2: str,
                         delimiter: str=",",
                         columns: int=2,
-                        max_edge_length: int = 50,
-                        max_dimension: int = 3,
-                        filtration: ['alpha','rips','witness']='rips') -> float:
+                        max_edge_length: int = 200.0,
+                        max_dimension: int = 1,
+                        landmark_percentage = 1,
+                        filtration: ['alpha','rips','witness']='witness') -> float:
     """
 
     :param path1: Path of the first csv file.
@@ -312,26 +313,64 @@ def bottleneck_distance(path1: str,
     """
     data1 = read_data(path1, columns)
     data2 = read_data(path2, columns)
+
+    nans1 = np.argwhere(np.isnan(data1))
+    nans2 = np.argwhere(np.isnan(data2))
+
+    for i in nans1:
+        data1 = np.delete(data1, nans1)
+    for j in nans2:
+        data2 = np.delete(data2, nans2)
+
     diag_1, diag_2 = [],[]
+    data1 = data1.reshape((int(data1.size / 2), 2))
+    data2 = data2.reshape((int(data2.size / 2), 2))
 
-    Rips_complex_sample_1 = gd.RipsComplex(points = data1, max_edge_length = max_edge_length)
-    Rips_simplex_tree_sample_1 = Rips_complex_sample_1.create_simplex_tree(max_dimension = max_dimension)
-    diag_Rips_1 = Rips_simplex_tree_sample_1.persistence()
+    if filtration == "alpha":
+        # First sample processed.
+        complex_sample1 = gd.AlphaComplex(points = data1)
+        complex_tree_sample1 = complex_sample1.create_simplex_tree()
+        diag1 = complex_tree_sample1.persistence()
+        # Second sample processed.
+        complex_sample2 = gd.AlphaComplex(points = data2)
+        complex_tree_sample2 = complex_sample2.create_simplex_tree()
+        diag2 = complex_tree_sample2.persistence()
+    elif filtration == "rips":
+        # First sample processed.
+        complex_sample1 = gd.RipsComplex(points=data1, max_edge_length=max_edge_length)
+        complex_tree_sample1 = complex_sample1.create_simplex_tree(max_dimension=max_dimension)
+        diag1 = complex_tree_sample1.persistence()
+        # Second sample processed.
+        complex_sample2 = gd.RipsComplex(points=data2, max_edge_length=max_edge_length)
+        complex_tree_sample2 = complex_sample2.create_simplex_tree(max_dimension=max_dimension)
+        diag2 = complex_tree_sample2.persistence()
+    elif filtration == "witness":
+        # First sample processed.
+        landmarks = gd.pick_n_random_points(points=data1, nb_points= round(data1.size / 100 * landmark_percentage))
+        witness_complex = gd.EuclideanStrongWitnessComplex(witnesses=data1, landmarks=landmarks)
+        complex_tree_sample1 = witness_complex.create_simplex_tree(max_alpha_square=10**3,
+                                                                   limit_dimension=max_dimension)
+        diag1 = complex_tree_sample1.persistence()
+        # Second sample processed.
+        landmarks = gd.pick_n_random_points(points=data2, nb_points= round(data1.size / 100 * landmark_percentage))
+        witness_complex = gd.EuclideanStrongWitnessComplex(witnesses=data2, landmarks=landmarks)
+        complex_tree_sample2 = witness_complex.create_simplex_tree(max_alpha_square=10**3,
+                                                                   limit_dimension=max_dimension)
+        diag2 = complex_tree_sample1.persistence()
+    else:
+        print("Wrong filtration specified.")
+        exit(1)
 
-
-    Rips_complex_sample_2 = gd.RipsComplex(points = data2, max_edge_length = max_edge_length)
-    Rips_simplex_tree_sample_2 = Rips_complex_sample_2.create_simplex_tree(max_dimension = max_dimension)
-    diag_Rips_2 = Rips_simplex_tree_sample_2.persistence()
-
-    for i in range(1, max(len(diag_Rips_1),len(diag_Rips_2))):
-        if i < len(diag_Rips_1):
-            element1 = [diag_Rips_1[i][1][0], diag_Rips_1[i][1][1]]
+    # Rebuilding objects for bottleneck distance calculation.
+    for i in range(1, max(len(diag1),len(diag2))):
+        if i < len(diag1):
+            element1 = [diag1[i][1][0], diag1[i][1][1]]
             diag_1.append(element1)
-        if i < len(diag_Rips_2):
-            element2 = [diag_Rips_2[i][1][0], diag_Rips_2[i][1][1]]
+        if i < len(diag2):
+            element2 = [diag2[i][1][0], diag2[i][1][1]]
             diag_2.append(element2)
 
-    distance = gd.bottleneck_distance(diag_1, diag_2, 0.2)
+    distance = gd.bottleneck_distance(diag_1, diag_2)
     print("The diagrams distance is: " + str(distance) + " bttlnck.")
     return distance
 
@@ -352,3 +391,4 @@ Good example files:
 """
 ########################################################################################################################
 
+bottleneck_distance("../../data/MOBISIG_natneighbor/USER64/it_4_SIGN_GEN_USER64_USER64_5.csv", "../../data/MOBISIG_natneighbor/USER64/it_0_SIGN_GEN_USER64_USER64_5.csv")
