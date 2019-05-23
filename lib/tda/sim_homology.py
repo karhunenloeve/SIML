@@ -17,9 +17,22 @@ from sklearn.preprocessing import PolynomialFeatures
 c = mcolors.ColorConverter().to_rgb
 
 HOMOLOGY = {
-    'colormap': {
-        'AvengersEndgame': [c('#0B0930'), c('#1A1A64'), c('#2C2A89'), c('#453AA4'), c('#5C49C6'), c('#7B6FDE')],
-        'IronMan': [c('#AA0505'), c('#6A0C0B'), c('#B97D10'), c('#FBCA03'), c('#67C7EB')]
+    "colormap": {
+        "AvengersEndgame": [
+            c("#0B0930"),
+            c("#1A1A64"),
+            c("#2C2A89"),
+            c("#453AA4"),
+            c("#5C49C6"),
+            c("#7B6FDE"),
+        ],
+        "IronMan": [
+            c("#AA0505"),
+            c("#6A0C0B"),
+            c("#B97D10"),
+            c("#FBCA03"),
+            c("#67C7EB"),
+        ],
     }
 }
 
@@ -33,9 +46,9 @@ def read_data(path: str, columns: int = 1, delimiter: str = ",") -> np.ndarray:
     """
     try:
         if columns == 1:
-            data = np.genfromtxt(path, delimiter = delimiter)
+            data = np.genfromtxt(path, delimiter=delimiter)
         else:
-            data = np.genfromtxt(path, delimiter = delimiter)[0:,:columns]
+            data = np.genfromtxt(path, delimiter=delimiter)[0:, :columns]
 
         return data
     except Exception as e:
@@ -51,14 +64,14 @@ def plot_data(path: str, columns: int = 1, delimiter: str = ",") -> np.ndarray:
     """
     try:
         if columns == 1:
-            data = np.genfromtxt(path, delimiter = delimiter)
+            data = np.genfromtxt(path, delimiter=delimiter)
         else:
-            data = np.genfromtxt(path, delimiter = delimiter)[0:,:columns]
+            data = np.genfromtxt(path, delimiter=delimiter)[0:, :columns]
             x, y = [], []
             for i in data:
                 x.append(i[0])
                 y.append(i[1])
-            plt.scatter(x,y)
+            plt.scatter(x, y)
             plt.show()
 
         return data
@@ -76,12 +89,12 @@ def sunburst_plot(nodes, total=np.pi * 2, offset=0, level=0, ax=None):
     :param ax: Parameter for axes.
     :proc: Plots sunburst diagram, no return value.
     """
-    ax = ax or plt.subplot(111, projection='polar')
+    ax = ax or plt.subplot(111, projection="polar")
 
     if level == 0 and len(nodes) == 1:
         label, value, subnodes = nodes[0]
         ax.bar([0], [0.5], [np.pi * 2])
-        ax.text(0, 0, label, ha='center', va='center')
+        ax.text(0, 0, label, ha="center", va="center")
         sunburst(subnodes, total=value, level=level + 1, ax=ax)
     elif nodes:
         d = np.pi * 2 / total
@@ -91,23 +104,29 @@ def sunburst_plot(nodes, total=np.pi * 2, offset=0, level=0, ax=None):
         for label, value, subnodes in nodes:
             labels.append(label)
             widths.append(value * d)
-            sunburst(subnodes, total=total, offset=local_offset,
-                     level=level + 1, ax=ax)
+            sunburst(subnodes, total=total, offset=local_offset, level=level + 1, ax=ax)
             local_offset += value
         values = np.cumsum([offset * d] + widths[:-1])
         heights = [1] * len(nodes)
         bottoms = np.zeros(len(nodes)) + level - 0.5
-        rects = ax.bar(values, heights, widths, bottoms, linewidth=1,
-                       edgecolor='white', align='edge')
+        rects = ax.bar(
+            values,
+            heights,
+            widths,
+            bottoms,
+            linewidth=1,
+            edgecolor="white",
+            align="edge",
+        )
         for rect, label in zip(rects, labels):
             x = rect.get_x() + rect.get_width() / 2
             y = rect.get_y() + rect.get_height() / 2
             rotation = (90 + (360 - np.degrees(x) % 180)) % 360
-            ax.text(x, y, label, rotation=rotation, ha='center', va='center')
+            ax.text(x, y, label, rotation=rotation, ha="center", va="center")
 
     if level == 0:
         ax.set_theta_direction(-1)
-        ax.set_theta_zero_location('N')
+        ax.set_theta_zero_location("N")
         ax.set_axis_off()
 
     plt.show()
@@ -121,7 +140,7 @@ def makeSparseDM(X, thresh):
     :return: Sparse correlation distance matrix.
     """
     N = X.shape[0]
-    D = pairwise_distances(X, metric='euclidean')
+    D = pairwise_distances(X, metric="euclidean")
     [I, J] = np.meshgrid(np.arange(N), np.arange(N))
     I = I[D <= thresh]
     J = J[D <= thresh]
@@ -129,29 +148,37 @@ def makeSparseDM(X, thresh):
     return sparse.coo_matrix((V, (I, J)), shape=(N, N)).tocsr()
 
 
-def plot_vr_complex(path: str, delimiter: str = ",", thresh: float = 1.0,
-                    maxdim: int = 3, coeff = 3, barcode: bool = True) -> np.ndarray:
+def plot_vr_complex(
+    path: str,
+    delimiter: str = ",",
+    thresh: float = 1.0,
+    maxdim: int = 3,
+    coeff=3,
+    barcode: bool = True,
+) -> np.ndarray:
     """
     Plots the Vietoris Rips complex and returns the data.
     :param path: Path to the desired csv file.
     :param delimiter: Delimiter for the csv file.
     :return: Data for a persistence diagram of a Vietoris Rips complex.
     """
-    rips = Rips(maxdim = maxdim, coeff = coeff, do_cocycles = True)
+    rips = Rips(maxdim=maxdim, coeff=coeff, do_cocycles=True)
     data = np.genfromtxt(path, delimiter=delimiter)
     diagrams = rips.fit_transform(data, distance_matrix=False)
     rips.plot(diagrams)
     return diagrams
 
 
-def gudhi_rips_persistence(path: str,
-                           columns: int = 1,
-                           delimiter: str = ",",
-                           max_edge_length: int = 500,
-                           max_dimension: int = 3,
-                           barcode: bool = True,
-                           persistence: bool = False,
-                           plot: bool = True):
+def gudhi_rips_persistence(
+    path: str,
+    columns: int = 1,
+    delimiter: str = ",",
+    max_edge_length: int = 500,
+    max_dimension: int = 3,
+    barcode: bool = True,
+    persistence: bool = False,
+    plot: bool = True,
+):
     """
     Computes the Vietoris-Rips complex and persistent homology.
     Further it can either plot the barcode, or the persistence diagram.
@@ -166,8 +193,10 @@ def gudhi_rips_persistence(path: str,
     :return: Vietoris-Rips filtration.
     """
     data = read_data(path, columns)
-    Rips_complex_sample = gd.RipsComplex(points = data, max_edge_length = max_edge_length)
-    Rips_simplex_tree_sample = Rips_complex_sample.create_simplex_tree(max_dimension = max_dimension)
+    Rips_complex_sample = gd.RipsComplex(points=data, max_edge_length=max_edge_length)
+    Rips_simplex_tree_sample = Rips_complex_sample.create_simplex_tree(
+        max_dimension=max_dimension
+    )
     diag_Rips = Rips_simplex_tree_sample.persistence()
 
     if barcode and plot:
@@ -182,12 +211,14 @@ def gudhi_rips_persistence(path: str,
         return diag_Rips
 
 
-def gudhi_alpha_persistence(path: str,
-                            columns: int = 1,
-                            max_alpha_square: float = 0.3,
-                            barcode: bool = True,
-                            persistence: bool = False,
-                            plot: bool = True):
+def gudhi_alpha_persistence(
+    path: str,
+    columns: int = 1,
+    max_alpha_square: float = 0.3,
+    barcode: bool = True,
+    persistence: bool = False,
+    plot: bool = True,
+):
     """
     Computes the Alpha-Complex and persistent homology.
     Further it can either plot the barcode, or the persistence diagram.
@@ -201,8 +232,10 @@ def gudhi_alpha_persistence(path: str,
     :return: Alpha-filtration.
     """
     data = read_data(path, columns)
-    Alpha_complex_sample = gd.AlphaComplex(points = data)
-    Alpha_simplex_tree_sample = Alpha_complex_sample.create_simplex_tree(max_alpha_square=0.3)
+    Alpha_complex_sample = gd.AlphaComplex(points=data)
+    Alpha_simplex_tree_sample = Alpha_complex_sample.create_simplex_tree(
+        max_alpha_square=0.3
+    )
     diag_Alpha = Alpha_simplex_tree_sample.persistence()
 
     if barcode and plot:
@@ -224,23 +257,25 @@ def make_colormap(seq: float):
     :return: LinearSegmentedColormap.
     """
     seq = [(None,) * 3, 0.0] + list(seq) + [1.0, (None,) * 3]
-    cdict = {'red': [], 'green': [], 'blue': []}
+    cdict = {"red": [], "green": [], "blue": []}
 
     for i, item in enumerate(seq):
         if isinstance(item, float):
             r1, g1, b1 = seq[i - 1]
             r2, g2, b2 = seq[i + 1]
-            cdict['red'].append([item, r1, r2])
-            cdict['green'].append([item, g1, g2])
-            cdict['blue'].append([item, b1, b2])
+            cdict["red"].append([item, r1, r2])
+            cdict["green"].append([item, g1, g2])
+            cdict["blue"].append([item, b1, b2])
 
-    return mcolors.LinearSegmentedColormap('CustomMap', cdict)
+    return mcolors.LinearSegmentedColormap("CustomMap", cdict)
 
 
-def persistence_ring_diagram(path: str,
-                             figsize: tuple = (8,8),
-                             axes: list = [0.1, 0.1, 0.8, 0.8],
-                             sorted: bool = False):
+def persistence_ring_diagram(
+    path: str,
+    figsize: tuple = (8, 8),
+    axes: list = [0.1, 0.1, 0.8, 0.8],
+    sorted: bool = False,
+):
     """
     Plots a persistence ring of some data.
     :param data: N-dimensional numpy array representing any data.
@@ -249,11 +284,11 @@ def persistence_ring_diagram(path: str,
     :return: Plots a persistence ring diagram (no return value, procedure).
     """
 
-    fig = plt.figure(figsize = figsize)
+    fig = plt.figure(figsize=figsize)
     ax = fig.add_axes(axes, polar=True)
 
     # Compute evolution of persistent homology of the dataset as persistence diagram.
-    persistence = gudhi_rips_persistence(path, columns = 2, plot = False)
+    persistence = gudhi_rips_persistence(path, columns=2, plot=False)
     death, birth = [], []
 
     for homgroup in persistence:
@@ -265,7 +300,7 @@ def persistence_ring_diagram(path: str,
 
     # Sorting the persistence, to yield a suitable representation. (optional)
     if sorted:
-        death, birth = zip(* sorted(zip(death, birth)))
+        death, birth = zip(*sorted(zip(death, birth)))
         death, birth = (list(t) for t in zip(*sorted(zip(death, birth))))
 
     N = len(death)
@@ -280,27 +315,36 @@ def persistence_ring_diagram(path: str,
 
     # Where should one start with the persistence?
     radii = np.array(death)
-    bars = ax.bar(theta, radii, width = width, bottom = bottom, edgecolor = 'black',
-                  linewidth=1, align="edge")
+    bars = ax.bar(
+        theta,
+        radii,
+        width=width,
+        bottom=bottom,
+        edgecolor="black",
+        linewidth=1,
+        align="edge",
+    )
 
-    purples = make_colormap(HOMOLOGY['colormap']['AvengersEndgame'])
+    purples = make_colormap(HOMOLOGY["colormap"]["AvengersEndgame"])
     colorarray = purples(np.linspace(0, 2 * np.pi, N))
 
-    for n,bar in zip(np.arange(N), bars):
+    for n, bar in zip(np.arange(N), bars):
         bar.set_facecolor(colorarray[n])
 
-    plt.axis('off')
+    plt.axis("off")
     plt.show()
 
 
-def bottleneck_distance(path1: str,
-                        path2: str,
-                        delimiter: str=",",
-                        columns: int=2,
-                        max_edge_length: int = 200.0,
-                        max_dimension: int = 1,
-                        landmark_percentage = 1,
-                        filtration: ['alpha','rips','witness']='witness') -> float:
+def bottleneck_distance(
+    path1: str,
+    path2: str,
+    delimiter: str = ",",
+    columns: int = 2,
+    max_edge_length: int = 200.0,
+    max_dimension: int = 1,
+    landmark_percentage=1,
+    filtration: ["alpha", "rips", "witness"] = "witness",
+) -> float:
     """
 
     :param path1: Path of the first csv file.
@@ -322,47 +366,61 @@ def bottleneck_distance(path1: str,
     for j in nans2:
         data2 = np.delete(data2, nans2)
 
-    diag_1, diag_2 = [],[]
+    diag_1, diag_2 = [], []
     data1 = data1.reshape((int(data1.size / 2), 2))
     data2 = data2.reshape((int(data2.size / 2), 2))
 
     if filtration == "alpha":
         # First sample processed.
-        complex_sample1 = gd.AlphaComplex(points = data1)
+        complex_sample1 = gd.AlphaComplex(points=data1)
         complex_tree_sample1 = complex_sample1.create_simplex_tree()
         diag1 = complex_tree_sample1.persistence()
         # Second sample processed.
-        complex_sample2 = gd.AlphaComplex(points = data2)
+        complex_sample2 = gd.AlphaComplex(points=data2)
         complex_tree_sample2 = complex_sample2.create_simplex_tree()
         diag2 = complex_tree_sample2.persistence()
     elif filtration == "rips":
         # First sample processed.
         complex_sample1 = gd.RipsComplex(points=data1, max_edge_length=max_edge_length)
-        complex_tree_sample1 = complex_sample1.create_simplex_tree(max_dimension=max_dimension)
+        complex_tree_sample1 = complex_sample1.create_simplex_tree(
+            max_dimension=max_dimension
+        )
         diag1 = complex_tree_sample1.persistence()
         # Second sample processed.
         complex_sample2 = gd.RipsComplex(points=data2, max_edge_length=max_edge_length)
-        complex_tree_sample2 = complex_sample2.create_simplex_tree(max_dimension=max_dimension)
+        complex_tree_sample2 = complex_sample2.create_simplex_tree(
+            max_dimension=max_dimension
+        )
         diag2 = complex_tree_sample2.persistence()
     elif filtration == "witness":
         # First sample processed.
-        landmarks = gd.pick_n_random_points(points=data1, nb_points= round(data1.size / 100 * landmark_percentage))
-        witness_complex = gd.EuclideanStrongWitnessComplex(witnesses=data1, landmarks=landmarks)
-        complex_tree_sample1 = witness_complex.create_simplex_tree(max_alpha_square=10**3,
-                                                                   limit_dimension=max_dimension)
+        landmarks = gd.pick_n_random_points(
+            points=data1, nb_points=round(data1.size / 100 * landmark_percentage)
+        )
+        witness_complex = gd.EuclideanStrongWitnessComplex(
+            witnesses=data1, landmarks=landmarks
+        )
+        complex_tree_sample1 = witness_complex.create_simplex_tree(
+            max_alpha_square=10 ** 3, limit_dimension=max_dimension
+        )
         diag1 = complex_tree_sample1.persistence()
         # Second sample processed.
-        landmarks = gd.pick_n_random_points(points=data2, nb_points= round(data1.size / 100 * landmark_percentage))
-        witness_complex = gd.EuclideanStrongWitnessComplex(witnesses=data2, landmarks=landmarks)
-        complex_tree_sample2 = witness_complex.create_simplex_tree(max_alpha_square=10**3,
-                                                                   limit_dimension=max_dimension)
+        landmarks = gd.pick_n_random_points(
+            points=data2, nb_points=round(data1.size / 100 * landmark_percentage)
+        )
+        witness_complex = gd.EuclideanStrongWitnessComplex(
+            witnesses=data2, landmarks=landmarks
+        )
+        complex_tree_sample2 = witness_complex.create_simplex_tree(
+            max_alpha_square=10 ** 3, limit_dimension=max_dimension
+        )
         diag2 = complex_tree_sample1.persistence()
     else:
         print("Wrong filtration specified.")
         exit(1)
 
     # Rebuilding objects for bottleneck distance calculation.
-    for i in range(1, max(len(diag1),len(diag2))):
+    for i in range(1, max(len(diag1), len(diag2))):
         if i < len(diag1):
             element1 = [diag1[i][1][0], diag1[i][1][1]]
             diag_1.append(element1)
@@ -373,8 +431,6 @@ def bottleneck_distance(path1: str,
     distance = gd.bottleneck_distance(diag_1, diag_2)
     print("The diagrams distance is: " + str(distance) + " bttlnck.")
     return distance
-
-
 
 
 ########################################################################################################################
@@ -390,5 +446,3 @@ Good example files:
 ../../data/MOBISIG/USER31/SIGN_FOR_USER31_USER33_10.csv
 """
 ########################################################################################################################
-
-bottleneck_distance("../../data/MOBISIG_natneighbor/USER64/it_4_SIGN_GEN_USER64_USER64_5.csv", "../../data/MOBISIG_natneighbor/USER64/it_0_SIGN_GEN_USER64_USER64_5.csv")

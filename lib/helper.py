@@ -54,8 +54,7 @@ def kde_statsmodels_m(x, x_grid, bandwidth=0.2, **kwargs):
     :param **kwargs: Type of interpolation.
     :return: Kernel density estimation.
     """
-    kde = KDEMultivariate(x, bw=bandwidth * np.ones_like(x),
-                          var_type='c', **kwargs)
+    kde = KDEMultivariate(x, bw=bandwidth * np.ones_like(x), var_type="c", **kwargs)
     return kde.pdf(x_grid)
 
 
@@ -94,10 +93,10 @@ def findCounts(arr: np.ndarray) -> np.ndarray:
         return False
     else:
         # Init the output list.
-        frequencies = np.empty(shape = array_shape, dtype = float)
+        frequencies = np.empty(shape=array_shape, dtype=float)
         # Calculate the statistics for each row.
         for i in range(0, array_shape[1]):
-            res = stats.relfreq(arr[:,i], len(arr[:,i]))
+            res = stats.relfreq(arr[:, i], len(arr[:, i]))
             print(res.frequency)
             np.append(frequencies, res.frequency)
     # Returns numpy array with frequencies.
@@ -113,9 +112,9 @@ def read_data(path: str, columns: int = 1, delimiter: str = ",") -> np.ndarray:
     """
     try:
         if columns == 1:
-            data = np.genfromtxt(path, delimiter = delimiter)
+            data = np.genfromtxt(path, delimiter=delimiter)
         else:
-            data = np.genfromtxt(path, delimiter = delimiter)[0:,:columns]
+            data = np.genfromtxt(path, delimiter=delimiter)[0:, :columns]
 
         return data
     except Exception as e:
@@ -128,7 +127,7 @@ def read_data_csv(path: str, sep: str = ",") -> np.ndarray:
     :param path: path to the csv.
     :return: np.ndarray.
     """
-    return np.genfromtxt(path, delimiter = sep)
+    return np.genfromtxt(path, delimiter=sep)
 
 
 def standardize(X: np.ndarray) -> np.ndarray:
@@ -149,7 +148,7 @@ def compute_ica(S: np.ndarray, n: int) -> dict:
     :param n: Number of independent components to be found.
     :return: {"Signals": S_, "MixingMatrix": A_, "UnmixingMatrix": U_}
     """
-    ica = FastICA(n_components = n)
+    ica = FastICA(n_components=n)
     S_ = ica.fit_transform(S)  # Reconstruct signals / computes ICA.
     A_ = ica.mixing_  # Get estimated mixing matrix.
     U_ = ica.components_  # Get the unmixing matrix.
@@ -166,7 +165,7 @@ def compute_pca(X: np.ndarray, n: int) -> dict:
     :param n: Number of independent components to be found.
     :return: {"Data": X, "Components": C.components_, "SingularValues": C.singular_values_}
     """
-    pca = PCA(n_components = n)
+    pca = PCA(n_components=n)
     X_ = pca.fit_transform(X)
     C = pca.components_
     D = pca.singular_values_
@@ -180,22 +179,43 @@ def plot_ica(path: str, n: int):
     :param n: number of components to be found.
     """
     try:
-        X = read_data_csv(path) # Reads the path into an np.ndarray.
-        s_X = standardize(X) # Standardizes the data.
-        ica_dict = compute_ica(s_X, n) # Gets a dict with Data, Signals, MixingMatrix and UnmixingMatrix.
-        pca_dict = compute_pca(s_X, n) # Gets a dict with Data, Components and SingularValues.
+        X = read_data_csv(path)  # Reads the path into an np.ndarray.
+        s_X = standardize(X)  # Standardizes the data.
+        ica_dict = compute_ica(
+            s_X, n
+        )  # Gets a dict with Data, Signals, MixingMatrix and UnmixingMatrix.
+        pca_dict = compute_pca(
+            s_X, n
+        )  # Gets a dict with Data, Components and SingularValues.
 
         # Create the plotting object.
         plt.figure()
-        models = [] # Here is specified what should be plotted.
+        models = []  # Here is specified what should be plotted.
 
-        models = [ica_dict["Components"], ica_dict["MixingMatrix"], ica_dict["Signals"], pca_dict["Signals"], X]
-        names = ['Components',
-                 'Mixing Matrix',
-                 'ICA recovered signals',
-                 'PCA recovered signals',
-                 'Original Signals']
-        colors = ['red', 'steelblue', 'orange', 'gray', 'green', 'yellow', 'blue', 'purple']
+        models = [
+            ica_dict["Components"],
+            ica_dict["MixingMatrix"],
+            ica_dict["Signals"],
+            pca_dict["Signals"],
+            X,
+        ]
+        names = [
+            "Components",
+            "Mixing Matrix",
+            "ICA recovered signals",
+            "PCA recovered signals",
+            "Original Signals",
+        ]
+        colors = [
+            "red",
+            "steelblue",
+            "orange",
+            "gray",
+            "green",
+            "yellow",
+            "blue",
+            "purple",
+        ]
 
         for ii, (model, name) in enumerate(zip(models, names), 1):
             plt.subplot(5, 1, ii)
@@ -219,25 +239,23 @@ def check_linear_dependence(matrix: np.ndarray) -> bool:
     for i in range(matrix.shape[0]):
         for j in range(matrix.shape[0]):
             if i != j:
-                inner_product = np.inner(
-                    matrix[:,i],
-                    matrix[:,j]
-                )
-                norm_i = np.linalg.norm(matrix[:,i])
-                norm_j = np.linalg.norm(matrix[:,j])
+                inner_product = np.inner(matrix[:, i], matrix[:, j])
+                norm_i = np.linalg.norm(matrix[:, i])
+                norm_j = np.linalg.norm(matrix[:, j])
 
-                print('I: ', matrix[:,i])
-                print('J: ', matrix[:,j])
-                print('Prod: ', inner_product)
-                print('Norm i: ', norm_i)
-                print('Norm j: ', norm_j)
+                print("I: ", matrix[:, i])
+                print("J: ", matrix[:, j])
+                print("Prod: ", inner_product)
+                print("Norm i: ", norm_i)
+                print("Norm j: ", norm_j)
 
-                if np.abs(inner_product - norm_j * norm_i) < 1E-5:
-                    print('Dependent')
+                if np.abs(inner_product - norm_j * norm_i) < 1e-5:
+                    print("Dependent")
                     return True
                 else:
-                    print('Independent')
+                    print("Independent")
                     return False
+
 
 def read_columns_to_dict(path, d=","):
     """
@@ -259,6 +277,7 @@ def read_columns_to_dict(path, d=","):
     del reader1, reader2
     return counter_columns
 
+
 def get_power_set(s):
     """
     Computes the powerset lattice of a set.
@@ -274,6 +293,7 @@ def get_power_set(s):
         power_set.extend(new_sets)
 
     return power_set
+
 
 def merge_csv():
     """

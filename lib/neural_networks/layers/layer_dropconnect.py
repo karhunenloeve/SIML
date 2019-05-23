@@ -7,14 +7,15 @@ class DropConnectDense(Dense):
     Implementation of a drop connect layer.
     :param dense: A dense layer within a neural network.
     """
+
     def __init__(self, *args, **kwargs):
         """
         Initialize.
         :param args: None.
         :param kwargs: Pass a probability of dropout.
         """
-        self.prob = kwargs.pop('prob', 0.5)
-        if 0. < self.prob < 1.:
+        self.prob = kwargs.pop("prob", 0.5)
+        if 0.0 < self.prob < 1.0:
             self.uses_learning_phase = True
         super(DropConnectDense, self).__init__(*args, **kwargs)
 
@@ -26,8 +27,10 @@ class DropConnectDense(Dense):
         :return: Dropout + activation on datapoints.
         """
         # Definition of dropout function in training phase.
-        if 0. < self.prob < 1.:
-            self.kernel = K.in_train_phase(K.dropout(self.kernel, self.prob), self.kernel)
+        if 0.0 < self.prob < 1.0:
+            self.kernel = K.in_train_phase(
+                K.dropout(self.kernel, self.prob), self.kernel
+            )
             self.b = K.in_train_phase(K.dropout(self.b, self.prob), self.b)
 
         output = K.dot(x, self.W)
@@ -41,7 +44,8 @@ class DropConnect(Wrapper):
     Wrapper class for manipulation of drop connect layer.
     :param Wrapper: Keras Wrapper.
     """
-    def __init__(self, layer, prob=1., **kwargs):
+
+    def __init__(self, layer, prob=1.0, **kwargs):
         """
         Initialize.
         :param layer: Previous layer.
@@ -51,7 +55,7 @@ class DropConnect(Wrapper):
         self.prob = prob
         self.layer = layer
         super(DropConnect, self).__init__(layer, **kwargs)
-        if 0. < self.prob < 1.:
+        if 0.0 < self.prob < 1.0:
             self.uses_learning_phase = True
 
     def build(self, input_shape):
@@ -79,7 +83,11 @@ class DropConnect(Wrapper):
         :param x: Datapoints (numpy ndarray).
         :return: Processed data.
         """
-        if 0. < self.prob < 1.:
-            self.layer.kernel = K.in_train_phase(K.dropout(self.layer.kernel, self.prob), self.layer.kernel)
-            self.layer.bias = K.in_train_phase(K.dropout(self.layer.bias, self.prob), self.layer.bias)
+        if 0.0 < self.prob < 1.0:
+            self.layer.kernel = K.in_train_phase(
+                K.dropout(self.layer.kernel, self.prob), self.layer.kernel
+            )
+            self.layer.bias = K.in_train_phase(
+                K.dropout(self.layer.bias, self.prob), self.layer.bias
+            )
         return self.layer.call(x)

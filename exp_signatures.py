@@ -13,9 +13,9 @@ from scipy.interpolate import Rbf, interp1d, interp2d
 from typing import List, Set, Dict, Tuple, Optional
 
 
-def top_nat_neighbors(path: str="",
-                      array: np.ndarray=np.empty(1),
-                      columns: int=88) -> np.ndarray:
+def top_nat_neighbors(
+    path: str = "", array: np.ndarray = np.empty(1), columns: int = 88
+) -> np.ndarray:
     """
     Nearest neighbor interpolation.
     Returns the original data with augmented nearest neighbors.
@@ -31,27 +31,25 @@ def top_nat_neighbors(path: str="",
     except ValueError:
         print("Oops! That was no valid number. Try again ...")
 
-    x,y=np.empty(0),np.empty(0)
+    x, y = np.empty(0), np.empty(0)
     print(data)
     for i in data:
         if np.isfinite(i[0]) and np.isfinite(i[1]):
-            x = np.append(x,i[0])
-            y = np.append(y,i[1])
+            x = np.append(x, i[0])
+            y = np.append(y, i[1])
 
-    xx = np.linspace(np.min(x),np.max(x),len(x))
-    f = interp1d(x, y, kind='nearest')
+    xx = np.linspace(np.min(x), np.max(x), len(x))
+    f = interp1d(x, y, kind="nearest")
     new_data = []
 
-    for i in range(0,len(xx)):
+    for i in range(0, len(xx)):
         new_data.append([xx[i], f(xx[i])])
         new_data.append([x[i], y[i]])
 
     return np.array(new_data)
 
 
-def proc_signatures(dir: str,
-                    delimiter: str=",",
-                    iterations: int=5):
+def proc_signatures(dir: str, delimiter: str = ",", iterations: int = 5):
     """
     Processes the experiment for the signature dataset.
     Insert the directory to the MOBISID dataset: https://ms.sapientia.ro/~manyi/mobisig.html.
@@ -67,16 +65,38 @@ def proc_signatures(dir: str,
             filepaths = os.listdir(path)
 
             for file in filepaths:
-                temp_data = top_nat_neighbors(path = dir + "/" + user_folder + "/" + file, columns = 2)
+                temp_data = top_nat_neighbors(
+                    path=dir + "/" + user_folder + "/" + file, columns=2
+                )
 
-                for j in range(0,iterations):
-                    temp_data = top_nat_neighbors(array = temp_data, columns = 2)
-                    np.savetxt(dir + "/" + "natneighbor" + "/" + user_folder + "/" + "it_" + str(j) + "_" + file, temp_data, delimiter=delimiter)
+                for j in range(0, iterations):
+                    temp_data = top_nat_neighbors(array=temp_data, columns=2)
+                    np.savetxt(
+                        dir
+                        + "/"
+                        + "natneighbor"
+                        + "/"
+                        + user_folder
+                        + "/"
+                        + "it_"
+                        + str(j)
+                        + "_"
+                        + file,
+                        temp_data,
+                        delimiter=delimiter,
+                    )
 
 
-def create_bttlnck_file(orig_path: str, interpol_path: str, savefile: bool=True) -> np.ndarray:
+def create_bttlnck_file(
+    orig_path: str,
+    interpol_path: str,
+    savefile: bool = True,
+    filtration: ["alpha", "rips", "witness"] = "rips",
+) -> np.ndarray:
     """
     Creates from two directories with corresponding named CSV-files a bottleneck-distance comparison.
+    This code relies on the naming of the directories.
+    The structure should be: MOBISIG/USERX/file.csv and MOBISIG_natneighbor/USERX/file.csv for a good naming of the .csv rows.
     :param orig_path: Path to the original MOBISIG-files.
     :param interpol_path: Path tot the interpolated MOBISIG-files.
     :param savefile: Whether to save the bottleneck distances into a file or not (npy-format).
@@ -114,11 +134,26 @@ def create_bttlnck_file(orig_path: str, interpol_path: str, savefile: bool=True)
         matching.sort()
 
         for j in matching:
-            bottleneck = sim_homology.bottleneck_distance(i,j)
-            with open('results_bottleneck.csv', 'a') as fd:
-                fd.write(myCsvRow)
+            bottleneck = sim_homology.bottleneck_distance(i, j, filtration=filtration)
+            with open("results/" + filtration + "_bottleneck.csv", "a") as fd:
+                fd.write(
+                    i[20 : len(i) - 4]
+                    + ","
+                    + j[32 : len(j) - 4]
+                    + ","
+                    + str(bottleneck)
+                    + "\n"
+                )
 
-            print("File with name " + j + " has been compared to " + i + ". Bottleneck distance is " + bottleneck + ".")
+            print(
+                "File with name "
+                + j
+                + " has been compared to "
+                + i
+                + ". Bottleneck distance is "
+                + str(bottleneck)
+                + "."
+            )
 
 
 create_bttlnck_file("data/MOBISIG/", "data/MOBISIG_natneighbor/")

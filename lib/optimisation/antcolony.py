@@ -21,14 +21,16 @@ class Graph(object):
 
 
 class ACO(object):
-    def __init__(self,
-                 ant_count: int,
-                 generations: int,
-                 alpha: float,
-                 beta: float,
-                 rho: float,
-                 q: int,
-                 strategy: int):
+    def __init__(
+        self,
+        ant_count: int,
+        generations: int,
+        alpha: float,
+        beta: float,
+        rho: float,
+        q: int,
+        strategy: int,
+    ):
         """
         :param ant_count:
         :param generations:
@@ -58,7 +60,7 @@ class ACO(object):
         """
         :param graph:
         """
-        best_cost = float('inf')
+        best_cost = float("inf")
         best_solution = []
         for gen in range(self.generations):
             # noinspection PyUnusedLocal
@@ -84,9 +86,13 @@ class _Ant(object):
         self.total_cost = 0.0
         self.tabu = []  # tabu list
         self.pheromone_delta = []  # the local increase of pheromone
-        self.allowed = [i for i in range(graph.rank)]  # nodes which are allowed for the next selection
-        self.eta = [[0 if i == j else 1 / graph.matrix[i][j] for j in range(graph.rank)] for i in
-                    range(graph.rank)]  # heuristic information
+        self.allowed = [
+            i for i in range(graph.rank)
+        ]  # nodes which are allowed for the next selection
+        self.eta = [
+            [0 if i == j else 1 / graph.matrix[i][j] for j in range(graph.rank)]
+            for i in range(graph.rank)
+        ]  # heuristic information
         start = random.randint(0, graph.rank - 1)  # start from any node
         self.tabu.append(start)
         self.current = start
@@ -95,15 +101,22 @@ class _Ant(object):
     def _select_next(self):
         denominator = 0
         for i in self.allowed:
-            denominator += self.graph.pheromone[self.current][i] ** self.colony.alpha * self.eta[self.current][
-                                                                                            i] ** self.colony.beta
+            denominator += (
+                self.graph.pheromone[self.current][i] ** self.colony.alpha
+                * self.eta[self.current][i] ** self.colony.beta
+            )
         # noinspection PyUnusedLocal
-        probabilities = [0 for i in range(self.graph.rank)]  # probabilities for moving to a node in the next step
+        probabilities = [
+            0 for i in range(self.graph.rank)
+        ]  # probabilities for moving to a node in the next step
         for i in range(self.graph.rank):
             try:
                 self.allowed.index(i)  # test if allowed list contains i
-                probabilities[i] = self.graph.pheromone[self.current][i] ** self.colony.alpha * \
-                    self.eta[self.current][i] ** self.colony.beta / denominator
+                probabilities[i] = (
+                    self.graph.pheromone[self.current][i] ** self.colony.alpha
+                    * self.eta[self.current][i] ** self.colony.beta
+                    / denominator
+                )
             except ValueError:
                 pass  # do nothing
         # select next node by probability roulette
@@ -121,7 +134,9 @@ class _Ant(object):
 
     # noinspection PyUnusedLocal
     def _update_pheromone_delta(self):
-        self.pheromone_delta = [[0 for j in range(self.graph.rank)] for i in range(self.graph.rank)]
+        self.pheromone_delta = [
+            [0 for j in range(self.graph.rank)] for i in range(self.graph.rank)
+        ]
         for _ in range(1, len(self.tabu)):
             i = self.tabu[_ - 1]
             j = self.tabu[_]

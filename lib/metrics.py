@@ -2,6 +2,7 @@ import numpy as np
 import math
 import scipy
 
+
 def gaussian_curvature(data: np.ndarray) -> np.ndarray:
     """
     Computes the gaussian curvature of a numpy ndarray.
@@ -11,9 +12,10 @@ def gaussian_curvature(data: np.ndarray) -> np.ndarray:
     Zy, Zx = np.gradient(data)
     Zxy, Zxx = np.gradient(Zx)
     Zyy, _ = np.gradient(Zy)
-    K = (Zxx * Zyy - (Zxy ** 2)) /  (1 + (Zx ** 2) + (Zy **2)) ** 2
+    K = (Zxx * Zyy - (Zxy ** 2)) / (1 + (Zx ** 2) + (Zy ** 2)) ** 2
 
     return K
+
 
 def mean_curvature(data: np.ndarray) -> np.ndarray:
     """
@@ -21,14 +23,15 @@ def mean_curvature(data: np.ndarray) -> np.ndarray:
     :param data: Points ensembled from the data manifold.
     :return: Mean curvature scalar.
     """
-    Zy, Zx  = numpy.gradient(data)
+    Zy, Zx = numpy.gradient(data)
     Zxy, Zxx = numpy.gradient(Zx)
     Zyy, _ = numpy.gradient(Zy)
 
-    H = (Zx**2 + 1)*Zyy - 2*Zx*Zy*Zxy + (Zy**2 + 1)*Zxx
-    H = -H/(2*(Zx**2 + Zy**2 + 1)**(1.5))
+    H = (Zx ** 2 + 1) * Zyy - 2 * Zx * Zy * Zxy + (Zy ** 2 + 1) * Zxx
+    H = -H / (2 * (Zx ** 2 + Zy ** 2 + 1) ** (1.5))
 
     return H
+
 
 def distcorr(X, Y):
     """
@@ -50,7 +53,7 @@ def distcorr(X, Y):
     n = X.shape[0]
 
     if Y.shape[0] != X.shape[0]:
-        raise ValueError('Number of samples must match')
+        raise ValueError("Number of samples must match")
 
     a = squareform(pdist(X))
     b = squareform(pdist(Y))
@@ -63,4 +66,3 @@ def distcorr(X, Y):
     dcor = np.sqrt(dcov2_xy) / np.sqrt(np.sqrt(dcov2_xx) * np.sqrt(dcov2_yy))
 
     return dcor
-

@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 from sklearn.cluster import KMeans
 
+
 class ClusteringLayer(Layer):
     """
     Clustering layer converts input sample (feature) to soft label.
@@ -20,8 +21,8 @@ class ClusteringLayer(Layer):
         :param alpha: Degree of freedom in T-distribution.
         :param kwargs: Additional optional arguments.
         """
-        if 'input_shape' not in kwargs and 'input_dim' in kwargs:
-            kwargs['input_shape'] = (kwargs.pop('input_dim'),)
+        if "input_shape" not in kwargs and "input_dim" in kwargs:
+            kwargs["input_shape"] = (kwargs.pop("input_dim"),)
         super(ClusteringLayer, self).__init__(**kwargs)
         self.n_clusters = n_clusters
         self.alpha = alpha
@@ -37,7 +38,9 @@ class ClusteringLayer(Layer):
         assert len(input_shape) == 2
         input_dim = input_shape[1]
         self.input_spec = InputSpec(dtype=K.floatx(), shape=(None, input_dim))
-        self.clusters = self.add_weight((self.n_clusters, input_dim), initializer='glorot_uniform', name='clusters')
+        self.clusters = self.add_weight(
+            (self.n_clusters, input_dim), initializer="glorot_uniform", name="clusters"
+        )
 
         if self.initial_weights is not None:
             self.set_weights(self.initial_weights)
@@ -51,7 +54,13 @@ class ClusteringLayer(Layer):
         :param kwargs: additional arguments can be passed.
         :return: Normalization call for cluster.
         """
-        q = 1.0 / (1.0 + (K.sum(K.square(K.expand_dims(inputs, axis=1) - self.clusters), axis=2) / self.alpha))
+        q = 1.0 / (
+            1.0
+            + (
+                K.sum(K.square(K.expand_dims(inputs, axis=1) - self.clusters), axis=2)
+                / self.alpha
+            )
+        )
         q **= (self.alpha + 1.0) / 2.0
         q = K.transpose(K.transpose(q) / K.sum(q, axis=1))
         return q
@@ -70,6 +79,6 @@ class ClusteringLayer(Layer):
         Returns the cluster configuration.
         :return: Dictionary.
         """
-        config = {'n_clusters': self.n_clusters}
+        config = {"n_clusters": self.n_clusters}
         base_config = super(ClusteringLayer, self).get_config()
         return dict(list(base_config.items()) + list(config.items()))

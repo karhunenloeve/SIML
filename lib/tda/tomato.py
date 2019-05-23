@@ -18,48 +18,52 @@ class ToMaTo:
         vec = den(np.vstack([x, y]))
 
         if graph:
-            u, v = np.mgrid[x.min():x.max():nbins * 1j, y.min():y.max():nbins * 1j]
+            u, v = np.mgrid[
+                x.min() : x.max() : nbins * 1j, y.min() : y.max() : nbins * 1j
+            ]
             val = den(np.vstack([u.flatten(), v.flatten()]))
 
             plt.figure(figsize=(18, 10))
             fig = gds.GridSpec(3, 6)
 
             plt.subplot(fig[0, 0:2])
-            plt.title('Data Scatter Plot')
-            plt.plot(x, y, 'ko')
+            plt.title("Data Scatter Plot")
+            plt.plot(x, y, "ko")
             plt.xticks([])
             plt.yticks([])
             plt.subplot(fig[0, 2:4])
-            plt.title('Gaussian KDE')
+            plt.title("Gaussian KDE")
             plt.pcolormesh(u, v, val.reshape(u.shape), cmap=plt.cm.BuGn_r)
             plt.xticks([])
             plt.yticks([])
             plt.subplot(fig[0, 4:6])
-            plt.title('Density Contours')
-            plt.pcolormesh(u, v, val.reshape(u.shape), cmap=plt.cm.BuGn_r, shading='gouraud')
+            plt.title("Density Contours")
+            plt.pcolormesh(
+                u, v, val.reshape(u.shape), cmap=plt.cm.BuGn_r, shading="gouraud"
+            )
             plt.contour(u, v, val.reshape(u.shape))
             plt.xticks([])
             plt.yticks([])
 
-            ax0 = plt.subplot(fig[1:3, 0:3], projection='3d')
-            ax0.set_title('Mapped Density over 2D Space')
+            ax0 = plt.subplot(fig[1:3, 0:3], projection="3d")
+            ax0.set_title("Mapped Density over 2D Space")
             ax0.set_xticks([])
             ax0.set_yticks([])
             ax0.set_zticks([])
-            ax0.scatter(u, v, val, s=2, c='lightblue')
-            ax0.set_xlabel('x Coordinate')
-            ax0.set_ylabel('y Coordinate')
-            ax0.set_zlabel('Density Value')
+            ax0.scatter(u, v, val, s=2, c="lightblue")
+            ax0.set_xlabel("x Coordinate")
+            ax0.set_ylabel("y Coordinate")
+            ax0.set_zlabel("Density Value")
 
-            ax1 = plt.subplot(fig[1:3, 3:6], projection='3d')
-            ax1.set_title('Density Estimate over 2D Space')
+            ax1 = plt.subplot(fig[1:3, 3:6], projection="3d")
+            ax1.set_title("Density Estimate over 2D Space")
             ax1.set_xticks([])
             ax1.set_yticks([])
             ax1.set_zticks([])
-            ax1.scatter(x, y, vec, s=2, c='lightgrey')
-            ax1.set_xlabel('x Coordinate')
-            ax1.set_ylabel('y Coordinate')
-            ax1.set_zlabel('Density Value')
+            ax1.scatter(x, y, vec, s=2, c="lightgrey")
+            ax1.set_xlabel("x Coordinate")
+            ax1.set_ylabel("y Coordinate")
+            ax1.set_zlabel("Density Value")
 
             plt.tight_layout()
             plt.show()
@@ -77,7 +81,7 @@ class ToMaTo:
 
         vec = self.estimate_density(graph=False)
 
-        self.kdt = KDTree(self.x, metric='euclidean')
+        self.kdt = KDTree(self.x, metric="euclidean")
         self.sxt = gudhi.SimplexTree()
 
         for ind in range(self.x.shape[0]):
@@ -93,7 +97,8 @@ class ToMaTo:
 
             dig, res = self.sxt.persistence(), []
             for ele in dig:
-                if ele[0] == 0: res.append(ele)
+                if ele[0] == 0:
+                    res.append(ele)
 
             plt.figure(figsize=(18, 4))
             fig = gds.GridSpec(1, 2)
@@ -111,10 +116,15 @@ class ToMaTo:
     # graph is a boolean for data visualization
     def fit_predict(self, num_clusters=None, tau=1e-2, neighbors=6, graph=False):
 
-        if not hasattr(self, 'sxt'): self.estimate_clusters(neighbors=neighbors, graph=graph)
+        if not hasattr(self, "sxt"):
+            self.estimate_clusters(neighbors=neighbors, graph=graph)
 
-        lst = np.asarray([ele[0][0] for ele in self.sxt.get_filtration() if len(ele[0]) == 1])
-        fil = np.asarray([-ele[1] for ele in self.sxt.get_filtration() if len(ele[0]) == 1])
+        lst = np.asarray(
+            [ele[0][0] for ele in self.sxt.get_filtration() if len(ele[0]) == 1]
+        )
+        fil = np.asarray(
+            [-ele[1] for ele in self.sxt.get_filtration() if len(ele[0]) == 1]
+        )
         fil = {k: v for k, v in zip(lst, fil)}
 
         def define_clusters(lst, fil, neighbors):
@@ -124,8 +134,11 @@ class ToMaTo:
             for idx in lst:
 
                 grp, srt = [], np.where(lst == idx)[0][0]
-                for ele in self.kdt.query([self.x[idx]], neighbors, return_distance=False)[0][1:]:
-                    if np.where(lst == ele)[0][0] < srt: grp.append(ele)
+                for ele in self.kdt.query(
+                    [self.x[idx]], neighbors, return_distance=False
+                )[0][1:]:
+                    if np.where(lst == ele)[0][0] < srt:
+                        grp.append(ele)
 
                 if len(grp) == 0:
                     unf.insert_objects([idx])
@@ -135,7 +148,10 @@ class ToMaTo:
                     unf.union(parent, idx)
                     for ele in grp:
                         root = unf.find(ele)
-                        if root != parent and min(fil[parent], fil[root]) < fil[idx] + tau:
+                        if (
+                            root != parent
+                            and min(fil[parent], fil[root]) < fil[idx] + tau
+                        ):
                             unf.union(parent, root)
                             parent = unf.find(root)
 
@@ -161,16 +177,24 @@ class ToMaTo:
 
             plt.figure(figsize=(18, 4))
             plt.subplot(1, 2, 1)
-            plt.title('Initial Data')
-            plt.scatter(self.x[:, 0], self.x[:, 1], c='lightgrey')
+            plt.title("Initial Data")
+            plt.scatter(self.x[:, 0], self.x[:, 1], c="lightgrey")
             plt.xticks([])
             plt.yticks([])
             plt.subplot(1, 2, 2)
-            plt.title('Clustered Data')
-            for idx, grp in enumerate(self.sts): plt.scatter(self.x[grp, 0], self.x[grp, 1],
-                                                             label='Cluster {}'.format(idx))
-            plt.scatter(self.x[self.cen, 0], self.x[self.cen, 1], c='black', marker='x', label='Centroids')
-            plt.legend(loc='best')
+            plt.title("Clustered Data")
+            for idx, grp in enumerate(self.sts):
+                plt.scatter(
+                    self.x[grp, 0], self.x[grp, 1], label="Cluster {}".format(idx)
+                )
+            plt.scatter(
+                self.x[self.cen, 0],
+                self.x[self.cen, 1],
+                c="black",
+                marker="x",
+                label="Centroids",
+            )
+            plt.legend(loc="best")
             plt.xticks([])
             plt.yticks([])
             plt.tight_layout()

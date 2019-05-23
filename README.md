@@ -1,5 +1,6 @@
 # ∂SIML
 [![License](https://img.shields.io/:license-mit-blue.svg)](https://badges.mit-license.org)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/python/black)
 
 In addition to topological data analysis, unsupervised and supervised learning, the project ∂SIML also uses basics of algebraic topology to identify successful schemes. Currently under construction and constantly expanded. A documentation with the description and the corresponding functionality is also created here.
 

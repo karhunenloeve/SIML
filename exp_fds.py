@@ -10,6 +10,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn.pipeline import Pipeline
 from scipy.spatial.distance import pdist, squareform
 
+
 def create_adjacency_matrix(path: list, distfkt: Callable) -> dict:
     """
     Creates an adjacency matrix for all columns of a dataset.
@@ -18,7 +19,7 @@ def create_adjacency_matrix(path: list, distfkt: Callable) -> dict:
     :return: Adjacency matrix as dictionary of the form {"1_to_8": distcorr()}.
     """
 
-    with open(path, 'r') as f:
+    with open(path, "r") as f:
         reader = csv.reader(f)
         data_list = list(reader)
 
@@ -30,6 +31,7 @@ def create_adjacency_matrix(path: list, distfkt: Callable) -> dict:
             adj_matrix[str(i) + "_to_" + str(j)] = distfkt(data_list[i], data_list[j])
 
     return adj_matrix
+
 
 print(create_adjacency_matrix("data/abalone.csv", mtr.distcorr))
 # Todo: finish experiments of functional dependencies

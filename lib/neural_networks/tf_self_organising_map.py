@@ -3,6 +3,7 @@ import tensorflow as tf
 import numpy as np
 from numpy import genfromtxt
 
+
 class SOM(object):
     def __init__(self, x, y, input_dim, learning_rate, radius, num_iter=111):
         """
@@ -31,7 +32,9 @@ class SOM(object):
 
             # Calculating BMU.
             input_matix = tf.stack([self._input for i in range(x * y)])
-            distances = tf.sqrt(tf.reduce_sum(tf.pow(tf.subtract(self._weights, input_matix), 2), 1))
+            distances = tf.sqrt(
+                tf.reduce_sum(tf.pow(tf.subtract(self._weights, input_matix), 2), 1)
+            )
             bmu = tf.argmin(distances, 0)
 
             # Get BMU location.
@@ -46,18 +49,34 @@ class SOM(object):
 
             # Adapt learning rate to each neuron based on position.
             bmu_matrix = tf.stack([bmu_location for i in range(x * y)])
-            bmu_distance = tf.reduce_sum(tf.pow(tf.subtract(self._locations, bmu_matrix), 2), 1)
+            bmu_distance = tf.reduce_sum(
+                tf.pow(tf.subtract(self._locations, bmu_matrix), 2), 1
+            )
             neighbourhood_func = tf.exp(
-                tf.negative(tf.div(tf.cast(bmu_distance, "float32"), tf.pow(_current_radius, 2))))
-            learning_rate_matrix = tf.multiply(_current_learning_rate, neighbourhood_func)
+                tf.negative(
+                    tf.div(tf.cast(bmu_distance, "float32"), tf.pow(_current_radius, 2))
+                )
+            )
+            learning_rate_matrix = tf.multiply(
+                _current_learning_rate, neighbourhood_func
+            )
 
             # Update all the weights.
-            multiplytiplier = tf.stack([tf.tile(tf.slice(
-                learning_rate_matrix, np.array([i]), np.array([1])), [input_dim])
-                for i in range(x * y)])
+            multiplytiplier = tf.stack(
+                [
+                    tf.tile(
+                        tf.slice(learning_rate_matrix, np.array([i]), np.array([1])),
+                        [input_dim],
+                    )
+                    for i in range(x * y)
+                ]
+            )
             delta = tf.multiply(
                 multiplytiplier,
-                tf.subtract(tf.stack([self._input for i in range(x * y)]), self._weights))
+                tf.subtract(
+                    tf.stack([self._input for i in range(x * y)]), self._weights
+                ),
+            )
 
             new_weights = tf.add(self._weights, delta)
             self._training = tf.assign(self._weights, new_weights)
@@ -75,9 +94,10 @@ class SOM(object):
         """
         for iter_no in range(self._num_iter):
             for input_vect in input_vects:
-                self._sess.run(self._training,
-                               feed_dict={self._input: input_vect,
-                                          self._iter_input: iter_no})
+                self._sess.run(
+                    self._training,
+                    feed_dict={self._input: input_vect, self._iter_input: iter_no},
+                )
 
         self._centroid_matrix = [[] for i in range(self._x)]
         self._weights_list = list(self._sess.run(self._weights))
@@ -94,8 +114,10 @@ class SOM(object):
         """
         return_value = []
         for vect in input_vectors:
-            min_index = min([i for i in range(len(self._weights_list))],
-                            key=lambda x: np.linalg.norm(vect - self._weights_list[x]))
+            min_index = min(
+                [i for i in range(len(self._weights_list))],
+                key=lambda x: np.linalg.norm(vect - self._weights_list[x]),
+            )
             return_value.append(self._locations[min_index])
         return return_value
 
@@ -118,6 +140,7 @@ class SOM(object):
         for i in range(x):
             for j in range(y):
                 yield np.array([i, j])
+
 
 ########################################################################################################################
 """ EXAMPLE OF USAGE
