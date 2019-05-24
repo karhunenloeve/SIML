@@ -33,7 +33,7 @@ def top_nat_neighbors(
         print("Oops! That was no valid number. Try again ...")
 
     x, y = np.empty(0), np.empty(0)
-    print(data)
+
     for i in data:
         if np.isfinite(i[0]) and np.isfinite(i[1]):
             x = np.append(x, i[0])

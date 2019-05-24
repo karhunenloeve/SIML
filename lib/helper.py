@@ -47,7 +47,7 @@ def kde_statsmodels_u(x, x_grid, bandwidth=0.2, **kwargs):
 
 def kde_statsmodels_m(x, x_grid, bandwidth=0.2, **kwargs):
     """
-    Multivariate Kernel Density Estimation with Statsmodels
+    Multivariate Kernel Density Estimation with Statsmodels.
     :param x: Data points on the x-axis.
     :param x_grid: Either a grid or the y-axis.
     :param bandwidth: Bandwidth of period.
