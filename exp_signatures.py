@@ -11,6 +11,7 @@ from lib import helper as hp
 from lib.tda import sim_homology
 from scipy.interpolate import Rbf, interp1d, interp2d
 from typing import List, Set, Dict, Tuple, Optional
+from multiprocessing import Process
 
 
 def top_nat_neighbors(
@@ -156,4 +157,29 @@ def create_bttlnck_file(
             )
 
 
-create_bttlnck_file("data/MOBISIG/", "data/MOBISIG_natneighbor/")
+def run_in_parallel(*fns):
+    """
+    Runs several functions in parallel.
+    :param fns: Several functions.
+    :return: A nice message.
+    """
+    proc = []
+
+    for fn in fns:
+        p = Process(target=fn)
+        p.start()
+        proc.append(p)
+    for p in proc:
+        p.join()
+
+    return print("Processing finished!")
+
+
+run_in_parallel(
+    create_bttlnck_file(
+        "data/MOBISIG/", "data/MOBISIG_natneighbor/", filtration="rips"
+    ),
+    create_bttlnck_file(
+        "data/MOBISIG/", "data/MOBISIG_natneighbor/", filtration="witness"
+    ),
+)
