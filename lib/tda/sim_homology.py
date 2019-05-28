@@ -8,6 +8,8 @@ import typing
 import matplotlib.cm as cm
 import matplotlib.colors as mcolors
 
+from lib.tda.handler.timeout import timeout
+from functools import wraps
 from matplotlib import pyplot as plt
 from ripser import Rips, plot_dgms
 from sklearn.linear_model import LinearRegression
@@ -335,6 +337,7 @@ def persistence_ring_diagram(
     plt.show()
 
 
+@timeout(seconds=10 ** 3)
 def bottleneck_distance(
     path1: str,
     path2: str,
@@ -343,7 +346,7 @@ def bottleneck_distance(
     max_edge_length: int = 200.0,
     max_dimension: int = 1,
     landmark_percentage=1,
-    filtration: ["alpha", "rips", "witness"] = "witness",
+    filtration: ["alpha", "rips", "witness"] = "rips",
 ) -> float:
     """
 

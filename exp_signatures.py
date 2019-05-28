@@ -176,10 +176,5 @@ def run_in_parallel(*fns):
 
 
 run_in_parallel(
-    create_bttlnck_file(
-        "data/MOBISIG/", "data/MOBISIG_natneighbor/", filtration="rips"
-    ),
-    create_bttlnck_file(
-        "data/MOBISIG/", "data/MOBISIG_natneighbor/", filtration="witness"
-    ),
+    create_bttlnck_file("data/MOBISIG/", "data/MOBISIG_natneighbor/", filtration="rips")
 )
