@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4baeb8a6-4dd2-4888-8f4b-65a1e1dcde3b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/results/rips_bottleneck.csv" beforeDir="false" afterPath="$PROJECT_DIR$/results/rips_bottleneck.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/tda/sim_homology.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/tda/sim_homology.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,7 +17,7 @@
       <file leaf-file-name="helper.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/helper.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
+            <state relative-caret-position="15">
               <caret line="49" column="60" selection-start-line="49" selection-start-column="60" selection-end-line="49" selection-end-column="60" />
               <folding>
                 <element signature="e#22#53#0" expanded="true" />
@@ -25,11 +26,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sim_homology.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="sim_homology.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/tda/sim_homology.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-925">
-              <caret line="339" column="22" selection-start-line="339" selection-start-column="22" selection-end-line="339" selection-end-column="22" />
+            <state relative-caret-position="435">
+              <caret line="329" column="30" selection-start-line="329" selection-start-column="30" selection-end-line="329" selection-end-column="30" />
               <folding>
                 <element signature="e#22#40#0" expanded="true" />
               </folding>
@@ -40,8 +41,8 @@
       <file leaf-file-name="witness_bottleneck.csv" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/results/witness_bottleneck.csv">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="10926" column="8" selection-start-line="10926" selection-start-column="8" selection-end-line="10926" selection-end-column="8" />
+            <state relative-caret-position="-9225">
+              <caret line="10660" column="60" lean-forward="true" selection-start-line="10660" selection-start-column="60" selection-end-line="10660" selection-end-column="60" />
             </state>
           </provider>
         </entry>
@@ -64,11 +65,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="rips_bottleneck.csv" pinned="false" current-in-tab="true">
+      <file leaf-file-name="rips_bottleneck.csv" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/results/rips_bottleneck.csv">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="788">
-              <caret line="2093" column="70" lean-forward="true" selection-start-line="2093" selection-start-column="70" selection-end-line="2093" selection-end-column="70" />
+            <state relative-caret-position="358">
+              <caret line="2072" column="66" selection-start-line="2072" selection-start-column="66" selection-end-line="2072" selection-end-column="66" />
             </state>
           </provider>
         </entry>
@@ -105,7 +106,10 @@
       <find>column</find>
       <find>sim_homology</find>
       <find>decorate</find>
+      <find>_raise</find>
+      <find>raise</find>
       <find>RipsComplex</find>
+      <find>birth</find>
     </findStrings>
     <replaceStrings>
       <replace>np.genfromtxt</replace>
@@ -113,6 +117,7 @@
       <replace>,</replace>
       <replace>birth</replace>
       <replace>\n</replace>
+      <replace>new_birth</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -163,17 +168,17 @@
         <option value="$PROJECT_DIR$/lib/helper.py" />
         <option value="$PROJECT_DIR$/exp_signatures.py" />
         <option value="$PROJECT_DIR$/lib/tda/timeout.py" />
-        <option value="$PROJECT_DIR$/lib/tda/sim_homology.py" />
-        <option value="$PROJECT_DIR$/lib/tda/handler/timeout.py" />
         <option value="$PROJECT_DIR$/results/rips_bottleneck.csv" />
+        <option value="$PROJECT_DIR$/lib/tda/handler/timeout.py" />
+        <option value="$PROJECT_DIR$/lib/tda/sim_homology.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1660" />
-    <option name="y" value="23" />
-    <option name="width" value="1442" />
-    <option name="height" value="828" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="76" />
+    <option name="y" value="949" />
+    <option name="width" value="1261" />
+    <option name="height" value="877" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -276,7 +281,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1920" y="23" width="1920" height="992" extended-state="6" />
+    <frame x="76" y="949" width="1261" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.18125" />
@@ -331,7 +336,7 @@
           <url>file://$PROJECT_DIR$/lib/neural_networks/layers/layer_dropconnect.py</url>
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="2" />
+      <option name="time" value="3" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -531,49 +536,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/exp_graphs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/helper.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="49" column="60" selection-start-line="49" selection-start-column="60" selection-end-line="49" selection-end-column="60" />
-          <folding>
-            <element signature="e#22#53#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/tda/handler/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/tda/handler/timeout.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="11" lean-forward="true" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/tda/sim_homology.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-925">
-          <caret line="339" column="22" selection-start-line="339" selection-start-column="22" selection-end-line="339" selection-end-column="22" />
-          <folding>
-            <element signature="e#22#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/results/witness_bottleneck.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="10926" column="8" selection-start-line="10926" selection-start-column="8" selection-end-line="10926" selection-end-column="8" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/exp_signatures.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -589,6 +553,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/helper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="49" column="60" selection-start-line="49" selection-start-column="60" selection-end-line="49" selection-end-column="60" />
+          <folding>
+            <element signature="e#22#53#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/tda/handler/timeout.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2340">
+          <caret line="156" column="38" lean-forward="true" selection-start-line="156" selection-start-column="38" selection-end-line="156" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exp_graphs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -596,10 +587,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/results/witness_bottleneck.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-9225">
+          <caret line="10660" column="60" lean-forward="true" selection-start-line="10660" selection-start-column="60" selection-end-line="10660" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/results/rips_bottleneck.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="788">
-          <caret line="2093" column="70" lean-forward="true" selection-start-line="2093" selection-start-column="70" selection-end-line="2093" selection-end-column="70" />
+        <state relative-caret-position="358">
+          <caret line="2072" column="66" selection-start-line="2072" selection-start-column="66" selection-end-line="2072" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/tda/sim_homology.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="329" column="30" selection-start-line="329" selection-start-column="30" selection-end-line="329" selection-end-column="30" />
+          <folding>
+            <element signature="e#22#40#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

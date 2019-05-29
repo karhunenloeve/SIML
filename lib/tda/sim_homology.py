@@ -8,7 +8,7 @@ import typing
 import matplotlib.cm as cm
 import matplotlib.colors as mcolors
 
-from lib.tda.handler.timeout import timeout
+from handler.timeout import timeout
 from functools import wraps
 from matplotlib import pyplot as plt
 from ripser import Rips, plot_dgms
@@ -272,6 +272,81 @@ def make_colormap(seq: float):
     return mcolors.LinearSegmentedColormap("CustomMap", cdict)
 
 
+def persistence_ring_diagram_tikz(
+    path: str, save: bool = True, filename: str = "tikz.tex"
+):
+    """
+    Creates a ring diagram as Tikz image.
+    :param path: Path of the csv file.
+    :param filename: Filename.
+    :return: Diagram as tikz.
+
+    Tikz-code for drawsector:
+    \newcommand{\drawsector}[6][]{
+    \draw[#1] (#4:{#2-.5*#3}) arc [start angle = #4, delta angle=-#5, radius={#2-.5*#3}]--++({#4-#5}:#3) arc [start angle = {#4- #5}, delta angle=#5, radius={#2+.5*#3}] --cycle;
+    \draw[decorate,decoration={raise=-3pt, text along path, text=#6, text align={align=center}}] (#4:#2) arc(#4:(#4-#5):#2);}
+    """
+    persistence = gudhi_rips_persistence(path, columns=2, plot=False)
+    death, birth, hom = [], [], []
+
+    for homgroup in persistence:
+        if homgroup[1][1] != float("inf"):
+            birth.append(homgroup[1][0])
+            death.append(homgroup[1][1])
+            hom.append(homgroup[0])
+        else:
+            pass
+
+    birth, death, hom = list(reversed(birth)), list(reversed(death)), list(reversed(hom))
+    new_birth, new_death, radius = [], [],
+
+    for j in range(0, len(death)):
+        new_birth.append(sum(birth[0:j]))
+        new_death.append(sum(death[0:j]))
+
+    new_death = 360 * np.array(new_death) / np.max(np.array(new_death))
+    new_birth = 360 * np.array(new_birth) / np.max(np.array(new_birth))
+    difference = np.array(death) - np.array(birth)
+    difference = 1.5 * difference / np.max(difference)
+
+
+    diagram = "\\begin{tikzpicture} \n"
+    colors = ["lightcandy", "lightblue", "lightgold"]
+
+    for i in range(0, len(new_death)):
+        if hom[i] == 0:
+            color = colors[0]
+        elif hom[i] == 1:
+            color = colors[1]
+        else:
+            color = colors[2]
+        intensity = 100 - (round((100 - 10) * i / len(new_death) + 10))
+        diagram = (
+            diagram
+            + "\t \\drawsector[draw=black, fill=white!"
+            + str(intensity)
+            + "!"
+            + color
+            + "]{"
+            + str(round(radius[i], 3))
+            + "}{"
+            + str(round(difference[i], 3))
+            + "}{"
+            + str(round(new_birth[i], 3))
+            + "}{"
+            + str(round((new_death[i] - new_birth[i]), 3))
+            + "}{\\empty} \n"
+        )
+
+    diagram = diagram + "\\end{tikzpicture}"
+
+    if save == True:
+        with open(filename, "w") as text_file:
+            text_file.write(diagram)
+
+    return diagram
+
+
 def persistence_ring_diagram(
     path: str,
     figsize: tuple = (8, 8),
@@ -349,7 +424,6 @@ def bottleneck_distance(
     filtration: ["alpha", "rips", "witness"] = "rips",
 ) -> float:
     """
-
     :param path1: Path of the first csv file.
     :param path2: Path of the second csv file.
     :param max_edge_length: Maximal length of an edge within the filtration.
@@ -449,3 +523,4 @@ Good example files:
 ../../data/MOBISIG/USER31/SIGN_FOR_USER31_USER33_10.csv
 """
 ########################################################################################################################
+persistence_ring_diagram_tikz("../../data/MOBISIG/USER01/SIGN_FOR_USER1_USER2_2.csv")
