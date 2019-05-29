@@ -298,17 +298,20 @@ def persistence_ring_diagram_tikz(
             pass
 
     birth, death, hom = list(reversed(birth)), list(reversed(death)), list(reversed(hom))
-    new_birth, new_death, radius = [], [],
+    new_birth, new_death, radius = [], [], [0]
 
     for j in range(0, len(death)):
         new_birth.append(sum(birth[0:j]))
         new_death.append(sum(death[0:j]))
 
-    new_death = 360 * np.array(new_death) / np.max(np.array(new_death))
-    new_birth = 360 * np.array(new_birth) / np.max(np.array(new_birth))
+    #new_death = 360 * np.array(new_death) / np.sum(np.array(new_death))
+    #new_birth = 360 * np.array(new_birth) / np.max(np.array(new_birth))
     difference = np.array(death) - np.array(birth)
-    difference = 1.5 * difference / np.max(difference)
+    difference = 360 * difference / np.sum(difference)
+    width = 4 * difference / np.sum(difference)
 
+    for k in range(1,len(difference)):
+        radius.append((difference[k-1] + radius[k-1]))
 
     diagram = "\\begin{tikzpicture} \n"
     colors = ["lightcandy", "lightblue", "lightgold"]
@@ -328,13 +331,13 @@ def persistence_ring_diagram_tikz(
             + "!"
             + color
             + "]{"
-            + str(round(radius[i], 3))
+            + str(round(radius[i],1))
             + "}{"
-            + str(round(difference[i], 3))
+            + str(round(difference[i], 1))
             + "}{"
-            + str(round(new_birth[i], 3))
+            + str(round(new_birth[i], 1))
             + "}{"
-            + str(round((new_death[i] - new_birth[i]), 3))
+            + str(round((new_death[i] - new_birth[i]), 1))
             + "}{\\empty} \n"
         )
 
