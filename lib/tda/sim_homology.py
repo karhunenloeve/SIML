@@ -1,19 +1,11 @@
 #!/usr/bin/env python
 import numpy as np
 import gudhi as gd
-import pandas as pd
-import pickle as pickle
-import matplotlib
-import typing
-import matplotlib.cm as cm
 import matplotlib.colors as mcolors
 
 from handler.timeout import timeout
-from functools import wraps
 from matplotlib import pyplot as plt
-from ripser import Rips, plot_dgms
-from sklearn.linear_model import LinearRegression
-from sklearn.preprocessing import PolynomialFeatures
+from ripser import Rips
 
 
 c = mcolors.ColorConverter().to_rgb
@@ -331,9 +323,9 @@ def persistence_ring_diagram_tikz(
             + "!"
             + color
             + "]{"
-            + str(round(radius[i],1))
+            + str(round(difference[i],1))
             + "}{"
-            + str(round(difference[i], 1))
+            + str(round(width[i], 1))
             + "}{"
             + str(round(new_birth[i], 1))
             + "}{"
