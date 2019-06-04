@@ -12,6 +12,20 @@ c = mcolors.ColorConverter().to_rgb
 
 HOMOLOGY = {
     "colormap": {
+        "IronRed": {
+
+        },
+        "IronBlue":{
+            c("#4b8ac7"),
+            c("#5299d0"),
+            c("#5299d0"),
+            c("#5aaad7"),
+            c("#61bbe4"),
+            c("#64bee6")
+        },
+        "IronYellow":{
+
+        },
         "AvengersEndgame": [
             c("#0B0930"),
             c("#1A1A64"),
@@ -265,7 +279,7 @@ def make_colormap(seq: float):
 
 
 def persistence_ring_diagram_tikz(
-    path: str, save: bool = True, filename: str = "tikz.tex"
+    path: str, save: bool = True, filename: str = "tikz.tex", delta: float = 0.2
 ):
     """
     Creates a ring diagram as Tikz image.
@@ -289,33 +303,32 @@ def persistence_ring_diagram_tikz(
         else:
             pass
 
-    birth, death, hom = list(reversed(birth)), list(reversed(death)), list(reversed(hom))
-    new_birth, new_death, radius = [], [], [0]
+    birth, death, hom = (
+        np.array(list(reversed(birth))),
+        np.array(list(reversed(death))),
+        np.array(list(reversed(hom))),
+    )
 
-    for j in range(0, len(death)):
-        new_birth.append(sum(birth[0:j]))
-        new_death.append(sum(death[0:j]))
+    diff = death - birth
+    start_angle = birth / np.sum(birth) * 360
+    delta_angle = death / np.sum(death) * 360
 
-    #new_death = 360 * np.array(new_death) / np.sum(np.array(new_death))
-    #new_birth = 360 * np.array(new_birth) / np.max(np.array(new_birth))
-    difference = np.array(death) - np.array(birth)
-    difference = 360 * difference / np.sum(difference)
-    width = 4 * difference / np.sum(difference)
-
-    for k in range(1,len(difference)):
-        radius.append((difference[k-1] + radius[k-1]))
+    width = diff / np.sum(diff) * 3
+    radius = []
+    for i in range(0,len(width)):
+        radius.append(np.sum(width[0:i]))
 
     diagram = "\\begin{tikzpicture} \n"
     colors = ["lightcandy", "lightblue", "lightgold"]
 
-    for i in range(0, len(new_death)):
+    for i in range(0, len(death)):
         if hom[i] == 0:
             color = colors[0]
         elif hom[i] == 1:
             color = colors[1]
         else:
             color = colors[2]
-        intensity = 100 - (round((100 - 10) * i / len(new_death) + 10))
+        intensity = 100 - (round((100 - 10) * i / len(death) + 10))
         diagram = (
             diagram
             + "\t \\drawsector[draw=black, fill=white!"
@@ -323,13 +336,13 @@ def persistence_ring_diagram_tikz(
             + "!"
             + color
             + "]{"
-            + str(round(difference[i],1))
+            + str(round(radius[i], 1))
             + "}{"
             + str(round(width[i], 1))
             + "}{"
-            + str(round(new_birth[i], 1))
+            + str(round(start_angle[i], 1))
             + "}{"
-            + str(round((new_death[i] - new_birth[i]), 1))
+            + str(round(delta_angle[i], 1))
             + "}{\\empty} \n"
         )
 
@@ -347,6 +360,7 @@ def persistence_ring_diagram(
     figsize: tuple = (8, 8),
     axes: list = [0.1, 0.1, 0.8, 0.8],
     sorted: bool = False,
+    hom: int = 1,
 ):
     """
     Plots a persistence ring of some data.
@@ -364,7 +378,7 @@ def persistence_ring_diagram(
     death, birth = [], []
 
     for homgroup in persistence:
-        if homgroup[1][1] != float("inf"):
+        if homgroup[1][1] != float("inf") and homgroup[0] == hom:
             birth.append(homgroup[1][0])
             death.append(homgroup[1][1])
         else:
@@ -397,7 +411,7 @@ def persistence_ring_diagram(
         align="edge",
     )
 
-    purples = make_colormap(HOMOLOGY["colormap"]["AvengersEndgame"])
+    purples = make_colormap(HOMOLOGY["colormap"]["IronBlue"])
     colorarray = purples(np.linspace(0, 2 * np.pi, N))
 
     for n, bar in zip(np.arange(N), bars):
@@ -518,4 +532,4 @@ Good example files:
 ../../data/MOBISIG/USER31/SIGN_FOR_USER31_USER33_10.csv
 """
 ########################################################################################################################
-persistence_ring_diagram_tikz("../../data/MOBISIG/USER01/SIGN_FOR_USER1_USER2_2.csv")
+persistence_ring_diagram("../../data/MOBISIG/USER01/SIGN_FOR_USER1_USER2_2.csv")
