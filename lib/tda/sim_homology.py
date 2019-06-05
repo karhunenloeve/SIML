@@ -13,7 +13,12 @@ c = mcolors.ColorConverter().to_rgb
 HOMOLOGY = {
     "colormap": {
         "IronRed": {
-
+            c("#f6e6e6"),
+            c("#e5b4b4"),
+            c("#d48282"),
+            c("#c35050"),
+            c("#b21e1e"),
+            c("#aa0505"),
         },
         "IronBlue":{
             c("#4b8ac7"),
@@ -21,10 +26,14 @@ HOMOLOGY = {
             c("#5299d0"),
             c("#5aaad7"),
             c("#61bbe4"),
-            c("#64bee6")
+            c("#64bee6"),
         },
         "IronYellow":{
-
+            c("#FEF9E5"),
+            c("#FDE99A"),
+            c("#FCD94E"),
+            c("#FBD435"),
+            c("#fbca03"),
         },
         "AvengersEndgame": [
             c("#0B0930"),
@@ -361,6 +370,7 @@ def persistence_ring_diagram(
     axes: list = [0.1, 0.1, 0.8, 0.8],
     sorted: bool = False,
     hom: int = 1,
+    map: str = "IronRed"
 ):
     """
     Plots a persistence ring of some data.
@@ -375,12 +385,13 @@ def persistence_ring_diagram(
 
     # Compute evolution of persistent homology of the dataset as persistence diagram.
     persistence = gudhi_rips_persistence(path, columns=2, plot=False)
-    death, birth = [], []
+    death, birth, homgrp = [], [], []
 
     for homgroup in persistence:
         if homgroup[1][1] != float("inf") and homgroup[0] == hom:
             birth.append(homgroup[1][0])
             death.append(homgroup[1][1])
+            homgrp.append(homgroup[0])
         else:
             pass
 
@@ -411,7 +422,7 @@ def persistence_ring_diagram(
         align="edge",
     )
 
-    purples = make_colormap(HOMOLOGY["colormap"]["IronBlue"])
+    purples = make_colormap(HOMOLOGY["colormap"][map])
     colorarray = purples(np.linspace(0, 2 * np.pi, N))
 
     for n, bar in zip(np.arange(N), bars):
@@ -526,10 +537,9 @@ plot_data("../../data/MOBISIG/USER31/SIGN_FOR_USER31_USER33_10.csv", columns=2)
 persistence_ring_diagram("../../data/MOBISIG/USER1/SIGN_FOR_USER1_USER2_2.csv")
 
 Good example files:
-../../data/MOBISIG/USER1/SIGN_FOR_USER1_USER2_2.csv
-../../data/MOBISIG/USER2/SIGN_FOR_USER2_USER5_14.csv
+../../data/MOBISIG/USER01/SIGN_FOR_USER1_USER2_2.csv
+../../data/MOBISIG/USER02/SIGN_FOR_USER2_USER5_14.csv
 ../../data/MOBISIG/USER16/SIGN_FOR_USER16_USER18_9.csv
 ../../data/MOBISIG/USER31/SIGN_FOR_USER31_USER33_10.csv
 """
 ########################################################################################################################
-persistence_ring_diagram("../../data/MOBISIG/USER01/SIGN_FOR_USER1_USER2_2.csv")
