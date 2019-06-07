@@ -20,7 +20,7 @@ HOMOLOGY = {
             c("#b21e1e"),
             c("#aa0505"),
         },
-        "IronBlue":{
+        "IronBlue": {
             c("#4b8ac7"),
             c("#5299d0"),
             c("#5299d0"),
@@ -28,7 +28,7 @@ HOMOLOGY = {
             c("#61bbe4"),
             c("#64bee6"),
         },
-        "IronYellow":{
+        "IronYellow": {
             c("#FEF9E5"),
             c("#FDE99A"),
             c("#FCD94E"),
@@ -324,7 +324,7 @@ def persistence_ring_diagram_tikz(
 
     width = diff / np.sum(diff) * 3
     radius = []
-    for i in range(0,len(width)):
+    for i in range(0, len(width)):
         radius.append(np.sum(width[0:i]))
 
     diagram = "\\begin{tikzpicture} \n"
@@ -370,7 +370,7 @@ def persistence_ring_diagram(
     axes: list = [0.1, 0.1, 0.8, 0.8],
     sorted: bool = False,
     hom: int = 1,
-    map: str = "IronRed"
+    map: str = "IronRed",
 ):
     """
     Plots a persistence ring of some data.
