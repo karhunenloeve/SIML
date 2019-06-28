@@ -32,7 +32,9 @@ def retrieve_bttlnck_distances(path: str, delimiter: str = ",", decimals: int = 
             it_4.append(float(i[2]))
 
     with open(path + "_retrieved_scores" + ".tex", "w") as myfile:
-        wr = csv.writer(myfile, quoting = csv.QUOTE_NONE,  delimiter='|', quotechar='',escapechar='')
+        wr = csv.writer(
+            myfile, quoting=csv.QUOTE_NONE, delimiter="|", quotechar="", escapechar=""
+        )
         max_levels, level_counter = len(it_4), 0
 
         while level_counter < max_levels:
@@ -45,9 +47,9 @@ def retrieve_bttlnck_distances(path: str, delimiter: str = ",", decimals: int = 
             fifth_value = forth_value + (it_4[level_counter] - it_3[level_counter])
 
             my_string = (
-                "\\addplot+ [mark=none, solid] coordinates{"+
-                "(1,0)" +
-                "(2,"
+                "\\addplot+ [mark=none, solid] coordinates{"
+                + "(1,0)"
+                + "(2,"
                 + str(round(first_value, decimals))
                 + ")"
                 + "(3,"

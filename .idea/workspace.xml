@@ -16,11 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/results/witness_bottleneck.csv">
           <provider selected="true" editor-type-id="csv-text-editor">
-            <state relative-caret-position="480">
-              <caret line="32" column="58" lean-forward="true" selection-start-line="32" selection-start-column="58" selection-end-line="32" selection-end-column="58" />
+            <state relative-caret-position="-5975">
+              <caret line="52" column="58" lean-forward="true" selection-start-line="52" selection-start-column="58" selection-end-line="52" selection-end-column="58" />
             </state>
           </provider>
           <provider editor-type-id="csv-table-editor">
@@ -40,11 +40,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/results/witness_bottleneck_retrieved_scores.tex">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-78489">
-              <caret line="65" column="56" selection-start-line="65" selection-start-column="56" selection-end-line="65" selection-end-column="56" />
+            <state relative-caret-position="-78279">
+              <caret line="28" column="56" selection-start-line="28" selection-start-column="56" selection-end-line="28" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -65,7 +65,7 @@
         <entry file="file://$PROJECT_DIR$/exp_graphs.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
-              <caret line="12" column="59" lean-forward="true" selection-start-line="12" selection-start-column="59" selection-end-line="12" selection-end-column="59" />
+              <caret line="12" column="59" selection-start-line="12" selection-start-column="59" selection-end-line="12" selection-end-column="59" />
               <folding>
                 <element signature="e#0#43#0" expanded="true" />
               </folding>
@@ -131,6 +131,7 @@
       <find>RipsComplex</find>
       <find>birth</find>
       <find>&quot;</find>
+      <find>e-308</find>
     </findStrings>
     <replaceStrings>
       <replace>np.genfromtxt</replace>
@@ -256,12 +257,12 @@
       <updated>1549882470047</updated>
       <workItem from="1561560648541" duration="55000" />
       <workItem from="1561560715276" duration="1736000" />
-      <workItem from="1561623463404" duration="13320000" />
+      <workItem from="1561623463404" duration="14110000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15111000" />
+    <option name="totallyTimeSpent" value="15901000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -274,7 +275,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="30" width="1440" height="2530" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.18125" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -586,17 +586,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/results/witness_bottleneck_retrieved_scores.tex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-78489">
-          <caret line="65" column="56" selection-start-line="65" selection-start-column="56" selection-end-line="65" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/exp_graphs.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="12" column="59" lean-forward="true" selection-start-line="12" selection-start-column="59" selection-end-line="12" selection-end-column="59" />
+          <caret line="12" column="59" selection-start-line="12" selection-start-column="59" selection-end-line="12" selection-end-column="59" />
           <folding>
             <element signature="e#0#43#0" expanded="true" />
           </folding>
@@ -605,8 +598,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/results/witness_bottleneck.csv">
       <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="58" lean-forward="true" selection-start-line="32" selection-start-column="58" selection-end-line="32" selection-end-column="58" />
+        <state relative-caret-position="-5975">
+          <caret line="52" column="58" lean-forward="true" selection-start-line="52" selection-start-column="58" selection-end-line="52" selection-end-column="58" />
         </state>
       </provider>
       <provider editor-type-id="csv-table-editor">
@@ -615,6 +608,13 @@
       <provider editor-type-id="text-editor">
         <state relative-caret-position="2311">
           <caret line="10660" column="60" selection-start-line="10660" selection-start-column="60" selection-end-line="10660" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results/witness_bottleneck_retrieved_scores.tex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-78279">
+          <caret line="28" column="56" selection-start-line="28" selection-start-column="56" selection-end-line="28" selection-end-column="56" />
         </state>
       </provider>
     </entry>
