@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4baeb8a6-4dd2-4888-8f4b-65a1e1dcde3b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/SIML.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SIML.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/exp_graphs.py" beforeDir="false" afterPath="$PROJECT_DIR$/exp_graphs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/alpha_bottleneck_retrieved_scores.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/rips_bottleneck_retrieved_scores.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/witness_bottleneck.csv" beforeDir="false" afterPath="$PROJECT_DIR$/results/witness_bottleneck.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/witness_bottleneck_retrieved_scores.csv" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,34 +14,45 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DockManager">
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/results/witness_bottleneck.csv">
-                <provider selected="true" editor-type-id="csv-text-editor">
-                  <state relative-caret-position="690">
-                    <caret line="46" column="74" selection-start-line="46" selection-start-column="57" selection-end-line="46" selection-end-column="74" />
-                  </state>
-                </provider>
-                <provider editor-type-id="csv-table-editor">
-                  <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/results/witness_bottleneck.csv">
+          <provider selected="true" editor-type-id="csv-text-editor">
+            <state relative-caret-position="480">
+              <caret line="32" column="58" lean-forward="true" selection-start-line="32" selection-start-column="58" selection-end-line="32" selection-end-column="58" />
+            </state>
+          </provider>
+          <provider editor-type-id="csv-table-editor">
+            <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/results/rips_bottleneck.csv">
+          <provider selected="true" editor-type-id="csv-text-editor">
+            <state>
+              <caret selection-end-line="599" selection-end-column="74" />
+            </state>
+          </provider>
+          <provider editor-type-id="csv-table-editor">
+            <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/results/witness_bottleneck_retrieved_scores.tex">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-78489">
+              <caret line="65" column="56" selection-start-line="65" selection-start-column="56" selection-end-line="65" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/helper.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="735">
+            <state>
               <caret line="49" column="60" selection-start-line="49" selection-start-column="60" selection-end-line="49" selection-end-column="60" />
               <folding>
                 <element signature="e#22#53#0" expanded="true" />
@@ -50,47 +62,35 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/tda/sim_homology.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5025">
-              <caret line="335" column="25" selection-start-line="335" selection-start-column="25" selection-end-line="335" selection-end-column="25" />
-              <folding>
-                <element signature="e#22#40#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="51" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/exp_graphs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="45" column="36" selection-start-line="45" selection-start-column="36" selection-end-line="45" selection-end-column="36" />
+            <state relative-caret-position="180">
+              <caret line="12" column="59" lean-forward="true" selection-start-line="12" selection-start-column="59" selection-end-line="12" selection-end-column="59" />
               <folding>
-                <element signature="e#0#28#0" expanded="true" />
+                <element signature="e#0#43#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/results/alpha_bottleneck_retrieved_scores.csv">
+        <entry file="file://$PROJECT_DIR$/results/alpha_bottleneck.csv">
           <provider selected="true" editor-type-id="csv-text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="91" selection-start-line="16" selection-start-column="91" selection-end-line="16" selection-end-column="91" />
+            <state relative-caret-position="-209698">
+              <caret line="5" column="60" selection-start-line="5" selection-start-column="60" selection-end-line="5" selection-end-column="60" />
             </state>
           </provider>
           <provider editor-type-id="csv-table-editor">
             <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/results/alpha_bottleneck_retrieved_scores.tex">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="82" selection-start-line="12" selection-start-column="82" selection-end-line="12" selection-end-column="82" />
+            </state>
           </provider>
         </entry>
       </file>
@@ -194,6 +194,7 @@
         <option value="$PROJECT_DIR$/results/alpha_scores.csv" />
         <option value="$PROJECT_DIR$/results/alpha_bottleneck_retrieved_scores.csv" />
         <option value="$PROJECT_DIR$/exp_graphs.py" />
+        <option value="$PROJECT_DIR$/results/witness_bottleneck.csv" />
       </list>
     </option>
   </component>
@@ -255,11 +256,12 @@
       <updated>1549882470047</updated>
       <workItem from="1561560648541" duration="55000" />
       <workItem from="1561560715276" duration="1736000" />
+      <workItem from="1561623463404" duration="13320000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1791000" />
+    <option name="totallyTimeSpent" value="15111000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -296,7 +298,7 @@
       <window_info anchor="right" id="R Graphics" order="3" />
       <window_info anchor="right" id="R Packages" order="4" />
       <window_info anchor="right" id="SciView" order="5" />
-      <window_info anchor="right" x="0" y="0" width="310" height="2330" id="Documentation" order="6" side_tool="true" visible="true" weight="0.32998565" />
+      <window_info anchor="right" x="0" y="0" width="310" height="2330" id="Documentation" order="6" side_tool="true" visible="true" weight="0.33070302" />
       <window_info anchor="right" id="Database" order="7" />
     </layout>
     <layout-to-restore>
@@ -334,21 +336,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Downloads/Dataset/batch1.dat" />
-    <entry file="file://$PROJECT_DIR$/lib/neural_networks/opt/vanilla_gradesc.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="15" column="59" selection-start-line="15" selection-start-column="59" selection-end-line="15" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/neural_networks/opt/rmsprop_natgrad.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1575">
-          <caret line="109" column="30" selection-start-line="109" selection-start-column="30" selection-end-line="109" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/breast.txt" />
     <entry file="file://$PROJECT_DIR$/data/s3.txt" />
     <entry file="file://$PROJECT_DIR$/lib/optimisation/antcolony.py">
@@ -498,13 +485,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/results/alpha_bottleneck.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="863">
-          <caret line="26975" selection-start-line="26975" selection-end-line="26975" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/tda/handler/timeout.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2340">
@@ -512,37 +492,79 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/results/witness_bottleneck.csv">
+    <entry file="file://$PROJECT_DIR$/results/alpha_scores.csv" />
+    <entry file="file://$PROJECT_DIR$/results/alpha_bottleneck_retrieved_scores_retrieved_scores.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results/alpha_bottleneck_retrieved_scores.csv">
       <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="690">
-          <caret line="46" column="74" selection-start-line="46" selection-start-column="57" selection-end-line="46" selection-end-column="74" />
+        <state>
+          <caret selection-end-line="599" selection-end-column="92" />
+        </state>
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results/rips_bottleneck_retrieved_scores.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results/alpha_bottleneck.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="-209698">
+          <caret line="5" column="60" selection-start-line="5" selection-start-column="60" selection-end-line="5" selection-end-column="60" />
         </state>
       </provider>
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
       <provider editor-type-id="text-editor">
-        <state relative-caret-position="2311">
-          <caret line="10660" column="60" selection-start-line="10660" selection-start-column="60" selection-end-line="10660" selection-end-column="60" />
+        <state relative-caret-position="863">
+          <caret line="26975" selection-start-line="26975" selection-end-line="26975" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results/alpha_bottleneck_retrieved_scores.tex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="82" selection-start-line="12" selection-start-column="82" selection-end-line="12" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results/rips_bottleneck_retrieved_scores.tex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1416">
+          <caret line="415" column="90" lean-forward="true" selection-end-line="418" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results/rips_bottleneck.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state>
+          <caret selection-end-line="599" selection-end-column="74" />
+        </state>
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="31080">
+          <caret line="2072" column="66" selection-start-line="2072" selection-start-column="66" selection-end-line="2072" selection-end-column="66" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/tda/sim_homology.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5025">
+        <state relative-caret-position="1525">
           <caret line="335" column="25" selection-start-line="335" selection-start-column="25" selection-end-line="335" selection-end-column="25" />
           <folding>
             <element signature="e#22#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/helper.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="49" column="60" selection-start-line="49" selection-start-column="60" selection-end-line="49" selection-end-column="60" />
-          <folding>
-            <element signature="e#22#53#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -554,46 +576,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/results/alpha_scores.csv">
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="1433">
-          <caret line="5393" column="96" lean-forward="true" selection-start-line="5393" selection-start-column="96" selection-end-line="5393" selection-end-column="96" />
+    <entry file="file://$PROJECT_DIR$/lib/helper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="49" column="60" selection-start-line="49" selection-start-column="60" selection-end-line="49" selection-end-column="60" />
+          <folding>
+            <element signature="e#22#53#0" expanded="true" />
+          </folding>
         </state>
       </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results/witness_bottleneck_retrieved_scores.tex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-78489">
+          <caret line="65" column="56" selection-start-line="65" selection-start-column="56" selection-end-line="65" selection-end-column="56" />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/results/rips_bottleneck.csv">
+    <entry file="file://$PROJECT_DIR$/exp_graphs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="59" lean-forward="true" selection-start-line="12" selection-start-column="59" selection-end-line="12" selection-end-column="59" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results/witness_bottleneck.csv">
       <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="-2610" />
+        <state relative-caret-position="480">
+          <caret line="32" column="58" lean-forward="true" selection-start-line="32" selection-start-column="58" selection-end-line="32" selection-end-column="58" />
+        </state>
       </provider>
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
       <provider editor-type-id="text-editor">
-        <state relative-caret-position="31080">
-          <caret line="2072" column="66" selection-start-line="2072" selection-start-column="66" selection-end-line="2072" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/results/alpha_bottleneck_retrieved_scores.csv">
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="91" selection-start-line="16" selection-start-column="91" selection-end-line="16" selection-end-column="91" />
-        </state>
-      </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exp_graphs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="45" column="36" selection-start-line="45" selection-start-column="36" selection-end-line="45" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="2311">
+          <caret line="10660" column="60" selection-start-line="10660" selection-start-column="60" selection-end-line="10660" selection-end-column="60" />
         </state>
       </provider>
     </entry>

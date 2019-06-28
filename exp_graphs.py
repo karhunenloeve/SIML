@@ -1,12 +1,10 @@
-from numpy import genfromtxt
+from sklearn.preprocessing import normalize
 import numpy as np
 import typing
 import csv
 
 
-def retrieve_bttlnck_distances(path: str,
-                               delimiter: str = ",",
-                               decimals: int = 2):
+def retrieve_bttlnck_distances(path: str, delimiter: str = ",", decimals: int = 2):
     """
     Customized retrieval function for the bottleneck distances.
     Retrieves elements from a 3-tuple, named by the iteration step it_i.
@@ -20,37 +18,55 @@ def retrieve_bttlnck_distances(path: str,
         my_list = list(reader)
 
     it_0, it_1, it_2, it_3, it_4 = [], [], [], [], []
+
     for i in my_list:
         if "it_0_" in i[1]:
-            it_0.append(i[2])
+            it_0.append(float(i[2]))
         elif "it_1_" in i[1]:
-            it_1.append(i[2])
+            it_1.append(float(i[2]))
         elif "it_2_" in i[1]:
-            it_2.append(i[2])
+            it_2.append(float(i[2]))
         elif "it_3_" in i[1]:
-            it_3.append(i[2])
+            it_3.append(float(i[2]))
         elif "it_4_" in i[1]:
-            it_4.append(i[2])
+            it_4.append(float(i[2]))
 
-    with open(path + "_retrieved_scores" + ".csv", "w") as myfile:
-        wr = csv.writer(myfile, quoting=csv.QUOTE_ALL)
+    with open(path + "_retrieved_scores" + ".tex", "w") as myfile:
+        wr = csv.writer(myfile, quoting = csv.QUOTE_NONE,  delimiter='|', quotechar='',escapechar='')
         max_levels, level_counter = len(it_4), 0
 
         while level_counter < max_levels:
-            wr.writerow(
-                (
-                    round(float(it_0[level_counter]),decimals),
-                    round(float(it_1[level_counter]),decimals),
-                    round(float(it_2[level_counter]),decimals),
-                    round(float(it_3[level_counter]),decimals),
-                    round(float(it_4[level_counter]),decimals),
-                )
+            first_value = it_0[level_counter]
+            second_value = it_0[level_counter] + (
+                it_1[level_counter] - it_0[level_counter]
             )
+            third_value = second_value + (it_2[level_counter] - it_1[level_counter])
+            forth_value = third_value + (it_3[level_counter] - it_2[level_counter])
+            fifth_value = forth_value + (it_4[level_counter] - it_3[level_counter])
+
+            my_string = (
+                "\\addplot+ [mark=none, solid] coordinates{"+
+                "(1,0)" +
+                "(2,"
+                + str(round(first_value, decimals))
+                + ")"
+                + "(3,"
+                + str(round(second_value, decimals))
+                + ")"
+                + "(4,"
+                + str(round(third_value, decimals))
+                + ")"
+                + "(5,"
+                + str(round(forth_value, decimals))
+                + ")"
+                + "(6,"
+                + str(round(fifth_value, decimals))
+                + ")};"
+            )
+            wr.writerow([my_string])
             level_counter += 1
 
     return print("Retrieval of data finished.")
 
 
-retrieve_bttlnck_distances("results/alpha_bottleneck")
-retrieve_bttlnck_distances("results/rips_bottleneck")
 retrieve_bttlnck_distances("results/witness_bottleneck")
