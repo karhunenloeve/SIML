@@ -4,7 +4,10 @@ import typing
 import csv
 
 
-def retrieve_bttlnck_distances(path: str, delimiter: str = ",", decimals: int = 2):
+def retrieve_persistence_distances(
+    path: str,
+    delimiter: str = ",",
+    decimals: int = 2):
     """
     Customized retrieval function for the bottleneck distances.
     Retrieves elements from a 3-tuple, named by the iteration step it_i.
@@ -71,4 +74,16 @@ def retrieve_bttlnck_distances(path: str, delimiter: str = ",", decimals: int = 
     return print("Retrieval of data finished.")
 
 
-retrieve_bttlnck_distances("results/witness_bottleneck")
+########################################################################################################################
+""" RETRIEVE THE DISTANCES TO TIKZ FILES
+Retrieve the experimental results for plots.
+These are the Tikz files for the iterational comparison of the respective distances.
+
+retrieve_persistence_distances("results/alpha_wasserstein")
+retrieve_persistence_distances("results/rips_wasserstein")
+retrieve_persistence_distances("results/witness_wasserstein")
+retrieve_persistence_distances("results/alpha_bottleneck")
+retrieve_persistence_distances("results/rips_bottleneck")
+retrieve_persistence_distances("results/witness_bottleneck")
+"""
+########################################################################################################################
