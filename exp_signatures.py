@@ -2,6 +2,8 @@ import os
 import numpy as np
 import random as rand
 import matplotlib
+matplotlib.use('Qt5Agg')
+
 import pylab as py
 import matplotlib.pyplot as plt
 import scipy.interpolate
@@ -15,7 +17,9 @@ from multiprocessing import Process
 
 
 def top_nat_neighbors(
-    path: str = "", array: np.ndarray = np.empty(1), columns: int = 88
+    path: str = "",
+    array: np.ndarray = np.empty(1),
+    columns: int = 88
 ) -> np.ndarray:
     """
     Nearest neighbor interpolation.
@@ -190,4 +194,5 @@ run_in_parallel(
 ########################################################################################################################
 run_in_parallel(
     create_distance_file("data/MOBISIG/", "data/MOBISIG_natneighbor/", filtration="witness", type="wasserstein"),
+    create_distance_file("data/MOBISIG/", "data/MOBISIG_natneighbor/", filtration="witness", type="bottleneck")
 )

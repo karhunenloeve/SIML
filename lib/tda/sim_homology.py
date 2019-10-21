@@ -1,6 +1,9 @@
 #!/usr/bin/env python
 import numpy as np
 import gudhi as gd
+import matplotlib
+matplotlib.use('Qt5Agg')
+
 import matplotlib.colors as mcolors
 import persim
 
@@ -474,6 +477,7 @@ def persistence_distance(
         complex_sample1 = gd.AlphaComplex(points=data1)
         complex_tree_sample1 = complex_sample1.create_simplex_tree()
         diag1 = complex_tree_sample1.persistence()
+
         # Second sample processed.
         complex_sample2 = gd.AlphaComplex(points=data2)
         complex_tree_sample2 = complex_sample2.create_simplex_tree()
@@ -485,6 +489,7 @@ def persistence_distance(
             max_dimension=max_dimension
         )
         diag1 = complex_tree_sample1.persistence()
+
         # Second sample processed.
         complex_sample2 = gd.RipsComplex(points=data2, max_edge_length=max_edge_length)
         complex_tree_sample2 = complex_sample2.create_simplex_tree(
@@ -503,6 +508,7 @@ def persistence_distance(
             max_alpha_square=10 ** 3, limit_dimension=max_dimension
         )
         diag1 = complex_tree_sample1.persistence()
+
         # Second sample processed.
         landmarks = gd.pick_n_random_points(
             points=data2, nb_points=round(data1.size / 100 * landmark_percentage)
@@ -513,7 +519,7 @@ def persistence_distance(
         complex_tree_sample2 = witness_complex.create_simplex_tree(
             max_alpha_square=10 ** 3, limit_dimension=max_dimension
         )
-        diag2 = complex_tree_sample1.persistence()
+        diag2 = complex_tree_sample2.persistence()
     else:
         print("Wrong filtration specified.")
         exit(1)
