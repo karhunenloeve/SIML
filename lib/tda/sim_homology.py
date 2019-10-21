@@ -440,9 +440,9 @@ def persistence_distance(
     path2: str,
     delimiter: str = ",",
     columns: int = 2,
-    max_edge_length: int = 2,
+    max_edge_length: int = 1,
     max_dimension: int = 3,
-    landmark_percentage=20,
+    landmark_percentage=5,
     type: ["wasserstein", "bottleneck"] = "bottleneck",
     filtration: ["alpha", "rips", "witness"] = "rips",
 ) -> float:
@@ -460,7 +460,6 @@ def persistence_distance(
 
     nans1 = np.argwhere(np.isnan(data1))
     nans2 = np.argwhere(np.isnan(data2))
-
     for i in nans1:
         data1 = np.delete(data1, nans1)
     for j in nans2:
@@ -497,7 +496,7 @@ def persistence_distance(
     elif filtration == "witness":
         # First sample processed.
         landmarks = gd.pick_n_random_points(
-            points=data1, nb_points=round(data1.size / 100 * landmark_percentage)
+            points=data1, nb_points=round((data1.size / 100) * landmark_percentage)
         )
         witness_complex = gd.EuclideanStrongWitnessComplex(
             witnesses=data1, landmarks=landmarks
@@ -509,7 +508,7 @@ def persistence_distance(
 
         # Second sample processed.
         landmarks = gd.pick_n_random_points(
-            points=data2, nb_points=round(data1.size / 100 * landmark_percentage)
+            points=data2, nb_points=round((data1.size / 100) * landmark_percentage)
         )
         witness_complex = gd.EuclideanStrongWitnessComplex(
             witnesses=data2, landmarks=landmarks
@@ -518,7 +517,6 @@ def persistence_distance(
             max_alpha_square=10 ** 3, limit_dimension=max_dimension
         )
         diag2 = complex_tree_sample2.persistence()
-        print("We reach here")
     else:
         print("Wrong filtration specified.")
         exit(1)
@@ -543,7 +541,7 @@ def persistence_distance(
     elif type == "bottleneck":
         distance = gd.bottleneck_distance(diagram_one, diagram_two)
 
-    print("The diagrams distance is: " + str(distance) + " bttlnck.")
+    print("The diagrams distance is: " + str(distance) + " " + type + ".")
     return distance
 
 
