@@ -2,99 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4baeb8a6-4dd2-4888-8f4b-65a1e1dcde3b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/exp_graphs.py" beforeDir="false" afterPath="$PROJECT_DIR$/exp_graphs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/alpha_bottleneck_retrieved_scores.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/rips_bottleneck_retrieved_scores.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/witness_bottleneck.csv" beforeDir="false" afterPath="$PROJECT_DIR$/results/witness_bottleneck.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/witness_bottleneck_retrieved_scores.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exp_signatures.py" beforeDir="false" afterPath="$PROJECT_DIR$/exp_signatures.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/tda/sim_homology.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/tda/sim_homology.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/results/witness_bottleneck.csv">
-          <provider selected="true" editor-type-id="csv-text-editor">
-            <state relative-caret-position="-5975">
-              <caret line="52" column="58" lean-forward="true" selection-start-line="52" selection-start-column="58" selection-end-line="52" selection-end-column="58" />
-            </state>
-          </provider>
-          <provider editor-type-id="csv-table-editor">
-            <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/results/rips_bottleneck.csv">
-          <provider selected="true" editor-type-id="csv-text-editor">
-            <state>
-              <caret selection-end-line="599" selection-end-column="74" />
-            </state>
-          </provider>
-          <provider editor-type-id="csv-table-editor">
-            <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/results/witness_bottleneck_retrieved_scores.tex">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-78279">
-              <caret line="28" column="56" selection-start-line="28" selection-start-column="56" selection-end-line="28" selection-end-column="56" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/helper.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="49" column="60" selection-start-line="49" selection-start-column="60" selection-end-line="49" selection-end-column="60" />
-              <folding>
-                <element signature="e#22#53#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/exp_graphs.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="59" selection-start-line="12" selection-start-column="59" selection-end-line="12" selection-end-column="59" />
-              <folding>
-                <element signature="e#0#43#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/results/alpha_bottleneck.csv">
-          <provider selected="true" editor-type-id="csv-text-editor">
-            <state relative-caret-position="-209698">
-              <caret line="5" column="60" selection-start-line="5" selection-start-column="60" selection-end-line="5" selection-end-column="60" />
-            </state>
-          </provider>
-          <provider editor-type-id="csv-table-editor">
-            <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/results/alpha_bottleneck_retrieved_scores.tex">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="82" selection-start-line="12" selection-start-column="82" selection-end-line="12" selection-end-column="82" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -145,65 +61,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/visu/kohomology.oy.py" />
-        <option value="$PROJECT_DIR$/opt/rmspropnatgrad.py" />
-        <option value="$PROJECT_DIR$/lib/ica_neural.py" />
-        <option value="$PROJECT_DIR$/lib/autoencoder.py" />
-        <option value="$PROJECT_DIR$/lib/clusterlayer.py" />
-        <option value="$PROJECT_DIR$/data/schema_inference_1.csv" />
-        <option value="$PROJECT_DIR$/data/schema_birc" />
-        <option value="$PROJECT_DIR$/lib/tomato.py" />
-        <option value="$PROJECT_DIR$/visu/simcomplex.py" />
-        <option value="$PROJECT_DIR$/lib/kohonen.py" />
-        <option value="$PROJECT_DIR$/opt/antcolony.py" />
-        <option value="$PROJECT_DIR$/lib/neural_networks/layers/layer_dropconnect" />
-        <option value="$PROJECT_DIR$/lib/neural_networks/layers/layer_cluster.py" />
-        <option value="$PROJECT_DIR$/lib/curvature.py" />
-        <option value="$PROJECT_DIR$/lib/neural_networks/layers/layer_dropconnect.py" />
-        <option value="$PROJECT_DIR$/exp_fds.py" />
-        <option value="$PROJECT_DIR$/lib/neural_networks/opt/vanilla_gradesc.py" />
-        <option value="$PROJECT_DIR$/lib/neural_networks/opt/rmsprop_natgrad.py" />
-        <option value="$PROJECT_DIR$/exp_graphs.oy.py" />
-        <option value="$PROJECT_DIR$/lib/metrics.py" />
-        <option value="$PROJECT_DIR$/lib/neural_networks/tf_time_contrastive_learning.py" />
-        <option value="$USER_HOME$/Downloads/plot_cluster_comparison.py" />
-        <option value="$PROJECT_DIR$/lib/optimisation/antcolony.py" />
-        <option value="$PROJECT_DIR$/exp_clusters.py" />
-        <option value="$USER_HOME$/Downloads/user1.csv" />
-        <option value="$USER_HOME$/Downloads/Mappe1.csv" />
-        <option value="$PROJECT_DIR$/lib/tda/test" />
-        <option value="$PROJECT_DIR$/lib/neural_networks/tf_self_organising_map.py" />
-        <option value="$PROJECT_DIR$/lib/tda/config.py" />
-        <option value="$PROJECT_DIR$/data/MOBISIG/natneighbor/USER64/SIGN_GEN_USER64_USER64_5.csv" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/data/MOBISIG/README.md" />
-        <option value="$PROJECT_DIR$/uninstall.sh" />
-        <option value="$PROJECT_DIR$/results_bottleneck.csv" />
-        <option value="$PROJECT_DIR$/results/bottleneck.csv" />
-        <option value="$USER_HOME$/Downloads/bibtex-2104.bib" />
-        <option value="$USER_HOME$/Downloads/10.1007%2FPL00013404.bib" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/lib/helper.py" />
-        <option value="$PROJECT_DIR$/exp_signatures.py" />
-        <option value="$PROJECT_DIR$/lib/tda/timeout.py" />
-        <option value="$PROJECT_DIR$/results/rips_bottleneck.csv" />
-        <option value="$PROJECT_DIR$/lib/tda/handler/timeout.py" />
-        <option value="$PROJECT_DIR$/lib/tda/sim_homology.py" />
-        <option value="$PROJECT_DIR$/results/alpha_scores.csv" />
-        <option value="$PROJECT_DIR$/results/alpha_bottleneck_retrieved_scores.csv" />
-        <option value="$PROJECT_DIR$/exp_graphs.py" />
-        <option value="$PROJECT_DIR$/results/witness_bottleneck.csv" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="30" />
-    <option name="width" value="1440" />
-    <option name="height" value="828" />
-  </component>
+  <component name="ProjectId" id="1QgykjH0kCmNZA2IY9BmFP1fiN9" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -217,7 +75,7 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/results/alpha_bottleneck_retrieved_scores.csv" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -273,58 +131,19 @@
       <is-autoscroll-to-source value="true" />
     </todo-panel>
   </component>
-  <component name="ToolWindowManager">
-    <frame x="0" y="30" width="1440" height="2530" extended-state="6" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.18125" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49895832" weight="0.3290461" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.496875" weight="0.17363344" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32985386" />
-      <window_info anchor="bottom" id="Python Console" order="8" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50104165" side_tool="true" weight="0.0" />
-      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="12" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="R Graphics" order="3" />
-      <window_info anchor="right" id="R Packages" order="4" />
-      <window_info anchor="right" id="SciView" order="5" />
-      <window_info anchor="right" x="0" y="0" width="310" height="2330" id="Documentation" order="6" side_tool="true" visible="true" weight="0.33070302" />
-      <window_info anchor="right" id="Database" order="7" />
-    </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18125" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49895832" weight="0.3290461" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.496875" weight="0.17363344" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Python Console" order="8" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50104165" side_tool="true" weight="0.0" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="R Graphics" order="3" />
-      <window_info anchor="right" id="R Packages" order="4" />
-    </layout-to-restore>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -334,289 +153,5 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/data/breast.txt" />
-    <entry file="file://$PROJECT_DIR$/data/s3.txt" />
-    <entry file="file://$PROJECT_DIR$/lib/optimisation/antcolony.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="17" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/neural_networks/tf_time_contrastive_learning.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1710">
-          <caret line="116" column="12" selection-start-line="116" selection-end-line="117" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/neural_networks/keras_dense_ica.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/neural_networks/keras_dense_autoencoder.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/neural_networks/layers/layer_cluster.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-150">
-          <caret column="21" selection-start-column="21" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/metrics.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/tda/tomato.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2002">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/neural_networks/layers/layer_dropconnect.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/user1.dat" />
-    <entry file="file://$USER_HOME$/Downloads/user1.csv" />
-    <entry file="file://$PROJECT_DIR$/data/MOBISIG/USER1/SIGN_FOR_USER1_USER2_2.csv" />
-    <entry file="file://$PROJECT_DIR$/data/MOBISIG/USER2/SIGN_FOR_USER2_USER5_14.csv" />
-    <entry file="file://$PROJECT_DIR$/data/MOBISIG/USER16/SIGN_FOR_USER16_USER18_9.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="21" selection-end-line="319" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/MOBISIG/USER31/SIGN_FOR_USER31_USER33_10.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="78" lean-forward="true" selection-start-line="32" selection-start-column="78" selection-end-line="32" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/SVJour3%20(Springer%20journals)/template.tex" />
-    <entry file="file://$PROJECT_DIR$/lib/neural_networks/tf_self_organising_map.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/tdapaper/signature_kde.py" />
-    <entry file="file://$PROJECT_DIR$/data/MOBISIG/natneighbor+USER64" />
-    <entry file="file://$PROJECT_DIR$/data/MOBISIG/natneighbor/USER64/itSIGN_GEN_USER64_USER64_5.csv" />
-    <entry file="file://$PROJECT_DIR$/data/MOBISIG/natneighbor/USER64/it_1_SIGN_GEN_USER64_USER64_5.csv" />
-    <entry file="file://$PROJECT_DIR$/data/MOBISIG/natneighbor/USER64/it_0_SIGN_GEN_USER64_USER64_5.csv" />
-    <entry file="file://$PROJECT_DIR$/data/MOBISIG/natneighbor/USER64/it_2_SIGN_GEN_USER64_USER64_5.csv" />
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="38" column="33" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/MOBISIG/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/uninstall.sh" />
-    <entry file="file://$PROJECT_DIR$/data/MOBISIG_natneighbor/USER01/it_4_SIGN_FOR_USER1_USER2_1.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-163358" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/MOBISIG_natneighbor/USER01/it_0_SIGN_FOR_USER1_USER2_1.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="630" column="49" lean-forward="true" selection-start-line="630" selection-start-column="49" selection-end-line="630" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/MOBISIG_natneighbor/USER01/it_1_SIGN_FOR_USER1_USER2_1.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-18593" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/results_bottleneck.csv" />
-    <entry file="file://$USER_HOME$/Downloads/witness_complex_from_nearest_landmark_table.py" />
-    <entry file="file://$USER_HOME$/Downloads/euclidean_strong_witness_complex_diagram_persistence_from_off_file_example.py" />
-    <entry file="file://$PROJECT_DIR$/exp_fds.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="36" column="30" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exp_clusters.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="40" column="47" selection-start-line="40" selection-start-column="47" selection-end-line="40" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exp_signatures.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1799">
-          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/tda/handler/timeout.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2340">
-          <caret line="156" column="38" lean-forward="true" selection-start-line="156" selection-start-column="38" selection-end-line="156" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/results/alpha_scores.csv" />
-    <entry file="file://$PROJECT_DIR$/results/alpha_bottleneck_retrieved_scores_retrieved_scores.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/results/alpha_bottleneck_retrieved_scores.csv">
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state>
-          <caret selection-end-line="599" selection-end-column="92" />
-        </state>
-      </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/results/rips_bottleneck_retrieved_scores.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/results/alpha_bottleneck.csv">
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="-209698">
-          <caret line="5" column="60" selection-start-line="5" selection-start-column="60" selection-end-line="5" selection-end-column="60" />
-        </state>
-      </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="863">
-          <caret line="26975" selection-start-line="26975" selection-end-line="26975" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/results/alpha_bottleneck_retrieved_scores.tex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="82" selection-start-line="12" selection-start-column="82" selection-end-line="12" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/results/rips_bottleneck_retrieved_scores.tex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1416">
-          <caret line="415" column="90" lean-forward="true" selection-end-line="418" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/results/rips_bottleneck.csv">
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state>
-          <caret selection-end-line="599" selection-end-column="74" />
-        </state>
-      </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="31080">
-          <caret line="2072" column="66" selection-start-line="2072" selection-start-column="66" selection-end-line="2072" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/tda/sim_homology.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1525">
-          <caret line="335" column="25" selection-start-line="335" selection-start-column="25" selection-end-line="335" selection-end-column="25" />
-          <folding>
-            <element signature="e#22#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="51" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/helper.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="49" column="60" selection-start-line="49" selection-start-column="60" selection-end-line="49" selection-end-column="60" />
-          <folding>
-            <element signature="e#22#53#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exp_graphs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="59" selection-start-line="12" selection-start-column="59" selection-end-line="12" selection-end-column="59" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/results/witness_bottleneck.csv">
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="-5975">
-          <caret line="52" column="58" lean-forward="true" selection-start-line="52" selection-start-column="58" selection-end-line="52" selection-end-column="58" />
-        </state>
-      </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="2311">
-          <caret line="10660" column="60" selection-start-line="10660" selection-start-column="60" selection-end-line="10660" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/results/witness_bottleneck_retrieved_scores.tex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-78279">
-          <caret line="28" column="56" selection-start-line="28" selection-start-column="56" selection-end-line="28" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
   </component>
 </project>

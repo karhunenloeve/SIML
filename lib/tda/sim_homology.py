@@ -2,11 +2,12 @@
 import numpy as np
 import gudhi as gd
 import matplotlib.colors as mcolors
+import persim
 
-from handler.timeout import timeout
+from lib.tda.handler.timeout import timeout
 from matplotlib import pyplot as plt
 from ripser import Rips
-
+from scipy.stats import wasserstein_distance
 
 c = mcolors.ColorConverter().to_rgb
 
@@ -433,14 +434,15 @@ def persistence_ring_diagram(
 
 
 @timeout(seconds=10 ** 3)
-def bottleneck_distance(
+def persistence_distance(
     path1: str,
     path2: str,
     delimiter: str = ",",
     columns: int = 2,
     max_edge_length: int = 200.0,
-    max_dimension: int = 1,
-    landmark_percentage=1,
+    max_dimension: int = 3,
+    landmark_percentage=90,
+    type: ["wasserstein", "bottleneck"] = "bottleneck",
     filtration: ["alpha", "rips", "witness"] = "rips",
 ) -> float:
     """
@@ -516,16 +518,27 @@ def bottleneck_distance(
         print("Wrong filtration specified.")
         exit(1)
 
-    # Rebuilding objects for bottleneck distance calculation.
-    for i in range(1, max(len(diag1), len(diag2))):
+    # Rebuilding objects for distance calculation.
+    diagram_one, diagram_two = [], []
+    for i in range(0, max(len(diag1), len(diag2))):
         if i < len(diag1):
             element1 = [diag1[i][1][0], diag1[i][1][1]]
-            diag_1.append(element1)
+            diagram_one.append(element1)
         if i < len(diag2):
             element2 = [diag2[i][1][0], diag2[i][1][1]]
-            diag_2.append(element2)
+            diagram_two.append(element2)
 
-    distance = gd.bottleneck_distance(diag_1, diag_2)
+    if type == "wasserstein":
+        print(diagram_one)
+        diagram_one = np.array(diagram_one)
+        diagram_one[~np.isfinite(diagram_one)] = 0
+        diagram_two = np.array(diagram_two)
+        diagram_two[~np.isfinite(diagram_two)] = 0
+
+        distance = persim.sliced_wasserstein(diagram_one, diagram_two)
+    elif type == "bottleneck":
+        distance = gd.bottleneck_distance(diagram_one, diagram_two)
+
     print("The diagrams distance is: " + str(distance) + " bttlnck.")
     return distance
 

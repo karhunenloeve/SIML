@@ -88,10 +88,11 @@ def proc_signatures(dir: str, delimiter: str = ",", iterations: int = 5):
                     )
 
 
-def create_bttlnck_file(
+def create_distance_file(
     orig_path: str,
     interpol_path: str,
     savefile: bool = True,
+    type: ["wasserstein", "bottleneck"] = "wasserstein",
     filtration: ["alpha", "rips", "witness"] = "rips",
 ) -> np.ndarray:
     """
@@ -135,14 +136,14 @@ def create_bttlnck_file(
         matching.sort()
 
         for j in matching:
-            bottleneck = sim_homology.bottleneck_distance(i, j, filtration=filtration)
-            with open("results/" + filtration + "_bottleneck.csv", "a") as fd:
+            distance = sim_homology.persistence_distance(i, j, filtration=filtration, type=type)
+            with open("results/" + filtration + "_" + type + ".csv", "a") as fd:
                 fd.write(
                     i[20 : len(i) - 4]
                     + ","
                     + j[32 : len(j) - 4]
                     + ","
-                    + str(bottleneck)
+                    + str(distance)
                     + "\n"
                 )
 
@@ -151,8 +152,8 @@ def create_bttlnck_file(
                 + j
                 + " has been compared to "
                 + i
-                + ". Bottleneck distance is "
-                + str(bottleneck)
+                + ". The " + type + "distance is "
+                + str(distance)
                 + "."
             )
 
@@ -175,6 +176,18 @@ def run_in_parallel(*fns):
     return print("Processing finished!")
 
 
+########################################################################################################################
+""" RUN THE DISTANCES
 run_in_parallel(
-    create_bttlnck_file("data/MOBISIG/", "data/MOBISIG_natneighbor/", filtration="rips")
+    create_distance_file("data/MOBISIG/", "data/MOBISIG_natneighbor/", filtration="rips", type="wasserstein"),
+    create_distance_file("data/MOBISIG/", "data/MOBISIG_natneighbor/", filtration="alpha", type="wasserstein"),
+    create_distance_file("data/MOBISIG/", "data/MOBISIG_natneighbor/", filtration="witness", type="wasserstein"),
+    create_distance_file("data/MOBISIG/", "data/MOBISIG_natneighbor/", filtration="rips", type="bottleneck"),
+    create_distance_file("data/MOBISIG/", "data/MOBISIG_natneighbor/", filtration="alpha", type="bottleneck"),
+    create_distance_file("data/MOBISIG/", "data/MOBISIG_natneighbor/", filtration="witness", type="bottleneck")
+)
+"""
+########################################################################################################################
+run_in_parallel(
+    create_distance_file("data/MOBISIG/", "data/MOBISIG_natneighbor/", filtration="witness", type="wasserstein"),
 )
