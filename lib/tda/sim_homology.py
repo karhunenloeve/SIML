@@ -2,8 +2,6 @@
 import numpy as np
 import gudhi as gd
 import matplotlib
-matplotlib.use('Qt5Agg')
-
 import matplotlib.colors as mcolors
 import persim
 
@@ -442,9 +440,9 @@ def persistence_distance(
     path2: str,
     delimiter: str = ",",
     columns: int = 2,
-    max_edge_length: int = 200.0,
+    max_edge_length: int = 2,
     max_dimension: int = 3,
-    landmark_percentage=90,
+    landmark_percentage=20,
     type: ["wasserstein", "bottleneck"] = "bottleneck",
     filtration: ["alpha", "rips", "witness"] = "rips",
 ) -> float:
@@ -455,7 +453,7 @@ def persistence_distance(
     :param max_dimension: Maximal dimension of a simplex.
     :param columns: Columns to be spanned inside the filtration.
     :param filtration: Which filtration has to be choosen.
-    :return: The bottleneck distance between two diagrams.
+    :return: The bottleneck/wasserstein distance between two diagrams.
     """
     data1 = read_data(path1, columns)
     data2 = read_data(path2, columns)
@@ -520,6 +518,7 @@ def persistence_distance(
             max_alpha_square=10 ** 3, limit_dimension=max_dimension
         )
         diag2 = complex_tree_sample2.persistence()
+        print("We reach here")
     else:
         print("Wrong filtration specified.")
         exit(1)
@@ -535,7 +534,6 @@ def persistence_distance(
             diagram_two.append(element2)
 
     if type == "wasserstein":
-        print(diagram_one)
         diagram_one = np.array(diagram_one)
         diagram_one[~np.isfinite(diagram_one)] = 0
         diagram_two = np.array(diagram_two)

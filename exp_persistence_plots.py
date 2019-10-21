@@ -87,3 +87,4 @@ retrieve_persistence_distances("results/rips_bottleneck")
 retrieve_persistence_distances("results/witness_bottleneck")
 """
 ########################################################################################################################
+retrieve_persistence_distances("results/rips_wasserstein")

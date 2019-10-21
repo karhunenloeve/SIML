@@ -2,8 +2,6 @@ import os
 import numpy as np
 import random as rand
 import matplotlib
-matplotlib.use('Qt5Agg')
-
 import pylab as py
 import matplotlib.pyplot as plt
 import scipy.interpolate
@@ -193,6 +191,7 @@ run_in_parallel(
 """
 ########################################################################################################################
 run_in_parallel(
+    create_distance_file("data/MOBISIG/", "data/MOBISIG_natneighbor/", filtration="rips", type="wasserstein"),
     create_distance_file("data/MOBISIG/", "data/MOBISIG_natneighbor/", filtration="witness", type="wasserstein"),
     create_distance_file("data/MOBISIG/", "data/MOBISIG_natneighbor/", filtration="witness", type="bottleneck")
 )
