@@ -5,6 +5,8 @@ import matplotlib
 import pylab as py
 import matplotlib.pyplot as plt
 import scipy.interpolate
+import gudhi as gd
+import ot
 
 from matplotlib import cm
 from lib import helper as hp
@@ -12,7 +14,8 @@ from lib.tda import sim_homology
 from scipy.interpolate import Rbf, interp1d, interp2d
 from typing import List, Set, Dict, Tuple, Optional
 from multiprocessing import Process
-
+from scipy.spatial.distance import *
+from scipy.stats import *
 
 def top_nat_neighbors(
     path: str = "",
@@ -90,11 +93,11 @@ def proc_signatures(dir: str, delimiter: str = ",", iterations: int = 5):
                     )
 
 
-def create_distance_file(
+def create_persistence_distance_file(
     orig_path: str,
     interpol_path: str,
     savefile: bool = True,
-    type: ["wasserstein", "bottleneck"] = "wasserstein",
+    distance_type: ["wasserstein", "bottleneck"] = "wasserstein",
     filtration: ["alpha", "rips", "witness"] = "rips",
     amount_of_files: int = 100
 ) -> np.ndarray:
@@ -140,8 +143,8 @@ def create_distance_file(
         matching.sort()
 
         for j in matching:
-            distance = sim_homology.persistence_distance(i, j, filtration=filtration, type=type)
-            with open("results/" + filtration + "_" + type + ".csv", "a") as fd:
+            distance = sim_homology.persistence_distance(i, j, filtration=filtration, type=distance_type)
+            with open("results/" + filtration + "_" + distance_type + ".csv", "a") as fd:
                 fd.write(
                     i[20 : len(i) - 4]
                     + ","
@@ -156,10 +159,83 @@ def create_distance_file(
                 + j
                 + " has been compared to "
                 + i
-                + ". The " + type + "distance is "
+                + ". The " + distance_type + "distance is "
                 + str(distance)
                 + "."
             )
+
+
+def compute_mean_distance(path1, path2):
+    def diff(first, second):
+        """
+        Computes the difference of two list objects.
+        :param first: First list.
+        :param second: Second list.
+        :return: List difference.
+        """
+        second = set(second)
+        return [item for item in first if item not in second]
+
+    original_data, interpolated_data, files_to_ignore = [], [], []
+
+    for dirpath, dirnames, filenames in os.walk(path1):
+        for filename in filenames:
+            files_to_ignore.append(os.path.join(dirpath, filename))
+        break
+    for dirpath, dirnames, filenames in os.walk(path1):
+        for filename in filenames:
+            original_data.append(os.path.join(dirpath, filename))
+    for dirpath, dirnames, filenames in os.walk(path2):
+        for filename in filenames:
+            interpolated_data.append(os.path.join(dirpath, filename))
+
+    original_data = diff(original_data, files_to_ignore)
+    interpolated_data = diff(interpolated_data, files_to_ignore)
+
+    for i in range(0, len(original_data)):
+        for j in range(0, len(original_data)):
+            data1 = np.genfromtxt(original_data[i], delimiter=",")
+            data2 = np.genfromtxt(interpolated_data[j], delimiter=",")
+
+            nans1 = np.argwhere(np.isnan(data1))
+            nans2 = np.argwhere(np.isnan(data2))
+            for a in nans1:
+                data1 = np.delete(data1, nans1)
+            for b in nans2:
+                data2 = np.delete(data2, nans2)
+
+            data1 = data1.flatten()
+            data2 = data2.flatten()
+
+            mean1 = np.mean(data1)
+            mean2 = np.mean(data2)
+            std1 = np.std(data1)
+            std2 = np.std(data2)
+            varia1 = variation(data1)
+            varia2 = variation(data2)
+            w1 = wasserstein_distance(data1, data2)
+
+            with open("results/measurement_it.csv", "a") as fd:
+                fd.write(
+                    original_data[i][20 : len(original_data[i]) - 4]
+                    + ","
+                    + interpolated_data[j][32 : len(interpolated_data[j]) - 4]
+                    + ","
+                    + str(mean1)
+                    + ","
+                    + str(mean2)
+                    + ","
+                    + str(std1)
+                    + ","
+                    + str(std2)
+                    + ","
+                    + str(varia1)
+                    + ","
+                    + str(varia2)
+                    + ","
+                    + str(w1)
+                    + "\n"
+                )
 
 
 def run_in_parallel(*fns):
@@ -183,12 +259,12 @@ def run_in_parallel(*fns):
 ########################################################################################################################
 """ RUN THE DISTANCES
 run_in_parallel(
-    create_distance_file("data/MOBISIG/", "data/MOBISIG_natneighbor/", filtration="rips", type="wasserstein"),
-    create_distance_file("data/MOBISIG/", "data/MOBISIG_natneighbor/", filtration="alpha", type="wasserstein"),
-    create_distance_file("data/MOBISIG/", "data/MOBISIG_natneighbor/", filtration="witness", type="wasserstein"),
-    create_distance_file("data/MOBISIG/", "data/MOBISIG_natneighbor/", filtration="rips", type="bottleneck"),
-    create_distance_file("data/MOBISIG/", "data/MOBISIG_natneighbor/", filtration="alpha", type="bottleneck"),
-    create_distance_file("data/MOBISIG/", "data/MOBISIG_natneighbor/", filtration="witness", type="bottleneck")
+    create_persistence_distance_file("data/MOBISIG/", "data/MOBISIG_natneighbor/", filtration="rips", distance_type="wasserstein"),
+    create_persistence_distance_file("data/MOBISIG/", "data/MOBISIG_natneighbor/", filtration="alpha", distance_type="wasserstein"),
+    create_persistence_distance_file("data/MOBISIG/", "data/MOBISIG_natneighbor/", filtration="witness", distance_type="wasserstein"),
+    create_persistence_distance_file("data/MOBISIG/", "data/MOBISIG_natneighbor/", filtration="rips", distance_type="bottleneck"),
+    create_persistence_distance_file("data/MOBISIG/", "data/MOBISIG_natneighbor/", filtration="alpha", distance_type="bottleneck"),
+    create_persistence_distance_file("data/MOBISIG/", "data/MOBISIG_natneighbor/", filtration="witness", distance_type="bottleneck")
 )
 """
 ########################################################################################################################

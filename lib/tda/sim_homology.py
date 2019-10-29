@@ -442,7 +442,7 @@ def persistence_distance(
     columns: int = 2,
     max_edge_length: int = 1,
     max_dimension: int = 3,
-    landmark_percentage=5,
+    landmark_percentage=10,
     type: ["wasserstein", "bottleneck"] = "bottleneck",
     filtration: ["alpha", "rips", "witness"] = "rips",
 ) -> float:
@@ -460,9 +460,9 @@ def persistence_distance(
 
     nans1 = np.argwhere(np.isnan(data1))
     nans2 = np.argwhere(np.isnan(data2))
-    for i in nans1:
+    for a in nans1:
         data1 = np.delete(data1, nans1)
-    for j in nans2:
+    for b in nans2:
         data2 = np.delete(data2, nans2)
 
     diag_1, diag_2 = [], []
