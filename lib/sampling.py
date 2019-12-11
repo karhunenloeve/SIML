@@ -58,5 +58,22 @@ def sample_dball(
 			ball[i][j] = x[j]
 		
 	return ball
+
+
+def sample_dtorus(
+	dimension: int,
+	amount: int,
+	radii: list) -> np.ndarray:
+	"""
+	This function samples from a d-torus by rejection.
+	"""
+	try:
+		if len(radii) > dimension:
+			print("Take care, your radii list is longer then the amount of loops.")
+			print("We selected only the first " + dimension + " entries.")
+
+
+	except IndexError:
+		print("The index of your radii list is out of range.")
 	
 print(sample_dball(3,100))
