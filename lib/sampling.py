@@ -1,4 +1,5 @@
 import numpy as np
+import math
 from typing import List, Set, Dict, Tuple, Optional
 
 def sample_dsphere(
@@ -7,10 +8,10 @@ def sample_dsphere(
 	radius: float = 1) -> np.ndarray:
 	"""
 	Creates uniform random sampling of a d-sphere.
-	:param sphere: ndarray with data points.
+	:param dimension: Integer as dimension of the embedding space.
 	:param amount: Amount of sample points.
 	:param radius: Radius of the d-sphere.
-	:return: ndarray with dara points.
+	:return: ndarray with data points.
 	"""
 	sphere = np.zeros(shape=(amount,dimension))
 
@@ -32,7 +33,30 @@ def sample_dsphere(
 def sample_dball(
 	dimension: int,
 	amount: int,
-	radius: float = 1):
-	pass
+	radius: float = 1) -> np.ndarray:
+	"""
+	This function samples from a d-ball by drop of coordinates.
+	:param dimension: Integer as dimension of the embedding space.
+	:param amount: Amount of sample points.
+	:param radius: Radius of the d-ball.
+	:return: ndarray with data points.
+	"""
+	# An array of d (dimension) normally distributed random variables.
+	# In this case, the dimension is an integer.
+	# This method is a result from https://www.sciencedirect.com/science/article/pii/S0047259X10001211.
+	# The result has been proven by http://compneuro.uwaterloo.ca/files/publications/voelker.2017.pdf.
+	ball = np.zeros(shape=(amount,dimension))
+
+	for i in range(0,amount):
+		# Radius indicates the size of the ball.
+		u = np.random.normal(0,radius,dimension + 2)
+		norm = np.sum(u**2)**(0.5)
+		u = u / norm
+		x = u[0:dimension]
+
+		for j in range(0,dimension):
+			ball[i][j] = x[j]
+		
+	return ball
 	
-sample_dsphere(3,100)
+print(sample_dball(3,100))
