@@ -1,5 +1,5 @@
 import numpy as np
-import math
+import math as mth
 from typing import List, Set, Dict, Tuple, Optional
 
 def sample_dsphere(
@@ -60,20 +60,49 @@ def sample_dball(
 	return ball
 
 
-def sample_dtorus(
+def sample_dtorus_cursed(
 	dimension: int,
 	amount: int,
 	radii: list) -> np.ndarray:
 	"""
 	This function samples from a d-torus by rejection.
+	The function is named cursed, because the curse of dimensionality leads to an exponential grouth in time.
 	"""
 	try:
 		if len(radii) > dimension:
 			print("Take care, your radii list is longer then the amount of loops.")
 			print("We selected only the first " + dimension + " entries.")
+		
+		torus = np.zeros(shape=(amount,dimension))
+		counter = amount
 
+		while counter != 0:
+			x = np.random.uniform(0,radii,dimension)
+
+			for i in range(0,amount):
+				def circle_sqrt(x,i):
+					if i == 0:
+						return x[0]**2 + x[1]**2
+					else:
+						return (mth.sqrt(x[i]**2 + circle_sqrt(x,i-1)) - radii[i])**2
+				
+				# One value possibly on the torus
+				y = circle_sqrt(x,dimension-1)
+				print(y)
+				print(radii[0])
+				# Check whether the coordinates really lie on the torus.
+				# Note that this method is deeply cursed by the dimensions.
+				if y == radii[0]**2:
+					print("YES")
+					for j in range(0,dimension):
+						torus[i][j] = x[j]
+						counter = counter - 1
+				else:
+					continue
+		print(y)
+		exit(1)
 
 	except IndexError:
 		print("The index of your radii list is out of range.")
 	
-print(sample_dball(3,100))
+print(sample_dtorus_cursed(2,10,[1,1]))
