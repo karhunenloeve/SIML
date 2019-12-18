@@ -1,0 +1,27 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Related Work}{}% 2
+\BOOKMARK [1][-]{section.3}{Simplicial Complexes and Filtrations}{}% 3
+\BOOKMARK [1][-]{section.4}{Simplicial Homology Theory}{}% 4
+\BOOKMARK [1][-]{section.5}{Measures of Distance}{}% 5
+\BOOKMARK [2][-]{subsection.5.1}{Bottleneck Distance}{section.5}% 6
+\BOOKMARK [2][-]{subsection.5.2}{Bottleneck Stability}{section.5}% 7
+\BOOKMARK [2][-]{subsection.5.3}{Wasserstein Distance}{section.5}% 8
+\BOOKMARK [2][-]{subsection.5.4}{Wasserstein Stability}{section.5}% 9
+\BOOKMARK [1][-]{section.6}{The Natural Neighbor Algorithm}{}% 10
+\BOOKMARK [2][-]{subsection.6.1}{The Voronoi Tesselation}{section.6}% 11
+\BOOKMARK [2][-]{subsection.6.2}{The Duality of Delaunay Complex and Voronoi Diagram}{section.6}% 12
+\BOOKMARK [2][-]{subsection.6.3}{The Simplicial Collapse}{section.6}% 13
+\BOOKMARK [1][-]{section.7}{Numerical Experiments}{}% 14
+\BOOKMARK [2][-]{subsection.7.1}{Parametrization}{section.7}% 15
+\BOOKMARK [3][-]{subsubsection.7.1.1}{The Natural Neighbor Method}{subsection.7.1}% 16
+\BOOKMARK [3][-]{subsubsection.7.1.2}{Cech and Vietoris-Rips Complex}{subsection.7.1}% 17
+\BOOKMARK [3][-]{subsubsection.7.1.3}{Witness Complex}{subsection.7.1}% 18
+\BOOKMARK [3][-]{subsubsection.7.1.4}{Heuristic for }{subsection.7.1}% 19
+\BOOKMARK [3][-]{subsubsection.7.1.5}{Data}{subsection.7.1}% 20
+\BOOKMARK [2][-]{subsection.7.2}{Evaluation}{section.7}% 21
+\BOOKMARK [2][-]{subsection.7.3}{Limitation}{section.7}% 22
+\BOOKMARK [1][-]{section.8}{Conclusions \046 Future Work}{}% 23
+\BOOKMARK [1][-]{section*.7}{References}{}% 24
+\BOOKMARK [1][-]{IEEEbiography.0}{Biographies}{}% 25
+\BOOKMARK [2][-]{IEEEbiography.1}{Luciano Melodia, M.A.}{IEEEbiography.0}% 26
+\BOOKMARK [2][-]{IEEEbiography.2}{Prof. Dr.-Ing. Richard Lenz}{IEEEbiography.0}% 27

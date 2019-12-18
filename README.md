@@ -2,13 +2,51 @@
 [![License](https://img.shields.io/:license-mit-blue.svg)](https://badges.mit-license.org)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/python/black)
 
-In addition to topological data analysis, unsupervised and supervised learning, the project ∂SIML also uses basics of algebraic topology to identify successful schemes. Currently under construction and constantly expanded. A documentation with the description and the corresponding functionality is also created here.
+This repository offers all functionalities and experiments for the paper *Persistent Homology as Stopping-Criterion for Voronoi Interpolation*. The functions are completely commented out. The repository is no longer maintained and is used for prototypical implementation of the project. It has been archived since publication. If you use the project, or share this project, please quote us as follows:
 
-The Machine Learning Library
-=======
-This repository provides a library for data analysis using clustering algorithms and algorithms for processing functional dependencies in the context of database technologies.
-The aim is to create a library that enables the development of a prototype for the implementation of automatic or semi-automatic schema inference.
-When we talk about schema inference, we think of a data stream, or a data set, that initially exists without defined relationtypes. From this, we would like to obtain a suitable schema using clustering techniques in combination with functional dependencies and normalization in order to support the database user.
+    @article{lume19,
+	  author    = {Luciano Melodia and
+	               Richard Lenz},
+	  title     = {Persistent Homology as Stopping-Criterion for Voronoi Interpolation},
+	  journal   = {CoRR},
+	  volume    = {abs/1911.02922},
+	  year      = {2019},
+	  url       = {http://arxiv.org/abs/1911.02922},
+	  archivePrefix = {arXiv},
+	  eprint    = {1911.02922}
+	}
+
+## Requirements
+For this package we use the `gcc` compiler. Please install `gcc` using one of the following commands for the linux distributions *Arch, Solus4* or *Ubuntu*:
+```bash
+ # Archlinux
+ sudo pacman -S gcc
+
+ # Solus4
+ sudo eopkg install gcc
+ # These are the requirements to run gcc for Solus4
+ sudo eopkg install -c system.devel
+
+ # Ubuntu
+ sudo apt update
+ sudo apt install build-essential
+ sudo apt-get install python3-dev
+ sudo apt-get install manpages-dev
+ gcc --version
+```
+
+ Some packages are way easier to install using Anaconda. For the installation on several linux distributions please follow [this link](https://docs.anaconda.com/anaconda/install/linux/). Further the installation of our clustering prototype requires some python packages to be installed. We provide a requirements file, but here is a complete list for manual installation using `pip3` and `python 3`:
+```bash
+  pip3 install pandas
+  pip3 install sklearn
+  # Works only with gcc installed.
+  pip3 install hdbscan
+
+  # Install Gudhi, easiest installation with Anaconda.
+  # Gudhi is a library to compute persistent homology.
+  conda install -c conda-forge gudhi
+  conda install -c conda-forge/label/cf201901 gudhi 
+```
 
 ## References
 - Coricos TDAToolbox, [https://github.com/Coricos/TdaToolbox](https://github.com/Coricos/TdaToolbox).

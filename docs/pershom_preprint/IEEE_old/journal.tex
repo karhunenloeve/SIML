@@ -1,0 +1,1051 @@
+
+%% bare_jrnl.tex
+%% V1.3
+%% 2007/01/11
+%% by Michael Shell
+%% see http://www.michaelshell.org/
+%% for current contact information.
+%%
+%% This is a skeleton file demonstrating the use of IEEEtran.cls
+%% (requires IEEEtran.cls version 1.7 or later) with an IEEE journal paper.
+%%
+%% Support sites:
+%% http://www.michaelshell.org/tex/ieeetran/
+%% http://www.ctan.org/tex-archive/macros/latex/contrib/IEEEtran/
+%% and
+%% http://www.ieee.org/
+
+
+
+% *** Authors should verify (and, if needed, correct) their LaTeX system  ***
+% *** with the testflow diagnostic prior to trusting their LaTeX platform ***
+% *** with production work. IEEE's font choices can trigger bugs that do  ***
+% *** not appear when using other class files.                            ***
+% The testflow support page is at:
+% http://www.michaelshell.org/tex/testflow/
+
+
+%%*************************************************************************
+%% Legal Notice:
+%% This code is offered as-is without any warranty either expressed or
+%% implied; without even the implied warranty of MERCHANTABILITY or
+%% FITNESS FOR A PARTICULAR PURPOSE!
+%% User assumes all risk.
+%% In no event shall IEEE or any contributor to this code be liable for
+%% any damages or losses, including, but not limited to, incidental,
+%% consequential, or any other damages, resulting from the use or misuse
+%% of any information contained here.
+%%
+%% All comments are the opinions of their respective authors and are not
+%% necessarily endorsed by the IEEE.
+%%
+%% This work is distributed under the LaTeX Project Public License (LPPL)
+%% ( http://www.latex-project.org/ ) version 1.3, and may be freely used,
+%% distributed and modified. A copy of the LPPL, version 1.3, is included
+%% in the base LaTeX documentation of all distributions of LaTeX released
+%% 2003/12/01 or later.
+%% Retain all contribution notices and credits.
+%% ** Modified files should be clearly indicated as such, including  **
+%% ** renaming them and changing author support contact information. **
+%%
+%% File list of work: IEEEtran.cls, IEEEtran_HOWTO.pdf, bare_adv.tex,
+%%                    bare_conf.tex, bare_jrnl.tex, bare_jrnl_compsoc.tex
+%%*************************************************************************
+
+% Note that the a4paper option is mainly intended so that authors in
+% countries using A4 can easily print to A4 and see how their papers will
+% look in print - the typesetting of the document will not typically be
+% affected with changes in paper size (but the bottom and side margins will).
+% Use the testflow package mentioned above to verify correct handling of
+% both paper sizes by the user's LaTeX system.
+%
+% Also note that the "draftcls" or "draftclsnofoot", not "draft", option
+% should be used if it is desired that the figures are to be displayed in
+% draft mode.
+%
+\documentclass[journal]{IEEEtran}
+% Some very useful LaTeX packages include:
+% (uncomment the ones you want to load)
+
+
+% *** MISC UTILITY PACKAGES ***
+%
+%\usepackage{ifpdf}
+% Heiko Oberdiek's ifpdf.sty is very useful if you need conditional
+% compilation based on whether the output is pdf or dvi.
+% usage:
+% \ifpdf
+%   % pdf code
+% \else
+%   % dvi code
+% \fi
+% The latest version of ifpdf.sty can be obtained from:
+% http://www.ctan.org/tex-archive/macros/latex/contrib/oberdiek/
+% Also, note that IEEEtran.cls V1.7 and later provides a builtin
+% \ifCLASSINFOpdf conditional that works the same way.
+% When switching from latex to pdflatex and vice-versa, the compiler may
+% have to be run twice to clear warning/error messages.
+
+
+
+
+\usepackage{cite}
+\ifCLASSINFOpdf
+  % \usepackage[pdftex]{graphicx}
+  % declare the path(s) where your graphic files are
+  % \graphicspath{{../pdf/}{../jpeg/}}
+  % and their extensions so you won't have to specify these with
+  % every instance of \includegraphics
+  % \DeclareGraphicsExtensions{.pdf,.jpeg,.png}
+\else
+  % or other class option (dvipsone, dvipdf, if not using dvips). graphicx
+  % will default to the driver specified in the system graphics.cfg if no
+  % driver is specified.
+  % \usepackage[dvips]{graphicx}
+  % declare the path(s) where your graphic files are
+  % \graphicspath{{../eps/}}
+  % and their extensions so you won't have to specify these with
+  % every instance of \includegraphics
+  % \DeclareGraphicsExtensions{.eps}
+\fi
+% graphicx was written by David Carlisle and Sebastian Rahtz. It is
+% required if you want graphics, photos, etc. graphicx.sty is already
+% installed on most LaTeX systems. The latest version and documentation can
+% be obtained at:
+% http://www.ctan.org/tex-archive/macros/latex/required/graphics/
+% Another good source of documentation is "Using Imported Graphics in
+% LaTeX2e" by Keith Reckdahl which can be found as epslatex.ps or
+% epslatex.pdf at: http://www.ctan.org/tex-archive/info/
+%
+% latex, and pdflatex in dvi mode, support graphics in encapsulated
+% postscript (.eps) format. pdflatex in pdf mode supports graphics
+% in .pdf, .jpeg, .png and .mps (metapost) formats. Users should ensure
+% that all non-photo figures use a vector format (.eps, .pdf, .mps) and
+% not a bitmapped formats (.jpeg, .png). IEEE frowns on bitmapped formats
+% which can result in "jaggedy"/blurry rendering of lines and letters as
+% well as large increases in file sizes.
+%
+% You can find documentation about the pdfTeX application at:
+% http://www.tug.org/applications/pdftex
+
+
+
+
+
+% *** MATH PACKAGES ***
+%
+\usepackage[cmex10]{amsmath}
+\usepackage{amssymb}
+\usepackage{euler}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage[pdftex]{graphicx}
+\usepackage{algorithm}
+\usepackage{algorithmicx}
+\usepackage{algpseudocode}
+
+% A popular package from the American Mathematical Society that provides
+% many useful and powerful commands for dealing with mathematics. If using
+% it, be sure to load this package with the cmex10 option to ensure that
+% only type 1 fonts will utilized at all point sizes. Without this option,
+% it is possible that some math symbols, particularly those within
+% footnotes, will be rendered in bitmap form which will result in a
+% document that can not be IEEE Xplore compliant!
+%
+% Also, note that the amsmath package sets \interdisplaylinepenalty to 10000
+% thus preventing page breaks from occurring within multiline equations. Use:
+%\interdisplaylinepenalty=2500
+% after loading amsmath to restore such page breaks as IEEEtran.cls normally
+% does. amsmath.sty is already installed on most LaTeX systems. The latest
+% version and documentation can be obtained at:
+% http://www.ctan.org/tex-archive/macros/latex/required/amslatex/math/
+
+\usepackage{hyperref}
+%
+\hypersetup{
+    bookmarks=true,         % show bookmarks bar?
+    unicode=false,          % non-Latin characters in Acrobat’s bookmarks
+    pdftoolbar=true,        % show Acrobat’s toolbar?
+    pdfmenubar=true,        % show Acrobat’s menu?
+    pdffitwindow=false,     % window fit to page when opened
+%    pdfstartview={FitW},    % fits the width of the page to the window
+    pdftitle={Certificate},    % title
+    pdfauthor={Luciano Melodia},     % author
+    pdfsubject={TEQIP certificates},   % subject of the document
+    pdfcreator={Luciano Melodia},   % creator of the document
+    pdfproducer={},  % producer of the document
+    pdfkeywords={Certificates,} {TEQIP} {Participation}, % list of keywords
+    pdfnewwindow=true,      % links in new window
+    colorlinks=false,       % false: boxed links; true: colored links
+    linkcolor=red,          % color of internal links
+    citecolor=green,        % color of links to bibliography
+    filecolor=magenta,      % color of file links
+    urlcolor=cyan           % color of external links
+}
+\usepackage{blindtext}
+
+\DeclareMathOperator{\Ima}{Im}
+\DeclareMathOperator{\SP}{span}
+\DeclareMathOperator{\rank}{rank}
+\DeclareMathOperator{\Cech}{\text{\v{C}ech}}
+\DeclareMathOperator{\CechDel}{\text{\v{C}ech}Del}
+\DeclareMathOperator{\Rips}{Rips}
+\DeclareMathOperator{\VorBall}{VorBall}
+\DeclareMathOperator{\Vor}{Vor}
+\DeclareMathOperator{\Del}{Del}
+\DeclareMathOperator{\Wrap}{Wrap}
+\DeclareMathOperator{\Wit}{Wit}
+\DeclareMathSizes{12}{30}{16}{12}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{definition}{Definition}[section]
+\newtheorem{lemma}{Lemma}[definition]
+\newtheorem{proof}{Proof}[lemma]
+\newtheorem{corollary}{Corollary}[theorem]
+
+\usepackage{array}
+\usepackage{mdwmath}
+\usepackage{mdwtab}
+\usepackage{url}
+\usepackage[svgnames,pdf]{pstricks}
+\usepackage{pstricks}
+\usepackage{pst-grad}
+\usepackage{pst-plot}
+\usepackage{tkz-euclide}
+\usepackage{pgfplots}
+\usepackage{pgfplotstable}
+\usepackage{filecontents}
+\usepackage{tkz-euclide}
+\usepgfplotslibrary{external}
+\tikzexternalize
+\definecolor{lightcandy}{RGB}{170, 5, 5}
+\definecolor{darkcandy}{RGB}{106, 12, 11}
+\definecolor{lightblue}{RGB}{103, 199, 235}
+\definecolor{darkblue}{RGB}{68, 123, 190}
+\definecolor{darkgold}{RGB}{185, 125, 16}
+\definecolor{lightgold}{RGB}{251, 202, 3}
+
+\usepgfplotslibrary{fillbetween}
+\usetikzlibrary{intersections}
+\usetikzlibrary{calc}
+\usetkzobj{all}
+\pgfplotsset{compat=1.16}
+
+% *** Do not adjust lengths that control margins, column widths, etc. ***
+% *** Do not use packages that alter fonts (such as pslatex).         ***
+% There should be no need to do such things with IEEEtran.cls V1.6 and later.
+% (Unless specifically asked to do so by the journal or conference you plan
+% to submit to, of course. )
+
+
+% correct bad hyphenation here
+\hyphenation{homo-logy}
+\pagestyle{empty}
+
+\begin{document}
+%
+% paper title
+% can use linebreaks \\ within to get better formatting as desired
+\title{Persistent Homology as Stopping-Criterion \\ for Natural Neighbor Interpolation}
+%
+%
+% author names and IEEE memberships
+% note positions of commas and nonbreaking spaces ( ~ ) LaTeX will not break
+% a structure at a ~ so this keeps an author's name from being broken across
+
+
+\author{Luciano~Melodia,
+        Richard~Lenz
+\thanks{Chair of Computer Science 6, Friedrich-Alexander University, Erlangen-Nürnberg, 91058 Deutschland. E-Mail: \{name.surname@fau.de\}.}
+\thanks{Luciano Melodia is responsible for the experimental implementation, the elaboration of the theoretical background and the written form.}
+\thanks{Richard Lenz mentored, supervised and guided the development of the proposed methods and the research.}
+\thanks{It is hereby confirmed that there is no conflict of interest with third parties. It is confirmed that this work is not funded by any
+other charity.}
+\thanks{Manuscript received November 20, 2019; revised December 18, 2019.}}
+
+\markboth{22th International Conference on Computational Topology and Topological Data Analysis, December~2020}%
+{Shell \MakeLowercase{\textit{et al.}}: Bare Demo of IEEEtran.cls for Journals}
+% The only time the second header will appear is for the odd numbered pages
+% after the title page when using the twoside option.
+%
+% *** Note that you probably will NOT want to include the author's ***
+% *** name in the headers of peer review papers.                   ***
+% You can use \ifCLASSOPTIONpeerreview for conditional compilation here if
+% you desire.
+\maketitle
+\thispagestyle{empty}
+
+
+\begin{abstract}
+\boldmath
+In this study the method of natural neighbours is used to interpolate data that has been drawn from a topological space with higher homology groups on its filtration. A particular difficulty with this algorithm are the boundary points. Its core is based on the Voronoi diagram, which induces a natural dual map to the Delaunay triangulation. Advantage is taken from this fact and the persistent homology is therefore calculated after each iteration to capture the changing topology of the data. The Bottleneck and Wasserstein distance serve as a measure of quality between the original data and the interpolation. If the norm of two distances exceeds a heuristically determined threshold, the algorithm terminates. The theoretical basis for this procedure is given and the validity of this approach is justified with numerical experiments.
+\end{abstract}
+
+\begin{IEEEkeywords}
+Interpolation, Natural Neighbors, Persistent Homology, Machine Learning.
+\end{IEEEkeywords}
+
+
+% For peer review papers, you can put extra information on the cover
+% page as needed:
+% \ifCLASSOPTIONpeerreview
+% \begin{center} \bfseries EDICS Category: 3-BBND \end{center}
+% \fi
+%
+% For peerreview papers, this IEEEtran command inserts a page break and
+% creates the second title. It will be ignored for other modes.
+\IEEEpeerreviewmaketitle
+
+
+
+\section{Introduction}
+% The very first letter is a 2 line initial drop letter followed
+% by the rest of the first word in caps.
+%
+% form to use if the first word consists of a single letter:
+% \IEEEPARstart{A}{demo} file is ....
+%
+% form to use if you need the single drop letter followed by
+% normal text (unknown if ever used by IEEE):
+% \IEEEPARstart{A}{}demo file is ....
+%
+% Some journals put the first two words in caps:
+% \IEEEPARstart{T}{his demo} file is ....
+%
+% Here we have the typical use of a "T" for an initial drop letter
+% and "HIS" in caps to complete the first word.
+\IEEEPARstart{M}{ost} interpolation techniques ignore global properties of the underlying topological space where data has been drawn from. The topology of an augmented point set depends entirely on the choice of the interpoland. However, it does not depend on the topological structure of the data set or its sub-level sets.
+
+The method of natural neighbors is an interpolation technique considering these issues. Using Delaunay triangulation or the Voronoi tesselation to determine the position of a new data point respects the topology in terms of simple-homotopy equivalence \cite{Sibson}. The Delaunay triangulation and the Voronoi tesselation behave dual.
+
+For the Voronoi tessellation an implicit restriction to a closed subset of the imbedded space is used, see Fig. \ref{fig:voronoi}. The closure of this subset depends on the metric, in Euclidean space it is flat. This restriction, also called \textit{clipping}, leads to different weightings for the interpolation varying according to the particular choice of clip. The clip does not represent the intrinsic geometry of the data, but that of the surrounding space. This can lead to an undesired topology during interpolation, since the target space that is interpolated does not reflect the topology nor the geometry of the data. This paper does not deal with the correct selection of the clip, but with the detection of topological changes during interpolation.
+
+Up to this point it is an open problem to detect these errors and to terminate the algorithm in time. Our contribution to solve this problem is divided into three parts:
+\begin{enumerate}
+  \item We introduce persistent homology as a stopping-criterion for interpolation methods. The distance between two persistence diagrams is an indicator of changes within the topology of certain sub-level sets of a point set during augmentation. It can be used to vary geometric precision.
+
+  \item We cover the theoretical connection of the Voronoi tesselation via duality to the Delaunay triangulation. It is shown that the Delaunay complex is simple-homotopy equivalent to the \v{C}ech complex by the Theorem of Simplicial Collapse. The connection is extended to homology groups to prove that the Delaunay triangulation from the natural neighbors method is already sufficient to calculate a suitable persistence diagram, under the restrictions for Hurewicz isomorphism.
+
+  \item We investigate the method on a handwritten signature data set. It provides interesting and visually interpretable topological features due to the topography of the letters. Higher homology groups such as $H_1$ and $H_2$ may appear on the filtration of a signature. This often represents an insurmountable hurdle for other interpolation methods.
+\end{enumerate}
+
+The paper is structured as follows: Related work on the development of interpolation using natural neighbours is presented in Sect. \ref{sec:relatedwork}, as well as on persistent homology. The theory of simplicial complexes and filtrations is discussed in Sect. \ref{sec:simplex}. Sect. \ref{sec:simplicialhomology} is an outline of the theory of simplicial homology. In Sect. \ref{sec:distances} the Bottleneck and Wasserstein distance and their stability properties are discussed followed by the algorithm of natural neighbors in Sect. \ref{sec:natneighbor}. The paper closes with numerical experiments Sect. \ref{sec:numexp} and a bottom line on the findings presented in Sect. \ref{sec:conclusion}.
+
+\section{Related Work}
+\label{sec:relatedwork}
+The algorithm of natural neighbors has been invented in its vanilla form by Sibson \cite{Sibson}. In the early development of the method only $\mathcal{C}^1$ interpolands were known for the coordinate representation of multidimensional data using this algorithm. It became generalized in $2004$ to $\mathcal{C}^k$ interpolands for a representation of $k$-times differentiable coordinate systems \cite{HiyoshiS04}.
+
+Using efficient algorithms and exploiting the duality of Delaunay triangulations and Voronoi diagrams, it was possible to make the natural neighbors method available for real-time applications \cite{LiCL08}. Thus the method was made scalable and implemented so efficiently that it found application to superresolution in the field of image reconstruction \cite{Rodriguez-Dagnino15}.
+
+The Delaunay triangulation is used to take into account the topology of the data. Up to this point, however, there are still problems as degenerated points occur after frequent use of the algorithm. In order to measure topological changes, first developments were made to calculate the homology groups of filtrations over the data set. Speaking about homology, we refer to simplicial homology.
+The consideration of the topology of a filtration representing the topology of different sub-level sets leads to the concept of persistence \cite{EdelsbrunnerLZ02}. It is called persistent homology, because it measures which homology classes arise on the filtration of the data set during a particular parametrization and at which point they disappear.
+
+Persistent homology encodes the topological properties of a sub-level set of a function in arbitrary granularity and can be calculated in high dimensions \cite{ZomorodianC05, CarlssonZ09, CarlssonSZ10}. In particular, this measurement of topological properties behaves Hausdorff stable, i.e. small changes in the function value also cause small changes in the persistent homology \cite{CerriL16}. Efficient data structures and algorithms have been designed for the construction of topologically accurate complexes \cite{Zomorodian10} and scalable ways to compare persistence diagrams using a Wasserstein distance have been developed \cite{CarriereCO17}.
+
+\section{Simplicial Complexes and Filtrations}
+\label{sec:simplex}
+To interpolate data with higher homology groups, informally a point cloud which forms evidend loops in different dimensions within its structure, it is difficult to find a suitable interpoland. A parametric polynomial interpolation is not always feasible due to the necessity of representing a more complex topological structure.
+
+Simplicial complexes are therefore introduced to obtain an object encoding the topology of the data. By implication, a meaning is assigned to the distribution of the points in space. The mutual arrangement of the points forms a shape. From this basic assumption it is concluded that if the data changes its shape through a transformation, it is no longer identifiable as the original data set, see Sect. \ref{sec:simplicialhomology} for a precise definition in terms of homology groups.
+
+Imbedded simplicial complexes are suitable data structures to detect the change of shape, by computing their homology classes. Primer to the introduction of the concept of simplicial complexes, the elements of which they are composed are considered.
+
+\begin{definition}[Simplex]
+Simplices, denoted by $\sigma$, are the set of permuted span of $X = \{x_0, x_1, \ldots, x_k\} \subset \mathbb{R}^d$ with $k+1$ points, which are not contained in any affine subspace of dimension smaller than $k$ \cite{ParzanchevskiR17}. A simplex forms the convex hull
+\begin{equation}
+    \sigma := \left\{ x \in X \; \bigg\rvert \; \sum_{i=0}^{k} \lambda_i x_i \; \text{with} \; \sum_{i=0}^{k} \lambda_i = 1 \; \text{and} \; \lambda_i \geq 0 \right\}.
+\end{equation}
+\end{definition}
+
+Simplices are well-defined imbeddings of polyhedra. It is possible to construct complex objects out of them, which are composed of simple components, glueing simplices together at their edges. Edges are meant to be $h$-dimensional simplices or $h$-simplices. Informally, the glueing results in a simplicial complex consisting of a series of $k$-simplices, which are connected by $h$-simplices, satisfying $h < k$.
+
+\begin{definition}[Simplicial Complex]
+A finite simplicial complex denoted by $K$ and imbedded into Euclidean space is a finite set of simplices with the following properties \cite{ParzanchevskiR17}:
+\begin{enumerate}
+  \item Each face of a simplex of $K$ is again a simplex of $K$.
+  \item The intersection of two simplices is either empty or a common face of both.
+\end{enumerate}
+\end{definition}
+
+\begin{definition}[Filtration]
+A filtration is a decomposition of a finite simplicial complex $K$ into a nested sequence of sub-complexes, starting with the empty set.
+\begin{flalign}
+    \emptyset &= K^{0} \subset K^{1} \subset \cdots \subset K^{n} = K, \\
+    K^{t+1} &= K^t \cup \sigma^{t+1}, \quad \text{for} \; t \in \{0,\ldots, n-1\}.
+\end{flalign}
+\end{definition}
+
+It is convention to mention the empty set as it is part of every set \cite{ChazalGLM15}.
+Considering the topological properties of each sub-level set of a tame function (Def. \ref{def:tame}), it is possible to reconstruct this function up to isomorphism. Therefore a step size for the parameterization of a filtration is determined, i.e. the radius $r$ of a closed Ball for the \v{C}ech complex (Def. \ref{def:cech}), to approximate all sub-level sets as good as possible. This can be thought as a lens which indicates the granularity of the filtration and on which basis the homology classes are calculated. In the following, variants of the simplicial complexes and their connection to each other are presented, which are decisive for our method.
+
+\begin{definition}[\v{C}ech Complex \cite{BauerE14}]
+\label{def:cech}
+Let $r \geq 0$ be a real number and $B_r(x) = \{y \in \mathbb{R}^d \; | \; ||x-y|| \leq r\}$ the closed ball with radius $r$ centered around the point $x \in X \subseteq \mathbb{R}^d$. The \v{C}ech complex for a finite set of points $X$ is defined by
+\begin{equation}
+  \Cech_r(X) = \left\{ U \subseteq X  \; \bigg\rvert \; \bigcap_{x\in U}B_r(x) \neq \emptyset \right\}.
+\end{equation}
+\end{definition}
+
+\begin{lemma}
+The \v{C}ech complex is the full abstract simplex spanned by $X$, denoted as $\tilde{K}(X) = 2^{X}\setminus \emptyset$ and is a filtration of $\tilde{K}(X)$  \cite{BauerE14}.
+\end{lemma}
+
+\begin{IEEEproof} The Nerve of the \v{C}ech complex is isomorphic to the collection of closed balls and is therefore by the Nerve Theorem \ref{Nerve} homotopy equivalent to the union of balls $B_r(X) = \bigcup_{x \in U} B_r(x)$ \cite{borsuk}. Spanning the simplicial complex for
+\[
+r = \sup_{x,y \in U} ||x-y||,
+\] one gets the whole simplex spanned by $U$. For two real numbers $r_1 < r_2$,
+\[
+\Cech_{r_1}(X) \subset \Cech_{r_2}(X)
+\] applies. This implies that the \v{C}ech complex forms a filtration over $U$ and therefore a filtration over the topological space $X$ if $U = X$ \cite{BauerE14}.
+\end{IEEEproof}
+
+
+\begin{definition}[Vietoris-Rips Complex \cite{boissonnat2018geometric}]
+Given $r \geq 0 \in \mathbb{R}$ for a filtration step, the Vietoris-Rips complex $\Rips_r(X)$ with vertex set $X$ and distance threshold $r$ is defined by the set
+\begin{equation}
+\Rips_r(X) = \left\{ U \subseteq X \; \bigg\rvert \; ||x-y|| \leq r, \; \text{for all} \; x,y \in U \right\}.
+\end{equation}
+\end{definition}
+
+The Vietoris-Rips complex is easier to compute than the \v{C}ech complex because it requires only the comparison of distance measures to be obtained. The Vietoris-Rips complex spans the same $1$-skeleton as the \v{C}ech complex \cite{boissonnat2018geometric}.
+
+\begin{lemma}
+For the imbedding of the Vietoris-Rips and the \v{C}ech complex into any metric space, the following relationship holds  \cite{boissonnat2018geometric}:
+\begin{equation}
+\label{eq:inc}
+\Rips_r(X)\subseteq \Cech_r(X) \subseteq \Rips_{2r}(X).
+\end{equation}
+\end{lemma}
+
+\begin{IEEEproof}
+Choose a simplex $\sigma = \{x_0,x_1,\ldots,x_k\} \in \Rips_r(X)$. The norm of the selected distance parameter is less or equal to the radius of a closed ball around $x_0$. Therefore
+\[
+x_0 \in \bigcap_{i=0}^{k}B_r(x_i)
+\] is contained in the ball with radius $r$. Choose a $\sigma = \{x_0,x_1,\ldots,x_k\} \in \Cech_r(X)$. There is a $y \in \mathbb{R}^d$, such that
+\[
+y \in \bigcap_{i=0}^{k}B_r(x_i),
+\] which is the desired condition $||x_i-y|| \leq r$ for any $i = 0,\ldots,k$. Therefore for all $i,j \in \{0,\ldots,k\}$ the following (in)equality applies: $||x_i-x_j|| \leq 2r$ and $\sigma \in \Rips_{2r}(X)$.
+\end{IEEEproof}
+
+Observe that the Vietoris-Rips complex and the \v{C}ech complex are equivalent if $\Rips_{r}(X) = \Rips_{2r}(X)$, i.e. if the radius is doubled, no new simplices are added. The condition in Eq. \ref{eq:inc} applies to any metric space, since this result can be shown for topological spaces in general, see \cite{boissonnat2018geometric} Chap. $2.5$. As a consequence, one sees that it is sufficient to compute the Vietoris-Rips complex for $r$ large enough to cover the point set. The calculation time for the Vietoris-Rips complex is better than for the \v{C}ech complex, with a bound of $|E| = \mathcal{O}(|V|) = \mathcal{O}(n^2)$ for $n$ points \cite{Zomorodian10}.
+
+Next the Delaunay complex is introduced, for which the definition of the Voronoi cells and Voronoi balls are prerequisite.
+
+\input{cech_rips_points.tex}
+
+\begin{definition}[Voronoi Cell]
+Let $X \subset \mathbb{R}^d$ be a finite set of points and $x \in X$. Let $|| \cdot ||$ denote the Euclidean norm. A Voronoi cell or also Voronoi region of a point $x \in X$ is given by
+\[
+\Vor(x) = \left\{ y \in \mathbb{R}^d \; \bigg\vert \; ||y-x|| \leq ||y-z||, \; \text{for all} \; z \in X \right\}.
+\]
+\end{definition}
+
+\begin{definition}[Voronoi Ball]
+The Voronoi ball of $x$ with respect to $X$ for a given radius $r \geq 0$ is defined as \cite{bauer2017morse}:
+\begin{flalign}
+  \VorBall_r(x) &= B_r(x) \cap \Vor(x).
+\end{flalign}
+\end{definition}
+
+\begin{definition}[Delaunay Complex]
+The Delaunay complex or alpha complex on $X$ for a given radius $r \geq 0$ is defined as
+\begin{equation}
+\Del_r(X) = \left\{ U \subseteq X \; \bigg\rvert \; \bigcap_{x\in U} \VorBall_r(x) \neq 0 \right\}.
+\end{equation}
+\end{definition}
+
+There is a fundamental connection between the union of all Voronoi balls over $X$ and the Delaunay complex, which already suggests a topological stability.
+The idea is to find a good cover that does not destroy topological structures.
+
+\begin{definition}[Nerve]
+Let $X$ be a topological space and $U = \bigcup_{i \in I} U_i$ an open cover. Then
+\begin{itemize}
+  \item the empty set $\emptyset \in N(U)$ is part of the Nerve and
+  \item if $\bigcap_{j\in J} U_j \neq \emptyset$ for a $J \subseteq I$, then $J \in N(U)$.
+\end{itemize}
+\end{definition}
+
+\begin{theorem}[Nerve Theorem \cite{borsuk}]
+\label{Nerve}
+If $U = \{U_i\}_{i \in I}$ is a good cover, such that for each $\sigma \subset I$ the set $\bigcap_{i\in \sigma} U_i \neq \emptyset$ is contractible, then the Nerve $N(U)$ is homotopy equivalent to $\bigcup_{i \in I} U_i$.
+\end{theorem}
+
+\begin{theorem}
+The Delaunay complex $\text{Del}_r(X)$ of a point set $X$ is isomorphic to the Nerve of the collection of Voronoi balls.
+\end{theorem}
+\begin{IEEEproof} For this proof we have to construct Voronoi regions for two different sets, so we call the Voronoi region of a point within a set $\Vor_r(x,U)$. Let be $\Vor_r(x,U) \subseteq \Vor_r(x,V)$ for each open set $U \subseteq V \subseteq X$ and all $x \in X$. One obtains the largest Voronoi ball for $U = \emptyset$ and the smallest Voronoi ball for $U = X$. In the first case each region is a ball with radius $r$ and in the second case the Voronoi balls form a convex decomposition of the union of balls. The selective Delaunay complex is therefore used, containing the Delaunay and \v{C}ech complexes in its extremal cases and is written as
+\[
+\Del_r(X,U) = \left\{V \subseteq X \; \bigg\vert \; \bigcap_{x \in V} \VorBall_r(x,U) \neq \emptyset \right\}.
+\]
+Since the union of open balls does not depend on $U$, the Nerve Theorem implies, that for a given set of points $X$ and a radius $r$ selective Delaunay complexes have the same homotopy type. This also results in $\Del_r(X,V) \subseteq \Del_s(X,U)$ for all $r \leq s$ and $U \subseteq V$. The proof has been given first by Bauer and Edelsbrunner \cite{bauer2017morse} $3.4$, in the section of Selective Delaunay complexes.
+\end{IEEEproof}
+
+The geometric realization of the Delaunay complex underlies the assumption that the points are in general position, which is a necessary condition for the construction of generalized discrete Morse functions, see Def. \ref{def:morse}. The latter are core tool for the collapsing sequence, see \cite{bauer2017morse}.
+
+Finally, a stochastic variant of a simplicial complex is shown. This should give the possibility to use a more inaccurate but scalable variant for large data sets. The filtration is carried out on a subset of randomly or systematically selected points in the following way:
+
+\begin{definition}[Witnessed Points]
+Let $W \subset \mathbb{R}^d$ be a set of points called witnesses and $L \subset \mathbb{R}^d$ be a set of points called landmarks. $L \subseteq W$ can be choosen. Let $\sigma$ be a simplex with vertices in $L$ and $w \in W$. Then $w$ is witnessed by $\sigma$ if
+\[
+  ||w-p|| \leq ||w-q||, \quad \text{for all} \quad p \in \sigma \quad \text{and} \quad q \in L \setminus \sigma.
+\] It is strongly witnessed by $\sigma$ if
+\[
+  ||w-p|| \leq ||w-q||, \quad \text{for all} \quad p \in \sigma \quad \text{and} \quad q \in L.
+\]
+\end{definition}
+
+\begin{definition}[Witness Complex]
+The witness complex $\Wit(L,W)$ consists of all simplices $\sigma$ such that any simplex $\tilde{\sigma} \subseteq \sigma$ has a witness in $W$. The strong witness complex is defined analogous by changing the witness condition into the strong witness condition.
+\end{definition}
+
+The witness complex scales better than other variants of  simplical complexes, but its homology classes depend strongly on the chosen landmarks. Often they are chosen randomly within the data set, sometimes partly within it and partly uniformly distributed in its convex hull or initialized completely outside the data set. In addition to equally distributed initialization, strategies such as sequential \textit{MaxMin} can lead to a more accurate estimate of homology groups \cite{de2004topological}.
+
+The time bound for the construction of a witness complex is $\mathcal{O}\left(|W|log|W|+k|W|\right)$ \cite{boissonnat2018geometric}, which makes it suitable for high dimensional data.
+
+\section{Simplicial Homology Theory}
+\label{sec:simplicialhomology}
+Our perspective on data is based on a hypothesis known as manifold assumption \cite{LinZ08}. It is supposed that the data is drawn from a topological manifold.
+
+A manifold describes the space from which points are drawn. Drawing enough equally distributed points from it one can obtain its shape by triangulation.
+
+Computationally feasible invariants of topological spaces in terms of its connected components and holes shall be considered. In topology one is particularly interested in whether a space can be transformed into another by stretching, twisting or tearing. Remember that a circle cannot be continuously transformed into a straight line without cutting it up. For this purpose $k$-dimensional holes play a central role. They characterize a topological space decisively.
+
+\begin{definition}[Homotopy Equivalence]
+Let $M$ and $N$ be two topological spaces. If there exists a continuous map $h: M \times I \rightarrow N$, which deforms $M$ over time $I$ into $N$, they are said to be homotopy equivalent or having the same homotopy type.
+\end{definition}
+
+Homotopy classes and groups are topological invariants (preserved under bijective transformations) and describe a topological space. But it is notoriously difficult to obtain a homotopy.
+
+Considering the holes within a simplicial complex for changing $r$, a good estimate of the homotopy groups can be obtained. An algebraic way to compute something strongly related, which counts these holes is homology. The connection is established by the Hurewicz Theorem \ref{hurewicz}. For an introduction to homotopy theory it is referred to \cite{goerss2009simplicial, whitehead2012elements,gray1975homotopy}.
+
+\begin{theorem}[Hurewicz Homomorphism \cite{hatcher2005algebraic}]
+\label{hurewicz}
+Let $\pi_k(x,X)$ be the $k^{\text{th}}$ homotopy group of a topological space $X$ in $x \in X$. There exists a homomorphism $h: \pi_k(x,X) \rightarrow H_k(x,X)$ into the $k^{\text{th}}$ homology group at $x$. The homomorphism is an isomorphism if $X$ is $(n-1)$-connected and $k \leq n$ when $n \geq 2$ with abelianization for $n = 1$.
+\end{theorem}
+
+Homology groups are not only a topological invariant, they are also isomorphic under the conditions of Theo. \ref{hurewicz} to the equal dimensional homotopy groups. In this particular case one is able to use an easier to calculate invariant to describe the feature space up to homotopy. The Betti numbers are such an invariant defined by the rank of the $k$-th homology group. The $k$-th homology group is a vector space whose rank gives the number of $k$-dimensional holes of a topological space $X$.
+
+The invariants of simplicial complexes spanned over a point set are calculated. To compute the rank of the $k^{\text{th}}$ homology group the chain groups are introduced.
+
+\begin{definition}[Chain Group]
+Let $\sigma^k$ be a $k$-simplex of $K := K(X)$ over a set of points $X$. Further let $k \in \mathbb{N}$. The linear combinations of $k$-simplices span a vector space
+\begin{equation}
+C_k := C_k(K) = \SP\left(\sigma_1^k, \ldots, \sigma_n^k\right).
+\end{equation}
+This vector space is called $k^{\text{th}}$ chain group of $K$ and contains all linear combinations of $k$-simplices.
+\end{definition}
+
+The coefficients of the group lie in $\mathbb{Z}_2$ and the group structure is established by $(C_k,+)$, with $e_{C_k}=0$ being the neutral element and addition as group operation.  A linear map $\partial:C_k \rightarrow C_{k-1}$ is induced from the $k^{\text{th}}$ chain group into the $(k-1)^{\text{th}}$.
+
+Using such an algebraic structures yields unsatisfactory geometrical intuitions, but on the other hand an efficient way to express the concept of a boundary.
+
+\begin{definition}
+The boundary operator $\partial_k(\sigma^k): C_k \rightarrow C_{k-1}$ is defined by
+\begin{equation}
+  \partial_k(\sigma^k) = \sum_{i=0}^{k} (-1)^i \left(v_0, \ldots, \widehat{v_i},\ldots,v_k\right).
+\end{equation}
+\end{definition}
+
+The vertex set of the $k$-simplex is named $v_0,\ldots,v_k$. The boundary of a line segment should be described by its two endpoints, the boundary of a triangle, or $2$-simplex by the union of the edges and the boundary of a tetrahedron, or $3$-simplex by the union of the triangular faces. Furthermore, a boundary itself shall not have a boundary of its own. This implies, that the property to be boundaryless is equivalent to the concept of a loop, i.e. the possibility to return from a starting point to the same point via the $k$-simplices, by not \textit{entering} a simplex twice and by not \textit{leaving} a simplex \textit{unentered}. This group homomorphism contains the alternating sum, thus for each oriented $k$-simplex $(v_0, \ldots, v_k)$ one element $\widehat{v_i}$ is omitted.
+
+The boundary operators can be composed $\partial^2 := \partial \circ \partial$ and one observes that every chain, which is a boundary of higher-dimensional chains, is boundariless, which means in return that an even composition of boundary maps is zero, i.e. $\partial^{2\mathbb{Z}} = 0$. For a proof it is referred to \cite{hatcher2005algebraic}.
+
+\begin{definition}[Kernel of a Chain Group] The kernel of a chain group $(C_k,+)$ with neutral element $e_{C_k} = 0$ is given by
+\begin{flalign}
+  \ker \partial_k &= \partial_k^{-1}\left(e_{C_{k-1}}\right) = \\
+  &= \left\{\sigma^k \in C_k \; \bigg\vert \; \partial_k(\sigma^k)= e_{C_{k-1}}\right\}.
+\end{flalign}
+All elements of the chain group are mapped in this way by the boundary operator to the neutral element of the lower chain group.
+\end{definition}
+
+\begin{definition}[Group of Cycles]
+A group of $k$-cycles $Z_k$ is defined as
+\begin{equation}
+Z_k := \ker \partial_k \subseteq C_k.
+\end{equation}
+\end{definition}
+
+Every $k$-simplex mapped to zero by the boundary operator is considered to be a loop and the collection of loops is the group of $k$-cycles $Z_k$. The $k$-boundaries are therefore $B_k = \Ima \partial_{k+1} \subset Z_k$.
+
+\begin{definition}[Homology Group]
+The $k^{\text{th}}$ homology group $H_k$ is the quotient group of $Z_k$ and the group of $k$-boundaries:
+\begin{equation}
+  H_k := Z_k / B_k = \ker \partial_k / \Ima \partial_{k+1}.
+\end{equation}
+\end{definition}
+
+Taking the rank of the homology group one gets its Betti number. In a certain sense the Betti numbers count the amount of holes in a topological space, i.e. $\beta_0$ the connected components, $\beta_1$ tunnels, $\beta_2$ voids and so forth.
+
+\begin{definition}[Betti Numbers]
+The $k^{\text{th}}$ Betti number is defined as
+\begin{equation}
+  \beta_k = \rank H_k.
+\end{equation}
+\end{definition}
+
+Using Betti numbers, the persistence diagrams are defined, representing the \textit{birth} and \textit{death} of homology classes from the respective $k^{\text{th}}$ homology group within a filtration.
+
+The filtration of a simplicial complex defines a sequence of homology groups connected by homomorphisms for each dimension. For the following maps the notation is slightly addapted to guarantee readability.
+
+\begin{lemma}
+The $k^{\text{th}}$ homology group over a simplicial complex $K_r$ with parameter $r$ is denoted by $H_k^r = H_k(K_r)$.
+The following sequence results from the group homomorphism $g^{r,r+1}_k: H_k^r \rightarrow H_k^{r+1}$ \cite{edelsbrunner2008persistent}:
+\[
+  0 = H_k^0 \xrightarrow{g^{0,1}_k} H_k^1 \xrightarrow{g^{1,2}_k} \cdots \xrightarrow{g^{n,r}_k} H_k^r \xrightarrow{g^{r,r+1}_k} H_k^{r+1} = 0
+\]
+\end{lemma}
+
+The image $\Ima g^{r,r+1}_k$ consists of all $k$-dimensional homology classes which are born in the $K_r$-complex or appear before and die after $K_{r+1}$.
+
+\begin{definition}[$k^{\text{th}}$ Persistent Homology Group]
+The dimension $k$ persistent homology group is the image of the homomorphisms induced by inclusion
+\[
+H_k^{n,r} = \Ima f_k^{n,r},
+\]
+ for $0\leq n \leq r \leq r+1$ \cite{edelsbrunner2008persistent}.
+\end{definition}
+
+For each dimension $k$ there is an index pair $n \leq r$. The following multiplicity (see Def. \ref{def:multiplicity}) is calculated from this, since elements of one and the same homology group can occur several times at the same time of birth or death and form therefore a multiset \cite{edelsbrunner2008persistent}:
+\begin{equation}
+  \mu^{n,r}_k = \underbrace{(\beta_k^{n,r-1} - \beta_k^{n,r})}_{\text{Birth in $K_{r-1}$, death at $K_r$.}} - \underbrace{(\beta_k^{n-1,r-1}-\beta_k^{n-1,r})}_{\text{Birth before $K_r$, death at $K_r$.}}
+\end{equation}
+According to Edelsbrunner et al., this equation is to be interpreted as follows \cite{edelsbrunner2008persistent}: The first difference counts the homology classes born in $K_{r-1}$ and dying when $K_r$ is entered. The second difference counts the homology classes born before $K_{r-1}$ and dying by entering $K_r$. It follows that $\mu^{n,r}_k$ counts the $k$-dimensional homology classes born in $K_n$ and dying in $K_r$.
+
+\begin{definition}[$k^{\text{th}}$ Persistence Diagram]
+\label{kpersist}
+The persistence diagram for the $k^{\text{th}}$ dimension of a filtration, denoted as $\mathcal{P}^{(\text{dim} k)}_{K}$, is the set of points $(n,r) \in \mathbb{R}^2$ with $\mu^{n,r}_k = 1$.
+\end{definition}
+
+\begin{definition}[Persistence Diagram]
+We define the persistent diagram as the disjoint union of all $k$-dimensional persistence diagrams
+\begin{equation}
+\mathcal{P}_K = \bigsqcup_{k \in \mathbb{Z}} \mathcal{P}^{(\text{dim} k)}_{K}.
+\end{equation}
+\end{definition}
+
+In this work $k \in \{0,1,2\}$ is chosen, up to the second homology group. The next section introduces distances for comparison of two persistence diagrams. In particular, it is important to resolve the multiplicity in a meaningful way. Note that the multiplicities are only defined for $n < r$ and that no values are below the diagonal. This is to be interpreted such as a homology class can't disappear before it arises.
+
+\section{Measures of Distance}
+\label{sec:distances}
+In order to use persistence diagrams as a stopping-criterion, the change in persistent homology must be measurable in each iteration step of the interpolation. From this measurement it must also be possible to deduce when a sufficiently high change occurs to terminate the algorithm.
+
+These changes can generally be measured by a distance in a metric space. In this section two distances for persistence diagrams are presented:
+
+\begin{enumerate}
+\item The Bottleneck distance, which is the coarser of both, but ultimately leads to more stable results.
+\item The Wasserstein distance, which is more sensitive to outliers and therefore requires additional conditions to be stable.
+\end{enumerate}
+
+The Wasserstein and Bottleneck distance have been choosen for this method due to their stability properties.
+
+\subsection{Bottleneck Distance}
+Let $X$ be a set of points imbedded in Euclidean space and $K_{r}^1, K_{r}^2$ two simplicial complexes forming a filtration over the points. Both simplicial complexes are finite and have in all their sub-level sets homology groups of finite rank. Note that these groups change due to a finite set of homology-critical values. Furthermore, the $L_\infty$-norm between two points $x = (x_1,x_2)$ and $y = (y_1,y_2)$ for $x \in \mathcal{P}_{K^1}$ and $y \in \mathcal{P}_{K^2}$ is defined by
+\begin{equation}
+||x-y||_\infty = \max\left\{|x_1-y_1|,|x_2-y_2|\right\}.
+\end{equation}
+By convention it is assumed that if $x_2=y_2=+\infty$, then $||x-y||_\infty = |x_1-y_1|$.
+
+\begin{definition}[Bottleneck Distance]
+If $\mathcal{P}_{K^1}$ and $\mathcal{P}_{K^2}$ are such two persistence diagrams and $x:=(x_1,x_2) \in \mathcal{P}_{K^1}$ and $y := (y_1,y_2)\in \mathcal{P}_{K^2}$, respectively, their Bottleneck distance is defined as
+\begin{equation}
+d_\text{B}(\mathcal{P}_{K^1},\mathcal{P}_{K^2})=\inf_{\varphi} \; \sup_{x\in \mathcal{P}_{K^1}}\;||x-\varphi(x)||_\infty,
+\end{equation}
+where $\varphi$ is the set of all bijections from the multiset $\mathcal{P}_{K^1}$ to $\mathcal{P}_{K^2}$ \cite{boissonnat2018geometric, edelsbrunner2008persistent}.
+\end{definition}
+
+\subsection{Bottleneck Stability}
+The Bottleneck stability has been derived, proven and discussed by Cohen-Steiner et al. \cite{Cohen-SteinerEH07}. We explain it and recapture the basic properties of Hausdorff stability. To do so, a smooth function $f: \mathbb{R} \rightarrow \mathbb{R}$ is considered as an example.
+
+\begin{definition}[Critical Values]
+A point $x \in \mathbb{R}$ of the smooth function $f$ is called critical and $f(x)$ is called critical value of $f$ if $f'(x) = 0$. The critical point is also not degenerated if $f''(x) \neq 0$.
+\end{definition}
+
+The terms $f'(x)$ and $f''(x)$ refer to the total first and second derivatives, respectively. The term shall further be specialized to homology critical value of a smooth function $f$.
+
+\begin{definition}[Homology Critical Values]
+\label{def:homcritval}
+$\Ima f(x)$ is a homology critical value, if there is a real number $y$ for which an integer $k$ exists, such that for a sufficiently small $\alpha >0$ the following map is not an isomorphism:
+\begin{equation}
+H_k\left(f^{-1}\left((-\infty,y-\alpha]\right)\right)\rightarrow H_k\left(f^{-1}\left((-\infty,y+\alpha]\right)\right)
+\end{equation}
+\end{definition}
+
+\begin{definition}[Tame Functions]
+\label{def:tame}
+Consider a smooth function $f$ as in Def. \ref{def:homcritval}. Then $f$ is called tame if it has a finite number of homology critical values and the homology group $H_k\left(f^{-1}\left((-\infty,y]\right)\right)$ is finite-dimensional for all $k\in \mathbb{Z}$ and $y \in \mathbb{R}$.
+\end{definition}
+
+Considering tame functions, it is also well known that a persistence diagram can be generated by pairing their critical values with each other and transferring corresponding points (depending on the functions value) to the persistence diagram. Note that this is an example of the dependence of persistent homology on the given metric or affine connection of the imbedding space.
+
+The Bottleneck distance of the persistence diagram of two tame functions $f,g$ is restricted to a norm between a point and its bijective projection. Therefore not all points of a multiset can be mapped to the nearest point in another. The proof of Cohen-Steiner et al. is structured as follows \cite{Cohen-SteinerEH07}:
+
+\begin{enumerate}
+  \item Proof of Hausdorff stability: \\
+  $d_H(\mathcal{P}_f,\mathcal{P}_g) \leq || f-g ||_\infty$.
+  \item Strenghten Hausdorff stability to proof: \\
+  $d_B(\mathcal{P}_f,\mathcal{P}_g) \leq || f-g ||_\infty$.
+\end{enumerate}
+
+The proof is recaptured in terms of a tame $1$-dimensional function to provide better intuitions. Note that the theorem has not been proven yet to the best of our knowledge for more general functions than tame functions. Therefore our analysis is also restricted to point sets drawn from manifolds with tame functions as coordinate representation.
+
+\paragraph{Preliminary Definitions}
+\begin{definition}[Hausdorff distance]
+The Hausdorff distance between two multisets $X$ and $Y$ is defined by
+\[
+    d_H(X,Y) = \max \left\{\sup_{x \in X} \inf_{y \in Y} ||x-y||_\infty, \sup_{y \in Y} \inf_{x \in X} ||y-x||_\infty \right\}.
+\]
+\end{definition}
+
+\begin{definition}[Multiplicity]
+\label{def:multiplicity}
+A multiplicity is defined as the number of values occurring in a multiset and is denoted as $\#(X)$. The multiplicity of a persistence diagram without its diagonal $\Delta$ is given by
+\begin{equation}
+  \#(\mathcal{P}_f - \Delta) = \sum_{n<r} \mu_n^r.
+\end{equation}
+\end{definition}
+
+\paragraph{Main Theorem}
+From the results of Cerri and Landi  \cite{CerriL16} it is known that the Hausdorff inequality
+\begin{equation}
+  d_H(\mathcal{P}_f,\mathcal{P}_g) \leq ||f-g||_\infty = \alpha
+\end{equation}
+holds and that there must exist a point $(x_1,x_2) \in \mathcal{P}_f$ which has a maximum distance $\alpha$ to a second point $(y_1,y_2) \in \mathcal{P}_g$. In particular, $(y_1,y_2)$ must be within the square
+\begin{equation}
+  [x_1 -\alpha, x_1 + \alpha] \times [x_2-\alpha, x_2+\alpha].
+\end{equation}
+
+From the Hausdorff stability more general inequalities are derived, considering the infinity norm.
+
+\begin{lemma}[Box-Lemma]
+\label{boxlemma}
+Let $x_1 \leq x_2 \leq x_3 \leq x_4$ be points in the extended plane $\bar{\mathbb{R}}^2$. Further let $R = [x_1,x_2] \times [y_1,y_2]$ be a square and $R_\alpha = [x_1+\alpha,x_2-\alpha] \times [y_1+\alpha,y_2-\alpha]$ another shrinked square by some parameter $\alpha$. Then the following inequality holds:
+\begin{equation}
+\#\left( \mathcal{P}_f \cap R_\alpha \right) \leq \#\left(\mathcal{P}_g \cap R \right).
+\end{equation}
+\end{lemma}
+
+In the proof of the Bottleneck Stability Theorem this Box-Lemma will be used. It is needed to find the smallest $\alpha$ such that squares of side-length $2 \alpha$ centered at the points of one diagram cover all off-diagonal elements of the other diagram, and vice versa with the diagrams exchanged \cite{Cohen-SteinerEH07}.
+
+\begin{theorem}[Bottleneck Stability \cite{Cohen-SteinerEH07}]
+Let $X$ be a triangulable topological space with continous tame functions $f,g: X \rightarrow \mathbb{R}$. The persistence diagrams $\mathcal{P}_f$ and $\mathcal{P}_g$ satisfy
+\begin{equation}
+d_B\left(\mathcal{P}_f,\mathcal{P}_g\right) \leq ||f-g||_\infty.
+\end{equation}
+\end{theorem}
+\begin{IEEEproof}
+Given is a tame function $f: X \rightarrow \mathbb{R}$ and $x = (x_1,x_2), y=(y_1,y_2) \in \mathcal{P}_f$. Consider the minimum infinite norm between two points in the persistence diagram of $f$ outside the diagonal $\Delta$ or the distance between a point outside the diagonal and the diagonal itself:
+\begin{equation}
+\delta_f = \min\left\{ ||x-y||_\infty \; \bigg\vert \; \mathcal{P}_f-\Delta \ni x \neq y \in \mathcal{P}_f \right\}.
+\end{equation}
+Choose a second tame function $g: X \rightarrow \mathbb{R}$, which satisfies
+\[
+||f-g||_\infty \leq \frac{\delta_f}{2}.
+\]
+Like in the definition of persistence diagrams (see Def. \ref{kpersist}), the multiplicity of the point $x \in \mathcal{P}_f-\Delta$ is denoted by $\mu$. The box $R_\alpha(x)$ is centered at $x$ and has radius $\alpha = ||f-g||_\infty$. Applying the Box-Lemma \ref{boxlemma} the following inequality results:
+\begin{equation}
+\mu \leq \#(\mathcal{P}_g \cap R_\alpha(x)) \leq \#(\mathcal{P}_f \cap R(x)_{2\alpha}).
+\end{equation}
+Since $g$ was chosen in such a way, that $||f-g||_\infty \leq \delta_f / 2$ applies, $2 \alpha \leq \delta_f$ follows. Thus $x$ is the only point of the persistence diagram $\mathcal{P}_f$ that is inside $R_{2\alpha}$. From this it can be concluded that the multiplicity $\mu$ is equal to $\#(\mathcal{P}_g \cap R(x)_\alpha)$. All points from $\mathcal{P}_g$ in $R(x)_\alpha$ can now be projected onto $x$. As $d_H(\mathcal{P}_f, \mathcal{P}_g) \leq \alpha$ holds, the remaining points are mapped to their nearest point on the diagional.
+\end{IEEEproof}
+
+\subsection{Wasserstein Distance}
+The Wasserstein distance is defined for Polish spaces, i.e. separable completely metrizable topological spaces \cite{boissonnat2018geometric}. In this particular case between the two persistence diagrams $\mathcal{P}_{K^1}$ and $\mathcal{P}_{K^2}$. The $p^{\text{th}}$ Wasserstein distance is a metric arising from the examination of transportation plans between two distributions.
+
+\begin{definition}[Wasserstein Distance]
+The $L^p$-Wasserstein distance for a $p \in [1,\infty)$ is defined as
+\begin{equation}
+  d_{W_p}(\mathcal{P}_{K^1},\mathcal{P}_{K^2}) = \left(\inf_{\varphi} \sum_{x \in \mathcal{P}_{K^1}} ||x-\varphi(x)||^p_\infty\right)^{\frac{1}{p}}.
+\end{equation}
+\end{definition}
+
+Then $\varphi: \mathcal{P}_{K^1}\rightarrow \mathcal{P}_{K^2}$ is within the set of all transportation plans from $\mathcal{P}_{K^1}$ to $\mathcal{P}_{K^2}$ over $\mathcal{P}_{K^1} \times \mathcal{P}_{K^2}$. In this paper $p$ is set to $1$. Thus the first Wasserstein distance is used consequently.
+
+The Wasserstein distance satisfies the axioms of a metric (for proof, it is referred to \cite{villani2008optimal}, Chap. 6). The transportation problem can be stated as finding the most economic way, measured at a ground distance, to transfer the points from one persistence diagram towards another \cite{togninalli2019wasserstein}.
+For an analogy, assume one persistence diagram is a pile of sand and has to be transported to another place forming a different pile.\footnote{A single pile  should be transferred into a hill forming two piles.} For the argument it is necessary to assume that these two persistence diagrams are disjoint subsets of $\bar{\mathbb{R}}^2 \times \bar{\mathbb{R}}^2$. Furthermore, there is the cost of transport $d: \bar{\mathbb{R}}^2 \times \bar{\mathbb{R}}^2 \rightarrow [0,\infty)$, so that $||x-\varphi(x)||$ indicates the length of a path, analogous the length of the transportation path of a grain of sand.\footnote{The cost is determined by the distance only, transport time is ignored here.} The above transport plan is then a bijection $\varphi: \mathcal{P}_{K^1} \rightarrow \mathcal{P}_{K^2}$ from one persistence diagram to the other.
+
+The Wasserstein distance of two persistence diagrams is the optimal cost of all transportation plans. Note, that the $L^\infty$-Wasserstein distance is equivalent to the Bottleneck distance, i.e. the Bottleneck distance is the limit of the Wasserstein distance as $p \rightarrow \infty$.
+
+\subsection{Wasserstein Stability}
+The Wasserstein distance is stable in a trianguliable compact metric space. We consider two Lipschitz functions $f,g: X \rightarrow Y$. To take up the relationship of Lipschitz continuity to Wasserstein stability and to show that this is a necessary condition, we repeat the definition of Lipschitz continuous functions:
+\begin{definition}[Lipschitz Functions]
+A function $f: X \rightarrow Y$ between two metric spaces $(X,d_X)$ and $(Y,d_Y)$ is called Lipschitz continuous or Lipschitz function, such that for a constant $c \in X$ the following condition applies:
+\[
+d_Y(f(x_1) - f(x_2)) \leq c \cdot d_X(x_1-x_2),
+\] for all $x_1, x_2 \in X$.
+\end{definition}
+Cohen-Steiner et al. have shown that for two Lipschitz functions $f,g: X \rightarrow \mathbb{R}$ and a compact triangulable metric space $X$ constants $b$ and $c$ exist  \cite{cohen2010lipschitz}, which depend on $X$ and the Lipschitz constants of $f$ and $g$, such that that the $p^{\text{th}}$ Wasserstein distance between the two functions satisfies the following condition:
+\begin{equation}
+  d_{W_p}(f,g) \leq c \cdot ||f-g||_\infty^{1-\frac{b}{p}}.
+\end{equation}
+
+Thus, for small perturbations of Lipschitz functions the $p^{\text{th}}$ Wasserstein distance of both is bounded. For our experiments we use the extremal cases of the Wasserstein distance. One such case is the Bottleneck distance, as much less sensitive variant, and the first Wasserstein distance, to obtain a detailed development of the topology during interpolation. The stability can be seen in Fig. \ref{fig:stopping}. The handwritings visualized in the figure, which belong to one single user, are colored accordingly. These equally colored lines show very similar behaviour and represent the mentioned small perturbations caused by the slight change of letter shape by repeated writing of the same text.
+
+\section{The Natural Neighbor Algorithm}
+\label{sec:natneighbor}
+Interpolation by polynomials requires a smooth manifold underlying the data set. There are only few methods which respect the homotopy groups of this manifold. This is a particular problem, taking signatures imbedded into $\mathbb{R}^2$ as an example due to their loops as a result of the topographic properties of letters. Note that it would be possible to embed the writing into $\mathbb{R}^3$ and find a two-dimensional polynomial function for interpolation. This would lead to problems in terms of increased calculation effort caused by sparse and not equally distributed data. Using polynomial interpolation will further cause a very complex representation, often being not computationally feasible. Approaches such as the nearest neighbor's method or linear interpolation also fail due to the lack of local precision or data sparsity \cite{BoissonnatC00}.
+
+The natural neighbor algorithm preserves local topological properties, which solve these kind of problems \cite{Bobach2009}. It has a direct connection to the Voronoi tesselation leading to an almost topology preserving representation \cite{Sibson}. Almost, because before this paper there was no stopping condition defined giving satisfactory topological results.
+
+The idea of the algorithm is to re-weight the coordinates of the data for each point by using the change in volume of Voronoi regions with an added point relative to the volume of the Voronoi regions without the additional point. The Voronoi diagram (see Def. \ref{def:voronoi}) is based on the Delaunay triangulation, which is in return dual to the Voronoi tesselation. Hence it is not needed to construct the Voronoi diagram explicitly, since all operations can take place on the Delaunay triangulation. The letter is well understood and supported by various efficient data structures \cite{DevillersMT91}. This interpolation method generalizes by its definition to arbitrary dimensions.
+
+\subsection{The Voronoi Tesselation}
+Boissonnat and Cazals have shown that for a set of points $X \subset \mathbb{R}^d$ distributed over an imbedded manifold $M$ the natural neighboring points behave like a local coordinate system for $M$ by increasing their density \cite{BoissonnatC01}. This local coordinate system represents the manifold from which the collected data is sampled. The investigation of invariants of a coordinate representation of such a manifold should provide information about its structure. For this purpose the Voronoi diagram is defined, cf. Sect. \ref{sec:simplex}.
+
+\input{voronoi_diagrams.tex}
+
+\begin{definition}[Voronoi Diagram]
+\label{def:voronoi}
+A Voronoi diagram $\text{dgm}_{\Vor}$ over a set of points $X$ is defined by the union of the Voronoi regions and assigns a polyhedron to each point, see Fig. \ref{fig:voronoi}:
+\begin{equation}
+\text{dgm}_{\Vor}(X) := \bigcup_{x \in X} \Vor(x), \quad \text{for all} \; x \in X.
+\end{equation}
+\end{definition}
+
+The Voronoi diagram builds a convex union of polyhedra. The Voronoi cells have no common interior and intersect at their boundaries. Because every point in Euclidean space belongs to a Voronoi region, the Voronoi diagram covers the entire $\mathbb{R}^d$. All points of the surrounding space in which the data set is imbedded and which are closest to the respective data point from $X$ are assigned to its Voronoi region. This is also called Voronoi tesselation.
+The combinatorial complexity of the Voronoi diagram of $n$ points of $\mathbb{R}^d$ is at most the combinatorial complexity of a polyhedron defined as the intersection of $n$ half-spaces of $\mathbb{R}^{d+1}$  \cite{BoissonnatDG18}. Considering the duality, one can deduced that the overall time for the construction of $\text{dgm}_{\Vor}(X)$ takes $\mathcal{O}( n \log n+n^{(\frac{d}{2})})$  \cite{BoissonnatDG18}.
+
+The resulting polygons can then be divided into Voronoi edges and vertices. Using Sibson's terminology \cite{Sibson}, the natural neighbors of a point are defined by the points of the neighboring Voronoi polygons. It can be stated that the natural neighbor is the closest point $x$ to two other points $y$ and $z$ within a collection of points $X$ being the signature.
+
+To yield the position of the new point one has to calculate the Voronoi diagram of the original signature $\text{dgm}_{\Vor}(X)$ and the one with an added point
+\begin{equation}
+\text{dgm}_{\Vor}^{\bullet}(X\cup x_{\bullet}) := \bigcup_{x \in X \cup x_\bullet} \Vor(x).
+\end{equation}
+
+The Voronoi diagram $\text{dgm}_{\Vor}^{\bullet}(X\cup x_{\bullet})$ consists of one Voronoi region more than $\text{dgm}_{\Vor}(X)$, see Fig. \ref{fig:voronoi} (a) and (d). This polygon being part of $\text{dgm}_{\Vor}^{\bullet}(X\cup x_{\bullet})$ contains a corresponding portion of its area. The weights of the coordinate representation of the new point can be determined by the ratio of the volume \textit{stolen} from its Voronoi regions \cite{Anton2001}:
+\begin{flalign}
+    \hat{x}_{\bullet} &= \sum_{l=1}^{L} \lambda_l x_{\bullet l},\\
+    \lambda_{l} &=
+    \begin{cases}
+        \frac{\text{vol}\left(\Vor(x_l) \cap \Vor^{\bullet}(x_{\bullet}\right))}{\text{vol}\left(\Vor^{\bullet}(x_{\bullet})\right)},& \text{if } x\geq 1\\
+        0, & \text{otherwise.}
+    \end{cases}
+\end{flalign}
+
+The total relative area sums up to one $\sum_{l=1}^{L} \lambda_l = 1$. The natural neighbor interpolation can then be repeated until a suitable stopping condition is met, defined by the Bottleneck or Wasserstein distance of the persistence diagrams of the original set $\mathcal{P}_{K}$ and $\mathcal{P}_{K^\bullet}$ with the added point in each step of the iteration.
+
+\subsection{The Duality of Delaunay Complex and Voronoi Diagram}
+The result that the Delaunay triangulation $Del(X)$ and the Voronoi diagram $dgm_{\Vor}(X)$ behave dual is used, formulated by Chazal et al.  \cite{BoissonnatDG18}, Chap. $4$. This duality gives a bijective correspondence between the faces of one complex and the faces of the other one, including incidence and reversibility of operations. Due to duality, both complexes have the same homotopy type.
+
+\begin{theorem}[Duality of $Del(X)$ and $dgm_{\Vor}(X)$]
+\label{theo:dual}
+The Delaunay triangulation $Del(X)$ of a point set $X \subset \mathbb{R}^d$, which is one extremal of the Delaunay complex, behaves dual to the Voronoi diagram $\text{dgm}_{\Vor}(X)$ of this point set.
+\end{theorem}
+
+Thus the Delaunay complex is particularly suitable to be used for persistent homology, because of its lower calculation effort in comparison to the Voronoi tesselation or the \v{C}ech complex.
+
+It remains to be investigated to what extent suitable characteristics in the form of homology groups are preserved when persistent homology is calculated on the Delaunay triangulation.
+
+\subsection{The Simplicial Collapse}
+The Delaunay triangulation of the data set is calculated during Voronoi interpolation. This complex could be suitable to calculate persistent homology on it. It would avoid the burden of computing an additional simplicial structure. To achieve this, the Theorem of the Simplicial Collapse is used, established by Bauer and Edelsbrunner \cite{BauerE14}. The argument is structured as follows:
+\begin{enumerate}
+  \item The simplicial collapse shows the simple-homotopy equivalence of the \v{C}ech complex, the Delaunay-\v{C}ech complex, the Delaunay complex and the Wrap complex.
+  \item Simple-homotopy equivalence is a stronger condition than homotopy equivalence. An elementary simplicial collapse determines a strong deformation retraction up to homotopy. Hence, simple-homotopy equivalence implies homotopy equivalence.
+  \item Under the conditions of the Hurewicz Theorem there is an isomorphism between homotopy groups and homology groups, thus also a correspondence of structures.
+\end{enumerate}
+
+The complete proof of the simplicial collapse is not presented, therefore we refer to the work of Bauer and Edelsbrunner \cite{BauerE14}.
+
+The \v{C}ech complex is related to the Delaunay complex by the simplicial collapse. In a combinatorial sense this property can be given by looking at an abstract simplicial complex $\tilde{K}$.
+
+\begin{definition}[Abstract Simplicial Complex]
+A family of simplices $\sigma$ of a non-empty finite subset of a set $\tilde{K}$ is an abstract simplicial complex if, for every set $\sigma'$ in $\sigma$ and every non-empty subset $\sigma'' \subset \sigma'$ the set $\sigma''$ also belongs to $\sigma$.
+\end{definition}
+
+Assuming $\sigma$ and $\sigma'$ are two simplices of $\tilde{K}$ so $\sigma \subset \sigma'$ and $\dim \sigma < \dim \sigma'$. Furthermore, if $\sigma'$ is a maximal face of $\tilde{K}$ and no other maximal face of $\tilde{K}$ contains $\sigma$, then $\sigma'$ is called free face.
+
+\begin{definition}[Simplicial Collapse]
+A simplicial collapse $\searrow$ of $\tilde{K}$ is the removal of all $\sigma''$ simplices, where $\sigma \subseteq \sigma'' \subseteq \sigma'$, $\sigma$ being a free face.
+\end{definition}
+
+Now it is possible to define the simple-homotopy type based on the concept of simplicial collapse.
+
+\begin{definition}[Simple-Homotopy Equivalence]
+Two abstract simplicial complexes $\tilde{K}$ and $\tilde{G}$ are said to have the same simple-homotopy type, if there exists a finite sequence
+\[
+\tilde{K}=\tilde{K}_0 \searrow \tilde{K}_1 \searrow \cdots \searrow \tilde{K}_n = \tilde{G},
+\]
+with each arrow representing a simplicial collapse or expansion, the latter being the inverse to the former.
+\end{definition}
+
+Intuitively speaking, two simplicial complexes are \textit{combinatorial-equivalent}, if it is possible to deform one complex into the other with a finite number of moves. Following the proof of Bauer and Edelsbrunner discrete Morse functions and critical simplices shall be defined at this point.
+
+\begin{definition}[Discrete Morse Function]
+\label{def:morse}
+Let $K$ be a simplicial complex and $\sigma,\tau,\nu \in K$ simplices, then a discrete Morse function $f: K \rightarrow \mathbb{R}$ is a function that has the following properties for each $k$-simplex $\sigma$:
+\begin{enumerate}
+  \item $\#\left( \left\{ \tau^{k+1} > \sigma: f(\tau) \leq f(\sigma) \right\} \right) \leq 1$,
+  \item $\#\left( \left\{ \nu^{k-1} < \sigma: f(\nu) \geq f(\sigma) \right\} \right) \leq 1$.
+\end{enumerate}
+\end{definition}
+
+The Morse functions help to understand the topology of the underlying space, as the sub-level set of the function only changes when it passes a critical value. Informally, it can be said that a discrete Morse function is a weakly increasing function and whenever $f(\sigma) = f(\tau)$ one of the simplices is a maximum coface of the other \cite{fernandez2016strong}.
+
+\begin{definition}[Critical Simplices \cite{fernandez2016strong}]
+A critical simplex of $f$ is a simplex $\sigma$ satisfying the following conditions:
+\begin{enumerate}
+  \item $\#\left( \left\{ \tau^{k+1} > \sigma: f(\tau) \leq f(\sigma) \right\} \right) = 0$,
+  \item $\#\left( \left\{ \nu^{k-1} < \sigma: f(\nu) \geq f(\sigma) \right\} \right) = 0$.
+\end{enumerate}
+If $\sigma$ is a critical simplex the number $f(\sigma) \in \mathbb{R}$ is a critical value.
+\end{definition}
+
+The critical simplices establish the relation to the critical  values, which can trigger a topological change in a collapse. For the main theorem it is important to show that these critical simplices are also contained in the \textit{lower} simplicial complexes to which the \v{C}ech complex is supposed to collapse.
+
+\begin{theorem}[\v{C}ech-Delaunay Collapse \cite{bauer2017morse}.] Let $X$ be a finite set of points in general position in $\mathbb{R}^d$. Then
+\begin{equation}
+\label{theo:collapse}
+\text{\v{C}ech}_r(X) \searrow \text{Del\v{C}ech}_r(X) \searrow \text{Del}_r(X) \searrow \text{Wrap}_r(X)
+\end{equation}
+for all $r \in \mathbb{R}$. This establishes the simple-homotopy equivalence of the \v{C}ech- and Delaunay complex.
+\end{theorem}
+
+\begin{IEEEproof}
+Let be $E = \emptyset$ and $F = X$, then the first two relations are obtained with the Selective Delaunay Collapse, see \cite{BauerE14} Theo. 5.9. To get the third, use
+the fact that $\Wrap_r(X) \subseteq \Del_r(X)$ for every $r \in \mathbb{R}$. Be $V_X$ the gradient of the Delaunay radius function $s_X: \Del(X) \rightarrow \mathbb{R}$, cf. Vertex Gradient Lemma $5.1$ \cite{BauerE14}. Each interval in $V_X$ is either disjoint from $\Del_r(X)$ or a subset of $\Del_r(X)$, similar is true for $\Wrap_r(X)$. All critical simplices of $\Del_r(X)$ are also contained in $\Wrap_r(X)$. It follows that $\Del_r(X) \setminus \Wrap_r(X)$ is the disjoint union of non-singular intervals of $V_X$ and according to the Generalized Gradient Collapsing Theorem, cf. \cite{BauerE14} Theo. 2.2, this implies $\Del_r(X) \searrow \Wrap_r(X)$.
+\end{IEEEproof}
+
+The simple-homotopy equivalence of the four different complexes is established, a particular type of homotopy equivalence that admits a purely combinatorial description in terms of elementary collapses and expansions \cite{BauerE14, cohen2012course}.
+
+We are only interested in whether simple-homotopy equivalence implies homotopy equivalence. Since elementary simplicial collapses form a strong deformation retraction that is unique up to homotopy, see \cite{cohen2012course} §2, it can be concluded that they preserve the homotopy type.
+
+This shows that all four complexes are suitable for calculating persistent homology as a result of the simplicial collapse up to homotopy equivalence. Is the underlying space $(n-1)$-connected, i.e. if it is not empty and path-connected and the $n^{\text{th}}$ homotopy groups vanish identically, then for the $k^{\text{th}}$ homotopy group for a $k \leq n$ and $n \geq 2$ with abelianization for $n = 1$, according to the Hurewicz Theorem \ref{hurewicz}, the homomorphism into the $k^{\text{th}}$ homology group is an isomorphism. This isomorphism allows to determine an estimate of the homotopy groups from the persistence diagram.
+
+\section{Numerical Experiments}
+\label{sec:numexp}
+\input{plot_stop}
+The experiments were conducted on a NVIDIA Quadro RTX $4000$. All source code is written in Python $3.7$. The library \textbf{G}eometry \textbf{U}n\textbf{d}erstanding in \textbf{H}igher D\textbf{i}mensions is used for the calculation of the simplicial complexes, filtrations and persistent homology \cite{gudhi:urm}.
+All experiments in the context of this paper are published on GitHub under \url{https://karhunenloeve.github.io} within the $\partial$SIML project.
+
+\subsection{Parametrization}
+
+\subsubsection{The Natural Neighbor Method}
+In all experiments as many new points are added as are already in the respective example of a signature for each interpolation step. This means that the number of data points is doubled per iteration. The points are inserted uniformly into a clipped region, see Fig. \ref{fig:voronoi}. Then it is proceeded as described in Sect. \ref{sec:natneighbor}.
+
+\subsubsection{\v{C}ech and  Vietoris-Rips Complex}
+The Vietoris-Rips complex is expanded up to the third dimension. This creates edges, triangles and tetrahedra as faces.
+
+Another parameter specified as maximum edge length is set to the average edge length between two points within the data set to obtain a more sparse representation of the simplicial complex. Although the Vietoris-Rips complex has the same $1$-skeleton as the \v{C}ech complex, the $1$-skeleton is restricted in these experiments to one of its subsets. Since it is our intention to test the performance of parametrization that are as adequate as really necessary, the same $r$ is used for the \v{C}ech and the Vietoris-Rips complex, so that the Vietoris-Rips complex is topologically \textit{farther away} from the union of closed balls around each data point, but faster to compute.
+
+To the best of our knowledge the problem of finding an optimal radius or distance threshold for these complexes is considered open \cite{wasserman2018topological,zomorodian2012topological}.  Thus empirical heuristics are used:
+\begin{equation}
+r = \max_{x,y \in X} ||x-y||.
+\end{equation}
+
+\input{interpol.tex}
+
+\subsubsection{Witness Complex}
+The strong witness complex, imbedded into $\mathbb{R}^d$, is recalculated for each sample at each interpolation step. A uniformly distributed selection of $5\%$ of the data points of each example determines the landmarks to use.
+
+The low amount of landmarks allows real-time calculation even after the fifth interpolation step, for which the number of data points exceeds $10.000 \cdot 2$ per signature.
+
+\subsubsection{Heuristic for $\alpha$}
+A free parameter $\alpha$ quantifies a tolerance to topological change, measured by Wasserstein or Bottleneck distance. Quantifying what means a significant topological change is not trivial and requires further investigation beyond the scope of this paper.
+A decision must be made on the following hypotheses:
+\begin{itemize}
+  \item $\text{H}_0$: The $\mathcal{P}_K^t$ and $\mathcal{P}_K^{t+1}$ persistence diagrams have different underlying distributions.
+  \item $\text{H}_1$: The $\mathcal{P}_K^t$ and $\mathcal{P}_K^{t+1}$ persistence diagrams have the same underlying distribution.
+\end{itemize}
+
+Czado and Munk have proposed an asymptotic solution for testing by trimmed Wasserstein distance of two distributions, which is adapted here \cite{czado1998assessing}. Our solution is not exact, it follows the expected value of the persistence diagrams. It is, however, exact in the limit:
+\begin{flalign}
+  \int_\gamma^{1-\gamma} f(x) dx = \lim_{\Delta\gamma \rightarrow 0} \sum_{x \in X} f(x) \Delta \gamma.
+\end{flalign}
+We slightly change the trimmed Wasserstein distance to an empirical estimate and use this estimate for our experiments. We accept a small error generated by the use of empirical measurements for our analysis.
+
+\begin{definition}[Empirical Trimmed Wasserstein Distance]
+The empirically trimmed Wasserstein distance of two persistence diagrams is
+\[
+  \hat{\Gamma}^p_\gamma(\mathcal{P}^t_K,\mathcal{P}^{t+1}_K) = \frac{1}{(1-2\gamma)} \left( \sum_{j=1}^{m} ||(\mathcal{P}^t_K)_j-\mathcal{P}^{t+1}_K)_j||^p_\infty \Delta \gamma \right)^\frac{1}{p},
+\]
+where $\alpha \in [0, 1/2)$ denotes a trimming bound resulting from the integral for the continuous case and is adapted as a difference in a finite weighted sum.
+\end{definition}
+The critical region of the equivalence test for our hypothesis $\text{H}_0$ against $\text{H}_1$ follows the analysis by Czado and Munk and is expressed as
+\begin{equation}
+\left(\frac{nm}{n+m}\right)^{\frac{1}{p}} \frac{\hat{\Gamma}^p_\gamma - \alpha^p}{\hat{\sigma}_\gamma} \leq z_\gamma,
+\end{equation}
+where $z_\gamma$ denotes the $\gamma$-quantile of the standard normal distribution and $n=m$, with $n$ being the number of samples. The initial problem can be rephrased in terms of the defined distance:
+\begin{itemize}
+  \item $\text{H}_0$: $\Gamma_\gamma^p (\mathcal{P}^t_K,\mathcal{P}^{t+1}_K) > \alpha$.
+  \item $\text{H}_1$: $\Gamma_\gamma^p (\mathcal{P}^t_K,\mathcal{P}^{t+1}_K) \leq \alpha$.
+\end{itemize}
+
+\subsubsection{Data} For this experiment $45$ signatures per user are considered. The signatures show the same writing, but are different and independent samples. In total we investigate $83$ users, i.e. just as many different writings. We assume that the persistence diagrams are statistically independent. For each user we have a set of $45$ persistence diagrams and a set of $45$ corresponding handwritings.
+
+\begin{algorithm}[t]
+  \caption{Voronoi interpolation or natural neighbor interpolation with heuristic topological stopping-criterion.}
+  \label{alg:Persistent homology}
+
+    \begin{algorithmic}[1]
+    \newcommand{\UF}{\texttt{UF}}
+    \newcommand{\diagram}{\mathcal{P}}
+    \small
+    \Require A point set $X = \{x_1, \ldots, x_k\}$ being the signature.
+    \State $\lambda, \diagram \gets \emptyset, \emptyset$ \Comment{\textit{\color{gray} Initialize $\lambda$s and persistence diagram.}}
+    \State $\alpha, \gamma, p \gets 0.01, 0.1, 1$ \Comment{\textit{\color{gray} Set constant parameters.}}
+    \State $X' \gets X$
+    \State $\diagram_{\Del} \gets$  $\texttt{PH.Del}(X)$ \Comment{\textit{\color{gray} Persistent homology on Delaunay.}}
+    \For{$\diagram'_{\Del} \gets \diagram_{\Del}$;
+    {$\hat{\Gamma}^p_\gamma(\diagram_{\Del}, \diagram'_{\Del}) \leq \alpha$};
+    $\diagram'_{\Del} \gets \texttt{PH.Del}(X')$}
+      \State $X_{\bullet} \gets \mathcal{U}(\text{conv} \; X')$ \Comment{\textit{\color{gray} Uniform points in convex hull.}}
+      \ForAll{$x_\bullet \in X_\bullet$}
+        \State $\Del \gets$  $\texttt{Triang.Del}(X)$ \Comment{\textit{\color{gray} Delaunay triangulation.}}
+        \State $\text{dgm}_{\Vor} \gets$ $\texttt{resort}(\Del)$ \Comment{\textit{\color{gray} Voronoi diagram.}}
+        \State $\Del_\bullet \gets$  $\texttt{Triang.Del}(X \cup x_\bullet)$
+        \State $\text{dgm}^\bullet_{\Vor} \gets$ $\texttt{resort}(\Del_\bullet)$
+        \State $\lambda \gets$ $\texttt{diff}(\text{dgm}_{\Vor},\text{dgm}^\bullet_{\Vor})$ \Comment{\textit{\color{gray}Determine weights.}}
+        \State $x_\bullet \gets$ $\texttt{reweight}(x_\bullet, \lambda)$ \Comment{\textit{\color{gray}Reweight added point.}}
+        \State $X' \gets$ $X' \cup x_\bullet$ \Comment{\textit{\color{gray}Update $X'$.}}
+      \EndFor
+    \EndFor
+    \State\Return$X'$
+  \end{algorithmic}
+\label{alg:natneighborinterpoltop}
+\end{algorithm}
+
+\subsection{Evaluation}
+The parameters for our experiment are stated in Alg. \ref{alg:natneighborinterpoltop}. In Fig. \ref{fig:evaluation} basic statistics are computed for the entire data set such as mean $\mu_X$, standard deviation $\sigma_X$, variation $\frac{\sigma_X}{\mu_X}$ and the Wasserstein distance $d_{W_1} = d_{W_1}(X_{\text{org}},X^{t})$. The statistics are also computed for the interpolated data with topological stop, respectively, marked with $\sim$. Note that for each signature it is decided separately up to which interpolation step the algorithm is executed.
+
+An improvement for each measured statistic at each iteration step by using the topological stop is achieved. In Fig. \ref{fig:stopping} the topological similarity between the individual users is made visual. It is confirmed that both the Vietoris-Rips and the Delaunay complex are suitable to estimate the topological characteristics. The calculations using the witness complex produced far less stable results. This is due to the small selection of landmarks of only $5\%$. Further experiments show that the differences in the iteration steps for witness complexes with more landmarks increasingly follow the diagrams Fig. \ref{fig:stopping} (c) and (d), but do not scale well.
+\input{eval.tex}
+
+\subsection{Limitation}
+\label{limit}
+The additional points are initialized in the convex hull of the Delaunay complex. Therefore only a very small deviation from its topological properties is possible, see Fig. \ref{fig:samples}. It must be judged whether this is a desired effect. For this experiment, the implicit topology of the handwriting, when following the typography of the letters, was not interpolated. Often other pairs were chosen, cf. Fig. \ref{fig:samples}. A possible solution for this is to establish similar methods with other complexes and different parametrization, thereby the geometrical precision could be adapted.
+
+\section{Conclusions \& Future Work}
+\label{sec:conclusion}
+In this threatise the theoretical background of interpolation by means of natural neighbours was elaborated. The result is a stopping-criterion with a hypothesis test to determine whether an interpolated signature still originates from the same distribution as the source.
+
+We have worked out the theoretical backgrounds of Bottleneck and Wasserstein distance to measure differences in persistent homology and could visualize the changing topology of each group of signatures, see Fig. \ref{fig:stopping}.
+
+Our measurement results show an improvement of basic statistics compared to the vanilla natural neighbor interpolation. We have shown the theoretical connection of Voronoi diagrams to the Delaunay complex and its connection to other complexes, which should serve as a basis to explore related algorithms. We have discussed, that up to homotopy equivalence -- due to certain conditions homology equivalence -- the Delaunay complex, \v{C}ech Delaunay complex and wrap complex can also be used for filtration.
+
+During our investigations we were restricted in some aspects, see Sect. \ref{limit}, out of which the following open research questions arose:
+\begin{itemize}
+  \item To compute the Voronoi tesselation, $\mathbb{R}^d$ must be restricted to a closed neighborhood. The intrinsic geometry of the data points is often not the Euclidean one. On the other handside the frequently used imbedding of the Voronoi tesselation is. This causes unwanted artifacts. Future work could derive a suitable geometrically motivated clipping of the boundaries (or imbedding of the Delaunay triangulation).
+  \item To our knowledge there is no evidence known that the Voronoi tesselation obtains the homology groups. According to \cite{reem2011geometric}, the Voronoi tessellation is stable, in the sense that small perturbations on the points lead to equally small amounts of changes of the Voronoi cells. However, the experiments show that for increasing iterations additional homology groups appear. Is it correct (for general metric spaces) that the Voronoi tesselation without restriction to a certain region preserves the homology groups or homotopy groups?
+  \item Is there a geometrically meaningful clipping for general metric spaces, for example using geodesics in a smooth manifold setting?
+\end{itemize}
+
+Future work shall extend the topological stopping-criterion for other interpolation methods. Further, a non-parametric T-test with simulated $p$ values shall be applied cf. \cite{robinson2017hypothesis, bubenik2015statistical}.
+
+\section*{Acknowledgement}
+The authors would like to thank David Haller, Lekshmi B.G. and Melanie Sigl for their corrections and suggestions which have contributed to the uniformity of this paper. Furthermore they thank Bastian Rieck, Anton Rechenauer and Jan Frahm who motivated and contributed significantly to the development of ideas through professional discussions and always had time for feedback.
+
+
+\bibliographystyle{IEEEtran}
+\bibliography{biblio.bib}
+\vspace{-1cm}
+\begin{IEEEbiography}[{
+\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{me.jpg}
+}
+]{Luciano Melodia, M.A.}
+studied German and Italian Philology as well as Information Science and Media Informatics at the University of Regensburg, and received his Bachelor of Arts in German Philology in $2015$. He completed his studies with a Master of Arts in Information Science in $2018$ at the Computational Intelligence and Machine Learning Lab (CIML) and is currently a Ph.D. student at the Friedrich-Alexander University Erlangen-Nuremberg in Computer Science. He is a member of the German Informatics Society (GI).
+\end{IEEEbiography}
+\vspace{-1.3cm}
+\begin{IEEEbiography}[{
+\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{lenz.jpg}
+}]{Prof. Dr.-Ing. Richard Lenz} is Professor for Evolutionary Data Management at the University of Erlangen-Nuremberg. He studied computer science at the University of Kaiserslautern. In $1997$ he received a Ph.D. from the University of Erlangen and in $2005$ a habilitation degree from the University of Marburg. His research focuses on Information Systems in Healthcare, Data Quality and Data Integration. He is speaker of the special interest group Informatics in Life Sciences of the German Informatics Society (GI).
+\end{IEEEbiography}
+\end{document}

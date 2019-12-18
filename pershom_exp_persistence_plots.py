@@ -8,14 +8,14 @@ def retrieve_persistence_distances(
     path: str,
     delimiter: str = ",",
     decimals: int = 2):
-    """
+    '''
     Customized retrieval function for the bottleneck distances.
     Retrieves elements from a 3-tuple, named by the iteration step it_i.
     Works for CSV files only.
     :param path: Path of the respective file.
     :param delimiter: CSV delimiter, by default set to ','.
     :return: A nice message to communicate that we are done.
-    """
+    '''
     with open(path + ".csv", "r") as f:
         reader = csv.reader(f)
         my_list = list(reader)
@@ -87,5 +87,3 @@ retrieve_persistence_distances("results/rips_bottleneck")
 retrieve_persistence_distances("results/witness_bottleneck")
 """
 ########################################################################################################################
-retrieve_persistence_distances("results/witness_bottleneck")
-retrieve_persistence_distances("results/witness_wasserstein")
