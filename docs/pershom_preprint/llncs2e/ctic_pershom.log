@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.11.27)  13 JAN 2020 13:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.11.27)  13 JAN 2020 16:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1320,6 +1320,10 @@ LaTeX Font Warning: Font shape `OMS/cmtt/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
 (Font)              for symbol `textbraceleft' on input line 98.
 
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\unskip' on input line 98.
+
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 101.
 
 (/usr/share/texmf-dist/tex/latex/base/omscmr.fd
@@ -1355,34 +1359,34 @@ Non-PDF special ignored!
 <special> ps:tx@Dict begin  gsave STV CP T /ps@refangle 0.  def grestore  e...
 Non-PDF special ignored!
 <special> ps:tx@Dict begin  gsave STV CP T /ps@rot 0 def grestore  end
-{/usr/share/texmf-dist/fonts/map/pdftex/updmap/pdftex.map}] [2]
+{/usr/share/texmf-dist/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
 (./cech_rips_points.tex
-<rips.pdf, id=84, 138.34686pt x 198.47148pt>
+<rips.pdf, id=101, 138.34686pt x 198.47148pt>
 File: rips.pdf Graphic file (type pdf)
 <use rips.pdf>
 Package pdftex.def Info: rips.pdf  used on input line 5.
 (pdftex.def)             Requested size: 56.23134pt x 80.6682pt.
-<cechdelaunay.pdf, id=85, 138.34686pt x 198.47148pt>
+<cechdelaunay.pdf, id=102, 138.34686pt x 198.47148pt>
 File: cechdelaunay.pdf Graphic file (type pdf)
 <use cechdelaunay.pdf>
 Package pdftex.def Info: cechdelaunay.pdf  used on input line 10.
 (pdftex.def)             Requested size: 56.23134pt x 80.6682pt.
-<delaunay.pdf, id=86, 138.34686pt x 198.47148pt>
+<delaunay.pdf, id=103, 138.34686pt x 198.47148pt>
 File: delaunay.pdf Graphic file (type pdf)
 <use delaunay.pdf>
 Package pdftex.def Info: delaunay.pdf  used on input line 15.
 (pdftex.def)             Requested size: 56.23134pt x 80.6682pt.
-<witness.pdf, id=87, 138.34686pt x 198.47148pt>
+<witness.pdf, id=104, 138.34686pt x 198.47148pt>
 File: witness.pdf Graphic file (type pdf)
 <use witness.pdf>
 Package pdftex.def Info: witness.pdf  used on input line 20.
 (pdftex.def)             Requested size: 56.23134pt x 80.6682pt.
-<wrap.pdf, id=88, 138.34686pt x 198.47148pt>
+<wrap.pdf, id=105, 138.34686pt x 198.47148pt>
 File: wrap.pdf Graphic file (type pdf)
 <use wrap.pdf>
 Package pdftex.def Info: wrap.pdf  used on input line 25.
 (pdftex.def)             Requested size: 56.23134pt x 80.6682pt.
-) [3] [4 <./rips.pdf> <./cechdelaunay.pdf
+) [4 <./rips.pdf> <./cechdelaunay.pdf
 
 pdfTeX warning: pdflatex (file ./cechdelaunay.pdf): PDF inclusion: multiple pdf
 s with page group included in a single page
@@ -1407,22 +1411,22 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
  [6] [7] [8] (./voronoi_diagrams.tex
-<voronoi0.pdf, id=432, 228.02188pt x 228.02188pt>
+<voronoi0.pdf, id=436, 228.02188pt x 228.02188pt>
 File: voronoi0.pdf Graphic file (type pdf)
 <use voronoi0.pdf>
 Package pdftex.def Info: voronoi0.pdf  used on input line 5.
 (pdftex.def)             Requested size: 79.83693pt x 79.83669pt.
-<voronoi1.pdf, id=433, 228.02188pt x 228.02188pt>
+<voronoi1.pdf, id=437, 228.02188pt x 228.02188pt>
 File: voronoi1.pdf Graphic file (type pdf)
 <use voronoi1.pdf>
 Package pdftex.def Info: voronoi1.pdf  used on input line 9.
 (pdftex.def)             Requested size: 79.83693pt x 79.83669pt.
-<voronoi2.pdf, id=434, 228.02188pt x 228.02188pt>
+<voronoi2.pdf, id=438, 228.02188pt x 228.02188pt>
 File: voronoi2.pdf Graphic file (type pdf)
 <use voronoi2.pdf>
 Package pdftex.def Info: voronoi2.pdf  used on input line 13.
 (pdftex.def)             Requested size: 79.83693pt x 79.83669pt.
-<voronoi3.pdf, id=435, 228.02188pt x 228.02188pt>
+<voronoi3.pdf, id=439, 228.02188pt x 228.02188pt>
 File: voronoi3.pdf Graphic file (type pdf)
 <use voronoi3.pdf>
 Package pdftex.def Info: voronoi3.pdf  used on input line 17.
@@ -1479,11 +1483,11 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 312.
  ) 
 Here is how much of TeX's memory you used:
- 38647 strings out of 492649
- 876505 string characters out of 6118254
- 2350696 words of memory out of 5000000
- 41515 multiletter control sequences out of 15000+600000
- 16610 words of font info for 116 fonts, out of 8000000 for 9000
+ 38679 strings out of 492649
+ 877019 string characters out of 6118254
+ 2350734 words of memory out of 5000000
+ 41540 multiletter control sequences out of 15000+600000
+ 20136 words of font info for 128 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  71i,20n,111p,1779b,2337s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/
@@ -1494,20 +1498,20 @@ mmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr
 /share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/
 public/amsfonts/cm/cmmi9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></
-usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb>
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt
-9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on ctic_pershom.pdf (14 pages, 669377 bytes).
+/cm/cmmib10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
+></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmr9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pf
+b></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmt
+t9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on ctic_pershom.pdf (14 pages, 667708 bytes).
 PDF statistics:
- 626 PDF objects out of 1000 (max. 8388607)
- 332 compressed objects within 4 object streams
+ 628 PDF objects out of 1000 (max. 8388607)
+ 333 compressed objects within 4 object streams
  82 named destinations out of 1000 (max. 500000)
- 19010 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 19522 words of extra memory for PDF output out of 20736 (max. 10000000)
 
