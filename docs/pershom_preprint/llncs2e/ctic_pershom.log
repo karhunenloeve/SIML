@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.11.27)  10 JAN 2020 16:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.11.27)  13 JAN 2020 12:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1355,7 +1355,7 @@ Non-PDF special ignored!
 <special> ps:tx@Dict begin  gsave STV CP T /ps@refangle 0.  def grestore  e...
 Non-PDF special ignored!
 <special> ps:tx@Dict begin  gsave STV CP T /ps@rot 0 def grestore  end
-{/usr/share/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
+{/usr/share/texmf-dist/fonts/map/pdftex/updmap/pdftex.map}] [2]
 (./cech_rips_points.tex
 <rips.pdf, id=84, 138.34686pt x 198.47148pt>
 File: rips.pdf Graphic file (type pdf)
@@ -1504,7 +1504,7 @@ mf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt
 9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on ctic_pershom.pdf (14 pages, 669289 bytes).
+Output written on ctic_pershom.pdf (14 pages, 669295 bytes).
 PDF statistics:
  626 PDF objects out of 1000 (max. 8388607)
  332 compressed objects within 4 object streams
