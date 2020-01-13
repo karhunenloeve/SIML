@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.11.27)  13 JAN 2020 16:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.11.27)  13 JAN 2020 21:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1359,7 +1359,7 @@ Non-PDF special ignored!
 <special> ps:tx@Dict begin  gsave STV CP T /ps@refangle 0.  def grestore  e...
 Non-PDF special ignored!
 <special> ps:tx@Dict begin  gsave STV CP T /ps@rot 0 def grestore  end
-{/usr/share/texmf-dist/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
+{/usr/share/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
 (./cech_rips_points.tex
 <rips.pdf, id=101, 138.34686pt x 198.47148pt>
 File: rips.pdf Graphic file (type pdf)
@@ -1485,7 +1485,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 312.
 Here is how much of TeX's memory you used:
  38679 strings out of 492649
  877019 string characters out of 6118254
- 2350734 words of memory out of 5000000
+ 2349734 words of memory out of 5000000
  41540 multiletter control sequences out of 15000+600000
  20136 words of font info for 128 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1508,7 +1508,7 @@ exmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts
 /type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmt
 t9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on ctic_pershom.pdf (14 pages, 667708 bytes).
+Output written on ctic_pershom.pdf (14 pages, 665993 bytes).
 PDF statistics:
  628 PDF objects out of 1000 (max. 8388607)
  333 compressed objects within 4 object streams
