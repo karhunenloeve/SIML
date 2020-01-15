@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.11.27)  13 JAN 2020 21:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.11.27)  15 JAN 2020 09:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1483,11 +1483,11 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 312.
  ) 
 Here is how much of TeX's memory you used:
- 38679 strings out of 492649
- 877019 string characters out of 6118254
- 2349734 words of memory out of 5000000
+ 38681 strings out of 492649
+ 877035 string characters out of 6118254
+ 2350734 words of memory out of 5000000
  41540 multiletter control sequences out of 15000+600000
- 20136 words of font info for 128 fonts, out of 8000000 for 9000
+ 20187 words of font info for 129 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  71i,20n,111p,1779b,2337s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/
@@ -1508,7 +1508,7 @@ exmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts
 /type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmt
 t9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on ctic_pershom.pdf (14 pages, 665992 bytes).
+Output written on ctic_pershom.pdf (14 pages, 666029 bytes).
 PDF statistics:
  628 PDF objects out of 1000 (max. 8388607)
  333 compressed objects within 4 object streams
