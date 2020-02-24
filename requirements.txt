@@ -42,7 +42,7 @@ pandas==0.25.1
 pathspec==0.7.0
 patsy==0.5.1
 persim==0.1.1
-Pillow==6.1.0
+Pillow==6.2.0
 POT==0.6.0
 protobuf==3.10.0
 pycosat==0.6.3
