@@ -20,7 +20,7 @@ This repository **SIML** (**S**ignature **I**nference & **M**achine **L**earning
 In this study the Voronoi interpolation is used to interpolate a set of points  drawn from a topological space with higher homology groups on its filtration. The technique is based on Voronoi tesselation, which induces a natural dual map to the Delaunay triangulation. Advantage is taken from this fact calculating the persistent homology on it after each iteration to capture the changing topology of the data. The boundary points are identified as critical. The Bottleneck and Wasserstein distance serve as a measure of quality between the original point set and the interpolation. If the norm of two distances exceeds a heuristically determined threshold, the algorithm terminates. We give the theoretical basis for this approach and justify its validity with numerical experiments.
 
 ## Requirements
-For this package we use the `gcc` compiler. Please install `gcc` using one of the following commands for the linux distributions *Arch, Solus4* or *Ubuntu*:
+For some of the packages written in `C++` with corresponding python bindings we use the `gcc` compiler. Please install `gcc` using one of the following commands for the linux distributions *Arch, Solus4* or *Ubuntu*:
 ```bash
  # Archlinux
  sudo pacman -S gcc
@@ -44,6 +44,16 @@ For this package we use the `gcc` compiler. Please install `gcc` using one of th
   pip3 install sklearn
   # Works only with gcc installed.
   pip3 install hdbscan
+  pip3 install gudhi
+  pip3 install matplotlib
+  pip3 install tikzplotlib
+  pip3 install scipy
+  pip3 install pylab
+  pip3 install ot
+  pip3 install typing
+  pip3 install sklearn
+  pip3 install csv
+  pip3 install numpy
 
   # Install Gudhi, easiest installation with Anaconda.
   # Gudhi is a library to compute persistent homology.

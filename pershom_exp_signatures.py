@@ -1,7 +1,6 @@
 import os
 import numpy as np
 import random as rand
-import matplotlib
 import pylab as py
 import matplotlib.pyplot as plt
 import scipy.interpolate
