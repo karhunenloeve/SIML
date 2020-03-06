@@ -52,15 +52,6 @@
 \DeclareMathOperator{\Wit}{\text{Wit}}
 
 \usepackage{hyperref}
-\hypersetup{
-    pdftitle={Certificate},    % title
-    pdfauthor={Luciano Melodia},     % author
-    pdfsubject={TEQIP certificates},   % subject of the document
-    pdfcreator={Luciano Melodia},   % creator of the document
-    pdfproducer={},  % producer of the document
-    pdfkeywords={Certificates,} {TEQIP} {Participation}, % list of keywords
-    pdfnewwindow=true
-}
 % Attempt to make hyperref and algorithmic work together better:
 \usepackage{algorithm}
 \usepackage{algorithmicx}
@@ -86,6 +77,7 @@
 % First names are abbreviated in the running head.
 % If there are more than two authors, 'et al.' is used.
 %
+\institute{Anon Institute}
 %
 \maketitle              % typeset the header of the contribution
 %
@@ -94,7 +86,6 @@ In this study the Voronoi interpolation is used to interpolate a set of points  
 
 \keywords{Voronoi Interpolation  \and Persistent Homology.}
 \end{abstract}
-
 
 
 \section{Introduction}
@@ -272,7 +263,7 @@ for all $r \in \mathbb{R}$. For the proof we refer to \cite{bauer2017morse}. The
 \label{sec:numexp}
 \input{plot_stop}
 All source code is written in Python 3.7. The GUDHI \cite{gudhi:urm} library is used for the calculation of simplicial complexes, filtrations and persistent homology. We investigate $83$ users, considering $45$ signatures per user from the MOBISIG signature database \cite{MOBISIG}, which show the same letters, but are independent writings. For each user we have a set of $45$ persistence diagrams and a set of $45$ corresponding handwritings. In every iteration as many new points are added as are already in the respective example of a signature. We inserted the points uniformly within the convex hull of the initial point set, see Fig. \ref{fig:voronoi}.
-\subsubsection{Experimental Setting} $\Rips(X)$ is expanded up to the third dimension. The \textit{maximum edge length} is set to the average edge length between two points within the data set. We use the same $r$ for $\Cech(X,r)$ and $\Rips(X,r)$, so that $\Rips(X,r)$ differs topologically more from the union of closed balls around each point, but is faster to compute. Finding an optimal radius as distance threshold is considered open \cite{ZomorodianC05}, thus we use $r = \max_{x,y \in X} ||x-y||$ as empirical heuristic. The strong $\Wit(X,r)$, embedded into $\mathbb{R}^d$, is recalculated for each sample at each interpolation step. We select uniformly $5\%$ of the points as landmarks. We set $\alpha = 0.01, \gamma = 0.1$ and $p = 1$. We assume that the persistence diagrams are i.i.d. A free parameter $\alpha$ quantifies a tolerance to topological change, thus a decision must be made on the hypotheses: $\text{H}_0$: $\mathcal{P}_K^t$ and $\mathcal{P}_K^{t+1}$ have different underlying distributions and $\text{H}_1$: $\mathcal{P}_K^t$ and $\mathcal{P}_K^{t+1}$ persistence diagrams have the same underlying distribution. \cite{czado1998assessing} proposed an asymptotic solution for testing by trimmed Wasserstein distance:
+\subsubsection{Experimental Setting} $\Rips(X)$ is expanded up to the third dimension. The \textit{maximum edge length} is set to the average edge length between two points within the data set. We use the same $r$ for $\Cech(X,r)$ and $\Rips(X,r)$, so that $\Rips(X,r)$ differs topologically more from the union of closed balls around each point, but is faster to compute. Finding an optimal radius as distance threshold is considered open \cite{ZomorodianC05}, thus we use $r = \max_{x,y \in X} ||x-y||$ as empirical heuristic. The strong $\Wit(X,r)$, embedded into $\mathbb{R}^d$, is recalculated for each sample at each interpolation step. We select uniformly $5\%$ of the points as landmarks. We set $\alpha = 0.01, \gamma = 0.1$ and $p = 1$. We assume that the persistence diagrams are i.i.d. A free parameter $\alpha$ quantifies a tolerance to topological change, thus a decision must be made on the hypotheses: $\text{H}_0$: $\mathcal{P}_K^t$ and $\mathcal{P}_K^{t+1}$ have different underlying distributions and $\text{H}_1$: $\mathcal{P}_K^t$ and $\mathcal{P}_K^{t+1}$ persistence diagrams have the same underlying distribution. We use an asymptotic solution for testing by trimmed Wasserstein distance \cite{czado1998assessing}:
 \begin{equation}
 \hat{\Gamma}^p_\gamma(\mathcal{P}^t_K,\mathcal{P}^{t+1}_K) = \frac{1}{(1-2\gamma)} \left( \sum_{j=1}^{m} ||(\mathcal{P}^t_K)_j-\mathcal{P}^{t+1}_K)_j||^p_\infty \Delta \gamma \right)^{1/p}.
 \end{equation}
