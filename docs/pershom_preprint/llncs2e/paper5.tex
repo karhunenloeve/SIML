@@ -76,14 +76,14 @@
 %
 \title{Persistent Homology as Stopping-Criterion for Voronoi Interpolation\thanks{The authors would like to thank David Haller, Anton Rechenauer, Jan Frahm, Lekshmi Beena Gopalakrishnan Nair, Demian Vöhringer, Melanie Sigl and Justin Noel for suggestions and/or proofreading. The implementation can be found on GitHub within the $\partial$SIML project: \url{https://github.com/karhunenloeve/SIML}.}}
 %
-%\titlerunning{Abbreviated paper title}
+\titlerunning{Topological Stopping for Voronoi Interpolation}
 % If the paper title is too long for the running head, you can set
 % an abbreviated paper title here
 %
 \author{Luciano Melodia\orcidID{0000-0002-7584-7287} \\ \and
 Richard Lenz\orcidID{0000-0003-1551-4824}}
 %
-\authorrunning{Luciano Melodia et al.}
+\authorrunning{L. Melodia \and R. Lenz}
 % First names are abbreviated in the running head.
 % If there are more than two authors, 'et al.' is used.
 %
@@ -98,7 +98,7 @@ Friedrich-Alexander University Erlangen-Nürnberg\\
 \begin{abstract}
 In this study the Voronoi interpolation is used to interpolate a set of points  drawn from a topological space with higher homology groups on its filtration. The technique is based on Voronoi tesselation, which induces a natural dual map to the Delaunay triangulation. Advantage is taken from this fact calculating the persistent homology on it after each iteration to capture the changing topology of the data. The boundary points are identified as critical. The Bottleneck and Wasserstein distance serve as a measure of quality between the original point set and the interpolation. If the norm of two distances exceeds a heuristically determined threshold, the algorithm terminates. We give the theoretical basis for this approach and justify its validity with numerical experiments.
 
-\keywords{Voronoi Interpolation  \and Persistent Homology.}
+\keywords{Interpolation \and Persistent Homology \and Voronoi Triangulation.}
 \end{abstract}
 
 
@@ -148,7 +148,7 @@ By $||\cdot||$ we denote consequently the $L^2$-norm. In terms of abstract simpl
 The Vietoris-Rips complex requires only the comparison of distance measures to be obtained. It spans the same $1$-skeleton as the \v{C}ech complex and fulfills for an embedding into any metric space the following relationship \cite[p.~15]{boissonnat2018geometric}: $\Rips(X,r)\subseteq \Cech(X,r) \subseteq \Rips(X,2r).$ To see this, we choose a simplex $\sigma = \{x_0,x_1,\ldots,x_k\} \in \Rips(X,r)$. The point $x_0 \in \bigcap_{i=0}^{k}B(x_i,r)$ must be within the intersection of closed balls with radius $r$ of all points. Now we choose a $\sigma = \{x_0,x_1,\ldots,x_k\} \in \Cech(X,r)$, then there is a point $y \in \mathbb{R}^d$ within the intersection $y \in \bigcap_{i=0}^{k}B(x_i,r)$, which is the desired condition $d(x_i-y) \leq r$ for any $i = 0,\ldots,k$. Therefore, for all $i,j \in \{0,\ldots,k\}$ the following (in)equality applies: $d(x_i-x_j) \leq 2r$ and $\sigma \in \Rips(X,2r)$.
 
 The calculation time for the Vietoris-Rips complex is better than for the \v{C}ech complex, with a bound of $\mathcal{O}(n^2)$ for $n$ points \cite{Zomorodian10}. As a third complex we introduce the $\alpha$-complex or Delaunay complex, for which the definition of Voronoi cells and balls are prerequisite.
-\input{cech_rips_points.tex}
+\input{figure1.tex}
 
 \subsubsection{Delaunay Complex} If $X \subset \mathbb{R}^d$ is a finite set of points and $x \in X$, then the Voronoi cell or also Voronoi region of a point $x \in X$ is given by
 \begin{equation}
@@ -168,9 +168,9 @@ Most interestingly, the Delaunay complex $\text{Del}_r(X)$ of a point set $X$ is
 \end{equation}
 Since the union of open balls does not depend on $U$, the Nerve lemma implies, that for a given set of points $X$ and a radius $r$ all selective Delaunay complexes have the same homotopy type. This also results in $\Del(X,r,V) \subseteq \Del(X,s,U)$ for all $r \leq s$ and $U \subseteq V$. The proof has been given first by \cite[§3.4]{bauer2017morse}.
 
-\subsubsection{Witness Complex} Through the restriction of the faces to randomly chosen subsets of the point cloud the filtration is carried out on a scalable complex, which is suitable for large point sets. We call these subsets witnesses $W \subset \mathbb{R}^d$ and $L \subset \mathbb{R}^d$ landmarks. The landmarks can be part of the witnesses $L \subseteq W$, but do not have to. Then $\sigma$ is a simplex with vertices in $L$ and some points $w \in W$. We say that $w$ is witnessed by $\sigma$ if $||w-p|| \leq ||w-q||,$ for all $p \in \sigma$ and $q \in L \setminus \sigma.$ We further say it is strongly witnessed by $\sigma$ if $||w-p|| \leq ||w-q||,$ for all $p \in \sigma$ and $q \in L$. The witness complex $\Wit(L,W)$ consists of all simplices $\sigma$, such that any simplex $\tilde{\sigma} \subseteq \sigma$ has a witness in $W$ and the strong witness complex analogously.
+\subsubsection{Witness Complex} Through the restriction of the faces to randomly chosen subsets of the point cloud the filtration is carried out on a scalable complex, which is suitable for large point sets. We call these subsets Witnesses $W \subset \mathbb{R}^d$ and $L \subset \mathbb{R}^d$ landmarks. The landmarks can be part of the Witnesses $L \subseteq W$, but do not have to. Then $\sigma$ is a simplex with vertices in $L$ and some points $w \in W$. We say that $w$ is Witnessed by $\sigma$ if $||w-p|| \leq ||w-q||,$ for all $p \in \sigma$ and $q \in L \setminus \sigma.$ We further say it is strongly Witnessed by $\sigma$ if $||w-p|| \leq ||w-q||,$ for all $p \in \sigma$ and $q \in L$. The Witness complex $\Wit(L,W)$ consists of all simplices $\sigma$, such that any simplex $\tilde{\sigma} \subseteq \sigma$ has a Witness in $W$ and the strong Witness complex analogously.
 
-The homology groups of the witness complex depend strongly on the landmarks. In addition to equally distributed initialization, strategies such as sequential \textit{MaxMin} can lead to a more accurate estimate of homology groups \cite{de2004topological}. Its time bound for construction is $\mathcal{O}\left(|W|log|W|+k|W|\right)$ \cite{boissonnat2018geometric}.
+The homology groups of the Witness complex depend strongly on the landmarks. In addition to equally distributed initialization, strategies such as sequential \textit{MaxMin} can lead to a more accurate estimate of homology groups \cite{de2004topological}. Its time bound for construction is $\mathcal{O}\left(|W|log|W|+k|W|\right)$ \cite{boissonnat2018geometric}.
 
 \section{Persistent Homology Theory}
 \label{sec:simplicialhomology}
@@ -230,7 +230,7 @@ We center a square $R_\alpha(x)$ at $x$ with radius $\alpha = ||f-g||_\infty$. A
 \begin{equation}
 \mu \leq \#(\mathcal{P}_g \cap R_\alpha(x)) \leq \#(\mathcal{P}_f \cap R(x)_{2\alpha}).
 \end{equation}
-Since $g$ was chosen in such a way, that $||f-g||_\infty \leq \delta_f / 2$ applies, we conclude that $2 \alpha \leq \delta_f$. Thus $x$ is the only point of the persistence diagram $\mathcal{P}_f$ that is inside $R_{2\alpha}$. Thus the multiplicity $\mu$ is equal to $\#(\mathcal{P}_g \cap R(x)_\alpha)$. We can now project all points from $\mathcal{P}_g$ in $R(x)_\alpha$ onto $x$. As $d_H(\mathcal{P}_f, \mathcal{P}_g) \leq \alpha$ holds, the remaining points are mapped to their nearest point on the diagional.
+Since $g$ was chosen in such a way, that $||f-g||_\infty \leq \delta_f / 2$ applies, we conclude that $2 \alpha \leq \delta_f$. Thus $x$ is the only point of the persistence diagram $\mathcal{P}_f$ that is inside $R_{2\alpha}$ and the multiplicity $\mu$ is equal to $\#(\mathcal{P}_g \cap R(x)_\alpha)$. We can now project all points from $\mathcal{P}_g$ in $R(x)_\alpha$ onto $x$. As $d_H(\mathcal{P}_f, \mathcal{P}_g) \leq \alpha$ holds, the remaining points are mapped to their nearest point on the diagional.
 
 \section{Wasserstein Distance}
 The Wasserstein distance is defined for separable completely metrizable topological spaces. In this particular case between the two persistence diagrams $\mathcal{P}_{K^1}$ and $\mathcal{P}_{K^2}$. The $L^p$-Wasserstein distance $W^p$ is a metric arising from the examination of transport plans between two distributions and is defined for a $p \in [1,\infty)$ as
@@ -248,7 +248,7 @@ For small enough perturbations of Lipschitz functions their $p$-th Wasserstein d
 
 \section{The Natural Neighbor Algorithm}
 \label{sec:natneighbor}
-\input{voronoi_diagrams.tex}
+\input{figure2.tex}
 The algorithm re-weights the coordinates of a new point in the convex hull of a point cloud by the change of Voronoi regions relative to the Voronoi regions without the additional point, i.e. $\hat{x}_{\bullet} = \sum_{l=1}^{L} \lambda_l x_{\bullet l}$. For a set of points $X \subset \mathbb{R}^d$ distributed over an embedded manifold $M$ natural neighbors behave like a local coordinate system for $M$ with their density increasing \cite{BoissonnatC01}. The Voronoi tesselation is dual to the Delaunay triangulation, thus we use the latter for our computation \cite[pp.~45-47]{BoissonnatDG18}. This duality gives a bijection between the faces of one complex and the faces of the other, including incidence and reversibility of operations. Both have the same homotopy type. A Voronoi diagram $\text{dgm}_{\Vor}(X)$ is defined by the union of the Voronoi regions $\text{dgm}_{\Vor}(X) := \bigcup_{x \in X} \Vor(x),$ for all $x \in X$ and assigns a polyhedron to each point, see Fig. \ref{fig:voronoi}. This interpolation method generalizes to arbitrary dimensions. The combinatorial complexity of the Voronoi diagram of $n$ points of $\mathbb{R}^d$ is at most the combinatorial complexity of a polyhedron defined as the intersection of $n$ half-spaces of $\mathbb{R}^{d+1}$. Due to duality the construction of $\text{dgm}_{\Vor}(X)$ takes $\mathcal{O}( n \log n+n^{d/2})$  \cite{BoissonnatDG18}.
 
 \subsubsection{Voronoi Tesselation}
@@ -275,7 +275,7 @@ for all $r \in \mathbb{R}$. For the proof we refer to \cite{bauer2017morse}. The
 
 \section{Numerical Experiments}
 \label{sec:numexp}
-\input{plot_stop}
+\input{figure3}
 All source code is written in Python 3.7. The GUDHI \cite{gudhi:urm} library is used for the calculation of simplicial complexes, filtrations and persistent homology. We investigate $83$ users, considering $45$ signatures per user from the MOBISIG signature database \cite{MOBISIG}, which show the same letters, but are independent writings. For each user we have a set of $45$ persistence diagrams and a set of $45$ corresponding handwritings. In every iteration as many new points are added as are already in the respective example of a signature. We inserted the points uniformly within the convex hull of the initial point set, see Fig. \ref{fig:voronoi}.
 \subsubsection{Experimental Setting} $\Rips(X)$ is expanded up to the third dimension. The \textit{maximum edge length} is set to the average edge length between two points within the data set. We use the same $r$ for $\Cech(X,r)$ and $\Rips(X,r)$, so that $\Rips(X,r)$ differs topologically more from the union of closed balls around each point, but is faster to compute. Finding an optimal radius as distance threshold is considered open \cite{ZomorodianC05}, thus we use $r = \max_{x,y \in X} ||x-y||$ as empirical heuristic. The strong $\Wit(X,r)$, embedded into $\mathbb{R}^d$, is recalculated for each sample at each interpolation step. We select uniformly $5\%$ of the points as landmarks. We set $\alpha = 0.01, \gamma = 0.1$ and $p = 1$. We assume that the persistence diagrams are i.i.d. A free parameter $\alpha$ quantifies a tolerance to topological change, thus a decision must be made on the hypotheses: $\text{H}_0$: $\mathcal{P}_K^t$ and $\mathcal{P}_K^{t+1}$ have different underlying distributions and $\text{H}_1$: $\mathcal{P}_K^t$ and $\mathcal{P}_K^{t+1}$ persistence diagrams have the same underlying distribution. We use an asymptotic solution for testing by trimmed Wasserstein distance \cite{czado1998assessing}:
 \begin{equation}
@@ -292,7 +292,7 @@ where $z_\gamma$ denotes the $\gamma$-quantile of the standard normal distributi
 \section{Conclusions}
 \label{sec:conclusion}
 We have discussed the connection of Voronoi diagrams to the Delaunay complex and its connection to other complexes, which should serve as a basis to explore related algorithms to the Voronoi interpolation. We investigated into metrics to measure differences in persistent homology and could visualize the changing homology groups of the users signatures during interpolation, see Fig. \ref{fig:stopping}.
-Our result is a stopping-criterion with a hypothesis test to determine whether the persistent homology of an interpolated signature still originates from the same distribution as the source. Our measurements show an improvement of statistics compared to vanilla Voronoi interpolation. We demonstrated, that -- under mild conditions -- the Delaunay complex, \v{C}ech Delaunay complex and wrap complex can also be used for filtration up to homotopy equivalence. Following open research questions arose during our investigations:
+Our result is a stopping-criterion with a hypothesis test to determine whether the persistent homology of an interpolated signature still originates from the same distribution as the source. Our measurements show an improvement of statistics compared to vanilla Voronoi interpolation. We demonstrated, that -- under mild conditions -- the Delaunay complex, \v{C}ech Delaunay complex and Wrap complex can also be used for filtration up to homotopy equivalence. Following open research questions arose during our investigations:
 \begin{itemize}
   \item The intrinsic geometry of the data points is often not the Euclidean one. On the other handside the frequently used embedding of the Voronoi tesselation is. This causes unwanted artifacts. Is there a geometrically meaningful clipping for general metric spaces, for example using geodesics in a smooth manifold setting? In which manifold should $\Del(X)$ be embedded?
   \item To our knowledge there is no evidence known that the Voronoi tesselation obtains the homology groups. According to \cite{reem2011geometric}, the Voronoi tessellation is stable. However, the experiments show that for increasing iterations additional homology groups appear. Does the Voronoi tesselation preserve homology groups and homotopy groups in general metric spaces?
@@ -303,5 +303,5 @@ Our result is a stopping-criterion with a hypothesis test to determine whether t
 % References will then be sorted and formatted in the correct style.
 %
 \bibliographystyle{splncs04}
-\bibliography{biblio}
+\bibliography{paper5}
 \end{document}

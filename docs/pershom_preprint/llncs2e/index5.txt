@@ -1,0 +1,7 @@
+AUTHOR INDEX:
+
+\index{Melodia, Luciano}
+\index{Lenz, Richard}
+
+RUNNING HEADS:
+\authorrunning{L. Melodia \and R. Lenz}
