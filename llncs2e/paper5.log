@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.11.27)  10 MAR 2020 17:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.11.27)  10 MAR 2020 17:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1353,33 +1353,34 @@ Non-PDF special ignored!
 <special> ps:tx@Dict begin  gsave STV CP T /ps@refangle 0.  def grestore  e...
 Non-PDF special ignored!
 <special> ps:tx@Dict begin  gsave STV CP T /ps@rot 0 def grestore  end
-{/usr/share/texmf-dist/fonts/map/pdftex/updmap/pdftex.map}] [2] (./figure1.tex
-<figure1_a.pdf, id=85, 138.34686pt x 198.47148pt>
+{/usr/share/texmf-dist/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
+(./figure1.tex
+<figure1_a.pdf, id=96, 138.34686pt x 198.47148pt>
 File: figure1_a.pdf Graphic file (type pdf)
 <use figure1_a.pdf>
 Package pdftex.def Info: figure1_a.pdf  used on input line 5.
 (pdftex.def)             Requested size: 56.23134pt x 80.6682pt.
-<figure1_b.pdf, id=86, 138.34686pt x 198.47148pt>
+<figure1_b.pdf, id=97, 138.34686pt x 198.47148pt>
 File: figure1_b.pdf Graphic file (type pdf)
 <use figure1_b.pdf>
 Package pdftex.def Info: figure1_b.pdf  used on input line 10.
 (pdftex.def)             Requested size: 56.23134pt x 80.6682pt.
-<figure1_c.pdf, id=87, 138.34686pt x 198.47148pt>
+<figure1_c.pdf, id=98, 138.34686pt x 198.47148pt>
 File: figure1_c.pdf Graphic file (type pdf)
 <use figure1_c.pdf>
 Package pdftex.def Info: figure1_c.pdf  used on input line 15.
 (pdftex.def)             Requested size: 56.23134pt x 80.6682pt.
-<figure1_d.pdf, id=88, 138.34686pt x 198.47148pt>
+<figure1_d.pdf, id=99, 138.34686pt x 198.47148pt>
 File: figure1_d.pdf Graphic file (type pdf)
 <use figure1_d.pdf>
 Package pdftex.def Info: figure1_d.pdf  used on input line 20.
 (pdftex.def)             Requested size: 56.23134pt x 80.6682pt.
-<figure1_e.pdf, id=89, 138.34686pt x 198.47148pt>
+<figure1_e.pdf, id=100, 138.34686pt x 198.47148pt>
 File: figure1_e.pdf Graphic file (type pdf)
 <use figure1_e.pdf>
 Package pdftex.def Info: figure1_e.pdf  used on input line 25.
 (pdftex.def)             Requested size: 56.23134pt x 80.6682pt.
-) [3] [4 <./figure1_a.pdf> <./figure1_b.pdf
+) [4 <./figure1_a.pdf> <./figure1_b.pdf
 
 pdfTeX warning: pdflatex (file ./figure1_b.pdf): PDF inclusion: multiple pdfs w
 ith page group included in a single page
@@ -1397,29 +1398,29 @@ pdfTeX warning: pdflatex (file ./figure1_e.pdf): PDF inclusion: multiple pdfs w
 ith page group included in a single page
 >]
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 169.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 172.
  [5] [6] [7] [8] (./figure2.tex
-<figure2_a.pdf, id=437, 228.02188pt x 228.02188pt>
+<figure2_a.pdf, id=433, 228.02188pt x 228.02188pt>
 File: figure2_a.pdf Graphic file (type pdf)
 <use figure2_a.pdf>
 Package pdftex.def Info: figure2_a.pdf  used on input line 5.
 (pdftex.def)             Requested size: 79.83693pt x 79.83669pt.
-<figure2_b.pdf, id=438, 228.02188pt x 228.02188pt>
+<figure2_b.pdf, id=434, 228.02188pt x 228.02188pt>
 File: figure2_b.pdf Graphic file (type pdf)
 <use figure2_b.pdf>
 Package pdftex.def Info: figure2_b.pdf  used on input line 9.
 (pdftex.def)             Requested size: 79.83693pt x 79.83669pt.
-<figure2_c.pdf, id=439, 228.02188pt x 228.02188pt>
+<figure2_c.pdf, id=435, 228.02188pt x 228.02188pt>
 File: figure2_c.pdf Graphic file (type pdf)
 <use figure2_c.pdf>
 Package pdftex.def Info: figure2_c.pdf  used on input line 13.
 (pdftex.def)             Requested size: 79.83693pt x 79.83669pt.
-<figure2_d.pdf, id=440, 228.02188pt x 228.02188pt>
+<figure2_d.pdf, id=436, 228.02188pt x 228.02188pt>
 File: figure2_d.pdf Graphic file (type pdf)
 <use figure2_d.pdf>
 Package pdftex.def Info: figure2_d.pdf  used on input line 17.
 (pdftex.def)             Requested size: 79.83693pt x 79.83669pt.
-) [9] [10 <./figure2_a.pdf> <./figure2_b.pdf> <./figure2_c.pdf> <./figure2_d.pd
+ [9]) [10 <./figure2_a.pdf> <./figure2_b.pdf> <./figure2_c.pdf> <./figure2_d.pd
 f>] (./figure3.tex (./figure3_a.tex)
 (./figure3_b.tex) (./figure3_c.tex) (./figure3_d.tex) (./figure3_e.tex)
 (./figure3_f.tex)
@@ -1452,7 +1453,7 @@ e main'. Filled path will be on top of the other ones. Please ensure that 'pre
 main' is somewhere in the layer list (or set '/tikz/fill between/on layer='). o
 n input line 172.
 
-) [11] [12] (./paper5.bbl [13]
+[11]) [12] [13] (./paper5.bbl
 Underfull \hbox (badness 1253) in paragraph at lines 7--10
 []\OT1/cmr/m/n/9 (+20) Anton, F., Mioc, D., Fournier, A.: Re-con-struct-ing 2d 
 im-ages with nat-u-
@@ -1488,7 +1489,7 @@ Underfull \hbox (badness 1803) in paragraph at lines 30--33
 T1/cmr/bx/n/9 18\OT1/cmr/m/n/9 (+20) (2), 399--431 (2018).
  []
 
-
+[14]
 Underfull \hbox (badness 3138) in paragraph at lines 59--62
 []\OT1/cmr/m/n/9 (+20) Cohen-Steiner, D., Edels-brun-ner, H., Harer, J.: Sta-bi
 l-ity of per-sis-tence
@@ -1506,7 +1507,7 @@ Underfull \hbox (badness 1281) in paragraph at lines 90--93
 r/bx/n/9 50\OT1/cmr/m/n/9 (+20) (2), 225--261 (2017).
  []
 
-[14]
+
 Underfull \hbox (badness 6876) in paragraph at lines 104--107
 []\OT1/cmr/m/n/9 (+20) Silva, V.D., Carls-son, G.: Topo-log-i-cal es-ti-ma-tion
  us-ing wit-ness com-
@@ -1519,23 +1520,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 104--107
  []
 
 ) [15]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 311.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 311.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 316.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 316.
  (./paper5.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 311.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 311.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 316.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 316.
 Package rerunfilecheck Info: File `paper5.out' has not changed.
 (rerunfilecheck)             Checksum: B90FA3B8A00366021743B3DE94A88064;102.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 311.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 316.
  ) 
 Here is how much of TeX's memory you used:
  38630 strings out of 492649
- 875712 string characters out of 6118254
- 2351699 words of memory out of 5000000
+ 875759 string characters out of 6118254
+ 2350943 words of memory out of 5000000
  41504 multiletter control sequences out of 15000+600000
  14445 words of font info for 105 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1559,10 +1563,10 @@ ype1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmtt9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/
 msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb
 >
-Output written on paper5.pdf (15 pages, 662214 bytes).
+Output written on paper5.pdf (15 pages, 663397 bytes).
 PDF statistics:
- 664 PDF objects out of 1000 (max. 8388607)
- 368 compressed objects within 4 object streams
+ 660 PDF objects out of 1000 (max. 8388607)
+ 366 compressed objects within 4 object streams
  91 named destinations out of 1000 (max. 500000)
  12866 words of extra memory for PDF output out of 14400 (max. 10000000)
 
