@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.11.27)  10 MAR 2020 15:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.11.27)  10 MAR 2020 16:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1353,7 +1353,7 @@ Non-PDF special ignored!
 <special> ps:tx@Dict begin  gsave STV CP T /ps@refangle 0.  def grestore  e...
 Non-PDF special ignored!
 <special> ps:tx@Dict begin  gsave STV CP T /ps@rot 0 def grestore  end
-{/usr/share/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] (./figure1.tex
+{/usr/share/texmf-dist/fonts/map/pdftex/updmap/pdftex.map}] [2] (./figure1.tex
 <figure1_a.pdf, id=85, 138.34686pt x 198.47148pt>
 File: figure1_a.pdf Graphic file (type pdf)
 <use figure1_a.pdf>
@@ -1379,8 +1379,7 @@ File: figure1_e.pdf Graphic file (type pdf)
 <use figure1_e.pdf>
 Package pdftex.def Info: figure1_e.pdf  used on input line 25.
 (pdftex.def)             Requested size: 56.23134pt x 80.6682pt.
-)
-[3] [4 <./figure1_a.pdf> <./figure1_b.pdf
+) [3] [4 <./figure1_a.pdf> <./figure1_b.pdf
 
 pdfTeX warning: pdflatex (file ./figure1_b.pdf): PDF inclusion: multiple pdfs w
 ith page group included in a single page
@@ -1548,10 +1547,10 @@ ype1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt
 9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></u
 sr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on paper5.pdf (15 pages, 675275 bytes).
+Output written on paper5.pdf (15 pages, 674824 bytes).
 PDF statistics:
- 658 PDF objects out of 1000 (max. 8388607)
- 361 compressed objects within 4 object streams
+ 659 PDF objects out of 1000 (max. 8388607)
+ 362 compressed objects within 4 object streams
  91 named destinations out of 1000 (max. 500000)
  13378 words of extra memory for PDF output out of 14400 (max. 10000000)
 
