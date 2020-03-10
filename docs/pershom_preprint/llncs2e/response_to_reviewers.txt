@@ -1,6 +1,0 @@
-Dear reviewers,
-
-we would like to thank you for the positive feedback. We are addressing your request to make the code available. The existing code was removed by us due to the anonymization guidelines. On the first page, according to the Springer guidelines, you will find a thank you note to scientists who contributed to the development of the idea and a link to an archived GitHub repository with all implementations, data sets, and measurements, including the program code described.
-
-Sincerely yours
-Luciano Melodia and Richard Lenz
