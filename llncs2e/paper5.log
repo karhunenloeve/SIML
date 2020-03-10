@@ -1,8 +1,8 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.11.27)  10 MAR 2020 16:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.11.27)  10 MAR 2020 17:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**paper5.tex
+**paper5.tex --shell-escape
 (./paper5.tex
 LaTeX2e <2018-04-01> patch level 2
 Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
@@ -1465,6 +1465,18 @@ T1/cmr/bx/n/9 17\OT1/cmr/m/n/9 (+20) (3), 134--146 (2001).
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 26--28
+[]\OT1/cmr/m/n/9 (+20) Boissonnat, J.D., Chazal, F., Yvinec, M.: Ge-o-met-ric a
+nd Topo-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--28
+\OT1/cmr/m/n/9 (+20) log-i-cal In-fer-ence, vol. 57. Cam-bridge Uni-ver-sity Pr
+ess (2018).
+ []
+
+
 Underfull \hbox (badness 1939) in paragraph at lines 30--33
 []\OT1/cmr/m/n/9 (+20) Boissonnat, J.D., Dyer, R., Ghosh, A.: De-lau-nay tri-an
 -gu-la-tion of man-i-
@@ -1477,31 +1489,31 @@ T1/cmr/bx/n/9 18\OT1/cmr/m/n/9 (+20) (2), 399--431 (2018).
  []
 
 
-Underfull \hbox (badness 3138) in paragraph at lines 57--60
+Underfull \hbox (badness 3138) in paragraph at lines 59--62
 []\OT1/cmr/m/n/9 (+20) Cohen-Steiner, D., Edels-brun-ner, H., Harer, J.: Sta-bi
 l-ity of per-sis-tence
  []
 
 
-Underfull \hbox (badness 2608) in paragraph at lines 57--60
+Underfull \hbox (badness 2608) in paragraph at lines 59--62
 \OT1/cmr/m/n/9 (+20) di-a-grams. Dis-crete and Com-pu-ta-tional Ge-om-e-try \OT
 1/cmr/bx/n/9 37\OT1/cmr/m/n/9 (+20) (1), 103--120 (2007).
  []
 
 
-Underfull \hbox (badness 1281) in paragraph at lines 87--90
+Underfull \hbox (badness 1281) in paragraph at lines 90--93
 \OT1/cmr/m/n/9 (+20) and ran-dom walks. Ran-dom Struc-ture Al-go-rithms \OT1/cm
 r/bx/n/9 50\OT1/cmr/m/n/9 (+20) (2), 225--261 (2017).
  []
 
 [14]
-Underfull \hbox (badness 6876) in paragraph at lines 101--104
+Underfull \hbox (badness 6876) in paragraph at lines 104--107
 []\OT1/cmr/m/n/9 (+20) Silva, V.D., Carls-son, G.: Topo-log-i-cal es-ti-ma-tion
  us-ing wit-ness com-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 101--104
+Underfull \hbox (badness 10000) in paragraph at lines 104--107
 \OT1/cmr/m/n/9 (+20) plexes. Sym-po-sium on Point-Based Graph-ics \OT1/cmr/bx/n
 /9 4\OT1/cmr/m/n/9 (+20) , 157--166 (2004).
  []
@@ -1522,12 +1534,12 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 311.
  ) 
 Here is how much of TeX's memory you used:
  38630 strings out of 492649
- 875735 string characters out of 6118254
- 2351464 words of memory out of 5000000
- 41505 multiletter control sequences out of 15000+600000
- 14562 words of font info for 105 fonts, out of 8000000 for 9000
+ 875712 string characters out of 6118254
+ 2351699 words of memory out of 5000000
+ 41504 multiletter control sequences out of 15000+600000
+ 14445 words of font info for 105 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 71i,20n,111p,1738b,2337s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 71i,20n,111p,1754b,2337s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texmf-dist/fonts/type1/public
@@ -1544,13 +1556,13 @@ dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt
-9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></u
-sr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on paper5.pdf (15 pages, 674824 bytes).
+sfonts/cm/cmtt9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/
+msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb
+>
+Output written on paper5.pdf (15 pages, 662214 bytes).
 PDF statistics:
- 659 PDF objects out of 1000 (max. 8388607)
- 362 compressed objects within 4 object streams
+ 664 PDF objects out of 1000 (max. 8388607)
+ 368 compressed objects within 4 object streams
  91 named destinations out of 1000 (max. 500000)
- 13378 words of extra memory for PDF output out of 14400 (max. 10000000)
+ 12866 words of extra memory for PDF output out of 14400 (max. 10000000)
 

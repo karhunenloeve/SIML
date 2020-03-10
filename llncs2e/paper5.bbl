@@ -9,9 +9,9 @@ Anton, F., Mioc, D., Fournier, A.: Reconstructing 2d images with natural
   (2001). \doi{10.1007/PL00013404}
 
 \bibitem{bauer2017morse}
-Bauer, U., Edelsbrunner, H.: The morse theory of Čech and delaunay complexes.
-  Transactions of the American Mathematical Society  \textbf{369}(5),
-  3741--3762 (2017)
+Bauer, U., Edelsbrunner, H.: The morse theory of \v{c}ech and delaunay
+  complexes. Transactions of the American Mathematical Society
+  \textbf{369}(5),  3741--3762 (2017). \doi{10.1090/tran/6991}
 
 \bibitem{Bobach2009}
 Bobach, T.A.: Natural Neighbor Interpolation - Critical Assessment and New
@@ -24,7 +24,7 @@ Boissonnat, J., Cazals, F.: Natural neighbor coordinates of points on a
 
 \bibitem{boissonnat2018geometric}
 Boissonnat, J.D., Chazal, F., Yvinec, M.: Geometric and Topological Inference,
-  vol.~57. Cambridge University Press (2018)
+  vol.~57. Cambridge University Press (2018). \doi{10.1017/9781108297806.014}
 
 \bibitem{BoissonnatDG18}
 Boissonnat, J.D., Dyer, R., Ghosh, A.: Delaunay triangulation of manifolds.
@@ -33,12 +33,13 @@ Boissonnat, J.D., Dyer, R., Ghosh, A.: Delaunay triangulation of manifolds.
 
 \bibitem{borsuk}
 Borsuk, K.: On the imbedding of systems of compacta in simplicial complexes.
-  Fundamenta Mathematicae  \textbf{35},  217--234 (1948)
+  Fundamenta Mathematicae  \textbf{35},  217--234 (1948).
+  \doi{10.4064/fm-35-1-217-234}
 
 \bibitem{CarriereCO17}
-Carrière, M., Cuturi, M., Oudot, S.: Sliced wasserstein kernel for persistence
-  diagrams. In: Proceedings of the $34th$ International Conference on Machine
-  Learning. pp. 664--673 (2017)
+Carri\`{e}re, M., Cuturi, M., Oudot, S.: Sliced wasserstein kernel for
+  persistence diagrams. In: Proceedings of the 34th International Conference on
+  Machine Learning. pp. 664--673 (2017)
 
 \bibitem{CerriL16}
 Cerri, A., Landi, C.: Hausdorff stability of persistence spaces. Foundations of
@@ -46,12 +47,13 @@ Cerri, A., Landi, C.: Hausdorff stability of persistence spaces. Foundations of
   \doi{10.1007/s10208-015-9244-1}
 
 \bibitem{ChazalGLM15}
-Chazal, F., Glisse, M., Labruère, C., Michel, B.: Convergence rates for
+Chazal, F., Glisse, M., Labru\`{e}re, C., Michel, B.: Convergence rates for
   persistence diagram estimation in topological data analysis. Journal of
   Machine Learning Research  \textbf{16},  3603--3635 (2015)
 
 \bibitem{cohen2012course}
-Cohen, M.: A Course in Simple-Homotopy Theory, vol.~10. Springer (2012)
+Cohen, M.: A Course in Simple-Homotopy Theory, vol.~10. Springer (2012).
+  \doi{10.1007/978-1-4684-9372-6}
 
 \bibitem{Cohen-SteinerEH07}
 Cohen-Steiner, D., Edelsbrunner, H., Harer, J.: Stability of persistence
@@ -60,17 +62,18 @@ Cohen-Steiner, D., Edelsbrunner, H., Harer, J.: Stability of persistence
 
 \bibitem{cohen2010lipschitz}
 Cohen-Steiner, D., Edelsbrunner, H., Harer, J., Mileyko, Y.: Lipschitz
-  functions have $l^p$-stable persistence. Foundations of Computational
+  functions have l\^{}p-stable persistence. Foundations of Computational
   Mathematics  \textbf{10}(2) (2010). \doi{10.1007/s10208-010-9060-6}
 
 \bibitem{czado1998assessing}
 Czado, C., Munk, A.: Assessing the similarity of distributions-finite sample
   performance of the empirical mallows distance. Journal of Statistical
-  Computation and Simulation  \textbf{60}(4),  319--346 (1998)
+  Computation and Simulation  \textbf{60}(4),  319--346 (1998).
+  \doi{10.1080/00949659808811895}
 
 \bibitem{edelsbrunner2008persistent}
 Edelsbrunner, H., Harer, J.: Persistent homology -- a survey. Contemporary
-  mathematics  \textbf{453},  257--282 (2008)
+  mathematics  \textbf{453},  257--282 (2008). \doi{10.1090/conm/453/08802}
 
 \bibitem{gudhi:urm}
 Ghudi user and reference manual,
@@ -90,7 +93,7 @@ Parzanchevski, O., Rosenthal, R.: Simplicial complexes: Spectrum, homology and
 
 \bibitem{reem2011geometric}
 Reem, D.: The geometric stability of voronoi diagrams with respect to small
-  changes of the sites. In: Proceedings of the $27th$ Annual Symposium on
+  changes of the sites. In: Proceedings of the 27th Annual Symposium on
   Computational Geometry. pp. 254--263 (2011). \doi{10.1145/1998196.1998234}
 
 \bibitem{Sibson}
@@ -111,6 +114,7 @@ Zomorodian, A.: Fast construction of the vietoris-rips complex. Computers and
 
 \bibitem{ZomorodianC05}
 Zomorodian, A., Carlsson, G.E.: Computing persistent homology. Discrete {\&}
-  Computational Geometry  \textbf{33}(2),  249--274 (2005)
+  Computational Geometry  \textbf{33}(2),  249--274 (2005).
+  \doi{10.1007/s00454-004-1146-y}
 
 \end{thebibliography}
