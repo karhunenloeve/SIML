@@ -50,7 +50,6 @@
 \DeclareMathOperator{\Del}{\text{Del}}
 \DeclareMathOperator{\Wrap}{\text{Wrap}}
 \DeclareMathOperator{\Wit}{\text{Wit}}
-
 \usepackage[hidelinks]{hyperref}
 \hypersetup{
     pdftitle={Persistent Homology as Stopping-Criterion for Voronoi Interpolation},    % title
@@ -59,7 +58,12 @@
     pdfcreator={Luciano Melodia},   % creator of the document
     pdfproducer={Luciano Melodia},  % producer of the document
     pdfkeywords={Persistent Homology} {Interpolation} {Voronoi Triangulation}, % list of keywords
-    pdfnewwindow=true
+    pdfnewwindow=true,
+    colorlinks,
+	citecolor=black,
+	filecolor=black,
+	linkcolor=black,
+	urlcolor=blue
 }
 % Attempt to make hyperref and algorithmic work together better:
 \usepackage{algorithm}
@@ -91,7 +95,7 @@ Richard Lenz\orcidID{0000-0003-1551-4824}}
 Chair of Computer Science 6\\
 Friedrich-Alexander University Erlangen-Nürnberg\\
 91058 Erlangen, Deutschland\\
-\email{\{firstname.surname\}@fau.de}}
+\email{\{luciano.melodia,richard.lenz\}@fau.de}}
 %
 \maketitle              % typeset the header of the contribution
 %
@@ -264,15 +268,16 @@ The Voronoi cells have no common interior, intersect at their boundaries and cov
 
 The natural neighbor is the closest point $x$ to two other points $y$ and $z$ within $X$. To yield the position of the added point we have to calculate the Voronoi diagram of the original signature $\text{dgm}_{\Vor}(X)$ and one with an added point $\text{dgm}_{\Vor}^{\bullet}(X\cup x_{\bullet}) = \bigcup_{x \in X \cup x_\bullet} \Vor(x)$. The latter consists of one Voronoi region more than the primer, see Fig. \ref{fig:voronoi} (a) and (c). This polygon is part of $\text{dgm}_{\Vor}^{\bullet}(X\cup x_{\bullet})$ and contains a certain amount of its `area'.
 
-The weights of the coordinate representation of $x_{\bullet}$ are determined by the quotient of the `stolen' Voronoi regions and the total `area' of the Voronoi diagram with the additional point \cite{Anton2001}:
+The Voronoi regions sum up to one $\sum_{l=1}^{L} \lambda_l = 1$. The Voronoi interpolation is repeated until the topological stopping condition is met, measured through the $W^p$-distances of the persistence diagrams $\mathcal{P}_{K}$ and $\mathcal{P}_{K^\bullet}$. The weights of the coordinate representation of $x_{\bullet}$ are determined by the quotient of the `stolen' Voronoi regions and the total `area' of the Voronoi diagram with the additional point according to Eq. \ref{voreq} \cite{Anton2001}. 
 \begin{equation}
+	\label{voreq}
     \lambda_{l} =
     \begin{cases}
         \frac{\text{vol}\left(\Vor(x_l) \cap \Vor^{\bullet}(x_{\bullet}\right))}{\text{vol}\left(\Vor^{\bullet}(x_{\bullet})\right)} & \text{if } x\geq 1,\\
         0 & \text{otherwise.}
     \end{cases}
 \end{equation}
-The regions sum up to one $\sum_{l=1}^{L} \lambda_l = 1$. The Voronoi interpolation is repeated until the stopping condition is met, measured through the $W^p$-distances of the persistence diagrams $\mathcal{P}_{K}$ and $\mathcal{P}_{K^\bullet}$. But to what extent are homology groups preserved if persistent homology is computed on the Delaunay triangulation?
+But to what extent are homology groups preserved if persistent homology is computed on the Delaunay triangulation?
 
 \section{The Simplicial Collapse}
 \label{simcoll}
