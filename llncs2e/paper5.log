@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.11.27)  11 MAR 2020 12:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.11.27)  11 MAR 2020 13:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1503,19 +1503,19 @@ Underfull \hbox (badness 2608) in paragraph at lines 60--63
  []
 
 
-Underfull \hbox (badness 1281) in paragraph at lines 91--94
+Underfull \hbox (badness 1281) in paragraph at lines 93--96
 \OT1/cmr/m/n/9 (+20) and ran-dom walks. Ran-dom Struc-ture Al-go-rithms \OT1/cm
 r/bx/n/9 50\OT1/cmr/m/n/9 (+20) (2), 225--261 (2017).
  []
 
 
-Underfull \hbox (badness 6876) in paragraph at lines 105--108
+Underfull \hbox (badness 6876) in paragraph at lines 107--110
 []\OT1/cmr/m/n/9 (+20) Silva, V.D., Carls-son, G.: Topo-log-i-cal es-ti-ma-tion
  us-ing wit-ness com-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 105--108
+Underfull \hbox (badness 10000) in paragraph at lines 107--110
 \OT1/cmr/m/n/9 (+20) plexes. Sym-po-sium on Point-Based Graph-ics \OT1/cmr/bx/n
 /9 4\OT1/cmr/m/n/9 (+20) , 157--166 (2004).
  []
@@ -1561,7 +1561,7 @@ ype1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmtt9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/
 msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb
 >
-Output written on paper5.pdf (15 pages, 663046 bytes).
+Output written on paper5.pdf (15 pages, 663045 bytes).
 PDF statistics:
  662 PDF objects out of 1000 (max. 8388607)
  368 compressed objects within 4 object streams

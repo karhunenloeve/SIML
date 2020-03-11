@@ -78,14 +78,16 @@ Edelsbrunner, H., Harer, J.: Persistent homology -- a survey. Contemporary
 
 \bibitem{gudhi:urm}
 Ghudi user and reference manual,
-  \href{http://gudhi.gforge.inria.fr/doc/latest/}{gudhi.gforge.inria.fr} (2015)
+  \href{http://gudhi.gforge.inria.fr/doc/latest/}{http://gudhi.gforge.inria.fr}
+  (2015)
 
 \bibitem{hatcher2005algebraic}
 Hatcher, A.: Algebraic Topology. Cambridge University Press (2005)
 
 \bibitem{MOBISIG}
 The mobisig online signature database,
-  \href{https://ms.sapientia.ro/~manyi/mobisig.html}{ms.sapientia.ro} (2019)
+  \href{https://ms.sapientia.ro/~manyi/mobisig.html}{https://ms.sapientia.ro}
+  (2019)
 
 \bibitem{ParzanchevskiR17}
 Parzanchevski, O., Rosenthal, R.: Simplicial complexes: Spectrum, homology and
