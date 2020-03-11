@@ -39,7 +39,7 @@ Borsuk, K.: On the imbedding of systems of compacta in simplicial complexes.
 \bibitem{CarriereCO17}
 Carri\`{e}re, M., Cuturi, M., Oudot, S.: Sliced wasserstein kernel for
   persistence diagrams. In: Proceedings of the 34th International Conference on
-  Machine Learning. pp. 664--673 (2017)
+  Machine Learning. pp. 664--673 (2017). \doi{10.5555/3305381.3305450}
 
 \bibitem{CerriL16}
 Cerri, A., Landi, C.: Hausdorff stability of persistence spaces. Foundations of
@@ -49,7 +49,8 @@ Cerri, A., Landi, C.: Hausdorff stability of persistence spaces. Foundations of
 \bibitem{ChazalGLM15}
 Chazal, F., Glisse, M., Labru\`{e}re, C., Michel, B.: Convergence rates for
   persistence diagram estimation in topological data analysis. Journal of
-  Machine Learning Research  \textbf{16},  3603--3635 (2015)
+  Machine Learning Research  \textbf{16},  3603--3635 (2015).
+  \doi{10.5555/3044805.3044825}
 
 \bibitem{cohen2012course}
 Cohen, M.: A Course in Simple-Homotopy Theory, vol.~10. Springer (2012).
