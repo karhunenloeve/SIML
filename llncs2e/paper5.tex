@@ -15,7 +15,6 @@
 \usepackage{tkz-euclide}
 \usepackage{pgfplots}
 \usepackage{pgfplotstable}
-\usepackage{filecontents}
 \usepackage{tkz-euclide}
 \usepackage{amsmath}
 \usepackage{amssymb}
@@ -23,8 +22,9 @@
 \usepackage{subcaption}
 \usepackage{graphicx}
 \usepackage{xcolor}
-\usepackage{wrapfig}
 \usepackage[utf8]{inputenc}
+
+\captionsetup[figure]{labelformat=simple, labelsep=period, labelfont=bf}
 
 \usepgfplotslibrary{fillbetween}
 \usetikzlibrary{intersections}
@@ -60,15 +60,11 @@
     pdfkeywords={Persistent Homology} {Interpolation} {Voronoi Triangulation}, % list of keywords
     pdfnewwindow=true,
     colorlinks,
-	citecolor=black,
-	filecolor=black,
-	linkcolor=black,
-	urlcolor=blue
+  citecolor=black,
+  filecolor=black,
+  linkcolor=black,
+  urlcolor=blue
 }
-% Attempt to make hyperref and algorithmic work together better:
-\usepackage{algorithm}
-\usepackage{algorithmicx}
-\usepackage{algpseudocode}
 % Used for displaying a sample figure. If possible, Fig. files should
 % be included in EPS format.
 %
@@ -97,12 +93,15 @@ Friedrich-Alexander University Erlangen-Nürnberg\\
 91058 Erlangen, Deutschland\\
 \email{\{luciano.melodia,richard.lenz\}@fau.de}}
 %
+\index{Melodia, Luciano}
+\index{Lenz, Richard}
+%
 \maketitle              % typeset the header of the contribution
 %
 \begin{abstract}
 In this study the Voronoi interpolation is used to interpolate a set of points drawn from a topological space with higher homology groups on its filtration. The technique is based on Voronoi tessellation, which induces a natural dual map to the Delaunay triangulation. Advantage is taken from this fact calculating the persistent homology on it after each iteration to capture the changing topology of the data. The boundary points are identified as critical. The Bottleneck and Wasserstein distance serve as a measure of quality between the original point set and the interpolation. If the norm of two distances exceeds a heuristically determined threshold, the algorithm terminates. We give the theoretical basis for this approach and justify its validity with numerical experiments.
 
-\keywords{Interpolation \and Persistent Homology \and Voronoi Triangulation.}
+\keywords{Interpolation \and Persistent homology \and Voronoi triangulation}
 \end{abstract}
 
 
@@ -132,7 +131,7 @@ Simplices are well-defined embeddings of polyhedra. `Gluing' simplices together 
 
 We want to take into account the systematic development of a simplicial complex upon a point cloud. This is called filtration and it is the decomposition of a finite simplicial complex $K$ into a nested sequence of sub-complexes, starting with the empty set \cite{ChazalGLM15}:
 \begin{flalign}
-	\label{filtration}
+  \label{filtration}
     \emptyset &= K^{0} \subset K^{1} \subset \cdots \subset K^{n} = K, \\
     K^{t+1} &= K^t \cup \sigma^{t+1}, \quad \text{for} \; t \in \{0,\ldots, n-1\}.
 \end{flalign}
@@ -148,7 +147,7 @@ By $||\cdot||$ we denote consequently the $L^2$-norm. In terms of abstract simpl
 \subsection{Vietoris-Rips Complex}
 The Vietoris-Rips complex $\Rips(X,r)$ with vertex set $X$ and distance threshold $r$ is defined as the set
 \begin{equation}
-	\label{rips}
+  \label{rips}
 \Rips(X,r) = \left\{ U \subseteq X \; \bigg\rvert \; ||x-y|| \leq r, \; \text{for all} \; x,y \in U \right\}.
 \end{equation}
 The Vietoris-Rips complex requires only the comparison of distance measures to be obtained. It spans the same $1$-skeleton as the \v{C}ech complex and fulfills for an embedding into any metric space the following relationship \cite[p.~15]{boissonnat2018geometric}: $\Rips(X,r)\subseteq \Cech(X,r) \subseteq \Rips(X,2r).$ To see this, we choose a simplex $\sigma = \{x_0,x_1,\ldots,x_k\} \in \Rips(X,r)$. The point $x_0 \in \bigcap_{i=0}^{k}B(x_i,r)$ must be within the intersection of closed balls with radius $r$ of all points. Now we choose a $\sigma = \{x_0,x_1,\ldots,x_k\} \in \Cech(X,r)$, then there is a point $y \in \mathbb{R}^d$ within the intersection $y \in \bigcap_{i=0}^{k}B(x_i,r)$, which is the desired condition $d(x_i-y) \leq r$ for any $i = 0,\ldots,k$. Therefore, for all $i,j \in \{0,\ldots,k\}$ the following (in)equality applies: $d(x_i-x_j) \leq 2r$ and $\sigma \in \Rips(X,2r)$.
@@ -165,7 +164,7 @@ If $X \subset \mathbb{R}^d$ is a finite set of points and $x \in X$, then the Vo
 The Voronoi ball of $x$ with respect to $X$ is defined as the intersection of the Voronoi region with the closed ball of given radius around this point, i.e.   $\VorBall(x,r) = B(x,r) \cap \Vor(x)$ \cite{bauer2017morse}.The Delaunay complex on a point set $X$ is defined as
 \begin{equation}
 \label{delaunay}
-	\Del(X,r) = \left\{ U \subseteq X \; \bigg\rvert \; \bigcap_{x\in U} \VorBall(x,r) \neq 0 \right\}.
+  \Del(X,r) = \left\{ U \subseteq X \; \bigg\rvert \; \bigcap_{x\in U} \VorBall(x,r) \neq 0 \right\}.
 \end{equation}
 There is a fundamental connection between the union of all Voronoi balls over $X$ and the Delaunay complex. The idea is to find a \textit{good cover} that does represent the global topology. Taking the topological space $X$ and $U = \bigcup_{i \in I} U_i$ beeing an open cover, we define the Nerve of a cover as its topological structure. Therefore, the empty set $\emptyset \in N(U)$ is part of the Nerve and if $\bigcap_{j\in J} U_j \neq \emptyset$ for a $J \subseteq I$, then $J \in N(U)$. We consider $U$ to be a good cover, if for each $\sigma \subset I$ the set $\bigcap_{i\in \sigma} U_i \neq \emptyset$ is contractible, or in other words if it has the same homotopy type as a point. In this case the Nerve $N(U)$ is homotopy equivalent to $\bigcup_{i \in I} U_i$.
 
@@ -270,7 +269,7 @@ The natural neighbor is the closest point $x$ to two other points $y$ and $z$ wi
 
 The Voronoi regions sum up to one $\sum_{l=1}^{L} \lambda_l = 1$. The Voronoi interpolation is repeated until the topological stopping condition is met, measured through the $W^p$-distances of the persistence diagrams $\mathcal{P}_{K}$ and $\mathcal{P}_{K^\bullet}$. The weights of the coordinate representation of $x_{\bullet}$ are determined by the quotient of the `stolen' Voronoi regions and the total `area' of the Voronoi diagram with the additional point according to Eq. \ref{voreq} \cite{Anton2001}. 
 \begin{equation}
-	\label{voreq}
+  \label{voreq}
     \lambda_{l} =
     \begin{cases}
         \frac{\text{vol}\left(\Vor(x_l) \cap \Vor^{\bullet}(x_{\bullet}\right))}{\text{vol}\left(\Vor^{\bullet}(x_{\bullet})\right)} & \text{if } x\geq 1,\\
@@ -337,14 +336,14 @@ Our result is a stopping-criterion with a hypothesis test to determine whether t
   \item To our knowledge there is no evidence known that the Voronoi tessellation obtains the homology groups. According to \cite{reem2011geometric}, the Voronoi tessellation is stable. However, the experiments show that for increasing iterations additional homology groups appear. Does the Voronoi tessellation preserve homology groups and homotopy groups in general metric spaces?
 \end{itemize}
 
-\paragraph{Acknowledgements} We would like to thank David Haller and Lekshmi Beena Gopalakrishnan Nair for proofreading. Further, we thank Anton Rechenauer, Jan Frahm and Justin Noel for suggestions and ideas on the elaboration of the final version of this work. We express our gratitude to Demian Vöhringer and Melanie Sigl for pointing out related work. This work was partially supported by Siemens Gas and Power GmbH \& Co. KG.
+\subsubsection*{Acknowledgements.} We would like to thank David Haller and Lekshmi Beena Gopalakrishnan Nair for proofreading. Further, we thank Anton Rechenauer, Jan Frahm and Justin Noel for suggestions and ideas on the elaboration of the final version of this work. We express our gratitude to Demian Vöhringer and Melanie Sigl for pointing out related work. This work was partially supported by Siemens Gas and Power GmbH \& Co. KG.
 
-\paragraph{Code \& Data} The implementation of the methods, the data sets and experimental results can be found at: \url{https://github.com/karhunenloeve/SIML}.
+\subsubsection*{Code \& Data.} The implementation of the methods, the data sets and experimental results can be found at: \url{https://github.com/karhunenloeve/SIML}.
 % ---- Bibliography ----
 %
 % BibTeX users should specify bibliography style 'splncs04'.
 % References will then be sorted and formatted in the correct style.
 %
-\bibliographystyle{splncs04}
+\bibliographystyle{splncs03}
 \bibliography{paper5}
 \end{document}
