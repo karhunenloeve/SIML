@@ -2,9 +2,9 @@
 [![License](https://img.shields.io/:license-mit-blue.svg)](https://badges.mit-license.org)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/python/black)
 
-This repository **SIML** (**S**ignature **I**nference & **M**achine **L**earning) offers all functionalities and experiments for the paper *Persistent Homology as Stopping-Criterion for Voronoi Interpolation*. The functions are completely commented out. The repository is no longer maintained and is used for prototypical implementation of the project. It has been archived since publication. If you use the project, or share this project, please quote us as follows:
+This repository **SIML** (**S**ignature **I**nference & **M**achine **L**earning) offers all functionalities and experiments for the paper *Persistent Homology as Stopping-Criterion for Voronoi Interpolation*. The functions are annotated. The repository is no longer maintained and is used for prototypical implementation of the project. It has been archived since publication. If you use the project, or share this project, please quote us as follows:
 
-    @article{lume19,
+    @article{1911.02922,
 	  author    = {Luciano Melodia and
 	               Richard Lenz},
 	  title     = {Persistent Homology as Stopping-Criterion for Voronoi Interpolation},
