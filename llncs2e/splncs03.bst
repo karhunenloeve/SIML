@@ -31,7 +31,6 @@
 %% - Used for editors the same name conventions used for authors (see function format.in.ed.booktitle)
 %% - Removed a \newblock to avoid long spaces between title and "In: ..."
 %% - Added function titto.space.prefix to add a space instead of "~" after the (removed) "vol." label
-%% - Added doi
 %% ================================================================================================
 %% This was file `titto.bst',
 %% generated with the docstrip utility.
@@ -74,7 +73,6 @@ ENTRY
     author
     booktitle
     chapter
-    doi
     edition
     editor
     eid
@@ -245,15 +243,8 @@ FUNCTION {field.or.null}
 }
 FUNCTION {emphasize}
 { skip$ }
-
-FUNCTION {embolden}
-{ duplicate$ empty$
-{ pop$ "" }
-{ "\textbf{" swap$ * "}" * }
-if$
-}
 FUNCTION {tie.or.space.prefix}
-{ duplicate$ text.length$ #5 <
+{ duplicate$ text.length$ #3 <
     { "~" }
     { " " }
   if$
@@ -442,14 +433,6 @@ FUNCTION {format.url}
     { "" }
 %    { "\urlprefix\url{" url * "}" * }
     { "\url{" url * "}" * }  % changed in titto-lncs-02.bst
-  if$
-}
-
-FUNCTION {format.doi} % added in splncs04.bst
-{ doi empty$
-     { "" }
-     { after.block 'output.state :=
-       "\doi{" doi * "}" * }
   if$
 }
 
@@ -785,17 +768,17 @@ FUNCTION {format.journal.eid}
   if$
 }
 FUNCTION {format.vol.num.pages} % this function is used only for journal entries
-{ volume field.or.null embolden
+{ volume field.or.null
   duplicate$ empty$ 'skip$
     {
-%    bbl.volume swap$ tie.or.space.prefix
-     titto.bbl.volume swap$ titto.space.prefix
-%            rationale for the change above: for journals you don't want "vol." label
-%            hence it does not make sense to attach the journal number to the label when
-%            it is short
+%     bbl.volume swap$ tie.or.space.prefix
+      titto.bbl.volume swap$ titto.space.prefix
+%             rationale for the change above: for journals you don't want "vol." label
+%             hence it does not make sense to attach the journal number to the label when
+%             it is short
       "volume" bibinfo.check
       * *
-      }
+    }
   if$
   number "number" bibinfo.check duplicate$ empty$ 'skip$
     {
@@ -1023,7 +1006,6 @@ FUNCTION {article}
     }
   if$
 %  new.block
-  format.doi output
   format.url output
 %  new.block
   format.note output
@@ -1060,7 +1042,6 @@ FUNCTION {book}
   format.edition output
   format.date "year" output.check
 %  new.block
-  format.doi output
   format.url output
 %  new.block
   format.note output
@@ -1077,7 +1058,6 @@ FUNCTION {booklet}
   address "address" bibinfo.check output
   format.date output
 %  new.block
-  format.doi output
   format.url output
 %  new.block
   format.note output
@@ -1118,7 +1098,6 @@ FUNCTION {inbook}
   format.edition output
   format.date "year" output.check
 %  new.block
-  format.doi output
   format.url output
 %  new.block
   format.note output
@@ -1147,7 +1126,6 @@ FUNCTION {incollection}
     }
   if$
 %  new.block
-  format.doi output
   format.url output
 %  new.block
   format.note output
@@ -1180,7 +1158,6 @@ FUNCTION {inproceedings}
     }
   if$
 %  new.block
-  format.doi output
   format.url output
 %  new.block
   format.note output
@@ -1220,7 +1197,6 @@ FUNCTION {manual}
   format.edition output
   format.date output
 %  new.block
-  format.doi output
   format.url output
 %  new.block
   format.note output
@@ -1240,7 +1216,6 @@ FUNCTION {mastersthesis}
   address "address" bibinfo.check output
   format.date "year" output.check
 %  new.block
-  format.doi output
   format.url output
 %  new.block
   format.note output
@@ -1257,7 +1232,6 @@ FUNCTION {misc}
   howpublished "howpublished" bibinfo.check output
   format.date output
 %  new.block
-  format.doi output
   format.url output
 %  new.block
   format.note output
@@ -1277,7 +1251,6 @@ FUNCTION {phdthesis}
   address "address" bibinfo.check output
   format.date "year" output.check
 %  new.block
-  format.doi output
   format.url output
 %  new.block
   format.note output
@@ -1321,7 +1294,6 @@ FUNCTION {proceedings}
   if$
       format.date "year" output.check
 %  new.block
-  format.doi output
   format.url output
 %  new.block
   format.note output
@@ -1341,7 +1313,6 @@ FUNCTION {techreport}
   address "address" bibinfo.check output
   format.date "year" output.check
 %  new.block
-  format.doi output
   format.url output
 %  new.block
   format.note output
@@ -1531,8 +1502,6 @@ FUNCTION {begin.bib}
   "\providecommand{\url}[1]{\texttt{#1}}"
   write$ newline$
   "\providecommand{\urlprefix}{URL }"
-  write$ newline$
-  "\providecommand{\doi}[1]{https://doi.org/#1}"
   write$ newline$
 }
 EXECUTE {begin.bib}
