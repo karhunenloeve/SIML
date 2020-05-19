@@ -1,0 +1,281 @@
+\documentclass[aspectratio=169]{beamer}
+\usepackage{FAU-beamer}
+\usepackage[ngerman,english]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{xcolor,colortbl}
+\usepackage{euler}
+\usepackage{amsfonts}
+\usepackage{booktabs}
+\usepackage{siunitx}
+\usepackage{bbding}
+\usepackage{pifont}
+\usepackage{wasysym}
+\usepackage{etoolbox}
+\usepackage[
+bibstyle=authoryear,
+citestyle=numeric,
+maxcitenames=2,
+maxbibnames=100,
+backend=bibtex
+]{biblatex}
+\usepackage{tikz}
+
+\usetikzlibrary{calc,arrows,decorations.pathmorphing,backgrounds,fit,positioning,shapes.symbols,chains}
+\hypersetup{
+    unicode=true,
+    pdfencoding=unicode,
+    pdftoolbar=false,
+    pdfmenubar=false,
+    pdffitwindow=false,
+    pdfstartview={FitH},
+    pdftitle={Homological Perspective on Data},
+    pdfauthor={Luciano Melodia},
+    pdfsubject={Topological Data Analysis},
+    pdfcreator={Luciano Melodia},
+    pdfproducer={XeLaTeX},
+    pdfnewwindow=false,
+    colorlinks=false,
+    linkcolor=FAURed,
+    urlcolor=true
+}
+
+\RequirePackage[oldstyle,scale=1]{sourcecodepro}
+\RequirePackage{dsfont}
+\setbeamertemplate{bibliography item}{\insertbiblabel}
+\defbeamertemplate*{title page}{customized}[1][]
+{
+  \placelogofalse
+  \usebeamerfont{title}\inserttitle\par
+  \usebeamerfont{subtitle}\insertsubtitle\par
+  \usebeamerfont{author}\insertauthor\par
+}
+
+\mode<presentation>{
+    \AtBeginSection[]{
+    	\begin{frame}
+    	\vfill
+    	\centering
+    	\begin{beamercolorbox}[sep=7pt,center]{title}
+    	\huge{\color{black}\insertsectionhead}\par%
+    	\end{beamercolorbox}
+    	\vfill
+    	\end{frame}
+    }
+}
+\setbeamertemplate{frametitle}{\bfseries
+\hspace{-0.75cm}\insertframetitle}
+\setbeamertemplate{theorems}[numbered]
+\theoremstyle{plain}
+\newtheorem{proposition}{Proposition}
+\def\maketitle{\ifbeamer@inframe\titlepage\else\frame{\titlepage}\fi}
+
+\AtBeginBibliography{\footnotesize}
+
+\setbeamertemplate{bibliography item}{%
+  \ifboolexpr{ test {\ifentrytype{book}} or test {\ifentrytype{mvbook}}
+    or test {\ifentrytype{collection}} or test {\ifentrytype{mvcollection}}
+    or test {\ifentrytype{reference}} or test {\ifentrytype{mvreference}} }
+    {\setbeamertemplate{bibliography item}[book]}
+    {\ifentrytype{online}
+       {\setbeamertemplate{bibliography item}[online]}
+       {\setbeamertemplate{bibliography item}[article]}}%
+  \usebeamertemplate{bibliography item}}
+
+\defbibenvironment{bibliography}
+  {\list{}
+     {\settowidth{\labelwidth}{\usebeamertemplate{bibliography item}}%
+      \setlength{\leftmargin}{\labelwidth}%
+      \setlength{\labelsep}{\biblabelsep}%
+      \addtolength{\leftmargin}{\labelsep}%
+      \setlength{\itemsep}{\bibitemsep}%
+      \setlength{\parsep}{\bibparsep}}}
+  {\endlist}
+  {\item}
+
+\addbibresource{refs.bib}
+\defbibheading{bibliography}[\refname]{}
+
+\definecolor{azure}{rgb}{0.0, 0.5, 1.0}
+\title{\textbf{Stopping Interpolation Topologically}}
+\author{Luciano Melodia \\
+\footnotesize{joint with Richard Lenz}}
+\institute[Lehrstuhl für Informatik 6]{}
+
+\begin{document}
+\begin{frame}[plain,noframenumbering]
+    \titlepage
+    \vspace{1cm}
+    \begin{minipage}{.25\textwidth}
+    \includegraphics[width=3cm]{siemens.jpg}
+    \end{minipage}
+    \begin{minipage}{.25\textwidth} % not "0.5\textwidth"
+    \includegraphics[width=2.5cm]{cs6.png}
+    \end{minipage}%
+    \begin{minipage}[t!]{.25\textwidth}
+    \includegraphics[width=1.8cm]{FAU-logo.pdf}
+    \end{minipage}
+\end{frame}
+
+\placelogotrue
+\begin{frame}{Agenda}
+\tableofcontents
+\end{frame}
+
+\section{Project Progress}
+\begin{frame}
+    \frametitle{
+    Project Progress
+    \par\hspace{-0.73cm}
+    \small{Project Plan}}
+    \vspace{-0.73cm}
+    \begin{table}
+    \centering
+    \begin{tabular}{|c||c|c|c|c|c|c|c|c|c|c|c|c|}
+       \hline
+       Year & \multicolumn{4}{c|}{1. Year} & \multicolumn{4}{c|}{2. Year} & \multicolumn{4}{c|}{3. Year}\\
+       \hline
+       Quartal & 1 & 2 & 3 & 4 & 1 & 2 & 3 & 4 & 1 & 2 & 3 & 4\\
+       \hline
+       Process analysis & \cellcolor{azure} & \cellcolor{azure} &&&&&&&&&&\\
+       Literature analysis &\cellcolor{azure}&\cellcolor{azure}&\cellcolor{azure}&\cellcolor{gray!20}&\cellcolor{gray!20}&\cellcolor{gray!20}&\cellcolor{gray!20}&\cellcolor{gray!20}&\cellcolor{gray!20}&\cellcolor{gray!20}&\cellcolor{gray!20}&\\
+       Market analysis &\cellcolor{azure}&\cellcolor{azure}&\cellcolor{azure}&\cellcolor{gray!20}&\cellcolor{gray!20}&\cellcolor{gray!20}&\cellcolor{gray!20}&\cellcolor{gray!20}&\cellcolor{gray!20}&\cellcolor{gray!20}&\cellcolor{gray!20}&\\
+       Pilot study &&&&\cellcolor{azure!50}&\cellcolor{azure!50}&&&&&&&\\
+       Evaluation &&&&&\cellcolor{azure!50}&\cellcolor{azure!50}&&&&&&\\
+       Conception of the tool &&\cellcolor{gray!20}&\cellcolor{gray!20}&\cellcolor{gray!20}&\cellcolor{gray!20}&\cellcolor{gray!20}&\cellcolor{azure!50}&\cellcolor{azure!50}&\cellcolor{gray!20}&\cellcolor{gray!20}&\cellcolor{gray!20}&\\
+       Prototype implementation &&&&&&&&\cellcolor{gray!20}&\cellcolor{azure!50}&\cellcolor{azure!50}&\cellcolor{azure!50}&\\
+       Documentation &&\cellcolor{gray!20}&\cellcolor{gray!20}&\cellcolor{gray!20}&\cellcolor{gray!20}&\cellcolor{gray!20}&\cellcolor{gray!20}&\cellcolor{gray!20}&\cellcolor{gray!20}&\cellcolor{azure!50}&\cellcolor{azure!50}&\cellcolor{azure!50}\\
+       \hline
+       Milestones & \multicolumn{2}{c|}{M1} & M2/M3 & \multicolumn{2}{c|}{M4} & \multicolumn{1}{c|}{M5} & \multicolumn{2}{c|}{M6} & \multicolumn{3}{c|}{M7} & M8\\
+       \hline
+    \end{tabular}
+    \end{table}
+\end{frame}
+
+\begin{frame}
+    \frametitle{
+    Research Questions to Answer
+    \par\hspace{-0.73cm}}
+    \vspace{-0.73cm}
+    \begin{itemize}
+        \item{\textbf{RQ1:}} What are requirements for exploratory data analysis tools in industrial use?
+        \item{\textbf{RQ2:}} What activities have taken place to exploratory data analysis?
+        \item{\textbf{RQ3:}} What are popular commercial tools and what features do they provide?
+        \item{\textbf{RQ4:}} What are gaps for schema inference and can we close them?
+    \end{itemize}
+\end{frame}
+
+
+\section{Outlier Detection}
+
+\begin{frame}
+    \frametitle{
+    Outlier Detection
+    \par\hspace{-0.73cm}
+    \small{What is outlier detection?}}
+    \vspace{-0.73cm}
+    We assume that most of the time series within a database follow some distribution. If a time series diverges from this distribution significantly it is considered as outlier. We need a function, telling us something about this amount:
+    \begin{itemize}
+        \item A score $f: X \times I \rightarrow \mathbb{R}_+$ can be computed directly.
+        \item A score $f \circ g_i: X \times I \rightarrow \mathbb{R}_+$ can be computed on overlapping fixed sized windows, where $g_i: X \times I \rightarrow U \times J$ for $U \subset X$ and $J \subset I$ and $\{g_i\}_{i \in I}$ covers $X \times I$.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}[plain]
+    \frametitle{Academic Tools}
+    \vspace{-0.73cm}
+    \centering
+    \hspace{-0.65cm}
+    \begin{tabular}{llcccccc}
+    \toprule
+        \bf{Name} & \bf{Year} & \multicolumn{1}{p{1.7cm}}{Distinguish attributes} & \multicolumn{1}{p{1.5cm}}{Univariate analysis} & \multicolumn{1}{p{1.7cm}}{Multivariate analysis} & \multicolumn{1}{p{1cm}}{Missing values} & \multicolumn{1}{p{1.2cm}}{Outliers} & \multicolumn{1}{p{1cm}}{User friendly} \\
+        \midrule
+        DataScope \cite{IyerDS17} & 2018 & \checkmark & \checkmark & & & &\\
+        Northstar \cite{Kraska18} & 2018 & \checkmark & \checkmark & \checkmark & \checkmark & &\\
+    \midrule
+    \end{tabular}
+\end{frame}
+
+
+\begin{frame}[plain]
+    \frametitle{Commercial Tools}
+    \vspace{-0.73cm}
+    \centering
+    \begin{tabular}{llcccccc}
+    \toprule
+        Name & Year & \multicolumn{1}{p{1.7cm}}{Distinguish attributes} & \multicolumn{1}{p{1.5cm}}{Univariate analysis} & \multicolumn{1}{p{1.7cm}}{Multivariate analysis} & \multicolumn{1}{p{1cm}}{Missing values} & \multicolumn{1}{p{1.2cm}}{Outliers} & \multicolumn{1}{p{1cm}}{User friendly} \\
+        \midrule
+         \cite{} & 2018 & \checkmark & \checkmark & & & &\\
+    \bottomrule
+    \end{tabular}
+\end{frame}
+
+\section{Topological Summaries}
+
+\begin{frame}
+    \frametitle{
+    Topological Summaries
+    \par\hspace{-0.73cm}
+    \small{Projektplan}}
+    \vspace{-0.73cm}
+    \begin{itemize}
+        \item t
+    \end{itemize}
+\end{frame}
+
+\section{Statistical Summaries}
+
+\begin{frame}
+    \frametitle{
+    Statistical Summaries
+    \par\hspace{-0.73cm}
+    \small{Projektplan}}
+    \vspace{-0.73cm}
+    \begin{itemize}
+        \item t
+    \end{itemize}
+\end{frame}
+
+\section{Functional Dependencies}
+
+\begin{frame}
+    \frametitle{
+    Functional Dependencies
+    \par\hspace{-0.73cm}
+    \small{Projektplan}}
+    \vspace{-0.73cm}
+    \begin{itemize}
+        \item t
+    \end{itemize}
+\end{frame}
+
+
+\section{Future Perspective}
+
+\begin{frame}
+    \frametitle{
+    Goals}
+    What we can do:
+    \begin{itemize}
+        \item What do we need to infer a schema?
+        \item How is schema inference technically feasible?
+        \item What do we need for the best possible classification?
+        \item Which libraries are suitable for the construction of a prototype?
+        \item What do developers need to create an application?
+    \end{itemize}
+    What we can't do:
+    \begin{itemize}
+        \item A productively usable tool for schema inference.
+        \item Provide a maintainable tool.
+        \item An additional tool for manual rectification.
+    \end{itemize}
+\end{frame}
+
+\frame[allowframebreaks]{
+\setbeamertemplate{bibliography item}{}
+	\frametitle{References}
+  \nocite{*}
+	\printbibliography
+}
+\end{document}

@@ -1,0 +1,131 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{nyt/global//global/global}
+  \entry{DBLP:journals/vi/GhoshNMQM18}{article}{}
+    \name{author}{5}{}{%
+      {{hash=GA}{%
+         family={Ghosh},
+         familyi={G\bibinitperiod},
+         given={Aindrila},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=NM}{%
+         family={Nashaat},
+         familyi={N\bibinitperiod},
+         given={Mona},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=MJ}{%
+         family={Miller},
+         familyi={M\bibinitperiod},
+         given={James},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=QS}{%
+         family={Quader},
+         familyi={Q\bibinitperiod},
+         given={Shaikh},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=MC}{%
+         family={Marston},
+         familyi={M\bibinitperiod},
+         given={Chad},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GA+1}
+    \strng{fullhash}{GANMMJQSMC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2018}
+    \field{labeldatesource}{year}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{number}{4}
+    \field{pages}{235\bibrangedash 253}
+    \field{title}{A comprehensive review of tools for exploratory analysis of
+  tabular industrial datasets}
+    \field{volume}{2}
+    \field{journaltitle}{Visual Informatics}
+    \field{year}{2018}
+  \endentry
+
+  \entry{IyerDS17}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=IGR}{%
+         family={Iyer},
+         familyi={I\bibinitperiod},
+         given={Ganesh\bibnamedelima R.},
+         giveni={G\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=DS}{%
+         family={Duttaduwarah},
+         familyi={D\bibinitperiod},
+         given={Sapoonjyoti},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=SA}{%
+         family={Sharma},
+         familyi={S\bibinitperiod},
+         given={Ashish},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{IGR+1}
+    \strng{fullhash}{IGRDSSA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{labeldatesource}{year}
+    \field{sortinit}{I}
+    \field{sortinithash}{I}
+    \field{booktitle}{{IEEE} Workshop on Visual Analytics in Healthcare}
+    \field{pages}{17\bibrangedash 23}
+    \field{title}{DataScope: Interactive visual exploratory dashboards for
+  large multidimensional data}
+    \field{year}{2017}
+  \endentry
+
+  \entry{Kraska18}{article}{}
+    \name{author}{1}{}{%
+      {{hash=KT}{%
+         family={Kraska},
+         familyi={K\bibinitperiod},
+         given={Tim},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KT1}
+    \strng{fullhash}{KT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2018}
+    \field{labeldatesource}{year}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{number}{12}
+    \field{pages}{2150\bibrangedash 2164}
+    \field{title}{Northstar: An Interactive Data Science System}
+    \field{volume}{11}
+    \field{journaltitle}{Proc. {VLDB} Endow.}
+    \field{year}{2018}
+  \endentry
+\enddatalist
+\endinput
