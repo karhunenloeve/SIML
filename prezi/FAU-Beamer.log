@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.11.27)  19 MAY 2020 13:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.11.27)  19 MAY 2020 13:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2100,17 +2100,17 @@ LaTeX Font Info:    Font shape `OT1/SourceCodePro-TOsF/m/n' will be
 File: siemens.jpg Graphic file (type jpg)
 <use siemens.jpg>
 Package pdftex.def Info: siemens.jpg  used on input line 119.
-(pdftex.def)             Requested size: 85.35826pt x 32.86252pt.
+(pdftex.def)             Requested size: 71.13188pt x 27.38573pt.
 <cs6.png, id=14, 112.42pt x 65.24374pt>
 File: cs6.png Graphic file (type png)
 <use cs6.png>
 Package pdftex.def Info: cs6.png  used on input line 119.
-(pdftex.def)             Requested size: 71.13188pt x 41.28395pt.
+(pdftex.def)             Requested size: 56.9055pt x 33.02597pt.
 <FAU-logo.pdf, id=16, 120.50948pt x 51.07231pt>
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
 Package pdftex.def Info: FAU-logo.pdf  used on input line 119.
-(pdftex.def)             Requested size: 51.21504pt x 21.70505pt.
+(pdftex.def)             Requested size: 36.98866pt x 15.6756pt.
 
 [1
 
@@ -2173,10 +2173,10 @@ Package logreq Info: Writing requests to 'FAU-Beamer.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 42940 strings out of 492649
- 847577 string characters out of 6118254
+ 42934 strings out of 492649
+ 847419 string characters out of 6118254
  1236243 words of memory out of 5000000
- 46098 multiletter control sequences out of 15000+600000
+ 46092 multiletter control sequences out of 15000+600000
  548607 words of font info for 74 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  56i,15n,71p,10380b,2269s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2185,7 +2185,7 @@ exmf-dist/fonts/type1/public/cm-super/sfss0600.pfb></usr/share/texmf-dist/fonts
 /type1/public/cm-super/sfss0900.pfb></usr/share/texmf-dist/fonts/type1/public/c
 m-super/sfss1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfsx060
 0.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb>
-Output written on FAU-Beamer.pdf (3 pages, 96630 bytes).
+Output written on FAU-Beamer.pdf (3 pages, 96629 bytes).
 PDF statistics:
  63 PDF objects out of 1000 (max. 8388607)
  42 compressed objects within 1 object stream
