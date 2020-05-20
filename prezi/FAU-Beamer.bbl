@@ -16,5 +16,1103 @@
   {}
 \endgroup
 
-\datalist[entry]{nyt/global//global/global}\enddatalist
+\datalist[entry]{nyt/global//global/global}
+  \entry{Anton2001}{article}{}
+    \name{author}{3}{}{%
+      {{hash=AF}{%
+         family={Anton},
+         familyi={A\bibinitperiod},
+         given={Fran\c{c}ois},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=MD}{%
+         family={Mioc},
+         familyi={M\bibinitperiod},
+         given={Darka},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=FA}{%
+         family={Fournier},
+         familyi={F\bibinitperiod},
+         given={Alain},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{AF+1}
+    \strng{fullhash}{AFMDFA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2001}
+    \field{labeldatesource}{year}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{number}{3}
+    \field{pages}{134\bibrangedash 146}
+    \field{title}{Reconstructing 2D Images with Natural Neighbour
+  Interpolation}
+    \field{volume}{17}
+    \field{journaltitle}{The Visual Computer}
+    \field{year}{2001}
+  \endentry
+
+  \entry{bauer2017morse}{article}{}
+    \name{author}{2}{}{%
+      {{hash=BU}{%
+         family={Bauer},
+         familyi={B\bibinitperiod},
+         given={Ulrich},
+         giveni={U\bibinitperiod},
+      }}%
+      {{hash=EH}{%
+         family={Edelsbrunner},
+         familyi={E\bibinitperiod},
+         given={Herbert},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BUEH1}
+    \strng{fullhash}{BUEH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{labeldatesource}{year}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{number}{5}
+    \field{pages}{3741\bibrangedash 3762}
+    \field{title}{The Morse Theory of \v{c}ech and Delaunay Complexes}
+    \field{volume}{369}
+    \field{journaltitle}{Transactions of the American Mathematical Society}
+    \field{year}{2017}
+  \endentry
+
+  \entry{Bobach2009}{thesis}{}
+    \name{author}{1}{}{%
+      {{hash=BTA}{%
+         family={Bobach},
+         familyi={B\bibinitperiod},
+         given={Tom\bibnamedelima Axel},
+         giveni={T\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BTA1}
+    \strng{fullhash}{BTA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2009}
+    \field{labeldatesource}{year}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{title}{Natural Neighbor Interpolation - Critical Assessment and New
+  Contributions}
+    \list{institution}{1}{%
+      {TU Kaiserslautern}%
+    }
+    \field{type}{Doctoral Thesis}
+    \field{year}{2009}
+  \endentry
+
+  \entry{BoissonnatC00}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=BJD}{%
+         family={Boissonnat},
+         familyi={B\bibinitperiod},
+         given={Jean-Daniel},
+         giveni={J\bibinitperiod-D\bibinitperiod},
+      }}%
+      {{hash=CF}{%
+         family={Cazals},
+         familyi={C\bibinitperiod},
+         given={Fr\'{e}d\'{e}ric},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BJDCF1}
+    \strng{fullhash}{BJDCF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2000}
+    \field{labeldatesource}{year}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{booktitle}{Proceedings of the 16th Annual Symposium on Computational
+  Geometry}
+    \field{pages}{223\bibrangedash 232}
+    \field{title}{Smooth Surface Reconstruction via Natural Neighbour
+  Interpolation of Distance Functions}
+    \field{year}{2000}
+  \endentry
+
+  \entry{BoissonnatC01}{article}{}
+    \name{author}{2}{}{%
+      {{hash=BJ}{%
+         family={Boissonnat},
+         familyi={B\bibinitperiod},
+         given={Jean{-}Daniel},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=CF}{%
+         family={Cazals},
+         familyi={C\bibinitperiod},
+         given={Fr\'{e}d\'{e}ric},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BJCF1}
+    \strng{fullhash}{BJCF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2001}
+    \field{labeldatesource}{year}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{number}{2-3}
+    \field{pages}{155\bibrangedash 173}
+    \field{title}{Natural Neighbor Coordinates of Points on a Surface}
+    \field{volume}{19}
+    \field{journaltitle}{Computational Geometry}
+    \field{year}{2001}
+  \endentry
+
+  \entry{BoissonnatDG18}{article}{}
+    \name{author}{3}{}{%
+      {{hash=BJD}{%
+         family={Boissonnat},
+         familyi={B\bibinitperiod},
+         given={Jean-Daniel},
+         giveni={J\bibinitperiod-D\bibinitperiod},
+      }}%
+      {{hash=DR}{%
+         family={Dyer},
+         familyi={D\bibinitperiod},
+         given={Ramsay},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=GA}{%
+         family={Ghosh},
+         familyi={G\bibinitperiod},
+         given={Arijit},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BJD+1}
+    \strng{fullhash}{BJDDRGA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2018}
+    \field{extradate}{1}
+    \field{labeldatesource}{year}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{number}{2}
+    \field{pages}{399\bibrangedash 431}
+    \field{title}{Delaunay Triangulation of Manifolds}
+    \field{volume}{18}
+    \field{journaltitle}{Foundations of Computational Mathematics}
+    \field{year}{2018}
+  \endentry
+
+  \entry{boissonnat2018geometric}{book}{}
+    \name{author}{3}{}{%
+      {{hash=BJD}{%
+         family={Boissonnat},
+         familyi={B\bibinitperiod},
+         given={Jean-Daniel},
+         giveni={J\bibinitperiod-D\bibinitperiod},
+      }}%
+      {{hash=CF}{%
+         family={Chazal},
+         familyi={C\bibinitperiod},
+         given={Fr\'{e}d\'{e}ric},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=YM}{%
+         family={Yvinec},
+         familyi={Y\bibinitperiod},
+         given={Mariette},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Cambridge University Press}%
+    }
+    \strng{namehash}{BJD+1}
+    \strng{fullhash}{BJDCFYM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2018}
+    \field{extradate}{2}
+    \field{labeldatesource}{year}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{title}{Geometric and Topological Inference}
+    \field{volume}{57}
+    \field{year}{2018}
+  \endentry
+
+  \entry{borsuk}{article}{}
+    \name{author}{1}{}{%
+      {{hash=BK}{%
+         family={Borsuk},
+         familyi={B\bibinitperiod},
+         given={Karol},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BK1}
+    \strng{fullhash}{BK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1948}
+    \field{labeldatesource}{year}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{pages}{217\bibrangedash 234}
+    \field{title}{On the Imbedding of Systems of Compacta in Simplicial
+  Complexes}
+    \field{volume}{35}
+    \field{journaltitle}{Fundamenta Mathematicae}
+    \field{year}{1948}
+  \endentry
+
+  \entry{bubenik2015statistical}{article}{}
+    \name{author}{1}{}{%
+      {{hash=BP}{%
+         family={Bubenik},
+         familyi={B\bibinitperiod},
+         given={Peter},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BP1}
+    \strng{fullhash}{BP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2015}
+    \field{labeldatesource}{year}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{number}{1}
+    \field{pages}{77\bibrangedash 102}
+    \field{title}{Statistical topological data analysis using persistence
+  landscapes}
+    \field{volume}{16}
+    \field{journaltitle}{Journal of Machine Learning Research}
+    \field{year}{2015}
+  \endentry
+
+  \entry{CarriereCO17}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=CM}{%
+         family={Carri\`{e}re},
+         familyi={C\bibinitperiod},
+         given={Mathieu},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=CM}{%
+         family={Cuturi},
+         familyi={C\bibinitperiod},
+         given={Marco},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=OS}{%
+         family={Oudot},
+         familyi={O\bibinitperiod},
+         given={Steve},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CM+1}
+    \strng{fullhash}{CMCMOS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{labeldatesource}{year}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{booktitle}{Proceedings of the 34th International Conference on
+  Machine Learning}
+    \field{pages}{664\bibrangedash 673}
+    \field{title}{Sliced Wasserstein Kernel for Persistence Diagrams}
+    \field{year}{2017}
+  \endentry
+
+  \entry{CerriL16}{article}{}
+    \name{author}{2}{}{%
+      {{hash=CA}{%
+         family={Cerri},
+         familyi={C\bibinitperiod},
+         given={Andrea},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=LC}{%
+         family={Landi},
+         familyi={L\bibinitperiod},
+         given={Claudia},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CALC1}
+    \strng{fullhash}{CALC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2016}
+    \field{labeldatesource}{year}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{number}{2}
+    \field{pages}{343\bibrangedash 367}
+    \field{title}{Hausdorff Stability of Persistence Spaces}
+    \field{volume}{16}
+    \field{journaltitle}{Foundations of Computational Mathematics}
+    \field{year}{2016}
+  \endentry
+
+  \entry{ChazalGLM15}{article}{}
+    \name{author}{4}{}{%
+      {{hash=CF}{%
+         family={Chazal},
+         familyi={C\bibinitperiod},
+         given={Fr\'{e}d\'{e}ric},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=GM}{%
+         family={Glisse},
+         familyi={G\bibinitperiod},
+         given={Marc},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=LC}{%
+         family={Labru\`{e}re},
+         familyi={L\bibinitperiod},
+         given={Catherine},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=MB}{%
+         family={Michel},
+         familyi={M\bibinitperiod},
+         given={Bertrand},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CF+1}
+    \strng{fullhash}{CFGMLCMB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2015}
+    \field{labeldatesource}{year}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{pages}{3603\bibrangedash 3635}
+    \field{title}{Convergence Rates for Persistence Diagram Estimation in
+  Topological Data Analysis}
+    \field{volume}{16}
+    \field{journaltitle}{Journal of Machine Learning Research}
+    \field{year}{2015}
+  \endentry
+
+  \entry{cohen2012course}{book}{}
+    \name{author}{1}{}{%
+      {{hash=CM}{%
+         family={Cohen},
+         familyi={C\bibinitperiod},
+         given={Marshall},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{CM1}
+    \strng{fullhash}{CM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2012}
+    \field{labeldatesource}{year}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{title}{A Course in Simple-Homotopy Theory}
+    \field{volume}{10}
+    \field{year}{2012}
+  \endentry
+
+  \entry{Cohen-SteinerEH07}{article}{}
+    \name{author}{3}{}{%
+      {{hash=CSD}{%
+         family={Cohen-Steiner},
+         familyi={C\bibinitperiod-S\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=EH}{%
+         family={Edelsbrunner},
+         familyi={E\bibinitperiod},
+         given={Herbert},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=HJ}{%
+         family={Harer},
+         familyi={H\bibinitperiod},
+         given={John},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CSD+1}
+    \strng{fullhash}{CSDEHHJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2007}
+    \field{labeldatesource}{year}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{number}{1}
+    \field{pages}{103\bibrangedash 120}
+    \field{title}{Stability of Persistence Diagrams}
+    \field{volume}{37}
+    \field{journaltitle}{Discrete and Computational Geometry}
+    \field{year}{2007}
+  \endentry
+
+  \entry{cohen2010lipschitz}{article}{}
+    \name{author}{4}{}{%
+      {{hash=CSD}{%
+         family={Cohen-Steiner},
+         familyi={C\bibinitperiod-S\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=EH}{%
+         family={Edelsbrunner},
+         familyi={E\bibinitperiod},
+         given={Herbert},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=HJ}{%
+         family={Harer},
+         familyi={H\bibinitperiod},
+         given={John},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=MY}{%
+         family={Mileyko},
+         familyi={M\bibinitperiod},
+         given={Yuriy},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{CSD+1}
+    \strng{fullhash}{CSDEHHJMY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2010}
+    \field{labeldatesource}{year}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{number}{2}
+    \field{title}{Lipschitz functions have L\^{}p-stable persistence}
+    \field{volume}{10}
+    \field{journaltitle}{Foundations of Computational Mathematics}
+    \field{year}{2010}
+  \endentry
+
+  \entry{czado1998assessing}{article}{}
+    \name{author}{2}{}{%
+      {{hash=CC}{%
+         family={Czado},
+         familyi={C\bibinitperiod},
+         given={Claudia},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=MA}{%
+         family={Munk},
+         familyi={M\bibinitperiod},
+         given={Axel},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{2}{%
+      {Taylor}%
+      {Francis}%
+    }
+    \strng{namehash}{CCMA1}
+    \strng{fullhash}{CCMA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1998}
+    \field{labeldatesource}{year}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{number}{4}
+    \field{pages}{319\bibrangedash 346}
+    \field{title}{Assessing the similarity of distributions-finite sample
+  performance of the empirical Mallows distance}
+    \field{volume}{60}
+    \field{journaltitle}{Journal of Statistical Computation and Simulation}
+    \field{year}{1998}
+  \endentry
+
+  \entry{edelsbrunner2008persistent}{article}{}
+    \name{author}{2}{}{%
+      {{hash=EH}{%
+         family={Edelsbrunner},
+         familyi={E\bibinitperiod},
+         given={Herbert},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=HJ}{%
+         family={Harer},
+         familyi={H\bibinitperiod},
+         given={John},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Mathematical Society}%
+    }
+    \strng{namehash}{EHHJ1}
+    \strng{fullhash}{EHHJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2008}
+    \field{labeldatesource}{year}
+    \field{sortinit}{E}
+    \field{sortinithash}{E}
+    \field{pages}{257\bibrangedash 282}
+    \field{title}{Persistent Homology -- A Survey}
+    \field{volume}{453}
+    \field{journaltitle}{Contemporary mathematics}
+    \field{year}{2008}
+  \endentry
+
+  \entry{EdelsbrunnerLZ02}{article}{}
+    \name{author}{3}{}{%
+      {{hash=EH}{%
+         family={Edelsbrunner},
+         familyi={E\bibinitperiod},
+         given={Herbert},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=LD}{%
+         family={Letscher},
+         familyi={L\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=ZA}{%
+         family={Zomorodian},
+         familyi={Z\bibinitperiod},
+         given={Afra},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{EH+1}
+    \strng{fullhash}{EHLDZA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2002}
+    \field{labeldatesource}{year}
+    \field{sortinit}{E}
+    \field{sortinithash}{E}
+    \field{number}{4}
+    \field{pages}{511\bibrangedash 533}
+    \field{title}{Topological Persistence and Simplification}
+    \field{volume}{28}
+    \field{journaltitle}{Discrete and Computational Geometry}
+    \field{year}{2002}
+  \endentry
+
+  \entry{fernandez2016strong}{article}{}
+    \name{author}{4}{}{%
+      {{hash=FTD}{%
+         family={Fern\'{a}ndez-Ternero},
+         familyi={F\bibinitperiod-T\bibinitperiod},
+         given={Desamparados},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=MVE}{%
+         family={Mac\'{a}as-Virg\'{o}s},
+         familyi={M\bibinitperiod-V\bibinitperiod},
+         given={Enrique},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=SNA}{%
+         family={Scoville},
+         familyi={S\bibinitperiod},
+         given={Nicholas\bibnamedelima A},
+         giveni={N\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=VJA}{%
+         family={Vilches},
+         familyi={V\bibinitperiod},
+         given={Jos\'{e}\bibnamedelima Antonio},
+         giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{FTD+1}
+    \strng{fullhash}{FTDMVESNAVJA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2019}
+    \field{labeldatesource}{year}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{title}{Strong discrete Morse theory and simplicial LS category: A
+  discrete version of the Lusternik-Schnirelmann Theorem}
+    \field{journaltitle}{Discrete and Computational Geometry}
+    \field{year}{2019}
+  \endentry
+
+  \entry{goerss2009simplicial}{book}{}
+    \name{author}{2}{}{%
+      {{hash=GPG}{%
+         family={Goerss},
+         familyi={G\bibinitperiod},
+         given={Paul\bibnamedelima G},
+         giveni={P\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+      {{hash=JJF}{%
+         family={Jardine},
+         familyi={J\bibinitperiod},
+         given={John\bibnamedelima F},
+         giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{GPGJJF1}
+    \strng{fullhash}{GPGJJF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2009}
+    \field{labeldatesource}{year}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{title}{Simplicial Homotopy Theory}
+    \field{year}{2009}
+  \endentry
+
+  \entry{gray1975homotopy}{book}{}
+    \name{author}{1}{}{%
+      {{hash=GB}{%
+         family={Gray},
+         familyi={G\bibinitperiod},
+         given={Brayton},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Academic Press}%
+    }
+    \strng{namehash}{GB1}
+    \strng{fullhash}{GB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1975}
+    \field{labeldatesource}{year}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{title}{Homotopy Theory: An Introduction to Algebraic Topology}
+    \field{volume}{64}
+    \field{year}{1975}
+  \endentry
+
+  \entry{hatcher2005algebraic}{book}{}
+    \name{author}{1}{}{%
+      {{hash=HA}{%
+         family={Hatcher},
+         familyi={H\bibinitperiod},
+         given={Allen},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Cambridge University Press}%
+    }
+    \strng{namehash}{HA1}
+    \strng{fullhash}{HA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2005}
+    \field{labeldatesource}{year}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{title}{Algebraic Topology}
+    \field{year}{2005}
+  \endentry
+
+  \entry{HiyoshiS04}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=HH}{%
+         family={Hiyoshi},
+         familyi={H\bibinitperiod},
+         given={Hisamoto},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=SK}{%
+         family={Sugihara},
+         familyi={S\bibinitperiod},
+         given={Kokichi},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HHSK1}
+    \strng{fullhash}{HHSK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2004}
+    \field{labeldatesource}{year}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{booktitle}{Computational Science and its Applications}
+    \field{pages}{71\bibrangedash 80}
+    \field{title}{Improving the Global Continuity of the Natural Neighbor
+  Interpolation}
+    \field{year}{2004}
+  \endentry
+
+  \entry{kerber2017geometry}{article}{}
+    \name{author}{3}{}{%
+      {{hash=KM}{%
+         family={Kerber},
+         familyi={K\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=MD}{%
+         family={Morozov},
+         familyi={M\bibinitperiod},
+         given={Dmitriy},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=NA}{%
+         family={Nigmetov},
+         familyi={N\bibinitperiod},
+         given={Arnur},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Association of Computing Machinery}%
+    }
+    \strng{namehash}{KM+1}
+    \strng{fullhash}{KMMDNA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{labeldatesource}{year}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{pages}{1\bibrangedash 4}
+    \field{title}{Geometry helps to compare persistence diagrams}
+    \field{volume}{22}
+    \field{journaltitle}{Journal of Experimental Algorithmics}
+    \field{year}{2017}
+  \endentry
+
+  \entry{LiCL08}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=LY}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Yi},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=CW}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Weidong},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=LD}{%
+         family={Lu},
+         familyi={L\bibinitperiod},
+         given={Dongming},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LY+1}
+    \strng{fullhash}{LYCWLD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2008}
+    \field{labeldatesource}{year}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{booktitle}{International Conference on Cyberworlds}
+    \field{pages}{306\bibrangedash 313}
+    \field{title}{The Application of Natural Neighbor Interpolation in
+  Real-Time Environments}
+    \field{year}{2008}
+  \endentry
+
+  \entry{mileyko2011probability}{article}{}
+    \name{author}{3}{}{%
+      {{hash=MY}{%
+         family={Mileyko},
+         familyi={M\bibinitperiod},
+         given={Yuriy},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=MS}{%
+         family={Mukherjee},
+         familyi={M\bibinitperiod},
+         given={Sayan},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=HJ}{%
+         family={Harer},
+         familyi={H\bibinitperiod},
+         given={John},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Institute of Physics Publishing}%
+    }
+    \strng{namehash}{MY+1}
+    \strng{fullhash}{MYMSHJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2011}
+    \field{labeldatesource}{year}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{number}{12}
+    \field{pages}{124007}
+    \field{title}{Probability Measures on the Space of Persistence Diagrams}
+    \field{volume}{27}
+    \field{journaltitle}{Inverse Problems}
+    \field{year}{2011}
+  \endentry
+
+  \entry{reem2011geometric}{inproceedings}{}
+    \name{author}{1}{}{%
+      {{hash=RD}{%
+         family={Reem},
+         familyi={R\bibinitperiod},
+         given={Daniel},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RD1}
+    \strng{fullhash}{RD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2011}
+    \field{labeldatesource}{year}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{booktitle}{Proceedings of the 27th Annual Symposium on Computational
+  Geometry}
+    \field{pages}{254\bibrangedash 263}
+    \field{title}{The Geometric Stability of Voronoi diagrams with Respect to
+  Small Changes of the Sites}
+    \field{year}{2011}
+  \endentry
+
+  \entry{robinson2017hypothesis}{article}{}
+    \name{author}{2}{}{%
+      {{hash=RA}{%
+         family={Robinson},
+         familyi={R\bibinitperiod},
+         given={Andrew},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=TK}{%
+         family={Turner},
+         familyi={T\bibinitperiod},
+         given={Katharine},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{RATK1}
+    \strng{fullhash}{RATK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{labeldatesource}{year}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{number}{2}
+    \field{pages}{241\bibrangedash 261}
+    \field{title}{Hypothesis testing for topological data analysis}
+    \field{volume}{1}
+    \field{journaltitle}{Journal of Applied and Computational Topology}
+    \field{year}{2017}
+  \endentry
+
+  \entry{Rodriguez-Dagnino15}{article}{}
+    \name{author}{1}{}{%
+      {{hash=RDRM}{%
+         family={Rodr\'{\i}guez-Dagnino},
+         familyi={R\bibinitperiod-D\bibinitperiod},
+         given={Ram\'{o}n\bibnamedelima M.},
+         giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RDRM1}
+    \strng{fullhash}{RDRM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2015}
+    \field{labeldatesource}{year}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{number}{2}
+    \field{title}{A Super-Resolution Image Reconstruction using Natural
+  Neighbor Interpolation}
+    \field{volume}{19}
+    \field{journaltitle}{Computaci\'{o}n y Sistemas}
+    \field{year}{2015}
+  \endentry
+
+  \entry{Sibson}{article}{}
+    \name{author}{1}{}{%
+      {{hash=SR}{%
+         family={Sibson},
+         familyi={S\bibinitperiod},
+         given={Robin},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \name{editor}{1}{}{%
+      {{hash=BV}{%
+         family={Barnett},
+         familyi={B\bibinitperiod},
+         given={V.},
+         giveni={V\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SR1}
+    \strng{fullhash}{SR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1981}
+    \field{labeldatesource}{year}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{pages}{21\bibrangedash 36}
+    \field{title}{A brief Description of Natural Neighbor Interpolation}
+    \field{journaltitle}{Interpreting Multivariate Data}
+    \field{year}{1981}
+  \endentry
+
+  \entry{de2004topological}{article}{}
+    \name{author}{2}{}{%
+      {{hash=SVD}{%
+         family={Silva},
+         familyi={S\bibinitperiod},
+         given={Vin\bibnamedelima De},
+         giveni={V\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=CG}{%
+         family={Carlsson},
+         familyi={C\bibinitperiod},
+         given={Gunnar},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SVDCG1}
+    \strng{fullhash}{SVDCG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2004}
+    \field{labeldatesource}{year}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{pages}{157\bibrangedash 166}
+    \field{title}{Topological estimation using witness complexes.}
+    \field{volume}{4}
+    \field{journaltitle}{Symposium on Point-Based Graphics}
+    \field{year}{2004}
+  \endentry
+
+  \entry{villani2008optimal}{book}{}
+    \name{author}{1}{}{%
+      {{hash=VC}{%
+         family={Villani},
+         familyi={V\bibinitperiod},
+         given={C\'{e}dric},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{VC1}
+    \strng{fullhash}{VC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2008}
+    \field{labeldatesource}{year}
+    \field{sortinit}{V}
+    \field{sortinithash}{V}
+    \field{title}{Optimal Transport: Old and New}
+    \field{volume}{338}
+    \field{year}{2008}
+  \endentry
+
+  \entry{Zomorodian10}{article}{}
+    \name{author}{1}{}{%
+      {{hash=ZA}{%
+         family={Zomorodian},
+         familyi={Z\bibinitperiod},
+         given={Afra},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ZA1}
+    \strng{fullhash}{ZA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2010}
+    \field{labeldatesource}{year}
+    \field{sortinit}{Z}
+    \field{sortinithash}{Z}
+    \field{number}{3}
+    \field{pages}{263\bibrangedash 271}
+    \field{title}{Fast Construction of the Vietoris-Rips Complex}
+    \field{volume}{34}
+    \field{journaltitle}{Computers and Graphics}
+    \field{year}{2010}
+  \endentry
+
+  \entry{ZomorodianC05}{article}{}
+    \name{author}{2}{}{%
+      {{hash=ZA}{%
+         family={Zomorodian},
+         familyi={Z\bibinitperiod},
+         given={Afra},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=CGE}{%
+         family={Carlsson},
+         familyi={C\bibinitperiod},
+         given={Gunnar\bibnamedelima E.},
+         giveni={G\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ZACGE1}
+    \strng{fullhash}{ZACGE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2005}
+    \field{labeldatesource}{year}
+    \field{sortinit}{Z}
+    \field{sortinithash}{Z}
+    \field{number}{2}
+    \field{pages}{249\bibrangedash 274}
+    \field{title}{Computing Persistent Homology}
+    \field{volume}{33}
+    \field{journaltitle}{Discrete {\&} Computational Geometry}
+    \field{year}{2005}
+  \endentry
+\enddatalist
 \endinput
