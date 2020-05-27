@@ -13,6 +13,7 @@
 \usepackage{pifont}
 \usepackage{wasysym}
 \usepackage{etoolbox}
+\usepackage{tkz-euclide}
 \usepackage[
 bibstyle=authoryear,
 citestyle=numeric,
@@ -23,6 +24,7 @@ backend=bibtex
 \usepackage{tikz}
 
 \usetikzlibrary{calc,arrows,decorations.pathmorphing,backgrounds,fit,positioning,shapes.symbols,chains}
+\usetkzobj{all}
 \hypersetup{
     unicode=true,
     pdfencoding=unicode,
@@ -40,7 +42,7 @@ backend=bibtex
     linkcolor=FAURed,
     urlcolor=true
 }
-
+\newcommand\Fontvi{\fontsize{13}{13}\selectfont}
 \RequirePackage[oldstyle,scale=1]{sourcecodepro}
 \RequirePackage{dsfont}
 \setbeamertemplate{bibliography item}{\insertbiblabel}
@@ -131,9 +133,10 @@ backend=bibtex
     \par\hspace{-0.73cm}
     \small{A brief description}}
     \vspace{-0.73cm}
-    Persistent homology is the study of \emph{$k$-dimensional abelian groups} attached to a topological space. Abelian groups can be studied algebraically and behave \emph{similar} to the topological space itself under change. They are easy to investigate and reveal properties of the original space they are attached to by their \emph{invariants}. \\[0.5cm]
+    \Fontvi
+    Persistent homology is the study of \textbf{$k$-dimensional abelian groups} attached to a topological space. They are studied algebraically and behave \emph{similar} to the topological space itself under change revealing properties of the original space they are attached to by their \emph{invariants}. \\[0.5cm]
 
-    \footnotesize{The connection of abelian groups by a boundary homomorphism allows to investigate all $k$-dimensions at once. The induced object is a chain complex.}
+    \small{The connection of abelian groups by a boundary homomorphism allows to investigate all $k$-dimensions at once. The induced object is a chain complex.}
 \end{frame}
 
 \section{Triangulation of Manifolds}
@@ -141,6 +144,55 @@ backend=bibtex
 \section{Persistence Stability}
 
 \section{Natural Neighbor Interpolation}
+\begin{frame}
+    \frametitle{
+    Step 1: Voronoi diagram
+    \par\hspace{-0.73cm}
+    \small{Natural neighbor interpolation example}}
+    \vspace{-0.73cm}
+    \Fontvi
+    \begin{minipage}{.35\textwidth}
+        \includegraphics[width=4cm]{figure2_a.pdf}
+    \end{minipage} \quad
+    \begin{minipage}{.6\textwidth}
+          The \textbf{Voronoi Diagram} is spanned over the point cloud embedded into some Euclidean space. Technically one does not calculate the Voronoi diagram but the dual \textbf{Delaunay triangulation}.
+
+          \begin{equation}
+              \text{Vordgm} = \{x \in X \; | \; d(x,\lambda_i) \leq d(x,\lambda_j)\}
+          \end{equation}
+    \end{minipage}
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{
+    Step 2: Add a point into the convex hull
+    \par\hspace{-0.73cm}
+    \small{We need to compute the weights per region}}
+    \vspace{-0.73cm}
+    \Fontvi
+    \includegraphics[width=4cm]{figure2_b.pdf}
+\end{frame}
+
+\begin{frame}
+    \frametitle{
+    An outline to persistent homology
+    \par\hspace{-0.73cm}
+    \small{A brief description}}
+    \vspace{-0.73cm}
+    \Fontvi
+    \includegraphics[width=4cm]{figure2_c.pdf}
+\end{frame}
+
+\begin{frame}
+    \frametitle{
+    An outline to persistent homology
+    \par\hspace{-0.73cm}
+    \small{A brief description}}
+    \vspace{-0.73cm}
+    \Fontvi
+    \includegraphics[width=4cm]{figure2_d.pdf}
+\end{frame}
 
 \section{The Collapsing Sequence}
 

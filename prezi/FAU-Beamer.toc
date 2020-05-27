@@ -1,10 +1,11 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {english}{}
+\babel@toc {english}{}
 \beamer@sectionintoc {1}{Introduction}{3}{0}{1}
 \beamer@sectionintoc {2}{Persistent Homology}{4}{0}{2}
 \beamer@sectionintoc {3}{Triangulation of Manifolds}{6}{0}{3}
 \beamer@sectionintoc {4}{Persistence Stability}{7}{0}{4}
 \beamer@sectionintoc {5}{Natural Neighbor Interpolation}{8}{0}{5}
-\beamer@sectionintoc {6}{The Collapsing Sequence}{9}{0}{6}
-\beamer@sectionintoc {7}{Hypothesis Testing}{10}{0}{7}
-\beamer@sectionintoc {8}{Summary}{11}{0}{8}
+\beamer@sectionintoc {6}{The Collapsing Sequence}{13}{0}{6}
+\beamer@sectionintoc {7}{Hypothesis Testing}{14}{0}{7}
+\beamer@sectionintoc {8}{Summary}{15}{0}{8}
