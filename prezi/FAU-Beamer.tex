@@ -14,6 +14,7 @@
 \usepackage{wasysym}
 \usepackage{etoolbox}
 \usepackage{tkz-euclide}
+\usepackage[percent]{overpic}
 \usepackage[
 bibstyle=authoryear,
 citestyle=numeric,
@@ -126,18 +127,76 @@ backend=bibtex
 
 \section{Introduction}
 
+\begin{frame}
+    \frametitle{
+    Hypothesis
+    \par\hspace{-0.73cm}
+    \small{Two main assumptions}}
+    \Fontvi
+    \large{\textbf{Hypothesis 1: \color{FAURed}Manifold assumption}}\\[0.1cm]
+    A point set $X$ lies on a \emph{topological} or even \emph{smooth manifold} $\mathbb{M}$, having a family of continuous/smooth \emph{coordinate systems} to describe it, with $\dim \mathbb{M} \ll \dim X$.\\[0.7cm]
+
+    \large{\textbf{Hypothesis 2: \color{FAURed}Meaning of shape}}\\[0.1cm]
+    The topology of the sublevel sets of a manifold $\mathbb{M}$ underlying a data set can be used to distinguish data up to some equivalence relation.
+\end{frame}
+
 \section{Persistent Homology}
 \begin{frame}
     \frametitle{
     An outline to persistent homology
     \par\hspace{-0.73cm}
     \small{A brief description}}
-    \vspace{-0.73cm}
     \Fontvi
     Persistent homology is the study of \textbf{$k$-dimensional abelian groups} attached to a topological space. They are studied algebraically and behave \emph{similar} to the topological space itself under change revealing properties of the original space they are attached to by their \emph{invariants}. \\[0.5cm]
 
     \small{The connection of abelian groups by a boundary homomorphism allows to investigate all $k$-dimensions at once. The induced object is a chain complex.}
 \end{frame}
+
+\begin{frame}
+    \frametitle{
+    Chain complex
+    \par\hspace{-0.73cm}
+    \small{How does it work?}}
+    \Fontvi
+    Homology theory is the study of properties of an object $X$, such as a set of points, by means of homological (commutative) algebra. One assigns to $X$ a sequence of abelian groups/modules $C_0, C_1, \cdots$ which are connected by homomorphisms $\partial_{k+1}: C_{k+1} \rightarrow C_{k}$ such that $\text{im} \partial_{k+1} \subseteq \ker \partial_{k}$. Such a structure is called \textbf{chain complex}. \\
+
+    \begin{equation*}
+      0 \xrightarrow{\partial_{k+1}} C_k \xrightarrow{\partial_{k}} C_{k-1} \xrightarrow{\partial_{k-1}} C_{k-2} \xrightarrow{\partial_{k-2}} \cdots \xrightarrow{\partial_{2}} C_1 \xrightarrow{\partial_{1}} 0
+    \end{equation*}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Cycle and boundary groups}
+    \Fontvi
+    
+\end{frame}
+
+\begin{frame}
+    \frametitle{
+    Putting them into context
+    \par\hspace{-0.73cm}
+    \small{Illustration of the chain complex}}
+    \Fontvi
+    \centering
+    \begin{overpic}[width=0.7\textwidth,tics=10]{chain-complex.pdf}
+        \put (17.7,1) {$0$}
+        \put (49,1) {$0$}
+        \put (80.2,1) {$0$}
+        \put (47.2,17) {$B_k$}
+        \put (47.2,27) {$Z_k$}
+        \put (47.2,37) {$C_k$}
+        \put (77,17) {$B_{k-1}$}
+        \put (77,27) {$Z_{k-1}$}
+        \put (77,37) {$C_{k-1}$}
+        \put (14.5,17) {$B_{k+1}$}
+        \put (14.5,27) {$Z_{k+1}$}
+        \put (14.5,37) {$C_{k+1}$}
+        \put (30.5,40) {$\partial_{k+1}$}
+        \put (63.5,40) {$\partial_{k}$}
+    \end{overpic}\\[0.1cm]
+    \small{Following Zomorodian, Edelsbrunner and many more \ldots}
+\end{frame}
+
 
 \section{Triangulation of Manifolds}
 
@@ -149,7 +208,6 @@ backend=bibtex
     Step 1: Voronoi diagram
     \par\hspace{-0.73cm}
     \small{Natural neighbor interpolation example}}
-    \vspace{-0.73cm}
     \Fontvi
     \begin{minipage}{.35\textwidth}
         \includegraphics[width=4cm]{figure2_a.pdf}
@@ -169,7 +227,6 @@ backend=bibtex
     Step 2: Add a point into the convex hull
     \par\hspace{-0.73cm}
     \small{We need to compute the weights per region}}
-    \vspace{-0.73cm}
     \Fontvi
     \includegraphics[width=4cm]{figure2_b.pdf}
 \end{frame}
@@ -179,7 +236,6 @@ backend=bibtex
     An outline to persistent homology
     \par\hspace{-0.73cm}
     \small{A brief description}}
-    \vspace{-0.73cm}
     \Fontvi
     \includegraphics[width=4cm]{figure2_c.pdf}
 \end{frame}
@@ -189,7 +245,6 @@ backend=bibtex
     An outline to persistent homology
     \par\hspace{-0.73cm}
     \small{A brief description}}
-    \vspace{-0.73cm}
     \Fontvi
     \includegraphics[width=4cm]{figure2_d.pdf}
 \end{frame}

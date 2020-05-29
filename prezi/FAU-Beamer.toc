@@ -2,10 +2,10 @@
 \babel@toc {english}{}
 \babel@toc {english}{}
 \beamer@sectionintoc {1}{Introduction}{3}{0}{1}
-\beamer@sectionintoc {2}{Persistent Homology}{4}{0}{2}
-\beamer@sectionintoc {3}{Triangulation of Manifolds}{6}{0}{3}
-\beamer@sectionintoc {4}{Persistence Stability}{7}{0}{4}
-\beamer@sectionintoc {5}{Natural Neighbor Interpolation}{8}{0}{5}
-\beamer@sectionintoc {6}{The Collapsing Sequence}{13}{0}{6}
-\beamer@sectionintoc {7}{Hypothesis Testing}{14}{0}{7}
-\beamer@sectionintoc {8}{Summary}{15}{0}{8}
+\beamer@sectionintoc {2}{Persistent Homology}{5}{0}{2}
+\beamer@sectionintoc {3}{Triangulation of Manifolds}{10}{0}{3}
+\beamer@sectionintoc {4}{Persistence Stability}{11}{0}{4}
+\beamer@sectionintoc {5}{Natural Neighbor Interpolation}{12}{0}{5}
+\beamer@sectionintoc {6}{The Collapsing Sequence}{17}{0}{6}
+\beamer@sectionintoc {7}{Hypothesis Testing}{18}{0}{7}
+\beamer@sectionintoc {8}{Summary}{19}{0}{8}
