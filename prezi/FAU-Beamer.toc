@@ -6,6 +6,6 @@
 \beamer@sectionintoc {3}{Triangulation of Manifolds}{10}{0}{3}
 \beamer@sectionintoc {4}{Persistence Stability}{11}{0}{4}
 \beamer@sectionintoc {5}{Natural Neighbor Interpolation}{12}{0}{5}
-\beamer@sectionintoc {6}{The Collapsing Sequence}{17}{0}{6}
-\beamer@sectionintoc {7}{Hypothesis Testing}{18}{0}{7}
-\beamer@sectionintoc {8}{Summary}{19}{0}{8}
+\beamer@sectionintoc {6}{The Collapsing Sequence}{21}{0}{6}
+\beamer@sectionintoc {7}{Hypothesis Testing}{22}{0}{7}
+\beamer@sectionintoc {8}{Summary}{23}{0}{8}

@@ -209,10 +209,10 @@ backend=bibtex
     \par\hspace{-0.73cm}
     \small{Natural neighbor interpolation example}}
     \Fontvi
-    \begin{minipage}{.35\textwidth}
+    \begin{minipage}{.27\textwidth}
         \includegraphics[width=4cm]{figure2_a.pdf}
     \end{minipage} \quad
-    \begin{minipage}{.6\textwidth}
+    \begin{minipage}{.68\textwidth}
           The \textbf{Voronoi Diagram} is spanned over the point cloud embedded into some Euclidean space. Technically one does not calculate the Voronoi diagram but the dual \textbf{Delaunay triangulation}.
 
           \begin{equation}
@@ -224,12 +224,57 @@ backend=bibtex
 
 \begin{frame}
     \frametitle{
-    Step 2: Add a point into the convex hull
+    Step 2: Add a point to the convex hull
     \par\hspace{-0.73cm}
     \small{We need to compute the weights per region}}
     \Fontvi
+    \begin{minipage}{.27\textwidth}
+        \includegraphics[width=4cm]{figure2_b1.pdf}
+    \end{minipage} \quad
+    \begin{minipage}{.68\textwidth}
+        We insert a point into the convex hull of the points $X = \{x_1,\cdots,x_n\}$. The selected position of the new point follows an uniform distribution. The point is added to the set forming the convex hull:
+        \begin{equation*}
+            \text{conv} X = \left\{ \sum_{i=1}^{n} \lambda_i x_i \; \bigg\vert \; x_i \in X, \sum_{i=1}^{n} \lambda_i = 1, \lambda_i \geq 0 \right\}.
+        \end{equation*}
+    \end{minipage}
+\end{frame}
+
+\begin{frame}
+    \frametitle{
+    Step 3: Iterative construction of Voronoi regions
+    \par\hspace{-0.73cm}
+    \small{Construction of the new regions}}
+    \Fontvi
+    \includegraphics[width=4cm]{figure2_b2.pdf}
+\end{frame}
+
+\begin{frame}
+    \frametitle{
+    Step 3: Iterative construction of Voronoi regions
+    \par\hspace{-0.73cm}
+    \small{Construction of the new regions}}
+    \Fontvi
+    \includegraphics[width=4cm]{figure2_b3.pdf}
+\end{frame}
+
+\begin{frame}
+    \frametitle{
+    Step 3: Iterative construction of Voronoi regions
+    \par\hspace{-0.73cm}
+    \small{Construction of the new regions}}
+    \Fontvi
+    \includegraphics[width=4cm]{figure2_b4.pdf}
+\end{frame}
+
+\begin{frame}
+    \frametitle{
+    Step 3: Iterative construction of Voronoi regions
+    \par\hspace{-0.73cm}
+    \small{Construction of the new regions}}
+    \Fontvi
     \includegraphics[width=4cm]{figure2_b.pdf}
 \end{frame}
+
 
 \begin{frame}
     \frametitle{
