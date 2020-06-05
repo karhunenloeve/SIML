@@ -9,75 +9,77 @@
 \headcommand {\beamer@framepages {3}{3}}
 \headcommand {\slideentry {1}{0}{2}{4/4}{}{0}}
 \headcommand {\beamer@framepages {4}{4}}
-\headcommand {\beamer@sectionpages {3}{4}}
-\headcommand {\beamer@subsectionpages {3}{4}}
-\headcommand {\sectionentry {2}{Persistent Homology}{5}{Persistent Homology}{0}}
-\headcommand {\slideentry {2}{0}{1}{5/5}{}{0}}
+\headcommand {\slideentry {1}{0}{3}{5/5}{}{0}}
 \headcommand {\beamer@framepages {5}{5}}
-\headcommand {\slideentry {2}{0}{2}{6/6}{}{0}}
+\headcommand {\beamer@sectionpages {3}{5}}
+\headcommand {\beamer@subsectionpages {3}{5}}
+\headcommand {\sectionentry {2}{Persistent Homology}{6}{Persistent Homology}{0}}
+\headcommand {\slideentry {2}{0}{1}{6/6}{}{0}}
 \headcommand {\beamer@framepages {6}{6}}
-\headcommand {\slideentry {2}{0}{3}{7/7}{}{0}}
+\headcommand {\slideentry {2}{0}{2}{7/7}{}{0}}
 \headcommand {\beamer@framepages {7}{7}}
-\headcommand {\slideentry {2}{0}{4}{8/8}{}{0}}
+\headcommand {\slideentry {2}{0}{3}{8/8}{}{0}}
 \headcommand {\beamer@framepages {8}{8}}
-\headcommand {\slideentry {2}{0}{5}{9/9}{}{0}}
+\headcommand {\slideentry {2}{0}{4}{9/9}{}{0}}
 \headcommand {\beamer@framepages {9}{9}}
-\headcommand {\beamer@sectionpages {5}{9}}
-\headcommand {\beamer@subsectionpages {5}{9}}
-\headcommand {\sectionentry {3}{Triangulation of Manifolds}{10}{Triangulation of Manifolds}{0}}
-\headcommand {\slideentry {3}{0}{1}{10/10}{}{0}}
+\headcommand {\slideentry {2}{0}{5}{10/10}{}{0}}
 \headcommand {\beamer@framepages {10}{10}}
-\headcommand {\beamer@sectionpages {10}{10}}
-\headcommand {\beamer@subsectionpages {10}{10}}
-\headcommand {\sectionentry {4}{Persistence Stability}{11}{Persistence Stability}{0}}
-\headcommand {\slideentry {4}{0}{1}{11/11}{}{0}}
+\headcommand {\beamer@sectionpages {6}{10}}
+\headcommand {\beamer@subsectionpages {6}{10}}
+\headcommand {\sectionentry {3}{Triangulation of Manifolds}{11}{Triangulation of Manifolds}{0}}
+\headcommand {\slideentry {3}{0}{1}{11/11}{}{0}}
 \headcommand {\beamer@framepages {11}{11}}
 \headcommand {\beamer@sectionpages {11}{11}}
 \headcommand {\beamer@subsectionpages {11}{11}}
-\headcommand {\sectionentry {5}{Natural Neighbor Interpolation}{12}{Natural Neighbor Interpolation}{0}}
-\headcommand {\slideentry {5}{0}{1}{12/12}{}{0}}
+\headcommand {\sectionentry {4}{Persistence Stability}{12}{Persistence Stability}{0}}
+\headcommand {\slideentry {4}{0}{1}{12/12}{}{0}}
 \headcommand {\beamer@framepages {12}{12}}
-\headcommand {\slideentry {5}{0}{2}{13/13}{}{0}}
+\headcommand {\beamer@sectionpages {12}{12}}
+\headcommand {\beamer@subsectionpages {12}{12}}
+\headcommand {\sectionentry {5}{Natural Neighbor Interpolation}{13}{Natural Neighbor Interpolation}{0}}
+\headcommand {\slideentry {5}{0}{1}{13/13}{}{0}}
 \headcommand {\beamer@framepages {13}{13}}
-\headcommand {\slideentry {5}{0}{3}{14/14}{}{0}}
+\headcommand {\slideentry {5}{0}{2}{14/14}{}{0}}
 \headcommand {\beamer@framepages {14}{14}}
-\headcommand {\slideentry {5}{0}{4}{15/15}{}{0}}
+\headcommand {\slideentry {5}{0}{3}{15/15}{}{0}}
 \headcommand {\beamer@framepages {15}{15}}
-\headcommand {\slideentry {5}{0}{5}{16/16}{}{0}}
+\headcommand {\slideentry {5}{0}{4}{16/16}{}{0}}
 \headcommand {\beamer@framepages {16}{16}}
-\headcommand {\slideentry {5}{0}{6}{17/17}{}{0}}
+\headcommand {\slideentry {5}{0}{5}{17/17}{}{0}}
 \headcommand {\beamer@framepages {17}{17}}
-\headcommand {\slideentry {5}{0}{7}{18/18}{}{0}}
+\headcommand {\slideentry {5}{0}{6}{18/18}{}{0}}
 \headcommand {\beamer@framepages {18}{18}}
-\headcommand {\slideentry {5}{0}{8}{19/19}{}{0}}
+\headcommand {\slideentry {5}{0}{7}{19/19}{}{0}}
 \headcommand {\beamer@framepages {19}{19}}
-\headcommand {\slideentry {5}{0}{9}{20/20}{}{0}}
+\headcommand {\slideentry {5}{0}{8}{20/20}{}{0}}
 \headcommand {\beamer@framepages {20}{20}}
-\headcommand {\beamer@sectionpages {12}{20}}
-\headcommand {\beamer@subsectionpages {12}{20}}
-\headcommand {\sectionentry {6}{The Collapsing Sequence}{21}{The Collapsing Sequence}{0}}
-\headcommand {\slideentry {6}{0}{1}{21/21}{}{0}}
+\headcommand {\slideentry {5}{0}{9}{21/21}{}{0}}
 \headcommand {\beamer@framepages {21}{21}}
-\headcommand {\beamer@sectionpages {21}{21}}
-\headcommand {\beamer@subsectionpages {21}{21}}
-\headcommand {\sectionentry {7}{Hypothesis Testing}{22}{Hypothesis Testing}{0}}
-\headcommand {\slideentry {7}{0}{1}{22/22}{}{0}}
+\headcommand {\beamer@sectionpages {13}{21}}
+\headcommand {\beamer@subsectionpages {13}{21}}
+\headcommand {\sectionentry {6}{The Collapsing Sequence}{22}{The Collapsing Sequence}{0}}
+\headcommand {\slideentry {6}{0}{1}{22/22}{}{0}}
 \headcommand {\beamer@framepages {22}{22}}
 \headcommand {\beamer@sectionpages {22}{22}}
 \headcommand {\beamer@subsectionpages {22}{22}}
-\headcommand {\sectionentry {8}{Summary}{23}{Summary}{0}}
-\headcommand {\slideentry {8}{0}{1}{23/23}{}{0}}
+\headcommand {\sectionentry {7}{Hypothesis Testing}{23}{Hypothesis Testing}{0}}
+\headcommand {\slideentry {7}{0}{1}{23/23}{}{0}}
 \headcommand {\beamer@framepages {23}{23}}
-\headcommand {\slideentry {8}{0}{2}{24/24}{}{0}}
+\headcommand {\beamer@sectionpages {23}{23}}
+\headcommand {\beamer@subsectionpages {23}{23}}
+\headcommand {\sectionentry {8}{Summary}{24}{Summary}{0}}
+\headcommand {\slideentry {8}{0}{1}{24/24}{}{0}}
 \headcommand {\beamer@framepages {24}{24}}
-\headcommand {\slideentry {8}{0}{2}{24/25}{}{0}}
-\headcommand {\beamer@framepages {24}{25}}
-\headcommand {\slideentry {8}{0}{2}{24/26}{}{0}}
-\headcommand {\beamer@framepages {24}{26}}
-\headcommand {\slideentry {8}{0}{2}{24/27}{}{0}}
-\headcommand {\beamer@framepages {24}{27}}
-\headcommand {\beamer@partpages {1}{27}}
-\headcommand {\beamer@subsectionpages {23}{27}}
-\headcommand {\beamer@sectionpages {23}{27}}
-\headcommand {\beamer@documentpages {27}}
-\headcommand {\gdef \inserttotalframenumber {26}}
+\headcommand {\slideentry {8}{0}{2}{25/25}{}{0}}
+\headcommand {\beamer@framepages {25}{25}}
+\headcommand {\slideentry {8}{0}{2}{25/26}{}{0}}
+\headcommand {\beamer@framepages {25}{26}}
+\headcommand {\slideentry {8}{0}{2}{25/27}{}{0}}
+\headcommand {\beamer@framepages {25}{27}}
+\headcommand {\slideentry {8}{0}{2}{25/28}{}{0}}
+\headcommand {\beamer@framepages {25}{28}}
+\headcommand {\beamer@partpages {1}{28}}
+\headcommand {\beamer@subsectionpages {24}{28}}
+\headcommand {\beamer@sectionpages {24}{28}}
+\headcommand {\beamer@documentpages {28}}
+\headcommand {\gdef \inserttotalframenumber {27}}
