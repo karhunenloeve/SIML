@@ -7,15 +7,6 @@
 
 This repository **SIML** (**S**ignature **I**nference & **M**achine **L**earning) offers all functionalities and experiments for the paper *Persistent Homology as Stopping-Criterion for Voronoi Interpolation*. The functions are annotated. The repository is no longer maintained and is used for prototypical implementation of the project. It has been archived since publication. If you use the project, or share this project, please quote us as follows:
 
-    @article{LuMeRiLe2020,
-    author    = {Luciano Melodia and
-                 Richard Lenz},
-    title     = {Persistent Homology as Stopping-Criterion for Voronoi Interpolation},
-    journal   = {Lectures Notes in Computer Science},
-    volume    = {20},
-    year      = {2020}
-    }
-
     @article{1911.02922,
 	  author    = {Luciano Melodia and
 	               Richard Lenz},
