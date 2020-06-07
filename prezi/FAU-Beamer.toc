@@ -2,8 +2,8 @@
 \babel@toc {english}{}
 \babel@toc {english}{}
 \beamer@sectionintoc {1}{Introduction}{3}{0}{1}
-\beamer@sectionintoc {2}{Persistent Homology}{8}{0}{2}
-\beamer@sectionintoc {3}{Natural Neighbor Interpolation}{14}{0}{3}
-\beamer@sectionintoc {4}{The Collapsing Sequence}{23}{0}{4}
-\beamer@sectionintoc {5}{Hypothesis Testing}{24}{0}{5}
-\beamer@sectionintoc {6}{Summary}{25}{0}{6}
+\beamer@sectionintoc {2}{Persistent Homology}{7}{0}{2}
+\beamer@sectionintoc {3}{Natural Neighbor Interpolation}{13}{0}{3}
+\beamer@sectionintoc {4}{The Collapsing Sequence}{22}{0}{4}
+\beamer@sectionintoc {5}{Hypothesis Testing}{23}{0}{5}
+\beamer@sectionintoc {6}{Summary}{24}{0}{6}
