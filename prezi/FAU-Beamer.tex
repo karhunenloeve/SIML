@@ -15,6 +15,7 @@
 \usepackage{etoolbox}
 \usepackage{tkz-euclide}
 \usepackage[percent]{overpic}
+\usepackage{mathtools}
 \usepackage[
 bibstyle=authoryear,
 citestyle=numeric,
@@ -186,10 +187,39 @@ backend=bibtex
     \end{equation*}
 \end{frame}
 
+
 \begin{frame}
-    \frametitle{Cycle and boundary groups}
+    \frametitle{
+    Chain complex
+    \par\hspace{-0.73cm}
+    \small{An example}}
     \Fontvi
-    
+    \begin{overpic}[width=\textwidth,tics=10]{simplicialcomplexes.pdf}
+        \put (12,9) {$C_1$}
+        \put (47,9) {$C_2$}
+        \put (83,9) {$C_3$}
+        \put (31,9) {$\xhookrightarrow[\imath]{}$}
+        \put (66,9) {$\xhookrightarrow[\imath]{}$}
+    \end{overpic}\\[0.1cm]
+\end{frame}
+
+\begin{frame}
+    \frametitle{
+    Cycle and boundary groups
+    \par\hspace{-0.73cm}
+    \small{These subgroups are normal with respect to $C_k$}}
+    \Fontvi
+    The \textbf{$k$th cycle group} $Z_k$ is defined as
+    \begin{equation*}
+        Z_k = \ker \partial_k = \{c\in C_k \; | \; \partial_k c = \emptyset \}.
+    \end{equation*}
+    An element of this group is called \textbf{$k$-cycle}. \\[0.5cm]
+
+    The \textbf{$k$th boundary group} $B_k$ is defined as
+    \begin{equation*}
+        B_k = \text{im} \; \partial_{k+1} = \{c\in C_k \; | \; \exists d \in C_{k+1} :c = \partial_{k+1}d \}.
+    \end{equation*}
+    An element of this group is called \textbf{$k$-boundary}.
 \end{frame}
 
 \begin{frame}
