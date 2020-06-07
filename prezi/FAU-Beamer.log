@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.11.27)  7 JUN 2020 12:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.11.27)  7 JUN 2020 12:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2395,7 +2395,7 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 ]
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package pdftex.def Info: FAU-logo.pdf  used on input line 168.
+Package pdftex.def Info: FAU-logo.pdf  used on input line 176.
 (pdftex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
@@ -2405,68 +2405,6 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 [7
 
 ]
-LaTeX Font Info:    Calculating math sizes for size <13> on input line 178.
-
-
-LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <13> not available
-(Font)              size <12> substituted on input line 178.
-
-
-LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <6.5> not available
-(Font)              size <6> substituted on input line 178.
-
-
-LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <13> not available
-(Font)              size <12> substituted on input line 178.
-
-
-LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <6.5> not available
-(Font)              size <6> substituted on input line 178.
-
-
-LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <13> not available
-(Font)              size <12> substituted on input line 178.
-
-
-LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <6.5> not available
-(Font)              size <6> substituted on input line 178.
-
-LaTeX Font Info:    Font shape `OT1/SourceCodePro-TOsF/m/n' will be
-(Font)              scaled to size 13.0pt on input line 178.
-LaTeX Font Info:    Font shape `OT1/SourceCodePro-TOsF/m/n' will be
-(Font)              scaled to size 9.09996pt on input line 178.
-LaTeX Font Info:    Font shape `OT1/SourceCodePro-TOsF/m/n' will be
-(Font)              scaled to size 6.5pt on input line 178.
-
-LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <13> not available
-(Font)              size <12> substituted on input line 178.
-
-
-LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <6.5> not available
-(Font)              size <6> substituted on input line 178.
-
-
-LaTeX Font Warning: Font shape `U/wasy/m/n' in size <13> not available
-(Font)              size <12> substituted on input line 178.
-
-
-LaTeX Font Warning: Font shape `U/wasy/m/n' in size <6.5> not available
-(Font)              size <6> substituted on input line 178.
-
-
-LaTeX Font Warning: Font shape `T1/cmss/m/n' in size <6.5> not available
-(Font)              size <6> substituted on input line 178.
-
-
-LaTeX Font Warning: Font shape `T1/cmss/m/it' in size <13> not available
-(Font)              size <12> substituted on input line 178.
-
-LaTeX Font Info:    Font shape `OT1/SourceCodePro-TOsF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 178.
-LaTeX Font Info:    Font shape `OT1/SourceCodePro-TOsF/m/n' will be
-(Font)              scaled to size 7.0pt on input line 178.
-LaTeX Font Info:    Font shape `OT1/SourceCodePro-TOsF/m/n' will be
-(Font)              scaled to size 5.0pt on input line 178.
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
 Package pdftex.def Info: FAU-logo.pdf  used on input line 178.
@@ -2479,9 +2417,71 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 [8
 
 ]
+LaTeX Font Info:    Calculating math sizes for size <13> on input line 188.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <13> not available
+(Font)              size <12> substituted on input line 188.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <6.5> not available
+(Font)              size <6> substituted on input line 188.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <13> not available
+(Font)              size <12> substituted on input line 188.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <6.5> not available
+(Font)              size <6> substituted on input line 188.
+
+
+LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <13> not available
+(Font)              size <12> substituted on input line 188.
+
+
+LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <6.5> not available
+(Font)              size <6> substituted on input line 188.
+
+LaTeX Font Info:    Font shape `OT1/SourceCodePro-TOsF/m/n' will be
+(Font)              scaled to size 13.0pt on input line 188.
+LaTeX Font Info:    Font shape `OT1/SourceCodePro-TOsF/m/n' will be
+(Font)              scaled to size 9.09996pt on input line 188.
+LaTeX Font Info:    Font shape `OT1/SourceCodePro-TOsF/m/n' will be
+(Font)              scaled to size 6.5pt on input line 188.
+
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <13> not available
+(Font)              size <12> substituted on input line 188.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <6.5> not available
+(Font)              size <6> substituted on input line 188.
+
+
+LaTeX Font Warning: Font shape `U/wasy/m/n' in size <13> not available
+(Font)              size <12> substituted on input line 188.
+
+
+LaTeX Font Warning: Font shape `U/wasy/m/n' in size <6.5> not available
+(Font)              size <6> substituted on input line 188.
+
+
+LaTeX Font Warning: Font shape `T1/cmss/m/n' in size <6.5> not available
+(Font)              size <6> substituted on input line 188.
+
+
+LaTeX Font Warning: Font shape `T1/cmss/m/it' in size <13> not available
+(Font)              size <12> substituted on input line 188.
+
+LaTeX Font Info:    Font shape `OT1/SourceCodePro-TOsF/m/n' will be
+(Font)              scaled to size 10.0pt on input line 188.
+LaTeX Font Info:    Font shape `OT1/SourceCodePro-TOsF/m/n' will be
+(Font)              scaled to size 7.0pt on input line 188.
+LaTeX Font Info:    Font shape `OT1/SourceCodePro-TOsF/m/n' will be
+(Font)              scaled to size 5.0pt on input line 188.
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package pdftex.def Info: FAU-logo.pdf  used on input line 191.
+Package pdftex.def Info: FAU-logo.pdf  used on input line 188.
 (pdftex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
@@ -2491,14 +2491,9 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 [9
 
 ]
-<simplicialcomplexes.pdf, id=2586, 855.33517pt x 173.55283pt>
-File: simplicialcomplexes.pdf Graphic file (type pdf)
-<use simplicialcomplexes.pdf>
-Package pdftex.def Info: simplicialcomplexes.pdf  used on input line 207.
-(pdftex.def)             Requested size: 398.3386pt x 80.82568pt.
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package pdftex.def Info: FAU-logo.pdf  used on input line 207.
+Package pdftex.def Info: FAU-logo.pdf  used on input line 201.
 (pdftex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
@@ -2507,10 +2502,15 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 
 [10
 
- <./simplicialcomplexes.pdf>]
+]
+<simplicialcomplexes.pdf, id=2591, 855.33517pt x 173.55283pt>
+File: simplicialcomplexes.pdf Graphic file (type pdf)
+<use simplicialcomplexes.pdf>
+Package pdftex.def Info: simplicialcomplexes.pdf  used on input line 217.
+(pdftex.def)             Requested size: 398.3386pt x 80.82568pt.
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package pdftex.def Info: FAU-logo.pdf  used on input line 226.
+Package pdftex.def Info: FAU-logo.pdf  used on input line 217.
 (pdftex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
@@ -2519,15 +2519,10 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 
 [11
 
-]
-<chain-complex.pdf, id=10203, 160.80615pt x 71.36116pt>
-File: chain-complex.pdf Graphic file (type pdf)
-<use chain-complex.pdf>
-Package pdftex.def Info: chain-complex.pdf  used on input line 252.
-(pdftex.def)             Requested size: 278.83578pt x 123.75798pt.
+ <./simplicialcomplexes.pdf>]
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package pdftex.def Info: FAU-logo.pdf  used on input line 252.
+Package pdftex.def Info: FAU-logo.pdf  used on input line 236.
 (pdftex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
@@ -2536,10 +2531,15 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 
 [12
 
- <./chain-complex.pdf>]
+]
+<chain-complex.pdf, id=10208, 160.80615pt x 71.36116pt>
+File: chain-complex.pdf Graphic file (type pdf)
+<use chain-complex.pdf>
+Package pdftex.def Info: chain-complex.pdf  used on input line 262.
+(pdftex.def)             Requested size: 278.83578pt x 123.75798pt.
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package pdftex.def Info: FAU-logo.pdf  used on input line 254.
+Package pdftex.def Info: FAU-logo.pdf  used on input line 262.
 (pdftex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
@@ -2548,20 +2548,10 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 
 [13
 
-]
-<figure2_a.pdf, id=10241, 228.02188pt x 228.02188pt>
-File: figure2_a.pdf Graphic file (type pdf)
-<use figure2_a.pdf>
-Package pdftex.def Info: figure2_a.pdf  used on input line 271.
-(pdftex.def)             Requested size: 113.81102pt x 113.81233pt.
-
-Overfull \hbox (6.2579pt too wide) in paragraph at lines 271--271
-[][] 
- []
-
+ <./chain-complex.pdf>]
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package pdftex.def Info: FAU-logo.pdf  used on input line 271.
+Package pdftex.def Info: FAU-logo.pdf  used on input line 264.
 (pdftex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
@@ -2570,20 +2560,20 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 
 [14
 
- <./figure2_a.pdf>]
-<figure2_b1.pdf, id=10249, 228.02188pt x 228.02188pt>
-File: figure2_b1.pdf Graphic file (type pdf)
-<use figure2_b1.pdf>
-Package pdftex.def Info: figure2_b1.pdf  used on input line 289.
+]
+<figure2_a.pdf, id=10246, 228.02188pt x 228.02188pt>
+File: figure2_a.pdf Graphic file (type pdf)
+<use figure2_a.pdf>
+Package pdftex.def Info: figure2_a.pdf  used on input line 281.
 (pdftex.def)             Requested size: 113.81102pt x 113.81233pt.
 
-Overfull \hbox (6.2579pt too wide) in paragraph at lines 289--289
+Overfull \hbox (6.2579pt too wide) in paragraph at lines 281--281
 [][] 
  []
 
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package pdftex.def Info: FAU-logo.pdf  used on input line 289.
+Package pdftex.def Info: FAU-logo.pdf  used on input line 281.
 (pdftex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
@@ -2592,20 +2582,20 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 
 [15
 
- <./figure2_b1.pdf>]
-<figure2_b2.pdf, id=15410, 228.02188pt x 228.02188pt>
-File: figure2_b2.pdf Graphic file (type pdf)
-<use figure2_b2.pdf>
-Package pdftex.def Info: figure2_b2.pdf  used on input line 303.
+ <./figure2_a.pdf>]
+<figure2_b1.pdf, id=10254, 228.02188pt x 228.02188pt>
+File: figure2_b1.pdf Graphic file (type pdf)
+<use figure2_b1.pdf>
+Package pdftex.def Info: figure2_b1.pdf  used on input line 299.
 (pdftex.def)             Requested size: 113.81102pt x 113.81233pt.
 
-Overfull \hbox (6.2579pt too wide) in paragraph at lines 303--303
+Overfull \hbox (6.2579pt too wide) in paragraph at lines 299--299
 [][] 
  []
 
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package pdftex.def Info: FAU-logo.pdf  used on input line 303.
+Package pdftex.def Info: FAU-logo.pdf  used on input line 299.
 (pdftex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
@@ -2614,20 +2604,20 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 
 [16
 
- <./figure2_b2.pdf>]
-<figure2_b3.pdf, id=20571, 228.02188pt x 228.02188pt>
-File: figure2_b3.pdf Graphic file (type pdf)
-<use figure2_b3.pdf>
-Package pdftex.def Info: figure2_b3.pdf  used on input line 317.
+ <./figure2_b1.pdf>]
+<figure2_b2.pdf, id=15415, 228.02188pt x 228.02188pt>
+File: figure2_b2.pdf Graphic file (type pdf)
+<use figure2_b2.pdf>
+Package pdftex.def Info: figure2_b2.pdf  used on input line 313.
 (pdftex.def)             Requested size: 113.81102pt x 113.81233pt.
 
-Overfull \hbox (6.2579pt too wide) in paragraph at lines 317--317
+Overfull \hbox (6.2579pt too wide) in paragraph at lines 313--313
 [][] 
  []
 
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package pdftex.def Info: FAU-logo.pdf  used on input line 317.
+Package pdftex.def Info: FAU-logo.pdf  used on input line 313.
 (pdftex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
@@ -2636,20 +2626,20 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 
 [17
 
- <./figure2_b3.pdf>]
-<figure2_b4.pdf, id=25731, 228.02188pt x 228.02188pt>
-File: figure2_b4.pdf Graphic file (type pdf)
-<use figure2_b4.pdf>
-Package pdftex.def Info: figure2_b4.pdf  used on input line 331.
+ <./figure2_b2.pdf>]
+<figure2_b3.pdf, id=20576, 228.02188pt x 228.02188pt>
+File: figure2_b3.pdf Graphic file (type pdf)
+<use figure2_b3.pdf>
+Package pdftex.def Info: figure2_b3.pdf  used on input line 327.
 (pdftex.def)             Requested size: 113.81102pt x 113.81233pt.
 
-Overfull \hbox (6.2579pt too wide) in paragraph at lines 331--331
+Overfull \hbox (6.2579pt too wide) in paragraph at lines 327--327
 [][] 
  []
 
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package pdftex.def Info: FAU-logo.pdf  used on input line 331.
+Package pdftex.def Info: FAU-logo.pdf  used on input line 327.
 (pdftex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
@@ -2658,20 +2648,20 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 
 [18
 
- <./figure2_b4.pdf>]
-<figure2_b.pdf, id=30891, 228.02188pt x 228.02188pt>
-File: figure2_b.pdf Graphic file (type pdf)
-<use figure2_b.pdf>
-Package pdftex.def Info: figure2_b.pdf  used on input line 346.
+ <./figure2_b3.pdf>]
+<figure2_b4.pdf, id=25736, 228.02188pt x 228.02188pt>
+File: figure2_b4.pdf Graphic file (type pdf)
+<use figure2_b4.pdf>
+Package pdftex.def Info: figure2_b4.pdf  used on input line 341.
 (pdftex.def)             Requested size: 113.81102pt x 113.81233pt.
 
-Overfull \hbox (6.2579pt too wide) in paragraph at lines 346--346
+Overfull \hbox (6.2579pt too wide) in paragraph at lines 341--341
 [][] 
  []
 
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package pdftex.def Info: FAU-logo.pdf  used on input line 346.
+Package pdftex.def Info: FAU-logo.pdf  used on input line 341.
 (pdftex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
@@ -2680,12 +2670,17 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 
 [19
 
- <./figure2_b.pdf>]
-<figure2_c.pdf, id=36052, 228.02188pt x 228.02188pt>
-File: figure2_c.pdf Graphic file (type pdf)
-<use figure2_c.pdf>
-Package pdftex.def Info: figure2_c.pdf  used on input line 356.
+ <./figure2_b4.pdf>]
+<figure2_b.pdf, id=30897, 228.02188pt x 228.02188pt>
+File: figure2_b.pdf Graphic file (type pdf)
+<use figure2_b.pdf>
+Package pdftex.def Info: figure2_b.pdf  used on input line 356.
 (pdftex.def)             Requested size: 113.81102pt x 113.81233pt.
+
+Overfull \hbox (6.2579pt too wide) in paragraph at lines 356--356
+[][] 
+ []
+
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
 Package pdftex.def Info: FAU-logo.pdf  used on input line 356.
@@ -2697,15 +2692,15 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 
 [20
 
- <./figure2_c.pdf>]
-<figure2_d.pdf, id=41212, 228.02188pt x 228.02188pt>
-File: figure2_d.pdf Graphic file (type pdf)
-<use figure2_d.pdf>
-Package pdftex.def Info: figure2_d.pdf  used on input line 365.
+ <./figure2_b.pdf>]
+<figure2_c.pdf, id=36057, 228.02188pt x 228.02188pt>
+File: figure2_c.pdf Graphic file (type pdf)
+<use figure2_c.pdf>
+Package pdftex.def Info: figure2_c.pdf  used on input line 366.
 (pdftex.def)             Requested size: 113.81102pt x 113.81233pt.
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package pdftex.def Info: FAU-logo.pdf  used on input line 365.
+Package pdftex.def Info: FAU-logo.pdf  used on input line 366.
 (pdftex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
@@ -2714,10 +2709,15 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 
 [21
 
- <./figure2_d.pdf>]
+ <./figure2_c.pdf>]
+<figure2_d.pdf, id=41217, 228.02188pt x 228.02188pt>
+File: figure2_d.pdf Graphic file (type pdf)
+<use figure2_d.pdf>
+Package pdftex.def Info: figure2_d.pdf  used on input line 375.
+(pdftex.def)             Requested size: 113.81102pt x 113.81233pt.
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package pdftex.def Info: FAU-logo.pdf  used on input line 367.
+Package pdftex.def Info: FAU-logo.pdf  used on input line 375.
 (pdftex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
@@ -2726,10 +2726,10 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 
 [22
 
-]
+ <./figure2_d.pdf>]
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package pdftex.def Info: FAU-logo.pdf  used on input line 369.
+Package pdftex.def Info: FAU-logo.pdf  used on input line 377.
 (pdftex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
@@ -2741,7 +2741,7 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 ]
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package pdftex.def Info: FAU-logo.pdf  used on input line 371.
+Package pdftex.def Info: FAU-logo.pdf  used on input line 379.
 (pdftex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
@@ -2753,7 +2753,7 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 ]
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package pdftex.def Info: FAU-logo.pdf  used on input line 378.
+Package pdftex.def Info: FAU-logo.pdf  used on input line 381.
 (pdftex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
@@ -2765,7 +2765,7 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 ]
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package pdftex.def Info: FAU-logo.pdf  used on input line 378.
+Package pdftex.def Info: FAU-logo.pdf  used on input line 388.
 (pdftex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
@@ -2774,11 +2774,10 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 
 [26
 
-
 ]
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package pdftex.def Info: FAU-logo.pdf  used on input line 378.
+Package pdftex.def Info: FAU-logo.pdf  used on input line 388.
 (pdftex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
@@ -2791,7 +2790,7 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 ]
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package pdftex.def Info: FAU-logo.pdf  used on input line 378.
+Package pdftex.def Info: FAU-logo.pdf  used on input line 388.
 (pdftex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
@@ -2799,6 +2798,19 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
  []
 
 [28
+
+
+]
+File: FAU-logo.pdf Graphic file (type pdf)
+<use FAU-logo.pdf>
+Package pdftex.def Info: FAU-logo.pdf  used on input line 388.
+(pdftex.def)             Requested size: 29.99857pt x 12.99948pt.
+
+Overfull \hbox (28.99857pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[29
 
 
 ]
@@ -2811,11 +2823,11 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 \tf@snm=\write10
 \openout10 = `FAU-Beamer.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 379.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 379.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 389.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 389.
  (./FAU-Beamer.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 379.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 379.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 389.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 389.
 Package rerunfilecheck Info: File `FAU-Beamer.out' has not changed.
 (rerunfilecheck)             Checksum: B037DCD5407FA5361938CA0BF29DF0AF;821.
 
@@ -2823,13 +2835,17 @@ Package rerunfilecheck Info: File `FAU-Beamer.out' has not changed.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
+
+Package biblatex Warning: Please rerun LaTeX.
+(biblatex)                Page breaks have changed.
+
 Package logreq Info: Writing requests to 'FAU-Beamer.run.xml'.
 \openout1 = `FAU-Beamer.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 47460 strings out of 492649
- 935932 string characters out of 6118254
+ 47462 strings out of 492649
+ 935951 string characters out of 6118254
  1368197 words of memory out of 5000000
  50328 multiletter control sequences out of 15000+600000
  574616 words of font info for 161 fonts, out of 8000000 for 9000
@@ -2858,10 +2874,10 @@ cm-super/sfss1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss20
 are/texmf-dist/fonts/type1/public/cm-super/sfsx1000.pfb></usr/share/texmf-dist/
 fonts/type1/public/cm-super/sfsx1200.pfb></usr/share/texmf-dist/fonts/type1/pub
 lic/cm-super/sfsx1440.pfb>
-Output written on FAU-Beamer.pdf (28 pages, 5051044 bytes).
+Output written on FAU-Beamer.pdf (29 pages, 5052400 bytes).
 PDF statistics:
- 47716 PDF objects out of 55141 (max. 8388607)
- 31655 compressed objects within 317 object streams
- 97 named destinations out of 1000 (max. 500000)
+ 47721 PDF objects out of 55141 (max. 8388607)
+ 31659 compressed objects within 317 object streams
+ 99 named destinations out of 1000 (max. 500000)
  161 words of extra memory for PDF output out of 10000 (max. 10000000)
 
