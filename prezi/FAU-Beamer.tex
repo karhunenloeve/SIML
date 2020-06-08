@@ -9,6 +9,7 @@
 \usepackage{amsfonts}
 \usepackage{booktabs}
 \usepackage{siunitx}
+\usepackage{pgfplots}
 \usepackage{bbding}
 \usepackage{pifont}
 \usepackage{wasysym}
@@ -24,6 +25,12 @@ maxbibnames=100,
 backend=bibtex
 ]{biblatex}
 \usepackage{tikz}
+\definecolor{lightcandy}{RGB}{170, 5, 5}
+\definecolor{darkcandy}{RGB}{106, 12, 11}
+\definecolor{lightblue}{RGB}{103, 199, 235}
+\definecolor{darkblue}{RGB}{68, 123, 190}
+\definecolor{darkgold}{RGB}{185, 125, 16}
+\definecolor{lightgold}{RGB}{251, 202, 3}
 
 \usetikzlibrary{calc,arrows,decorations.pathmorphing,backgrounds,fit,positioning,shapes.symbols,chains}
 \usetkzobj{all}
@@ -551,33 +558,191 @@ backend=bibtex
     \end{itemize}
 \end{frame}
 
-\section{Hypothesis Testing}
-
+\section{Results}
 \begin{frame}
     \frametitle{
-    Hypothesis on the space of persistence diagrams}
+    Bottleneck distance over Delaunay PH
+    \par\hspace{-0.73cm}}
     \Fontvi
-    $\text{H}_0:$ Persistence diagrams of iteration $t$ and $t+1$ have different distributions.\\
-    $\text{H}_1:$ Persistence diagrams of iteration $t$ and $t+1$ have the same distributions.\\[0.5cm]
-
-    Asymptotic solution for trimmed Wasserstein distance by \href{https://www.tandfonline.com/doi/abs/10.1080/00949659808811895}{Czado and Munk}:
-    \begin{equation*}
-        \hat{\Gamma}^p_\gamma(\mathcal{P}^t_K,\mathcal{P}^{t+1}_K) = \frac{1}{(1-2\gamma)} \left( \sum_{j=1}^{m} ||(\mathcal{P}^t_K)_j-\mathcal{P}^{t+1}_K)_j||^p_\infty \Delta \gamma \right)^{1/p}.
-    \end{equation*}
+    \begin{minipage}{.27\textwidth}
+    \begin{tikzpicture}
+        \begin{axis}[
+           width=5cm,
+           height=4cm,
+           scale only axis,
+           xtick={1,2,3,4,5,6},
+           xticklabels={$t_0$,$t_1$,$t_2$,$t_3$, $t_4$, $t_5$},
+           xmajorgrids,
+           ylabel={$d_B(\mathcal{P}^{t}_{\text{Del}},\mathcal{P}^{t+1}_{\text{Del}})$},
+           ylabel near ticks,
+           grid = none,
+           minor tick num=3,
+           every major grid/.style={darkcandy, opacity=0.5},
+           ytick=\empty,
+           axis lines*=left,
+           cycle list name= color list
+        ]
+        \input{figure3_a.tex}
+        \end{axis}
+        \end{tikzpicture}
+    \end{minipage} \quad
+    \begin{minipage}{.68\textwidth}
+    \end{minipage}
 \end{frame}
 
 \begin{frame}
     \frametitle{
-    Critical regions}
+    $1$-Wasserstein distance over Delaunay PH
+    \par\hspace{-0.73cm}}
     \Fontvi
-    The critial region for our hypothesis $H_0$ against $H_1$, where $z_\gamma$ denotes the $\gamma$-quantile of the standard normal distribution with $n,m$ being the number of samples of two different persistence diagrams.
-    \begin{equation*}
-        \left(\frac{nm}{n+m}\right)^{\frac{1}{p}} \frac{\hat{\Gamma}^p_\gamma - \alpha^p}{\hat{\sigma}_\gamma} \leq z_\gamma,
-    \end{equation*}
-    Thus we rephrase the initial problem as\\[0.2cm]
-    $\text{H}_0: \Gamma_\gamma^p (\mathcal{P}^t_K,\mathcal{P}^{t+1}_K) > \alpha$ and \\
-    $\text{H}_1: \Gamma_\gamma^p (\mathcal{P}^t_K,\mathcal{P}^{t+1}_K) \leq \alpha$.
+    \begin{minipage}{.27\textwidth}
+    \begin{tikzpicture}
+        \begin{axis}[
+           width=5cm,
+           height=4cm,
+           scale only axis,
+           xtick={1,2,3,4,5,6},
+           xticklabels={$t_0$,$t_1$,$t_2$,$t_3$, $t_4$, $t_5$},
+           ylabel={$d_{W_1}(\mathcal{P}^{t}_{\text{Del}},\mathcal{P}^{t+1}_{\text{Del}})$},
+           ylabel near ticks,
+           ytick=\empty,
+           axis lines*=left,
+           cycle list name= color list,
+           grid = none,
+           minor tick num=3,
+           every major grid/.style={darkcandy, opacity=0.5},
+        ]
+        \input{figure3_b.tex}
+        \end{axis}
+    \end{tikzpicture}
+    \end{minipage} \quad
+    \begin{minipage}{.68\textwidth}
+    \end{minipage}
 \end{frame}
+
+\begin{frame}
+    \frametitle{
+    Bottleneck distance over Vietoris-Rips PH
+    \par\hspace{-0.73cm}}
+    \Fontvi
+    \begin{minipage}{.27\textwidth}
+        \begin{tikzpicture}
+        \begin{axis}[
+           width=5cm,
+           height=4cm,
+           scale only axis,
+           xtick={1,2,3,4,5,6},
+           xticklabels={$t_0$,$t_1$,$t_2$,$t_3$, $t_4$, $t_5$},
+           ylabel={$\text{d}_B(\mathcal{P}^{t}_{\text{Rips}},\mathcal{P}^{t+1}_{\text{Rips}})$},
+           ylabel near ticks,
+           grid = none,
+           minor tick num=3,
+           every major grid/.style={darkcandy, opacity=0.5},
+           ytick=\empty,
+           axis lines*=left,
+           cycle list name= color list
+        ]
+        \input{figure3_c.tex}
+        \end{axis}
+        \end{tikzpicture}
+    \end{minipage} \quad
+    \begin{minipage}{.68\textwidth}
+    \end{minipage}
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{
+    $1$-Wasserstein distance over Vietoris-Rips PH
+    \par\hspace{-0.73cm}}
+    \Fontvi
+    \begin{minipage}{.27\textwidth}
+        \begin{tikzpicture}
+        \begin{axis}[
+           width=5cm,
+           height=4cm,
+           scale only axis,
+           xtick={1,2,3,4,5,6},
+           xticklabels={$t_0$,$t_1$,$t_2$,$t_3$, $t_4$, $t_5$},
+           ylabel={$d_{W_1}(\mathcal{P}^{t}_{\text{Rips}},\mathcal{P}^{t+1}_{\text{Rips}})$},
+           ylabel near ticks,
+           ytick=\empty,
+           grid = none,
+           minor tick num=3,
+           every major grid/.style={darkcandy, opacity=0.5},
+           axis lines*=left,
+           cycle list name= color list
+        ]
+        \input{figure3_d.tex}
+        \end{axis}
+        \end{tikzpicture}
+    \end{minipage} \quad
+    \begin{minipage}{.68\textwidth}
+    \end{minipage}
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{
+    $1$-Wasserstein distance over Witness PH
+    \par\hspace{-0.73cm}}
+    \Fontvi
+    \begin{minipage}{.27\textwidth}
+        \begin{tikzpicture}
+        \begin{axis}[
+           width=5cm,
+           height=4cm,
+           scale only axis,
+           xtick={1,2,3,4,5,6},
+           xticklabels={$t_0$,$t_1$,$t_2$,$t_3$, $t_4$, $t_5$},
+           ylabel={$d_{B}(\mathcal{P}^{t}_{\text{Wit}},\mathcal{P}^{t+1}_{\text{Wit}})$},
+           ylabel near ticks,
+           ytick=\empty,
+           grid = none,
+           minor tick num=3,
+           every major grid/.style={darkcandy, opacity=0.5},
+           axis lines*=left,
+           cycle list name= color list
+        ]
+        \input{figure3_e.tex}
+        \end{axis}
+        \end{tikzpicture}
+    \end{minipage} \quad
+    \begin{minipage}{.68\textwidth}
+    \end{minipage}
+\end{frame}
+
+\begin{frame}
+    \frametitle{
+    $1$-Wasserstein distance over Witness PH
+    \par\hspace{-0.73cm}}
+    \Fontvi
+    \begin{minipage}{.27\textwidth}
+        \begin{tikzpicture}
+        \begin{axis}[
+           width=5cm,
+           height=4cm,
+           scale only axis,
+           xtick={1,2,3,4,5,6},
+           xticklabels={$t_0$,$t_1$,$t_2$,$t_3$, $t_4$, $t_5$},
+           ylabel={$d_{W_1}(\mathcal{P}^{t}_{\text{Wit}},\mathcal{P}^{t+1}_{\text{Wit}})$},
+           ylabel near ticks,
+           ytick=\empty,
+           grid = none,
+           minor tick num=3,
+           every major grid/.style={darkcandy, opacity=0.5},
+           axis lines*=left,
+           cycle list name= color list
+        ]
+        \input{figure3_f.tex}
+        \end{axis}
+        \end{tikzpicture}
+    \end{minipage} \quad
+    \begin{minipage}{.68\textwidth}
+    \end{minipage}
+\end{frame}
+
+
 
 \section{Summary}
 
