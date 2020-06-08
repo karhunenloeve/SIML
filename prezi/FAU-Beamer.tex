@@ -158,12 +158,72 @@ backend=bibtex
 
 \begin{frame}
     \frametitle{
-    Triangulation of point sets
+    Simplicial complexes upon point sets
     \par\hspace{-0.73cm}
-    \small{An estimate of the underlying manifold}}
+    \small{How do we capture the topology of the underlying space?}}
     \Fontvi
-
+    \begin{itemize}
+        \item Associate a simplicial complex to the point set.
+        \item There is an isomorphism from simplicial to singular homology.
+        \item We study the simplicial complex to study the underlying topological space.
+    \end{itemize}
+    \vspace{0.5cm}
+    \textbf{Question:} Which (simplicial) complex is a good choice?
 \end{frame}
+
+\begin{frame}
+    \frametitle{
+    Simplicial complexes upon point sets
+    \par\hspace{-0.73cm}
+    \small{Spanning the \v{C}ech complex}}
+    \Fontvi
+    \begin{minipage}{.27\textwidth}
+    \includegraphics[width=4cm]{figure1_a.pdf}
+    \end{minipage} \quad
+    \begin{minipage}{.68\textwidth}
+        Let the radius $r \geq 0$ be a real number and $B(x,r) = \{y \in \mathbb{R}^d \; | \; ||x-y|| \leq r\}$ the closed ball centered around $x \in X \subseteq \mathbb{R}^d$. The \textbf{\v{C}ech complex} for a finite point set $X$ is defined as
+        \begin{equation*}
+            \text{\v{C}ech}(X,r) = \left\{U\subseteq X \; | \; \bigcap_{x \in U} B(x,r) = \emptyset \right\}.
+        \end{equation*}
+    \small{On the left one can see a high dimensional \v{C}ech complex projected onto the plane.}
+    \end{minipage}
+\end{frame}
+
+\begin{frame}
+    \frametitle{
+    Simplicial complexes upon point sets
+    \par\hspace{-0.73cm}
+    \small{Spanning the Delaunay complex}}
+    \Fontvi
+    \begin{minipage}{.27\textwidth}
+    \includegraphics[width=4cm]{figure1_c.pdf}
+    \end{minipage} \quad
+    \begin{minipage}{.68\textwidth}
+        The \textbf{Voronoi cell} around a point is defined as
+        \begin{equation*}
+            \text{Vor}(x) = \left\{ y \in \mathbb{R}^d \; \bigg\vert \; ||y-x|| \leq ||y-z||, \text{for all } z \in X \right\}.
+        \end{equation*}
+        The \textbf{Voronoi ball} of $x$ with respect to $X$ is defined as the intersection of the \textbf{Voronoi cell} with the closed ball of given radius around this point $\text{VorBall}(x,r) = B(x,r) \cap Vor(x)$. Thus we define
+        \begin{equation*}
+            \text{Del}(X,r) = \left\{ U \subseteq X \; | \; \bigcap_{x\in U} \text{VorBall}(x,r) \neq \emptyset \right\}.
+        \end{equation*}
+    \end{minipage}
+\end{frame}
+
+\begin{frame}
+    \frametitle{
+    Simplicial complexes upon point sets
+    \par\hspace{-0.73cm}
+    \small{Spanning the Witness complex}}
+    \Fontvi
+    \begin{minipage}{.27\textwidth}
+    \includegraphics[width=4cm]{figure1_d.pdf}
+    \end{minipage} \quad
+    \begin{minipage}{.68\textwidth}
+
+    \end{minipage}
+\end{frame}
+
 
 \section{Persistent Homology}
 \begin{frame}
@@ -345,23 +405,13 @@ backend=bibtex
     \end{minipage}
 \end{frame}
 
-
 \begin{frame}
     \frametitle{
-
+    Coordinate shift of the added point
     \par\hspace{-0.73cm}
-    \small{}}
+    \small{Weighting by Voronoi regions}}
     \Fontvi
     \includegraphics[width=4cm]{figure2_c.pdf}
-\end{frame}
-
-\begin{frame}
-    \frametitle{
-
-    \par\hspace{-0.73cm}
-    \small{}}
-    \Fontvi
-    \includegraphics[width=4cm]{figure2_d.pdf}
 \end{frame}
 
 \section{The Collapsing Sequence}
