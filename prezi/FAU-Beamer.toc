@@ -6,4 +6,4 @@
 \beamer@sectionintoc {3}{Natural Neighbor Interpolation}{22}{0}{3}
 \beamer@sectionintoc {4}{The Collapsing Sequence}{31}{0}{4}
 \beamer@sectionintoc {5}{Hypothesis Testing}{35}{0}{5}
-\beamer@sectionintoc {6}{Summary}{36}{0}{6}
+\beamer@sectionintoc {6}{Summary}{38}{0}{6}
