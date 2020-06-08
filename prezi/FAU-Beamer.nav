@@ -95,15 +95,19 @@
 \headcommand {\beamer@framepages {40}{40}}
 \headcommand {\slideentry {5}{0}{7}{41/41}{}{0}}
 \headcommand {\beamer@framepages {41}{41}}
-\headcommand {\beamer@sectionpages {35}{41}}
-\headcommand {\beamer@subsectionpages {35}{41}}
-\headcommand {\sectionentry {6}{Summary}{42}{Summary}{0}}
-\headcommand {\slideentry {6}{0}{1}{42/42}{}{0}}
+\headcommand {\slideentry {5}{0}{8}{42/42}{}{0}}
 \headcommand {\beamer@framepages {42}{42}}
-\headcommand {\slideentry {6}{0}{2}{43/43}{}{0}}
+\headcommand {\beamer@sectionpages {35}{42}}
+\headcommand {\beamer@subsectionpages {35}{42}}
+\headcommand {\sectionentry {6}{Summary}{43}{Summary}{0}}
+\headcommand {\slideentry {6}{0}{1}{43/43}{}{0}}
 \headcommand {\beamer@framepages {43}{43}}
-\headcommand {\beamer@partpages {1}{43}}
-\headcommand {\beamer@subsectionpages {42}{43}}
-\headcommand {\beamer@sectionpages {42}{43}}
-\headcommand {\beamer@documentpages {43}}
-\headcommand {\gdef \inserttotalframenumber {42}}
+\headcommand {\slideentry {6}{0}{2}{44/44}{}{0}}
+\headcommand {\beamer@framepages {44}{44}}
+\headcommand {\slideentry {6}{0}{3}{45/45}{}{0}}
+\headcommand {\beamer@framepages {45}{45}}
+\headcommand {\beamer@partpages {1}{45}}
+\headcommand {\beamer@subsectionpages {43}{45}}
+\headcommand {\beamer@sectionpages {43}{45}}
+\headcommand {\beamer@documentpages {45}}
+\headcommand {\gdef \inserttotalframenumber {44}}
