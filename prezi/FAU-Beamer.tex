@@ -745,11 +745,23 @@ backend=bibtex
 
 
 \section{Summary}
-
-\frame[allowframebreaks]{
-\setbeamertemplate{bibliography item}{}
-	\frametitle{References}
-  \nocite{*}
-	\printbibliography
-}
+\begin{frame}
+    \frametitle{
+    Summary
+    \par\hspace{-0.73cm}}
+    \Fontvi
+    \textbf{What do we have achieved?}
+    \begin{itemize}
+        \item Connection of Collapsing Theorem to Voronoi Interpolation.
+        \item A mathematical plausible stopping condition for interpolation techniques.
+        \item A hypothesis test for persistence diagrams.
+    \end{itemize}
+    \vspace{0.2cm}
+    \textbf{Open problems?}
+    \begin{itemize}
+        \item What if points do not lie in general position with respect to $\mathbb{R}^n$?
+        \item Which embedding should be used for Voronoi interpolation?
+        \item Does Voronoi interpolation (computed this way) preserve homology groups?
+    \end{itemize}
+\end{frame}
 \end{document}

@@ -102,14 +102,8 @@
 \headcommand {\beamer@framepages {42}{42}}
 \headcommand {\slideentry {6}{0}{2}{43/43}{}{0}}
 \headcommand {\beamer@framepages {43}{43}}
-\headcommand {\slideentry {6}{0}{2}{43/44}{}{0}}
-\headcommand {\beamer@framepages {43}{44}}
-\headcommand {\slideentry {6}{0}{2}{43/45}{}{0}}
-\headcommand {\beamer@framepages {43}{45}}
-\headcommand {\slideentry {6}{0}{2}{43/46}{}{0}}
-\headcommand {\beamer@framepages {43}{46}}
-\headcommand {\beamer@partpages {1}{46}}
-\headcommand {\beamer@subsectionpages {42}{46}}
-\headcommand {\beamer@sectionpages {42}{46}}
-\headcommand {\beamer@documentpages {46}}
-\headcommand {\gdef \inserttotalframenumber {45}}
+\headcommand {\beamer@partpages {1}{43}}
+\headcommand {\beamer@subsectionpages {42}{43}}
+\headcommand {\beamer@sectionpages {42}{43}}
+\headcommand {\beamer@documentpages {43}}
+\headcommand {\gdef \inserttotalframenumber {42}}
