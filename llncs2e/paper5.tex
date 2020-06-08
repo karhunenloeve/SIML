@@ -164,7 +164,7 @@ If $X \subset \mathbb{R}^d$ is a finite set of points and $x \in X$, then the Vo
 The Voronoi ball of $x$ with respect to $X$ is defined as the intersection of the Voronoi region with the closed ball of given radius around this point, i.e.   $\VorBall(x,r) = B(x,r) \cap \Vor(x)$ \cite{bauer2017morse}.The Delaunay complex on a point set $X$ is defined as
 \begin{equation}
 \label{delaunay}
-  \Del(X,r) = \left\{ U \subseteq X \; \bigg\rvert \; \bigcap_{x\in U} \VorBall(x,r) \neq 0 \right\}.
+  \Del(X,r) = \left\{ U \subseteq X \; \bigg\rvert \; \bigcap_{x\in U} \VorBall(x,r) \neq \emptyset \right\}.
 \end{equation}
 There is a fundamental connection between the union of all Voronoi balls over $X$ and the Delaunay complex. The idea is to find a \textit{good cover} that does represent the global topology. Taking the topological space $X$ and $U = \bigcup_{i \in I} U_i$ beeing an open cover, we define the Nerve of a cover as its topological structure. Therefore, the empty set $\emptyset \in N(U)$ is part of the Nerve and if $\bigcap_{j\in J} U_j \neq \emptyset$ for a $J \subseteq I$, then $J \in N(U)$. We consider $U$ to be a good cover, if for each $\sigma \subset I$ the set $\bigcap_{i\in \sigma} U_i \neq \emptyset$ is contractible, or in other words if it has the same homotopy type as a point. In this case the Nerve $N(U)$ is homotopy equivalent to $\bigcup_{i \in I} U_i$.
 
