@@ -5,19 +5,7 @@
 + [This is the link to the arxiv article.](http://arxiv.org/abs/1911.02922)
 + [This is the link to slides for the talk given at the IWCAI.](https://karhunenloeve.github.io/SIML/prezi/FAU-Beamer.pdf)
 
-This repository **SIML** (**S**ignature **I**nference & **M**achine **L**earning) offers all functionalities and experiments for the paper *Persistent Homology as Stopping-Criterion for Voronoi Interpolation*. The functions are annotated. The repository is no longer maintained and is used for prototypical implementation of the project. It has been archived since publication. If you use the project, or share this project, please quote us as follows:
-
-    @article{1911.02922,
-	  author    = {Luciano Melodia and
-	               Richard Lenz},
-	  title     = {Persistent Homology as Stopping-Criterion for Voronoi Interpolation},
-	  journal   = {CoRR},
-	  volume    = {abs/1911.02922},
-	  year      = {2019},
-	  url       = {http://arxiv.org/abs/1911.02922},
-	  archivePrefix = {arXiv},
-	  eprint    = {1911.02922}
-	 }
+This repository **SIML** (**S**ignature **I**nference & **M**achine **L**earning) offers all functionalities and experiments for the paper *Persistent Homology as Stopping-Criterion for Voronoi Interpolation*. The functions are annotated. The repository is no longer maintained and is used for prototypical implementation of the project. It has been archived since publication. If you use the project, or share this project, please quote us as follows according to [DBLP (Natural Neighbor)](https://dblp.uni-trier.de/search?q=Persistent%20Homology%20as%20Stopping-Criterion%20for%20Natural%20Neighbor%20Interpolation) of [DBLP (Voronoi)](https://dblp.uni-trier.de/search?q=Persistent%20Homology%20as%20Stopping-Criterion%20for%Voronoi%20Interpolation).
 
 ## Persistent Homology as Stopping for Voronoi Interpolation
 In this study the Voronoi interpolation is used to interpolate a set of points  drawn from a topological space with higher homology groups on its filtration. The technique is based on Voronoi tesselation, which induces a natural dual map to the Delaunay triangulation. Advantage is taken from this fact calculating the persistent homology on it after each iteration to capture the changing topology of the data. The boundary points are identified as critical. The Bottleneck and Wasserstein distance serve as a measure of quality between the original point set and the interpolation. If the norm of two distances exceeds a heuristically determined threshold, the algorithm terminates. We give the theoretical basis for this approach and justify its validity with numerical experiments.
