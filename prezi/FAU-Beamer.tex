@@ -220,8 +220,25 @@ backend=bibtex
     \includegraphics[width=4cm]{figure1_d.pdf}
     \end{minipage} \quad
     \begin{minipage}{.68\textwidth}
+    We call the subsets $W \subset \mathbb{R}^d$ Witnesses and $L \subset \mathbb{R}^d$ landmarks, respectively. \\
+    We use $L \subset W$. We say that $w$ is Witnessed by $\sigma$ if $||w-p|| \leq ||w-q||$ for all $p \in \sigma$ and $q \in L\setminus\sigma$. The Witness complex $\text{Wit}(L,W)$ consists of all simplices $\sigma$, such that any simplex $\sigma' \subseteq \sigma$ has a Witness in $W$.\\[0.2cm]
 
+    \small{All points are within $W$ and the white bullets are in $L$.}
     \end{minipage}
+\end{frame}
+
+\begin{frame}
+    \frametitle{
+    Topological inference
+    \par\hspace{-0.73cm}
+    \small{Investigating the homology groups}}
+    \Fontvi
+    \begin{itemize}
+        \item The homology groups of a fully spanned simplicial complex are trivial.
+        \item We need to capture local properties of data to some extend.
+    \end{itemize}
+    \vspace{0.5cm}
+    \textbf{Solution:} We use the notion of persistence for homology groups.
 \end{frame}
 
 
@@ -240,27 +257,14 @@ backend=bibtex
 
 \begin{frame}
     \frametitle{
-    The free Abelian group
-    \par\hspace{-0.73cm}
-    \small{Example of a simplicial complex}}
+    Simplices
+    \par\hspace{-0.73cm}}
     \Fontvi
-    \centering
-
+    Given a set $X = \{x_0, \cdots, x_k\} \subset \mathbb{R}^d$ of $k+1$ points that do not lie on a hyperplane with dimension less than $d$, the $k$-dimensional simplex $\sigma$ spanned by $X$ is the set of convex combinations, such that
+    \begin{align}
+      \sum_{i=0}^{k} \lambda_i x_i \quad \text{with} \quad \sum_{i=0}^{k} \lambda_i = 1 \quad \text{and} \quad \lambda_i \geq 0.
+    \end{align}
 \end{frame}
-
-\begin{frame}
-    \frametitle{
-    Chain complex
-    \par\hspace{-0.73cm}
-    \small{How does it work?}}
-    \Fontvi
-    Homology theory is the study of properties of an object $X$, such as a set of points, by means of homological (commutative) algebra. One assigns to $X$ a sequence of abelian groups/modules $C_0, C_1, \cdots$ which are connected by homomorphisms $\partial_{k+1}: C_{k+1} \rightarrow C_{k}$ such that $\text{im} \partial_{k+1} \subseteq \ker \partial_{k}$. Such a structure is called \textbf{chain complex}. \\
-
-    \begin{equation*}
-      0 \xrightarrow{\partial_{k+1}} C_k \xrightarrow{\partial_{k}} C_{k-1} \xrightarrow{\partial_{k-1}} C_{k-2} \xrightarrow{\partial_{k-2}} \cdots \xrightarrow{\partial_{2}} C_1 \xrightarrow{\partial_{1}} 0
-    \end{equation*}
-\end{frame}
-
 
 \begin{frame}
     \frametitle{
@@ -276,6 +280,20 @@ backend=bibtex
         \put (66,9) {$\xhookrightarrow[\imath]{}$}
     \end{overpic}\\[0.1cm]
 \end{frame}
+
+\begin{frame}
+    \frametitle{
+    Chain complex
+    \par\hspace{-0.73cm}
+    \small{How does it work?}}
+    \Fontvi
+    Homology theory is the study of properties of an object $X$, such as a set of points, by means of homological (commutative) algebra. One assigns to $X$ a sequence of abelian groups/modules $C_0, C_1, \cdots$ which are connected by homomorphisms $\partial_{k+1}: C_{k+1} \rightarrow C_{k}$ such that $\text{im} \partial_{k+1} \subseteq \ker \partial_{k}$. Such a structure is called \textbf{chain complex}. \\
+
+    \begin{equation*}
+      0 \xrightarrow{\partial_{k+1}} C_k \xrightarrow{\partial_{k}} C_{k-1} \xrightarrow{\partial_{k-1}} C_{k-2} \xrightarrow{\partial_{k-2}} \cdots \xrightarrow{\partial_{2}} C_1 \xrightarrow{\partial_{1}} 0
+    \end{equation*}
+\end{frame}
+
 
 \begin{frame}
     \frametitle{
@@ -320,6 +338,28 @@ backend=bibtex
         \put (63.5,40) {$\partial_{k}$}
     \end{overpic}\\[0.1cm]
     \small{Following Zomorodian, Edelsbrunner and many more \ldots}
+\end{frame}
+
+\begin{frame}
+    \frametitle{
+    Homology groups\par\hspace{-0.73cm}}
+    \Fontvi
+    The $k$th \textbf{homology group} of a simplicial complex is defined as
+    \begin{equation*}
+      H_k(K) = \frac{\ker \partial_k C_k(K)}{\text{im}\; \partial_{k+1} C_{k+1}(X)}.
+    \end{equation*}
+    Intuitively, the kernel of the boundary homomorphism of the $k$th chain group gives all $k$-cycles, thus the cycle group, from which we quotient out all elements of the $k$th boundary group, i.e. 
+    \begin{equation*}
+        H_k(K) = Z_k(K) / B_k(K).
+    \end{equation*}
+\end{frame}
+
+\begin{frame}
+    \frametitle{
+    Betti numbers\par\hspace{-0.73cm}}
+    \Fontvi
+    The $k$th \textbf{Betti} number $\beta_k$ is the rank of the $k$th homology group $H_k(K)$ of the topological space $K$.\\[0.5cm]
+    \small{We'll track the betti numbers to track the amount of holes along the filtration.}
 \end{frame}
 
 \begin{frame}
