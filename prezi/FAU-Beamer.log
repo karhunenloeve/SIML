@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.11.27)  8 JUN 2020 17:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.11.27)  9 JUN 2020 11:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1755,6 +1755,26 @@ Package biblatex Info: ... file 'biblatex.cfg' found.
 (/usr/share/texmf-dist/tex/latex/biblatex/biblatex.cfg
 File: biblatex.cfg 
 ))
+(/usr/share/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.fillbetwee
+n.code.tex
+(/usr/share/texmf-dist/tex/generic/pgfplots/pgfcontrib/tikzlibraryfillbetween.c
+ode.tex
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
+intersections.code.tex
+(/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryintersections.code.t
+ex
+\pgf@intersect@solutions=\count505
+))
+(/usr/share/texmf-dist/tex/generic/pgfplots/pgfcontrib/tikzlibrarydecorations.s
+oftclip.code.tex
+(/usr/share/texmf-dist/tex/generic/pgfplots/pgfcontrib/pgflibraryfillbetween.co
+de.tex
+(/usr/share/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_p
+gflibraryintersections.code.tex
+\pgf@intersect@solutions=\count506
+))))
+(/usr/share/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.decoration
+s.softclip.code.tex))
 (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
 backgrounds.code.tex
 File: tikzlibrarybackgrounds.code.tex 2013/07/18 v3.0.1a (rcs-revision 1.3)
@@ -1808,7 +1828,7 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 \XKV@toks=\toks55
 \XKV@tempa@toks=\toks56
 )
-\XKV@depth=\count505
+\XKV@depth=\count507
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 (/usr/share/texmf-dist/tex/latex/base/fontenc.sty
@@ -1964,7 +1984,7 @@ LaTeX Info: Redefining \ttfamily on input line 94.
 (/usr/share/texmf-dist/tex/latex/doublestroke/dsfont.sty
 Package: dsfont 1995/08/01 v0.1 Double stroke roman fonts
 )
-\c@proposition=\count506
+\c@proposition=\count508
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
 
@@ -1992,8 +2012,8 @@ File: german.lbx 2018/03/04 v3.11 biblatex localization (PK/MW)
 Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 (biblatex)                Loading 'csquotes' recommended.
 
-\@quotelevel=\count507
-\@quotereset=\count508
+\@quotelevel=\count509
+\@quotereset=\count510
 (./FAU-Beamer.aux)
 \openout1 = `FAU-Beamer.aux'.
 
@@ -2057,16 +2077,16 @@ LaTeX Font Info:    ... okay on input line 116.
 
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count509
+\scratchcounter=\count511
 \scratchdimen=\dimen365
 \scratchbox=\box88
-\nofMPsegments=\count510
-\nofMParguments=\count511
+\nofMPsegments=\count512
+\nofMParguments=\count513
 \everyMPshowfont=\toks57
-\MPscratchCnt=\count512
+\MPscratchCnt=\count514
 \MPscratchDim=\dimen366
-\MPnumerator=\count513
-\makeMPintoPDFobject=\count514
+\MPnumerator=\count515
+\makeMPintoPDFobject=\count516
 \everyMPtoPDFconversion=\toks58
 ) (/usr/share/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -2095,7 +2115,7 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/share/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count515
+\c@section@level=\count517
 )
 LaTeX Info: Redefining \ref on input line 116.
 LaTeX Info: Redefining \pageref on input line 116.
@@ -3016,9 +3036,14 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 [35
 
 ]
+<luci.pdf, id=53973, 420.93985pt x 210.95197pt>
+File: luci.pdf Graphic file (type pdf)
+<use luci.pdf>
+Package pdftex.def Info: luci.pdf  used on input line 577.
+(pdftex.def)             Requested size: 113.81102pt x 57.03503pt.
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package pdftex.def Info: FAU-logo.pdf  used on input line 570.
+Package pdftex.def Info: FAU-logo.pdf  used on input line 577.
 (pdftex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
@@ -3027,14 +3052,14 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 
 [36
 
-] (./figure3_a.tex)
-Overfull \hbox (58.1515pt too wide) in paragraph at lines 601--601
+ <./luci.pdf>] (./figure3_a.tex)
+Overfull \hbox (58.1515pt too wide) in paragraph at lines 608--608
 [][] 
  []
 
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package pdftex.def Info: FAU-logo.pdf  used on input line 601.
+Package pdftex.def Info: FAU-logo.pdf  used on input line 608.
 (pdftex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
@@ -3044,15 +3069,15 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 [37
 
 ] (./figure3_b.tex)
-Overfull \hbox (58.1515pt too wide) in paragraph at lines 631--631
+Overfull \hbox (58.1515pt too wide) in paragraph at lines 638--638
 [][] 
  []
 
 LaTeX Font Info:    Font shape `OT1/SourceCodePro-TOsF/m/n' will be
-(Font)              scaled to size 14.4pt on input line 631.
+(Font)              scaled to size 14.4pt on input line 638.
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package pdftex.def Info: FAU-logo.pdf  used on input line 631.
+Package pdftex.def Info: FAU-logo.pdf  used on input line 638.
 (pdftex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
@@ -3062,13 +3087,13 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 [38
 
 ] (./figure3_c.tex)
-Overfull \hbox (59.62337pt too wide) in paragraph at lines 661--661
+Overfull \hbox (59.62337pt too wide) in paragraph at lines 668--668
 [][] 
  []
 
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package pdftex.def Info: FAU-logo.pdf  used on input line 661.
+Package pdftex.def Info: FAU-logo.pdf  used on input line 668.
 (pdftex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
@@ -3078,13 +3103,13 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 [39
 
 ] (./figure3_d.tex)
-Overfull \hbox (59.62337pt too wide) in paragraph at lines 692--692
+Overfull \hbox (59.62337pt too wide) in paragraph at lines 699--699
 [][] 
  []
 
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package pdftex.def Info: FAU-logo.pdf  used on input line 692.
+Package pdftex.def Info: FAU-logo.pdf  used on input line 699.
 (pdftex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
@@ -3094,13 +3119,13 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 [40
 
 ] (./figure3_e.tex)
-Overfull \hbox (6.09392pt too wide) in paragraph at lines 726--726
+Overfull \hbox (6.09392pt too wide) in paragraph at lines 733--733
 [][] 
  []
 
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package pdftex.def Info: FAU-logo.pdf  used on input line 726.
+Package pdftex.def Info: FAU-logo.pdf  used on input line 733.
 (pdftex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
@@ -3110,13 +3135,13 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 [41
 
 ] (./figure3_f.tex)
-Overfull \hbox (57.8738pt too wide) in paragraph at lines 756--756
+Overfull \hbox (57.8738pt too wide) in paragraph at lines 763--763
 [][] 
  []
 
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package pdftex.def Info: FAU-logo.pdf  used on input line 756.
+Package pdftex.def Info: FAU-logo.pdf  used on input line 763.
 (pdftex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
@@ -3128,7 +3153,7 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 ]
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package pdftex.def Info: FAU-logo.pdf  used on input line 760.
+Package pdftex.def Info: FAU-logo.pdf  used on input line 766.
 (pdftex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
@@ -3138,9 +3163,43 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 [43
 
 ]
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+
+
+Package pgfplots Warning: 'fill between': Could not activate graphics layer 'pr
+e main'. Filled path will be on top of the other ones. Please ensure that 'pre 
+main' is somewhere in the layer list (or set '/tikz/fill between/on layer='). o
+n input line 820.
+
+
+Package pgfplots Warning: 'fill between': Could not activate graphics layer 'pr
+e main'. Filled path will be on top of the other ones. Please ensure that 'pre 
+main' is somewhere in the layer list (or set '/tikz/fill between/on layer='). o
+n input line 820.
+
+
+Package pgfplots Warning: 'fill between': Could not activate graphics layer 'pr
+e main'. Filled path will be on top of the other ones. Please ensure that 'pre 
+main' is somewhere in the layer list (or set '/tikz/fill between/on layer='). o
+n input line 820.
+
+
+Package pgfplots Warning: 'fill between': Could not activate graphics layer 'pr
+e main'. Filled path will be on top of the other ones. Please ensure that 'pre 
+main' is somewhere in the layer list (or set '/tikz/fill between/on layer='). o
+n input line 820.
+
+
+Overfull \hbox (60.43307pt too wide) in paragraph at lines 820--820
+[][] 
+ []
+
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package pdftex.def Info: FAU-logo.pdf  used on input line 767.
+Package pdftex.def Info: FAU-logo.pdf  used on input line 820.
 (pdftex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
@@ -3152,7 +3211,7 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 ]
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package pdftex.def Info: FAU-logo.pdf  used on input line 787.
+Package pdftex.def Info: FAU-logo.pdf  used on input line 840.
 (pdftex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
@@ -3171,11 +3230,11 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 \tf@snm=\write10
 \openout10 = `FAU-Beamer.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 788.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 788.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 841.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 841.
  (./FAU-Beamer.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 788.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 788.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 841.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 841.
 Package rerunfilecheck Info: File `FAU-Beamer.out' has not changed.
 (rerunfilecheck)             Checksum: 84949CE7F274749E102C5D5665CB8756;763.
 
@@ -3188,13 +3247,13 @@ Package logreq Info: Writing requests to 'FAU-Beamer.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 56925 strings out of 492649
- 1254520 string characters out of 6118254
- 2508302 words of memory out of 5000000
- 59657 multiletter control sequences out of 15000+600000
+ 57490 strings out of 492649
+ 1272259 string characters out of 6118254
+ 2526375 words of memory out of 5000000
+ 60196 multiletter control sequences out of 15000+600000
  577336 words of font info for 174 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 64i,17n,102p,10382b,2269s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 73i,17n,109p,10382b,2267s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/font
 s/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public
@@ -3219,10 +3278,10 @@ are/texmf-dist/fonts/type1/public/cm-super/sfsx0600.pfb></usr/share/texmf-dist/
 fonts/type1/public/cm-super/sfsx1000.pfb></usr/share/texmf-dist/fonts/type1/pub
 lic/cm-super/sfsx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sf
 sx1440.pfb>
-Output written on FAU-Beamer.pdf (45 pages, 5768284 bytes).
+Output written on FAU-Beamer.pdf (45 pages, 6667763 bytes).
 PDF statistics:
- 54138 PDF objects out of 55141 (max. 8388607)
- 35833 compressed objects within 359 object streams
+ 63243 PDF objects out of 66169 (max. 8388607)
+ 41863 compressed objects within 419 object streams
  97 named destinations out of 1000 (max. 500000)
- 181 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 186 words of extra memory for PDF output out of 10000 (max. 10000000)
 
