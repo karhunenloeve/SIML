@@ -17,6 +17,10 @@
 \usepackage{tkz-euclide}
 \usepackage[percent]{overpic}
 \usepackage{mathtools}
+\usepackage{fontspec}
+\usepackage{fontawesome}
+\usepackage{academicons}
+
 \usepackage[
 bibstyle=authoryear,
 citestyle=numeric,
@@ -503,13 +507,13 @@ backend=bibtex
 
 \begin{frame}
     \frametitle{
-    Duality of Delaunay and Voronoi diagram
+    Duality of Delaunay complex and Voronoi diagram
     \par\hspace{-0.73cm}}
     \Fontvi
     \centering
     \includegraphics[width=4cm]{figure2_d_DEL_blank.pdf}
     \hspace{1cm}
-    \includegraphics[width=4cm]{figure2_d_DEL.pdf}
+    \includegraphics[width=4cm]{figure2_d_DEL.pdf}\\[0.2cm]
 
     The Delaunay complex is spanned connecting each point to its neighbors.\\
     \small{It is always well defined and does not create simplicial complexes which \\
@@ -581,7 +585,7 @@ backend=bibtex
     Bottleneck distance over Delaunay PH
     \par\hspace{-0.73cm}}
     \Fontvi
-    \begin{minipage}{.27\textwidth}
+    \begin{minipage}{.4\textwidth}
     \begin{tikzpicture}
         \begin{axis}[
            width=5cm,
@@ -603,7 +607,9 @@ backend=bibtex
         \end{axis}
         \end{tikzpicture}
     \end{minipage} \quad
-    \begin{minipage}{.68\textwidth}
+    \begin{minipage}{.55\textwidth}
+    In the diagram on the left, all signatures of a user are displayed in the same color. Each line corresponds to a independent signature.\\
+    We observe that the signatures are stable in terms of interpolation, since the colours in the diagram are also grouped together.
     \end{minipage}
 \end{frame}
 
@@ -612,7 +618,7 @@ backend=bibtex
     $1$-Wasserstein distance over Delaunay PH
     \par\hspace{-0.73cm}}
     \Fontvi
-    \begin{minipage}{.27\textwidth}
+    \begin{minipage}{.4\textwidth}
     \begin{tikzpicture}
         \begin{axis}[
            width=5cm,
@@ -633,7 +639,11 @@ backend=bibtex
         \end{axis}
     \end{tikzpicture}
     \end{minipage} \quad
-    \begin{minipage}{.68\textwidth}
+    \begin{minipage}{.55\textwidth}
+    $1$-Wasserstein metric for $X$ and $Y$:
+    \begin{equation*}
+        \sqrt{\inf_{\varphi: X \rightarrow Y} \sum_{x \in X} || x - \varphi(x)||_\infty}
+    \end{equation*}
     \end{minipage}
 \end{frame}
 
@@ -642,7 +652,7 @@ backend=bibtex
     Bottleneck distance over Vietoris-Rips PH
     \par\hspace{-0.73cm}}
     \Fontvi
-    \begin{minipage}{.27\textwidth}
+    \begin{minipage}{.4\textwidth}
         \begin{tikzpicture}
         \begin{axis}[
            width=5cm,
@@ -663,7 +673,11 @@ backend=bibtex
         \end{axis}
         \end{tikzpicture}
     \end{minipage} \quad
-    \begin{minipage}{.68\textwidth}
+    \begin{minipage}{.55\textwidth}
+        Bottleneck metric:
+        \begin{equation*}
+        \sqrt{\inf_{\varphi: X \rightarrow Y} \sum_{x \in X} || x - \varphi(x)||^{\infty}_\infty}
+        \end{equation*}
     \end{minipage}
 \end{frame}
 
@@ -673,7 +687,7 @@ backend=bibtex
     $1$-Wasserstein distance over Vietoris-Rips PH
     \par\hspace{-0.73cm}}
     \Fontvi
-    \begin{minipage}{.27\textwidth}
+    \begin{minipage}{.4\textwidth}
         \begin{tikzpicture}
         \begin{axis}[
            width=5cm,
@@ -694,7 +708,8 @@ backend=bibtex
         \end{axis}
         \end{tikzpicture}
     \end{minipage} \quad
-    \begin{minipage}{.68\textwidth}
+    \begin{minipage}{.55\textwidth}
+    This simplicial complex is closely related to the \v{C}ech complex and provides a very accurate description of the topology.
     \end{minipage}
 \end{frame}
 
@@ -726,6 +741,7 @@ backend=bibtex
         \end{tikzpicture}
     \end{minipage} \quad
     \begin{minipage}{.55\textwidth}
+    \small
     The Witness complex is constructed by selecting $5\%$ of the data points as landmarks so that they are uniformly distributed over the set of points. \\
     Since this variant is stochastic in nature and the landmarks are chosen anew for each iteration step, we obtain a zig-zag pattern.\\
     The pattern indicates volatile representatives of homology groups.
@@ -737,7 +753,7 @@ backend=bibtex
     $1$-Wasserstein distance over Witness PH
     \par\hspace{-0.73cm}}
     \Fontvi
-    \begin{minipage}{.27\textwidth}
+    \begin{minipage}{.4\textwidth}
         \begin{tikzpicture}
         \begin{axis}[
            width=5cm,
@@ -758,7 +774,8 @@ backend=bibtex
         \end{axis}
         \end{tikzpicture}
     \end{minipage} \quad
-    \begin{minipage}{.68\textwidth}
+    \begin{minipage}{.55\textwidth}
+    The first Wasserstein metric behaves similar to a $1$-norm and is not as coarse as the Bottleneck metric, which behaves like a $\infty$-norm.
     \end{minipage}
 \end{frame}
 
@@ -769,7 +786,7 @@ backend=bibtex
     Summary statistics
     \par\hspace{-0.73cm}}
     \Fontvi
-    \begin{minipage}{.27\textwidth}
+    \begin{minipage}{.4\textwidth}
         \begin{tikzpicture}
         \begin{axis}[
           width=5cm,
@@ -815,7 +832,17 @@ backend=bibtex
         \end{axis}
     \end{tikzpicture}
     \end{minipage} \quad
-    \begin{minipage}{.68\textwidth}
+    \begin{minipage}{.55\textwidth}
+    \small
+    With a hypothesis test, calculated using the Wasserstein metric, we have defined a stop criterion. To validate the stop criterion, we calculated elmentary statistics on the whole dataset during interpolation.\\
+
+    Upper curve: no stopping.\\
+    Lower curve: with stopping.\\
+
+    {\color{darkgold} $\bullet$}: Variation.\\
+    {\color{darkblue} $\bullet$}: Standard deviation.\\
+    {\color{darkcandy} $\bullet$}: Mean.\\
+    {\bullet}: $1$-Wasserstein metric.
     \end{minipage}
 \end{frame}
 
@@ -827,7 +854,7 @@ backend=bibtex
     \textbf{What do we have achieved?}
     \begin{itemize}
         \item Connection of Collapsing Theorem to Voronoi Interpolation.
-        \item A mathematical plausible stopping condition for interpolation techniques.
+        \item A mathematical stopping condition for interpolation techniques.
         \item A hypothesis test for persistence diagrams.
     \end{itemize}
     \vspace{0.2cm}
@@ -835,7 +862,16 @@ backend=bibtex
     \begin{itemize}
         \item What if points do not lie in general position with respect to $\mathbb{R}^n$?
         \item Which embedding should be used for Voronoi interpolation?
-        \item Does Voronoi interpolation (computed this way) preserve homology groups?
+        \item Does Voronoi interpolation preserve homology groups?
     \end{itemize}
 \end{frame}
+
+\begin{frame}[plain]
+    \Fontvi
+    \centering
+    {\LARGE Thank you for your attention!}\\[0.5cm]
+
+    {\Large Got interested?}\\
+    Drop me a line: \href{mailto:l.melodia@pm.me}{l.melodia@pm.me} {\footnotesize \faEnvelope}.\\
+    Let's connect on GitHub: \href{https://karhunenloeve.github.io}{karhunenloeve} {\footnotesize \faGithub}.\end{frame}
 \end{document}

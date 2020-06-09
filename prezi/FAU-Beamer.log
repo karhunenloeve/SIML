@@ -1,11 +1,41 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.11.27)  9 JUN 2020 11:15
-entering extended mode
- restricted \write18 enabled.
- %&-line parsing enabled.
+This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2019.11.27)  9 JUN 2020 13:44
+ restricted system commands enabled.
 **FAU-Beamer.tex
 (./FAU-Beamer.tex
 LaTeX2e <2018-04-01> patch level 2
-Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
+Lua module: luaotfload-main 2017/01/29 2.80001 OpenType layout system.
+Lua module: lualibs 2017-02-01 2.5 ConTeXt Lua standard libraries.
+Lua module: lualibs-extended 2017-02-01 2.5 ConTeXt Lua libraries -- extended co
+llection.(using write cache: /home/lume/.texlive2018/texmf-var/luatex-cache/gene
+ric)(using read cache: /usr/share/texmf-var/luatex-cache/generic /home/lume/.tex
+live2018/texmf-var/luatex-cache/generic)
+luaotfload | conf : Root cache directory is /home/lume/.texlive2018/texmf-var/lu
+atex-cache/generic/names.
+luaotfload | init : Loading fontloader “fontloader-2017-02-11.lua” from kpse
+-resolved path “/usr/share/texmf-dist/tex/luatex/luaotfload/fontloader-2017-02
+-11.lua”.
+Lua-only attribute luaotfload@state = 1
+Lua-only attribute luaotfload@noligature = 2
+Lua-only attribute luaotfload@syllabe = 3
+luaotfload | init : Context OpenType loader version “3.027”
+Inserting `luaotfload.node_processor' at position 1 in `pre_linebreak_filter'.
+Inserting `luaotfload.node_processor' at position 1 in `hpack_filter'.
+Inserting `luaotfload.define_font' at position 1 in `define_font'.
+Lua-only attribute luaotfload_color_attribute = 4
+luaotfload | conf : Root cache directory is /home/lume/.texlive2018/texmf-var/lu
+atex-cache/generic/names.
+Inserting `luaotfload.aux.set_sscale_dimens' at position 1 in `luaotfload.patch_
+font'.
+Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
+_font'.
+Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_fon
+t_unsafe'.
+Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
+'.
+Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
+.
+luaotfload | main : initialization completed in 0.073 seconds
+Babel <3.18> and hyphenation patterns for 1 language(s) loaded.
 (/usr/share/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2018/02/20 v3.50 A class for typesetting presentations
 (/usr/share/texmf-dist/tex/latex/beamer/beamerbasemodes.sty
@@ -103,7 +133,9 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 (/usr/share/texmf-dist/tex/latex/base/size11.clo
 File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
-)
+luaotfload | db : Font names database loaded from /home/lume/.texlive2018/texmf-
+var/luatex-cache/generic/names/luaotfload-names.luc(load luc: /home/lume/.texliv
+e2018/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-regular.luc))
 (/usr/share/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
 (/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
@@ -117,10 +149,10 @@ Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 (/usr/share/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 99.
+Package graphics Info: Driver file: luatex.def on input line 99.
 
-(/usr/share/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+(/usr/share/texmf-dist/tex/latex/graphics-def/luatex.def
+File: luatex.def 2018/01/08 v1.0l Graphics/color driver for luatex
 ))
 \Gin@req@height=\dimen126
 \Gin@req@width=\dimen127
@@ -173,10 +205,10 @@ Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
 (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
 )
-Driver file for pgf: pgfsys-pdftex.def
+Driver file for pgf: pgfsys-luatex.def
 
-(/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
-File: pgfsys-pdftex.def 2014/10/11  (rcs-revision 1.35)
+(/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-luatex.def
+File: pgfsys-luatex.def 2014/10/11  (rcs-revision 1.35)
 
 (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
 File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
@@ -195,7 +227,7 @@ Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 (/usr/share/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Driver file: luatex.def on input line 225.
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
 Package xcolor Info: Model `RGB' extended on input line 1364.
@@ -328,33 +360,31 @@ Package: hyperref 2018/02/06 v6.86b Hypertext links for LaTeX
 (/usr/share/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
 Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
 
-
 (/usr/share/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
 Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
 Package hobsub Info: Skipping package `infwarerr' (already loaded).
 Package hobsub Info: Skipping package `ltxcmds' (already loaded).
 Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
+Package ifluatex Info: LuaTeX detected.
 Package hobsub Info: Skipping package `ifvtex' (already loaded).
 Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
 Package hobsub Info: Skipping package `ifpdf' (already loaded).
 Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
-Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
-(etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this package earlier.
 Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
-Package: pdftexcmds 2018/01/30 v0.27 Utility functions of pdfTeX for LuaTeX (HO
-)
-Package pdftexcmds Info: LuaTeX not detected.
+Package: luatex-loader 2016/05/16 v0.6 Lua module loader (HO)
+
+(/usr/share/texmf-dist/scripts/oberdiek/oberdiek.luatex.lua)
+Package: pdftexcmds 2018/01/30 v0.27 Utility functions of pdfTeX for LuaTeX (HO)
+
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
+\pdftexcmds@toks=\toks26
 Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
-Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
-)
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO)
+
 Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
 Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
 )
@@ -379,8 +409,6 @@ Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 
 (/usr/share/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
-Now handling font encoding PD1 ...
-... no UTF-8 mapping file for font encoding PD1
 )
 \Hy@SavedSpaceFactor=\count122
 
@@ -423,16 +451,16 @@ LaTeX Info: Redefining \pageref on input line 6443.
 Package hyperref Message: Stopped early.
 
 )
-Package hyperref Info: Driver (autodetected): hpdftex.
- (/usr/share/texmf-dist/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2018/02/06 v6.86b Hyperref driver for pdfTeX
+Package hyperref Info: Driver (autodetected): hluatex.
+ (/usr/share/texmf-dist/tex/latex/hyperref/hluatex.def
+File: hluatex.def 2018/02/06 v6.86b Hyperref driver for luaTeX
 \Fld@listcount=\count126
 \c@bookmark@seq@number=\count127
 
 (/usr/share/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
-Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
-82.
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
+2.
 ))
 (/usr/share/texmf-dist/tex/latex/beamer/beamerbaserequires.sty
 (/usr/share/texmf-dist/tex/latex/beamer/beamerbasecompatibility.sty)
@@ -442,7 +470,7 @@ Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
-\@emptytoks=\toks26
+\@emptytoks=\toks27
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
@@ -485,7 +513,7 @@ Package: translator 2018/01/04 v1.12 Easy translation of strings in LaTeX
 \beamer@framebottomskip=\skip46
 \beamer@frametopskipautobreak=\skip47
 \beamer@framebottomskipautobreak=\skip48
-\beamer@envbody=\toks27
+\beamer@envbody=\toks28
 \framewidth=\dimen168
 \c@framenumber=\count138
 )
@@ -496,8 +524,8 @@ Package: translator 2018/01/04 v1.12 Easy translation of strings in LaTeX
 \beamer@splitbox=\box43
 \beamer@autobreakcount=\count139
 \beamer@autobreaklastheight=\dimen169
-\beamer@frametitletoks=\toks28
-\beamer@framesubtitletoks=\toks29
+\beamer@frametitletoks=\toks29
+\beamer@framesubtitletoks=\toks30
 )
 (/usr/share/texmf-dist/tex/latex/beamer/beamerbaseframecomponents.sty
 \beamer@footins=\box44
@@ -512,7 +540,7 @@ Package: translator 2018/01/04 v1.12 Easy translation of strings in LaTeX
 )
 (/usr/share/texmf-dist/tex/latex/beamer/beamerbasetoc.sty)
 (/usr/share/texmf-dist/tex/latex/beamer/beamerbasetemplates.sty
-\beamer@sbttoks=\toks30
+\beamer@sbttoks=\toks31
 
 (/usr/share/texmf-dist/tex/latex/beamer/beamerbaseauxtemplates.sty
 (/usr/share/texmf-dist/tex/latex/beamer/beamerbaseboxes.sty
@@ -531,7 +559,7 @@ Package: translator 2018/01/04 v1.12 Easy translation of strings in LaTeX
 (/usr/share/texmf-dist/tex/latex/beamer/beamerbaselocalstructure.sty
 (/usr/share/texmf-dist/tex/latex/tools/enumerate.sty
 Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
-\@enLab=\toks31
+\@enLab=\toks32
 )
 \c@figure=\count140
 \c@table=\count141
@@ -552,7 +580,7 @@ Package: amstext 2000/06/29 v2.01 AMS text
 
 (/usr/share/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks32
+\@emptytoks=\toks33
 \ex@=\dimen179
 ))
 (/usr/share/texmf-dist/tex/latex/amsmath/amsbsy.sty
@@ -582,40 +610,40 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 \dotsspace@=\muskip11
 \c@parentequation=\count149
 \dspbrk@lvl=\count150
-\tag@help=\toks33
+\tag@help=\toks34
 \row@=\count151
 \column@=\count152
 \maxfields@=\count153
-\andhelp@=\toks34
+\andhelp@=\toks35
 \eqnshift@=\dimen182
 \alignsep@=\dimen183
 \tagshift@=\dimen184
 \tagwidth@=\dimen185
 \totwidth@=\dimen186
 \lineht@=\dimen187
-\@envbody=\toks35
+\@envbody=\toks36
 \multlinegap=\skip52
 \multlinetaggap=\skip53
-\mathdisplay@stack=\toks36
+\mathdisplay@stack=\toks37
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
 )
 (/usr/share/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2017/10/31 v2.20.4
-\thm@style=\toks37
-\thm@bodyfont=\toks38
-\thm@headfont=\toks39
-\thm@notefont=\toks40
-\thm@headpunct=\toks41
+\thm@style=\toks38
+\thm@bodyfont=\toks39
+\thm@headfont=\toks40
+\thm@notefont=\toks41
+\thm@headpunct=\toks42
 \thm@preskip=\skip54
 \thm@postskip=\skip55
 \thm@headsep=\skip56
-\dth@everypar=\toks42
+\dth@everypar=\toks43
 )
 \c@theorem=\count154
 )
-(/usr/share/texmf-dist/tex/latex/beamer/beamerbasethemes.sty))
-(/usr/share/texmf-dist/tex/latex/beamer/beamerthemedefault.sty
+(/usr/share/texmf-dist/tex/latex/beamer/beamerbasethemes.sty))(load luc: /home/l
+ume/.texlive2018/texmf-var/luatex-cache/generic/fonts/otl/lmsans10-regular.luc) (/usr/share/texmf-dist/tex/latex/beamer/beamerthemedefault.sty
 (/usr/share/texmf-dist/tex/latex/beamer/beamerfontthemedefault.sty)
 (/usr/share/texmf-dist/tex/latex/beamer/beamercolorthemedefault.sty)
 (/usr/share/texmf-dist/tex/latex/beamer/beamerinnerthemedefault.sty
@@ -639,7 +667,7 @@ Grid set 16 x 16 = 28.45274pt x 16.00467pt
 \TPboxrulesize=\dimen194
 \TP@ox=\dimen195
 \TP@oy=\dimen196
-\TP@tbargs=\toks43
+\TP@tbargs=\toks44
 \TP@prevdepth=\dimen197
 TextBlockOrigin set to 0pt x 0pt
 )) (/usr/share/texmf-dist/tex/generic/babel/babel.sty
@@ -648,26 +676,115 @@ Package: babel 2018/02/14 3.18 The Babel package
 (/usr/share/texmf-dist/tex/generic/babel/switch.def
 File: switch.def 2018/02/14 3.18 Babel switching mechanism
 )
+(/usr/share/texmf-dist/tex/generic/babel/luababel.def
+\l@dumylang=\language2
+Package babel Info: Non-standard hyphenation setup on input line 113.
+\l@nohyphenation=\language3
+\l@german-x-2018-03-31=\language4
+\l@ngerman-x-2018-03-31=\language5
+\l@afrikaans=\language6
+\l@ancientgreek=\language7
+\l@ibycus=\language8
+\l@arabic=\language9
+\l@armenian=\language10
+\l@basque=\language11
+\l@belarusian=\language12
+\l@bulgarian=\language13
+\l@catalan=\language14
+\l@pinyin=\language15
+\l@churchslavonic=\language16
+\l@coptic=\language17
+\l@croatian=\language18
+\l@czech=\language19
+\l@danish=\language20
+\l@dutch=\language21
+\l@ukenglish=\language22
+\l@usenglishmax=\language23
+\l@esperanto=\language24
+\l@estonian=\language25
+\l@ethiopic=\language26
+\l@farsi=\language27
+\l@finnish=\language28
+\l@french=\language29
+\l@friulan=\language30
+\l@galician=\language31
+\l@georgian=\language32
+\l@german=\language33
+\l@ngerman=\language34
+\l@swissgerman=\language35
+\l@monogreek=\language36
+\l@greek=\language37
+\l@hungarian=\language38
+\l@icelandic=\language39
+\l@assamese=\language40
+\l@bengali=\language41
+\l@gujarati=\language42
+\l@hindi=\language43
+\l@kannada=\language44
+\l@malayalam=\language45
+\l@marathi=\language46
+\l@oriya=\language47
+\l@panjabi=\language48
+\l@tamil=\language49
+\l@telugu=\language50
+\l@indonesian=\language51
+\l@interlingua=\language52
+\l@irish=\language53
+\l@italian=\language54
+\l@kurmanji=\language55
+\l@latin=\language56
+\l@classiclatin=\language57
+\l@liturgicallatin=\language58
+\l@latvian=\language59
+\l@lithuanian=\language60
+\l@mongolian=\language61
+\l@mongolianlmc=\language62
+\l@bokmal=\language63
+\l@nynorsk=\language64
+\l@occitan=\language65
+\l@piedmontese=\language66
+\l@polish=\language67
+\l@portuguese=\language68
+\l@romanian=\language69
+\l@romansh=\language70
+\l@russian=\language71
+\l@sanskrit=\language72
+\l@serbian=\language73
+\l@serbianc=\language74
+\l@slovak=\language75
+\l@slovenian=\language76
+\l@spanish=\language77
+\l@swedish=\language78
+\l@thai=\language79
+\l@turkish=\language80
+\l@turkmen=\language81
+\l@ukrainian=\language82
+\l@uppersorbian=\language83
+\l@welsh=\language84
+)
 (/usr/share/texmf-dist/tex/generic/babel-german/ngerman.ldf
-Language: ngerman 2018/03/29 v2.10 German support for babel (post-1996 orthogra
-phy)
+Language: ngerman 2018/03/29 v2.10 German support for babel (post-1996 orthograp
+hy)
 
 (/usr/share/texmf-dist/tex/generic/babel-german/ngermanb.ldf
-Language: ngermanb 2018/03/29 v2.10 German support for babel (post-1996 orthogr
-aphy)
+Language: ngermanb 2018/03/29 v2.10 German support for babel (post-1996 orthogra
+phy)
 
 (/usr/share/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2018/02/14 3.18 Babel common definitions
 \babel@savecnt=\count155
 \U@D=\dimen198
 
-(/usr/share/texmf-dist/tex/generic/babel/txtbabel.def)
+(/usr/share/texmf-dist/tex/generic/babel/luababel.def)
 LaTeX Info: Redefining \textlatin on input line 1839.
-\bbl@dirlevel=\count156
 )
 Package babel Info: Making " an active character on input line 121.
-))
-(/usr/share/texmf-dist/tex/generic/babel-english/english.ldf
+
+(/usr/share/texmf-dist/tex/generic/hyph-utf8/loadhyph/loadhyph-de-1996.tex
+UTF-8 German hyphenation patterns (reformed orthography)
+(/usr/share/texmf-dist/tex/generic/hyph-utf8/patterns/tex/hyph-de-1996.tex
+German Hyphenation Patterns (Reformed Orthography, 2006) `dehyphn-x' 2018-03-31
+ (WL))))) (/usr/share/texmf-dist/tex/generic/babel-english/english.ldf
 Language: english 2017/06/06 v3.3r English support from the babel system
 \l@canadian = a dialect from \language\l@american 
 \l@australian = a dialect from \language\l@british 
@@ -681,12 +798,12 @@ Package: array 2018/04/07 v2.4g Tabular extension package (FMi)
 \col@sep=\dimen199
 \ar@mcellbox=\box55
 \extrarowheight=\dimen256
-\NC@list=\toks44
+\NC@list=\toks45
 \extratabsurround=\skip57
 \backup@length=\skip58
 \ar@cellbox=\box56
 )
-\everycr=\toks45
+\everycr=\toks46
 \minrowclearance=\skip59
 )
 (/usr/share/texmf-dist/tex/latex/euler/euler.sty
@@ -765,10 +882,9 @@ LaTeX Font Info:    Redeclaring math delimiter \Downarrow on input line 174.
 LaTeX Font Info:    Redeclaring math delimiter \Updownarrow on input line 176.
 LaTeX Font Info:    Redeclaring math symbol \leftharpoonup on input line 177.
 LaTeX Font Info:    Redeclaring math symbol \leftharpoondown on input line 178.
-
 LaTeX Font Info:    Redeclaring math symbol \rightharpoonup on input line 179.
-LaTeX Font Info:    Redeclaring math symbol \rightharpoondown on input line 180
-.
+LaTeX Font Info:    Redeclaring math symbol \rightharpoondown on input line 180.
+
 LaTeX Font Info:    Redeclaring math delimiter \lbrace on input line 182.
 LaTeX Font Info:    Redeclaring math delimiter \rbrace on input line 184.
 \symcmmigroup=\mathgroup9
@@ -798,12 +914,12 @@ Package: booktabs 2016/04/27 v1.618033 publication quality tables
 \cmidrulesep=\dimen264
 \cmidrulekern=\dimen265
 \defaultaddspace=\dimen266
-\@cmidla=\count157
-\@cmidlb=\count158
+\@cmidla=\count156
+\@cmidlb=\count157
 \@aboverulesep=\dimen267
 \@belowrulesep=\dimen268
-\@thisruleclass=\count159
-\@lastruleclass=\count160
+\@thisruleclass=\count158
+\@lastruleclass=\count159
 \@thisrulewidth=\dimen269
 )
 (/usr/share/texmf-dist/tex/latex/siunitx/siunitx.sty
@@ -812,18 +928,19 @@ Package: expl3 2018/03/05 L3 programming layer (loader)
 
 (/usr/share/texmf-dist/tex/latex/l3kernel/expl3-code.tex
 Package: expl3 2018/03/05 L3 programming layer (code)
-\c_max_int=\count161
-\l_tmpa_int=\count162
-\l_tmpb_int=\count163
-\g_tmpa_int=\count164
-\g_tmpb_int=\count165
-\g__intarray_font_int=\count166
-\g__prg_map_int=\count167
-\c_log_iow=\count168
-\l_iow_line_count_int=\count169
-\l__iow_line_target_int=\count170
-\l__iow_one_indent_int=\count171
-\l__iow_indent_int=\count172
+\ucharcat@table=\catcodetable5
+\c_max_int=\count160
+\l_tmpa_int=\count161
+\l_tmpb_int=\count162
+\g_tmpa_int=\count163
+\g_tmpb_int=\count164
+\g__intarray_font_int=\count165
+\g__prg_map_int=\count166
+\c_log_iow=\count167
+\l_iow_line_count_int=\count168
+\l__iow_line_target_int=\count169
+\l__iow_one_indent_int=\count170
+\l__iow_indent_int=\count171
 \c_zero_dim=\dimen270
 \c_max_dim=\dimen271
 \l_tmpa_dim=\dimen272
@@ -842,77 +959,75 @@ Package: expl3 2018/03/05 L3 programming layer (code)
 \l_tmpb_muskip=\muskip15
 \g_tmpa_muskip=\muskip16
 \g_tmpb_muskip=\muskip17
-\l_keys_choice_int=\count173
-\c__fp_leading_shift_int=\count174
-\c__fp_middle_shift_int=\count175
-\c__fp_trailing_shift_int=\count176
-\c__fp_big_leading_shift_int=\count177
-\c__fp_big_middle_shift_int=\count178
-\c__fp_big_trailing_shift_int=\count179
-\c__fp_Bigg_leading_shift_int=\count180
-\c__fp_Bigg_middle_shift_int=\count181
-\c__fp_Bigg_trailing_shift_int=\count182
-\c__fp_rand_size_int=\count183
-\c__fp_rand_four_int=\count184
-\c__fp_rand_eight_int=\count185
-\l__sort_length_int=\count186
-\l__sort_min_int=\count187
-\l__sort_top_int=\count188
-\l__sort_max_int=\count189
-\l__sort_true_max_int=\count190
-\l__sort_block_int=\count191
-\l__sort_begin_int=\count192
-\l__sort_end_int=\count193
-\l__sort_A_int=\count194
-\l__sort_B_int=\count195
-\l__sort_C_int=\count196
-\l__tl_build_start_index_int=\count197
-\l__tl_build_index_int=\count198
-\l__tl_analysis_normal_int=\count199
-\l__tl_analysis_index_int=\count266
-\l__tl_analysis_nesting_int=\count267
-\l__tl_analysis_type_int=\count268
-\l__regex_internal_a_int=\count269
-\l__regex_internal_b_int=\count270
-\l__regex_internal_c_int=\count271
-\l__regex_balance_int=\count272
-\l__regex_group_level_int=\count273
-\l__regex_mode_int=\count274
-\c__regex_cs_in_class_mode_int=\count275
-\c__regex_cs_mode_int=\count276
-\l__regex_catcodes_int=\count277
-\l__regex_default_catcodes_int=\count278
-\c__regex_catcode_D_int=\count279
-\c__regex_catcode_S_int=\count280
-\c__regex_catcode_L_int=\count281
-\c__regex_catcode_O_int=\count282
-\c__regex_catcode_A_int=\count283
-\c__regex_all_catcodes_int=\count284
-\l__regex_show_lines_int=\count285
-\l__regex_min_state_int=\count286
-\l__regex_max_state_int=\count287
-\l__regex_left_state_int=\count288
-\l__regex_right_state_int=\count289
-\l__regex_capturing_group_int=\count290
-\l__regex_min_pos_int=\count291
-\l__regex_max_pos_int=\count292
-\l__regex_curr_pos_int=\count293
-\l__regex_start_pos_int=\count294
-\l__regex_success_pos_int=\count295
-\l__regex_curr_char_int=\count296
-\l__regex_curr_catcode_int=\count297
-\l__regex_last_char_int=\count298
-\l__regex_case_changed_char_int=\count299
-\l__regex_curr_state_int=\count300
-\l__regex_step_int=\count301
-\l__regex_min_active_int=\count302
-\l__regex_max_active_int=\count303
-\l__regex_replacement_csnames_int=\count304
-\l__regex_match_count_int=\count305
-\l__regex_min_submatch_int=\count306
-\l__regex_submatch_int=\count307
-\l__regex_zeroth_submatch_int=\count308
-\g__regex_trace_regex_int=\count309
+\l_keys_choice_int=\count172
+\c__fp_leading_shift_int=\count173
+\c__fp_middle_shift_int=\count174
+\c__fp_trailing_shift_int=\count175
+\c__fp_big_leading_shift_int=\count176
+\c__fp_big_middle_shift_int=\count177
+\c__fp_big_trailing_shift_int=\count178
+\c__fp_Bigg_leading_shift_int=\count179
+\c__fp_Bigg_middle_shift_int=\count180
+\c__fp_Bigg_trailing_shift_int=\count181
+\c__fp_rand_size_int=\count182
+\c__fp_rand_four_int=\count183
+\c__fp_rand_eight_int=\count184
+\l__sort_length_int=\count185
+\l__sort_min_int=\count186
+\l__sort_top_int=\count187
+\l__sort_max_int=\count188
+\l__sort_true_max_int=\count189
+\l__sort_block_int=\count190
+\l__sort_begin_int=\count191
+\l__sort_end_int=\count192
+\l__sort_A_int=\count193
+\l__sort_B_int=\count194
+\l__sort_C_int=\count195
+\l__tl_build_start_index_int=\count196
+\l__tl_build_index_int=\count197
+\l__tl_analysis_normal_int=\count198
+\l__tl_analysis_index_int=\count199
+\l__tl_analysis_nesting_int=\count266
+\l__tl_analysis_type_int=\count267
+\l__regex_internal_a_int=\count268
+\l__regex_internal_b_int=\count269
+\l__regex_internal_c_int=\count270
+\l__regex_balance_int=\count271
+\l__regex_group_level_int=\count272
+\l__regex_mode_int=\count273
+\c__regex_cs_in_class_mode_int=\count274
+\c__regex_cs_mode_int=\count275
+\l__regex_catcodes_int=\count276
+\l__regex_default_catcodes_int=\count277
+\c__regex_catcode_L_int=\count278
+\c__regex_catcode_O_int=\count279
+\c__regex_catcode_A_int=\count280
+\c__regex_all_catcodes_int=\count281
+\l__regex_show_lines_int=\count282
+\l__regex_min_state_int=\count283
+\l__regex_max_state_int=\count284
+\l__regex_left_state_int=\count285
+\l__regex_right_state_int=\count286
+\l__regex_capturing_group_int=\count287
+\l__regex_min_pos_int=\count288
+\l__regex_max_pos_int=\count289
+\l__regex_curr_pos_int=\count290
+\l__regex_start_pos_int=\count291
+\l__regex_success_pos_int=\count292
+\l__regex_curr_char_int=\count293
+\l__regex_curr_catcode_int=\count294
+\l__regex_last_char_int=\count295
+\l__regex_case_changed_char_int=\count296
+\l__regex_curr_state_int=\count297
+\l__regex_step_int=\count298
+\l__regex_min_active_int=\count299
+\l__regex_max_active_int=\count300
+\l__regex_replacement_csnames_int=\count301
+\l__regex_match_count_int=\count302
+\l__regex_min_submatch_int=\count303
+\l__regex_submatch_int=\count304
+\l__regex_zeroth_submatch_int=\count305
+\g__regex_trace_regex_int=\count306
 \c_empty_box=\box57
 \l_tmpa_box=\box58
 \l_tmpb_box=\box59
@@ -956,15 +1071,15 @@ Package: expl3 2018/03/05 L3 programming layer (code)
 )
 (/usr/share/texmf-dist/tex/latex/l3kernel/l3pdfmode.def
 File: l3pdfmode.def 2017/03/18 v L3 Experimental driver: PDF mode
-\l__driver_color_stack_int=\count310
+\l__driver_color_stack_int=\count307
 ))
 (/usr/share/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 Package: xparse 2018/02/21 L3 Experimental document command parser
-\l__xparse_current_arg_int=\count311
-\g__xparse_grabber_int=\count312
-\l__xparse_m_args_int=\count313
-\l__xparse_mandatory_args_int=\count314
-\l__xparse_v_nesting_int=\count315
+\l__xparse_current_arg_int=\count308
+\g__xparse_grabber_int=\count309
+\l__xparse_m_args_int=\count310
+\l__xparse_mandatory_args_int=\count311
+\l__xparse_v_nesting_int=\count312
 )
 Package: siunitx 2018-03-20 v2.7m A comprehensive (SI) units package
 
@@ -973,27 +1088,27 @@ Package: l3keys2e 2018/02/21 LaTeX2e option processing using LaTeX3 keys
 )
 \l__siunitx_tmp_box=\box72
 \l__siunitx_tmp_dim=\dimen301
-\l__siunitx_tmp_int=\count316
-\l__siunitx_number_mantissa_length_int=\count317
-\l__siunitx_number_uncert_length_int=\count318
-\l__siunitx_round_int=\count319
-\l__siunitx_process_decimal_int=\count320
-\l__siunitx_process_uncertainty_int=\count321
-\l__siunitx_process_fixed_int=\count322
-\l__siunitx_process_integer_min_int=\count323
-\l__siunitx_process_precision_int=\count324
-\l__siunitx_group_min_int=\count325
+\l__siunitx_tmp_int=\count313
+\l__siunitx_number_mantissa_length_int=\count314
+\l__siunitx_number_uncert_length_int=\count315
+\l__siunitx_round_int=\count316
+\l__siunitx_process_decimal_int=\count317
+\l__siunitx_process_uncertainty_int=\count318
+\l__siunitx_process_fixed_int=\count319
+\l__siunitx_process_integer_min_int=\count320
+\l__siunitx_process_precision_int=\count321
+\l__siunitx_group_min_int=\count322
 \l__siunitx_angle_marker_box=\box73
 \l__siunitx_angle_unit_box=\box74
 \l__siunitx_angle_marker_dim=\dimen302
 \l__siunitx_angle_unit_dim=\dimen303
-\l__siunitx_unit_int=\count326
-\l__siunitx_unit_denominator_int=\count327
-\l__siunitx_unit_numerator_int=\count328
-\l__siunitx_unit_prefix_int=\count329
-\l__siunitx_unit_prefix_base_int=\count330
-\l__siunitx_unit_prefix_gram_int=\count331
-\l__siunitx_number_product_int=\count332
+\l__siunitx_unit_int=\count323
+\l__siunitx_unit_denominator_int=\count324
+\l__siunitx_unit_numerator_int=\count325
+\l__siunitx_unit_prefix_int=\count326
+\l__siunitx_unit_prefix_base_int=\count327
+\l__siunitx_unit_prefix_gram_int=\count328
+\l__siunitx_number_product_int=\count329
 \c__siunitx_one_fill_skip=\skip66
 \l__siunitx_table_unit_align_skip=\skip67
 \l__siunitx_table_exponent_dim=\dimen304
@@ -1162,8 +1277,8 @@ Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
 (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
 \pgffor@iter=\dimen315
 \pgffor@skip=\dimen316
-\pgffor@stack=\toks46
-\pgffor@toks=\toks47
+\pgffor@stack=\toks47
+\pgffor@toks=\toks48
 ))
 (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
 Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
@@ -1171,7 +1286,7 @@ Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
 (/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.te
 x
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
-\pgf@plot@mark@count=\count333
+\pgf@plot@mark@count=\count330
 \pgfplotmarksize=\dimen317
 )
 \tikz@lastx=\dimen318
@@ -1184,17 +1299,17 @@ File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
 \tikz@figbox@bg=\box81
 \tikz@tempbox=\box82
 \tikz@tempbox@bg=\box83
-\tikztreelevel=\count334
-\tikznumberofchildren=\count335
-\tikznumberofcurrentchild=\count336
-\tikz@fig@count=\count337
+\tikztreelevel=\count331
+\tikznumberofchildren=\count332
+\tikznumberofcurrentchild=\count333
+\tikz@fig@count=\count334
  (/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
-\pgfmatrixcurrentrow=\count338
-\pgfmatrixcurrentcolumn=\count339
-\pgf@matrix@numberofcolumns=\count340
+\pgfmatrixcurrentrow=\count335
+\pgfmatrixcurrentcolumn=\count336
+\pgf@matrix@numberofcolumns=\count337
 )
-\tikz@expandcount=\count341
+\tikz@expandcount=\count338
 
 (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
 topaths.code.tex
@@ -1202,12 +1317,14 @@ File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
 )))
 (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex
 (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
-\t@pgfplots@toka=\toks48
-\t@pgfplots@tokb=\toks49
-\t@pgfplots@tokc=\toks50
+Package pgfplots info on input line 124: Initializing with LUA version Lua 5.2
+\pgfplots@luabackend@table=\catcodetable6
+\t@pgfplots@toka=\toks49
+\t@pgfplots@tokb=\toks50
+\t@pgfplots@tokc=\toks51
 \pgfplots@tmpa=\dimen324
-\c@pgfplots@coordindex=\count342
-\c@pgfplots@scanlineindex=\count343
+\c@pgfplots@coordindex=\count339
+\c@pgfplots@scanlineindex=\count340
 
 (/usr/share/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric.code.tex))
 (/usr/share/texmf-dist/tex/generic/pgfplots/libs/pgfplotslibrary.code.tex)
@@ -1220,36 +1337,45 @@ Package pgfplots: loading complementary arithmetics for your pgf version...
 gflibraryfpu.code.tex)
 (/usr/share/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_p
 gfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count344
+\c@pgfmathroundto@lastzeros=\count341
 )
+(/usr/share/texmf-dist/tex/generic/pgf/libraries/luamath/pgflibraryluamath.code
+.tex)
+(/usr/share/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_p
+gflibraryluamath.code.tex)
+Package pgfplots info on input line 273: luamath library shipped with pgf 3.0.1a
+ is outdated; using a substitute shipped with pgfplots
+
 (/usr/share/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_l
 eq.code.tex))
 (/usr/share/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code.tex
+Package pgfplots info on input line 82: Found new luatex: initializing lua comma
+nds instead of write18 (shell-escape)
+
 (/usr/share/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsliststructure
 .code.tex)
 (/usr/share/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsliststructure
 ext.code.tex)
 (/usr/share/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsarray.code.te
 x
-\c@pgfplotsarray@tmp=\count345
+\c@pgfplotsarray@tmp=\count342
 )
 (/usr/share/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsmatrix.code.t
 ex)
 (/usr/share/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstableshared.code.t
 ex
-\c@pgfplotstable@counta=\count346
-\t@pgfplotstable@a=\toks51
+\c@pgfplotstable@counta=\count343
+\t@pgfplotstable@a=\toks52
 )
 (/usr/share/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsdeque.code.te
 x) (/usr/share/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.code.tex
-(/usr/share/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.data.code.tex))
-(/usr/share/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.verb.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.data.code.tex)) (/usr/share/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.verb.code.tex)
 (/usr/share/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.surfshading
 .code.tex
-\c@pgfplotslibrarysurf@no=\count347
+\c@pgfplotslibrarysurf@no=\count344
 
 (/usr/share/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surfshading.
-pgfsys-pdftex.def)))
+pgfsys-luatex.def)))
 (/usr/share/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.code.tex
 (/usr/share/texmf-dist/tex/generic/pgfplots/util/pgfplotscolor.code.tex))
 (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotsstackedplots.code.tex)
@@ -1270,7 +1396,7 @@ decorations.code.tex
 \pgfdecoratedinputsegmentcompleteddistance=\dimen327
 \pgfdecoratedinputsegmentremainingdistance=\dimen328
 \pgf@decorate@distancetomove=\dimen329
-\pgf@decorate@repeatstate=\count348
+\pgf@decorate@repeatstate=\count345
 \pgfdecorationsegmentamplitude=\dimen330
 \pgfdecorationsegmentlength=\dimen331
 )
@@ -1284,7 +1410,7 @@ ons.pathmorphing.code.tex))
 decorations.pathreplacing.code.tex
 (/usr/share/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorati
 ons.pathreplacing.code.tex))
-\pgfplots@numplots=\count349
+\pgfplots@numplots=\count346
 \pgfplots@xmin@reg=\dimen332
 \pgfplots@xmax@reg=\dimen333
 \pgfplots@ymin@reg=\dimen334
@@ -1373,23 +1499,23 @@ File: pgflibrarypatterns.code.tex 2008/03/03 v3.0.1a (rcs-revision 1.13)
 ))
 (/usr/share/texmf-dist/tex/latex/numprint/numprint.sty
 Package: numprint 2012/08/20 v1.39 Print numbers (HH)
-\c@nprt@mantissa@digitsbefore=\count350
-\c@nprt@mantissa@digitsafter=\count351
-\c@nprt@exponent@digitsbefore=\count352
-\c@nprt@exponent@digitsafter=\count353
+\c@nprt@mantissa@digitsbefore=\count347
+\c@nprt@mantissa@digitsafter=\count348
+\c@nprt@exponent@digitsbefore=\count349
+\c@nprt@exponent@digitsafter=\count350
 \nprt@digitwidth=\skip70
 \nprt@sepwidth=\skip71
 \nprt@decimalwidth=\skip72
 \nprt@blockwidth=\skip73
-\nprt@digittoks=\toks52
-\nprt@pretoks=\toks53
-\nprt@posttoks=\toks54
-\nprt@thisdigit=\count354
-\nprt@curpos=\count355
-\nprt@rndpos=\count356
-\c@nprt@digitsfirstblock=\count357
-\c@nprt@blockcnt=\count358
-\c@nprt@cntprint=\count359
+\nprt@digittoks=\toks53
+\nprt@pretoks=\toks54
+\nprt@posttoks=\toks55
+\nprt@thisdigit=\count351
+\nprt@curpos=\count352
+\nprt@rndpos=\count353
+\c@nprt@digitsfirstblock=\count354
+\c@nprt@blockcnt=\count355
+\c@nprt@cntprint=\count356
 
 No configuration file `numprint.cfg' found.)
 (/usr/share/texmf-dist/tex/latex/fp/fp.sty
@@ -1398,19 +1524,19 @@ Package: fp 1995/04/02
 `Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich
 (/usr/share/texmf-dist/tex/latex/fp/defpattern.sty
 Package: defpattern 1994/10/12
-\actioncount=\count360
+\actioncount=\count357
 )
 (/usr/share/texmf-dist/tex/latex/fp/fp-basic.sty
 Package: fp-basic 1996/05/13
-\FP@xs=\count361
-\FP@xia=\count362
-\FP@xib=\count363
-\FP@xfa=\count364
-\FP@xfb=\count365
-\FP@rega=\count366
-\FP@regb=\count367
-\FP@regs=\count368
-\FP@times=\count369
+\FP@xs=\count358
+\FP@xia=\count359
+\FP@xib=\count360
+\FP@xfa=\count361
+\FP@xfb=\count362
+\FP@rega=\count363
+\FP@regb=\count364
+\FP@regs=\count365
+\FP@times=\count366
 )
 (/usr/share/texmf-dist/tex/latex/fp/fp-addons.sty
 Package: fp-addons 1995/03/15
@@ -1429,7 +1555,7 @@ Package: fp-pas 1994/08/29
 )
 (/usr/share/texmf-dist/tex/latex/fp/fp-random.sty
 Package: fp-random 1995/02/23
-\FPseed=\count370
+\FPseed=\count367
 )
 (/usr/share/texmf-dist/tex/latex/fp/fp-eqn.sty
 Package: fp-eqn 1995/04/03
@@ -1462,7 +1588,7 @@ File: tkz-tool-arith.tex tkz-tool-arith 1.161 c
 (/usr/share/texmf-dist/tex/latex/tkz-base/tkz-obj-points.tex)
 (/usr/share/texmf-dist/tex/latex/tkz-base/tkz-obj-segments.tex)
 (/usr/share/texmf-dist/tex/latex/tkz-base/tkz-obj-marks.tex
-\tkz@cntmk=\count371
+\tkz@cntmk=\count368
 ))
 (/usr/share/texmf-dist/tex/latex/tkz-euclide/tkz-tools-intersections.tex)
 (/usr/share/texmf-dist/tex/latex/tkz-euclide/tkz-tools-transformations.tex)
@@ -1475,36 +1601,36 @@ Package: overpic 2017/10/06 1.0 picture overlays
 
 (/usr/share/texmf-dist/tex/latex/eepic/epic.sty
 Enhancements to Picture Environment. Version 1.2 - Released June 1, 1986
-\@@multicnt=\count372
-\d@lta=\count373
+\@@multicnt=\count369
+\d@lta=\count370
 \@delta=\dimen350
 \@@delta=\dimen351
-\@gridcnt=\count374
-\@joinkind=\count375
+\@gridcnt=\count371
+\@joinkind=\count372
 \@dotgap=\dimen352
 \@ddotgap=\dimen353
-\@x@diff=\count376
-\@y@diff=\count377
+\@x@diff=\count373
+\@y@diff=\count374
 \x@diff=\dimen354
 \y@diff=\dimen355
 \@dotbox=\box85
-\num@segments=\count378
-\num@segmentsi=\count379
+\num@segments=\count375
+\num@segmentsi=\count376
 \@datafile=\read3
 )) (/usr/share/texmf-dist/tex/latex/mathtools/mathtools.sty
 Package: mathtools 2018/01/08 v1.21 mathematical typesetting tools
 
 (/usr/share/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count380
-\calc@Bcount=\count381
+\calc@Acount=\count377
+\calc@Bcount=\count378
 \calc@Adimen=\dimen356
 \calc@Bdimen=\dimen357
 \calc@Askip=\skip74
 \calc@Bskip=\skip75
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count382
+\calc@Ccount=\count379
 \calc@Cskip=\skip76
 )
 (/usr/share/texmf-dist/tex/latex/mathtools/mhsetup.sty
@@ -1514,7 +1640,7 @@ LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
-\g_MT_multlinerow_int=\count383
+\g_MT_multlinerow_int=\count380
 \l_MT_multwidth_dim=\dimen358
 \origjot=\skip77
 \l_MT_shortvdotswithinadjustabove_dim=\dimen359
@@ -1524,12 +1650,304 @@ LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
 \l_MT_above_shortintertext_sep=\dimen363
 \l_MT_below_shortintertext_sep=\dimen364
 )
+(/usr/share/texmf-dist/tex/latex/fontspec/fontspec.sty
+Package: fontspec 2017/11/09 v2.6g Font selection for XeLaTeX and LuaLaTeX
+Lua module: fontspec 2017/11/09 2.6g Font selection for XeLaTeX and LuaLaTeX
+(/usr/share/texmf-dist/tex/latex/fontspec/fontspec-luatex.sty
+Package: fontspec-luatex 2017/11/09 v2.6g Font selection for XeLaTeX and LuaLaTe
+X
+\l__fontspec_script_int=\count381
+\l__fontspec_language_int=\count382
+\l__fontspec_strnum_int=\count383
+\l__fontspec_tmp_int=\count384
+\l__fontspec_em_int=\count385
+\l__fontspec_emdef_int=\count386
+\l__fontspec_strong_int=\count387
+\l__fontspec_strongdef_int=\count388
+\l__fontspec_tmpa_dim=\dimen365
+\l__fontspec_tmpb_dim=\dimen366
+\l__fontspec_tmpc_dim=\dimen367
+
+(/usr/share/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
+
+(/usr/share/texmf-dist/tex/latex/base/tuenc.def
+File: tuenc.def 2017/04/05 v2.0i Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding TU on input line 82.
+))
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \fontspec with sig. 'O{}mO{}' on line 545.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmainfont with sig. 'O{}mO{}' on line 549.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setsansfont with sig. 'O{}mO{}' on line 553.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmonofont with sig. 'O{}mO{}' on line 557.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmathrm with sig. 'O{}mO{}' on line 561.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setboldmathrm with sig. 'O{}mO{}' on line 565.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmathsf with sig. 'O{}mO{}' on line 569.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmathtt with sig. 'O{}mO{}' on line 573.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setromanfont with sig. 'O{}mO{}' on line 577.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontfamily with sig. 'mO{}mO{}' on line 581.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontface with sig. 'mO{}mO{}' on line 585.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \defaultfontfeatures with sig. 't+om' on line 589.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \addfontfeatures with sig. 'm' on line 593.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \addfontfeature with sig. 'm' on line 597.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontfeature with sig. 'mm' on line 601.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newAATfeature with sig. 'mmmm' on line 605.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newopentypefeature with sig. 'mmm' on line 609.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newICUfeature with sig. 'mmm' on line 613.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \aliasfontfeature with sig. 'mm' on line 617.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \aliasfontfeatureoption with sig. 'mmm' on line 621.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontscript with sig. 'mm' on line 625.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontlanguage with sig. 'mm' on line 629.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareFontsExtensions with sig. 'm' on line 633.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \IfFontFeatureActiveTF with sig. 'mmm' on line 637.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \EncodingCommand with sig. 'mO{}m' on line 3366.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \EncodingAccent with sig. 'mm' on line 3372.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \EncodingSymbol with sig. 'mm' on line 3378.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \EncodingComposite with sig. 'mmm' on line 3384.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \EncodingCompositeCommand with sig. 'mmm' on line 3390.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareUnicodeEncoding with sig. 'mm' on line 3415.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \UndeclareSymbol with sig. 'm' on line 3421.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \UndeclareAccent with sig. 'm' on line 3427.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \UndeclareCommand with sig. 'm' on line 3433.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \UndeclareComposite with sig. 'mm' on line 3440.
+.................................................
+
+(/usr/share/texmf-dist/tex/latex/fontspec/fontspec.cfg)
+LaTeX Info: Redefining \itshape on input line 3625.
+LaTeX Info: Redefining \slshape on input line 3630.
+LaTeX Info: Redefining \scshape on input line 3635.
+LaTeX Info: Redefining \upshape on input line 3640.
+LaTeX Info: Redefining \em on input line 3670.
+LaTeX Info: Redefining \emph on input line 3695.
+(load luc: /home/lume/.texlive2018/texmf-var/luatex-cache/generic/fonts/otl/lmsa
+ns10-bold.luc)
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <10.95> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 3745.
+(load luc: /home/lume/.texlive2018/texmf-var/luatex-cache/generic/fonts/otl/lmsa
+ns10-oblique.luc)
+LaTeX Info: Redefining \- on input line 3749.
+.................................................
+. LaTeX info: "xparse/redefine-command"
+. 
+. Redefining command \oldstylenums with sig. 'm' on line 3844.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \liningnums with sig. 'm' on line 3848.
+.................................................
+)) (/usr/share/texmf-dist/tex/latex/fontawesome/fontawesome.sty
+Package: fontawesome 2016/05/15 v4.6.3.1 font awesome icons
+
+(/usr/share/texmf-dist/tex/latex/fontawesome/fontawesomesymbols-generic.tex)
+luaotfload | cache : Lookup cache loaded from /home/lume/.texlive2018/texmf-var/
+luatex-cache/generic/names/luaotfload-lookup-cache.luc.(load luc: /home/lume/.te
+xlive2018/texmf-var/luatex-cache/generic/fonts/otl/fontawesome.luc)
+luaotfload | aux : font no 29 (nil) defines no feature for script latn
+luaotfload | aux : no font with id 29
+.................................................
+. fontspec info: "no-scripts"
+. 
+. Font "FontAwesome" does not contain any OpenType `Script' information.
+.................................................
+\g__fontspec_family_FontAwesome_int=\count389
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font "FontAwesome/BI" (it probably doesn't exist).
+.................................................
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font "FontAwesome/B" (it probably doesn't exist).
+.................................................
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font "FontAwesome/I" (it probably doesn't exist).
+.................................................
+luaotfload | aux : font no 29 (nil) does not define feature smcp for script  wit
+h language 
+luaotfload | aux : no font with id 29
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'FontAwesome(0)' created for font 'FontAwesome' with options [].
+.  
+.  This font family consists of the following NFSS series/shapes:
+.  
+. - 'normal' (m/n) with NFSS spec.: <->"FontAwesome:mode=node;"
+. - 'small caps'  (m/sc) with NFSS spec.: 
+.................................................
+
+(/usr/share/texmf-dist/tex/latex/fontawesome/fontawesomesymbols-xeluatex.tex))
+(/usr/share/texmf-dist/tex/latex/academicons/academicons.sty
+Package: academicons 2018/04/03 v1.8.3 Academicons Icons
+(load luc: /home/lume/.texlive2018/texmf-var/luatex-cache/generic/fonts/otl/acad
+emicons.luc)
+luaotfload | aux : font no 30 (nil) defines no feature for script latn
+luaotfload | aux : no font with id 30
+.................................................
+. fontspec info: "no-scripts"
+. 
+. Font "academicons" does not contain any OpenType `Script' information.
+.................................................
+\g__fontspec_family_academicons.ttf_int=\count390
+luaotfload | aux : font no 30 (nil) does not define feature smcp for script  wit
+h language 
+luaotfload | aux : no font with id 30
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'academicons.ttf(0)' created for font 'academicons.ttf' with
+. options [].
+.  
+.  This font family consists of the following NFSS series/shapes:
+.  
+. - 'normal' (m/n) with NFSS spec.: <->"[academicons.ttf]:mode=node;"
+. - 'small caps'  (m/sc) with NFSS spec.: 
+.................................................
+)
 (/usr/share/texmf-dist/tex/latex/biblatex/biblatex.sty
 Package: biblatex 2018/03/04 v3.11 programmable bibliographies (PK/MW)
 
 (/usr/share/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count384
+\lrq@indent=\count391
 
 (/usr/share/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
@@ -1540,49 +1958,49 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 (/usr/share/texmf-dist/tex/generic/xstring/xstring.sty
 (/usr/share/texmf-dist/tex/generic/xstring/xstring.tex
 \@xs@message=\write5
-\integerpart=\count385
-\decimalpart=\count386
+\integerpart=\count392
+\decimalpart=\count393
 )
 Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
 )
-\c@tabx@nest=\count387
-\c@listtotal=\count388
-\c@listcount=\count389
-\c@liststart=\count390
-\c@liststop=\count391
-\c@citecount=\count392
-\c@citetotal=\count393
-\c@multicitecount=\count394
-\c@multicitetotal=\count395
-\c@instcount=\count396
-\c@maxnames=\count397
-\c@minnames=\count398
-\c@maxitems=\count399
-\c@minitems=\count400
-\c@citecounter=\count401
-\c@savedcitecounter=\count402
-\c@uniquelist=\count403
-\c@uniquename=\count404
-\c@refsection=\count405
-\c@refsegment=\count406
-\c@maxextratitle=\count407
-\c@maxextratitleyear=\count408
-\c@maxextradate=\count409
-\c@maxextraalpha=\count410
-\c@abbrvpenalty=\count411
-\c@highnamepenalty=\count412
-\c@lownamepenalty=\count413
-\c@maxparens=\count414
-\c@parenlevel=\count415
-\blx@tempcnta=\count416
-\blx@tempcntb=\count417
-\blx@tempcntc=\count418
-\blx@maxsection=\count419
-\blx@maxsegment@0=\count420
-\blx@notetype=\count421
-\blx@parenlevel@text=\count422
-\blx@parenlevel@foot=\count423
-\blx@sectionciteorder@0=\count424
+\c@tabx@nest=\count394
+\c@listtotal=\count395
+\c@listcount=\count396
+\c@liststart=\count397
+\c@liststop=\count398
+\c@citecount=\count399
+\c@citetotal=\count400
+\c@multicitecount=\count401
+\c@multicitetotal=\count402
+\c@instcount=\count403
+\c@maxnames=\count404
+\c@minnames=\count405
+\c@maxitems=\count406
+\c@minitems=\count407
+\c@citecounter=\count408
+\c@savedcitecounter=\count409
+\c@uniquelist=\count410
+\c@uniquename=\count411
+\c@refsection=\count412
+\c@refsegment=\count413
+\c@maxextratitle=\count414
+\c@maxextratitleyear=\count415
+\c@maxextradate=\count416
+\c@maxextraalpha=\count417
+\c@abbrvpenalty=\count418
+\c@highnamepenalty=\count419
+\c@lownamepenalty=\count420
+\c@maxparens=\count421
+\c@parenlevel=\count422
+\blx@tempcnta=\count423
+\blx@tempcntb=\count424
+\blx@tempcntc=\count425
+\blx@maxsection=\count426
+\blx@maxsegment@0=\count427
+\blx@notetype=\count428
+\blx@parenlevel@text=\count429
+\blx@parenlevel@foot=\count430
+\blx@sectionciteorder@0=\count431
 \labelnumberwidth=\skip78
 \labelalphawidth=\skip79
 \biblabelsep=\skip80
@@ -1593,9 +2011,9 @@ Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
 \bibhang=\skip85
 \blx@bcfin=\read4
 \blx@bcfout=\write6
-\c@mincomprange=\count425
-\c@maxcomprange=\count426
-\c@mincompwidth=\count427
+\c@mincomprange=\count432
+\c@maxcomprange=\count433
+\c@mincompwidth=\count434
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
@@ -1608,74 +2026,74 @@ Package biblatex Info: Trying to load biblatex bibstyle data model...
 Package biblatex Info: ... file 'authoryear.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count428
-\c@savedafterword=\count429
-\c@annotator=\count430
-\c@savedannotator=\count431
-\c@author=\count432
-\c@savedauthor=\count433
-\c@bookauthor=\count434
-\c@savedbookauthor=\count435
-\c@commentator=\count436
-\c@savedcommentator=\count437
-\c@editor=\count438
-\c@savededitor=\count439
-\c@editora=\count440
-\c@savededitora=\count441
-\c@editorb=\count442
-\c@savededitorb=\count443
-\c@editorc=\count444
-\c@savededitorc=\count445
-\c@foreword=\count446
-\c@savedforeword=\count447
-\c@holder=\count448
-\c@savedholder=\count449
-\c@introduction=\count450
-\c@savedintroduction=\count451
-\c@namea=\count452
-\c@savednamea=\count453
-\c@nameb=\count454
-\c@savednameb=\count455
-\c@namec=\count456
-\c@savednamec=\count457
-\c@translator=\count458
-\c@savedtranslator=\count459
-\c@shortauthor=\count460
-\c@savedshortauthor=\count461
-\c@shorteditor=\count462
-\c@savedshorteditor=\count463
-\c@labelname=\count464
-\c@savedlabelname=\count465
-\c@institution=\count466
-\c@savedinstitution=\count467
-\c@lista=\count468
-\c@savedlista=\count469
-\c@listb=\count470
-\c@savedlistb=\count471
-\c@listc=\count472
-\c@savedlistc=\count473
-\c@listd=\count474
-\c@savedlistd=\count475
-\c@liste=\count476
-\c@savedliste=\count477
-\c@listf=\count478
-\c@savedlistf=\count479
-\c@location=\count480
-\c@savedlocation=\count481
-\c@organization=\count482
-\c@savedorganization=\count483
-\c@origlocation=\count484
-\c@savedoriglocation=\count485
-\c@origpublisher=\count486
-\c@savedorigpublisher=\count487
-\c@publisher=\count488
-\c@savedpublisher=\count489
-\c@language=\count490
-\c@savedlanguage=\count491
-\c@origlanguage=\count492
-\c@savedoriglanguage=\count493
-\c@pageref=\count494
-\c@savedpageref=\count495
+\c@afterword=\count435
+\c@savedafterword=\count436
+\c@annotator=\count437
+\c@savedannotator=\count438
+\c@author=\count439
+\c@savedauthor=\count440
+\c@bookauthor=\count441
+\c@savedbookauthor=\count442
+\c@commentator=\count443
+\c@savedcommentator=\count444
+\c@editor=\count445
+\c@savededitor=\count446
+\c@editora=\count447
+\c@savededitora=\count448
+\c@editorb=\count449
+\c@savededitorb=\count450
+\c@editorc=\count451
+\c@savededitorc=\count452
+\c@foreword=\count453
+\c@savedforeword=\count454
+\c@holder=\count455
+\c@savedholder=\count456
+\c@introduction=\count457
+\c@savedintroduction=\count458
+\c@namea=\count459
+\c@savednamea=\count460
+\c@nameb=\count461
+\c@savednameb=\count462
+\c@namec=\count463
+\c@savednamec=\count464
+\c@translator=\count465
+\c@savedtranslator=\count466
+\c@shortauthor=\count467
+\c@savedshortauthor=\count468
+\c@shorteditor=\count469
+\c@savedshorteditor=\count470
+\c@labelname=\count471
+\c@savedlabelname=\count472
+\c@institution=\count473
+\c@savedinstitution=\count474
+\c@lista=\count475
+\c@savedlista=\count476
+\c@listb=\count477
+\c@savedlistb=\count478
+\c@listc=\count479
+\c@savedlistc=\count480
+\c@listd=\count481
+\c@savedlistd=\count482
+\c@liste=\count483
+\c@savedliste=\count484
+\c@listf=\count485
+\c@savedlistf=\count486
+\c@location=\count487
+\c@savedlocation=\count488
+\c@organization=\count489
+\c@savedorganization=\count490
+\c@origlocation=\count491
+\c@savedoriglocation=\count492
+\c@origpublisher=\count493
+\c@savedorigpublisher=\count494
+\c@publisher=\count495
+\c@savedpublisher=\count496
+\c@language=\count497
+\c@savedlanguage=\count498
+\c@origlanguage=\count499
+\c@savedoriglanguage=\count500
+\c@pageref=\count501
+\c@savedpageref=\count502
 \shorthandwidth=\skip86
 \shortjournalwidth=\skip87
 \shortserieswidth=\skip88
@@ -1690,6 +2108,10 @@ Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 \localshorttitlewidth=\skip97
 \localshortauthorwidth=\skip98
 \localshorteditorwidth=\skip99
+Package biblatex Info: Trying to load enhanced support for Unicode engines...
+Package biblatex Info: ... file 'blx-unicode.def' found.
+
+(/usr/share/texmf-dist/tex/latex/biblatex/blx-unicode.def)
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
 
@@ -1711,13 +2133,13 @@ Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
  (/usr/share/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2018/03/04 v3.11 biblatex compatibility (PK/MW)
-\c@textcitecount=\count496
-\c@textcitetotal=\count497
-\c@textcitemaxnames=\count498
-\c@biburlnumpenalty=\count499
-\c@biburlucpenalty=\count500
-\c@biburllcpenalty=\count501
-\c@smartand=\count502
+\c@textcitecount=\count503
+\c@textcitetotal=\count504
+\c@textcitemaxnames=\count505
+\c@biburlnumpenalty=\count506
+\c@biburlucpenalty=\count507
+\c@biburllcpenalty=\count508
+\c@smartand=\count509
 )
 Package biblatex Info: Trying to load bibliography style 'authoryear'...
 Package biblatex Info: ... file 'authoryear.bbx' found.
@@ -1729,8 +2151,8 @@ Package biblatex Info: ... file 'standard.bbx' found.
 
 (/usr/share/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2018/03/04 v3.11 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count503
-\c@bbx:relatedtotal=\count504
+\c@bbx:relatedcount=\count510
+\c@bbx:relatedtotal=\count511
 ))
 Package biblatex Info: Trying to load citation style 'numeric'...
 Package biblatex Info: ... file 'numeric.cbx' found.
@@ -1763,7 +2185,7 @@ ode.tex
 intersections.code.tex
 (/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryintersections.code.t
 ex
-\pgf@intersect@solutions=\count505
+\pgf@intersect@solutions=\count512
 ))
 (/usr/share/texmf-dist/tex/generic/pgfplots/pgfcontrib/tikzlibrarydecorations.s
 oftclip.code.tex
@@ -1771,7 +2193,7 @@ oftclip.code.tex
 de.tex
 (/usr/share/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_p
 gflibraryintersections.code.tex
-\pgf@intersect@solutions=\count506
+\pgf@intersect@solutions=\count513
 ))))
 (/usr/share/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.decoration
 s.softclip.code.tex))
@@ -1803,19 +2225,17 @@ File: tikzlibrarychains.code.tex 2013/07/15 v3.0.1a (rcs-revision 1.6)
 (/usr/share/texmf-dist/tex/latex/tkz-euclide/tkz-obj-sectors.tex)
 (/usr/share/texmf-dist/tex/latex/tkz-euclide/tkz-obj-angles.tex)
 (/usr/share/texmf-dist/tex/latex/tkz-euclide/tkz-obj-protractor.tex)
-Package hyperref Info: Option `unicode' set `true' on input line 53.
+Package hyperref Info: Option `unicode' set `true' on input line 57.
 
 (/usr/share/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2018/02/06 v6.86b Hyperref: PDF Unicode definition (HO)
-Now handling font encoding PU ...
-... no UTF-8 mapping file for font encoding PU
 )
-Package hyperref Info: Option `unicode' set `true' on input line 53.
-Package hyperref Info: Option `pdftoolbar' set `false' on input line 53.
-Package hyperref Info: Option `pdfmenubar' set `false' on input line 53.
-Package hyperref Info: Option `pdffitwindow' set `false' on input line 53.
-Package hyperref Info: Option `pdfnewwindow' set `false' on input line 53.
-Package hyperref Info: Option `colorlinks' set `false' on input line 53.
+Package hyperref Info: Option `unicode' set `true' on input line 57.
+Package hyperref Info: Option `pdftoolbar' set `false' on input line 57.
+Package hyperref Info: Option `pdfmenubar' set `false' on input line 57.
+Package hyperref Info: Option `pdffitwindow' set `false' on input line 57.
+Package hyperref Info: Option `pdfnewwindow' set `false' on input line 57.
+Package hyperref Info: Option `colorlinks' set `false' on input line 57.
 
 (/usr/share/texmf-dist/tex/latex/sourcecodepro/sourcecodepro.sty
 Package: sourcecodepro 2015/10/09 v2.6 Adobe's Source Code Pro typeface
@@ -1825,166 +2245,287 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 
 (/usr/share/texmf-dist/tex/generic/xkeyval/xkeyval.tex
 (/usr/share/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks55
-\XKV@tempa@toks=\toks56
+\XKV@toks=\toks56
+\XKV@tempa@toks=\toks57
 )
-\XKV@depth=\count507
+\XKV@depth=\count514
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
-))
-(/usr/share/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
-
-(/usr/share/texmf-dist/tex/latex/base/ot1enc.def
-File: ot1enc.def 2017/04/05 v2.0i Standard LaTeX file
-LaTeX Font Info:    Redeclaring font encoding OT1 on input line 48.
+))(load luc: /home/lume/.texlive2018/texmf-var/luatex-cache/generic/fonts/otl/so
+urcecodepro-regular.luc)
+\g__fontspec_family_SourceCodePro_int=\count515
+luaotfload | aux : font no 31 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : no font with id 31(load luc: /home/lume/.texlive2018/texmf-va
+r/luatex-cache/generic/fonts/otl/sourcecodepro-bold.luc)
+luaotfload | aux : font no 32 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : no font with id 32(load luc: /home/lume/.texlive2018/texmf-va
+r/luatex-cache/generic/fonts/otl/sourcecodepro-regularit.luc)
+luaotfload | aux : font no 33 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : no font with id 33(load luc: /home/lume/.texlive2018/texmf-va
+r/luatex-cache/generic/fonts/otl/sourcecodepro-boldit.luc)
+luaotfload | aux : font no 34 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : no font with id 34
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'SourceCodePro(0)' created for font 'SourceCodePro' with options
+. [Ligatures = TeX,Numbers = OldStyle,Scale = 1,Extension =
+. .otf,WordSpace={1,0,0},HyphenChar=None,PunctuationSpace=WordSpace,UprightFont
+. = *-Regular,ItalicFont = *-RegularIt,BoldFont = *-Bold,BoldItalicFont =
+. *-BoldIt].
+.  
+.  This font family consists of the following NFSS series/shapes:
+.  
+. - 'normal' (m/n) with NFSS spec.:
+. <->s*[1]"[SourceCodePro-Regular.otf]:mode=node;script=latn;language=DFLT;+tlig
+;+onum;"
+. - 'small caps'  (m/sc) with NFSS spec.: 
+. and font adjustment code:
+. \fontdimen 2\font =1\fontdimen 2\font \fontdimen 3\font =0\fontdimen 3\font
+. \fontdimen 4\font =0\fontdimen 4\font \fontdimen 7\font =0\fontdimen 2\font
+. \tex_hyphenchar:D \font =-1\scan_stop: 
+. - 'bold' (bx/n) with NFSS spec.:
+. <->s*[1]"[SourceCodePro-Bold.otf]:mode=node;script=latn;language=DFLT;+tlig;+o
+num;"
+. - 'bold small caps'  (bx/sc) with NFSS spec.: 
+. and font adjustment code:
+. \fontdimen 2\font =1\fontdimen 2\font \fontdimen 3\font =0\fontdimen 3\font
+. \fontdimen 4\font =0\fontdimen 4\font \fontdimen 7\font =0\fontdimen 2\font
+. \tex_hyphenchar:D \font =-1\scan_stop: 
+. - 'italic' (m/it) with NFSS spec.:
+. <->s*[1]"[SourceCodePro-RegularIt.otf]:mode=node;script=latn;language=DFLT;+tl
+ig;+onum;"
+. - 'italic small caps'  (m/itsc) with NFSS spec.: 
+. and font adjustment code:
+. \fontdimen 2\font =1\fontdimen 2\font \fontdimen 3\font =0\fontdimen 3\font
+. \fontdimen 4\font =0\fontdimen 4\font \fontdimen 7\font =0\fontdimen 2\font
+. \tex_hyphenchar:D \font =-1\scan_stop: 
+. - 'bold italic' (bx/it) with NFSS spec.:
+. <->s*[1]"[SourceCodePro-BoldIt.otf]:mode=node;script=latn;language=DFLT;+tlig;
++onum;"
+. - 'bold italic small caps'  (bx/itsc) with NFSS spec.: 
+. and font adjustment code:
+. \fontdimen 2\font =1\fontdimen 2\font \fontdimen 3\font =0\fontdimen 3\font
+. \fontdimen 4\font =0\fontdimen 4\font \fontdimen 7\font =0\fontdimen 2\font
+. \tex_hyphenchar:D \font =-1\scan_stop: 
+.................................................
+LaTeX Info: Redefining \ttfamily on input line 118.
+luaotfload | aux : font no 31 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : no font with id 31
+luaotfload | aux : font no 32 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : no font with id 32
+luaotfload | aux : font no 33 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : no font with id 33
+luaotfload | aux : font no 34 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : no font with id 34
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'SourceCodePro(1)' created for font 'SourceCodePro' with options
+. [Ligatures = TeX,Numbers = OldStyle,Scale = 1,Extension = .otf,UprightFont =
+. *-Regular,ItalicFont = *-RegularIt,BoldFont = *-Bold,BoldItalicFont =
+. *-BoldIt].
+.  
+.  This font family consists of the following NFSS series/shapes:
+.  
+. - 'normal' (m/n) with NFSS spec.:
+. <->s*[1]"[SourceCodePro-Regular.otf]:mode=node;script=latn;language=DFLT;+tlig
+;+onum;"
+. - 'small caps'  (m/sc) with NFSS spec.: 
+. - 'bold' (bx/n) with NFSS spec.:
+. <->s*[1]"[SourceCodePro-Bold.otf]:mode=node;script=latn;language=DFLT;+tlig;+o
+num;"
+. - 'bold small caps'  (bx/sc) with NFSS spec.: 
+. - 'italic' (m/it) with NFSS spec.:
+. <->s*[1]"[SourceCodePro-RegularIt.otf]:mode=node;script=latn;language=DFLT;+tl
+ig;+onum;"
+. - 'italic small caps'  (m/itsc) with NFSS spec.: 
+. - 'bold italic' (bx/it) with NFSS spec.:
+. <->s*[1]"[SourceCodePro-BoldIt.otf]:mode=node;script=latn;language=DFLT;+tlig;
++onum;"
+. - 'bold italic small caps'  (bx/itsc) with NFSS spec.: 
+.................................................
+(load luc: /home/lume/.texlive2018/texmf-var/luatex-cache/generic/fonts/otl/sour
+cecodepro-medium.luc)
+luaotfload | aux : font no 35 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : no font with id 35
+luaotfload | aux : font no 32 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : no font with id 32(load luc: /home/lume/.texlive2018/texmf-va
+r/luatex-cache/generic/fonts/otl/sourcecodepro-mediumit.luc)
+luaotfload | aux : font no 36 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : no font with id 36
+luaotfload | aux : font no 34 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : no font with id 34
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'SourceCodePro(2)' created for font 'SourceCodePro' with options
+. [Ligatures = TeX,Numbers = OldStyle,Scale = 1,Extension = .otf,UprightFont =
+. *-Medium,ItalicFont = *-MediumIt,BoldFont = *-Bold,BoldItalicFont =
+. *-BoldIt].
+.  
+.  This font family consists of the following NFSS series/shapes:
+.  
+. - 'normal' (m/n) with NFSS spec.:
+. <->s*[1]"[SourceCodePro-Medium.otf]:mode=node;script=latn;language=DFLT;+tlig;
++onum;"
+. - 'small caps'  (m/sc) with NFSS spec.: 
+. - 'bold' (bx/n) with NFSS spec.:
+. <->s*[1]"[SourceCodePro-Bold.otf]:mode=node;script=latn;language=DFLT;+tlig;+o
+num;"
+. - 'bold small caps'  (bx/sc) with NFSS spec.: 
+. - 'italic' (m/it) with NFSS spec.:
+. <->s*[1]"[SourceCodePro-MediumIt.otf]:mode=node;script=latn;language=DFLT;+tli
+g;+onum;"
+. - 'italic small caps'  (m/itsc) with NFSS spec.: 
+. - 'bold italic' (bx/it) with NFSS spec.:
+. <->s*[1]"[SourceCodePro-BoldIt.otf]:mode=node;script=latn;language=DFLT;+tlig;
++onum;"
+. - 'bold italic small caps'  (bx/itsc) with NFSS spec.: 
+.................................................
+(load luc: /home/lume/.texlive2018/texmf-var/luatex-cache/generic/fonts/otl/sour
+cecodepro-light.luc)
+luaotfload | aux : font no 37 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : no font with id 37(load luc: /home/lume/.texlive2018/texmf-va
+r/luatex-cache/generic/fonts/otl/sourcecodepro-semibold.luc)
+luaotfload | aux : font no 38 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : no font with id 38(load luc: /home/lume/.texlive2018/texmf-va
+r/luatex-cache/generic/fonts/otl/sourcecodepro-lightit.luc)
+luaotfload | aux : font no 39 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : no font with id 39(load luc: /home/lume/.texlive2018/texmf-va
+r/luatex-cache/generic/fonts/otl/sourcecodepro-semiboldit.luc)
+luaotfload | aux : font no 40 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : no font with id 40
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'SourceCodePro(3)' created for font 'SourceCodePro' with options
+. [Ligatures = TeX,Numbers = OldStyle,Scale = 1,Extension = .otf,UprightFont =
+. *-Light,ItalicFont = *-LightIt,BoldFont = *-Semibold,BoldItalicFont =
+. *-SemiboldIt].
+.  
+.  This font family consists of the following NFSS series/shapes:
+.  
+. - 'normal' (m/n) with NFSS spec.:
+. <->s*[1]"[SourceCodePro-Light.otf]:mode=node;script=latn;language=DFLT;+tlig;+
+onum;"
+. - 'small caps'  (m/sc) with NFSS spec.: 
+. - 'bold' (bx/n) with NFSS spec.:
+. <->s*[1]"[SourceCodePro-Semibold.otf]:mode=node;script=latn;language=DFLT;+tli
+g;+onum;"
+. - 'bold small caps'  (bx/sc) with NFSS spec.: 
+. - 'italic' (m/it) with NFSS spec.:
+. <->s*[1]"[SourceCodePro-LightIt.otf]:mode=node;script=latn;language=DFLT;+tlig
+;+onum;"
+. - 'italic small caps'  (m/itsc) with NFSS spec.: 
+. - 'bold italic' (bx/it) with NFSS spec.:
+. <->s*[1]"[SourceCodePro-SemiboldIt.otf]:mode=node;script=latn;language=DFLT;+t
+lig;+onum;"
+. - 'bold italic small caps'  (bx/itsc) with NFSS spec.: 
+.................................................
+(load luc: /home/lume/.texlive2018/texmf-var/luatex-cache/generic/fonts/otl/sour
+cecodepro-extralight.luc)
+luaotfload | aux : font no 41 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : no font with id 41(load luc: /home/lume/.texlive2018/texmf-va
+r/luatex-cache/generic/fonts/otl/sourcecodepro-black.luc)
+luaotfload | aux : font no 42 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : no font with id 42(load luc: /home/lume/.texlive2018/texmf-va
+r/luatex-cache/generic/fonts/otl/sourcecodepro-extralightit.luc)
+luaotfload | aux : font no 43 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : no font with id 43(load luc: /home/lume/.texlive2018/texmf-va
+r/luatex-cache/generic/fonts/otl/sourcecodepro-blackit.luc)
+luaotfload | aux : font no 44 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : no font with id 44
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'SourceCodePro(4)' created for font 'SourceCodePro' with options
+. [Ligatures = TeX,Numbers = OldStyle,Scale = 1,Extension = .otf,UprightFont =
+. *-ExtraLight,ItalicFont = *-ExtraLightIt,BoldFont = *-Black,BoldItalicFont =
+. *-BlackIt].
+.  
+.  This font family consists of the following NFSS series/shapes:
+.  
+. - 'normal' (m/n) with NFSS spec.:
+. <->s*[1]"[SourceCodePro-ExtraLight.otf]:mode=node;script=latn;language=DFLT;+t
+lig;+onum;"
+. - 'small caps'  (m/sc) with NFSS spec.: 
+. - 'bold' (bx/n) with NFSS spec.:
+. <->s*[1]"[SourceCodePro-Black.otf]:mode=node;script=latn;language=DFLT;+tlig;+
+onum;"
+. - 'bold small caps'  (bx/sc) with NFSS spec.: 
+. - 'italic' (m/it) with NFSS spec.:
+. <->s*[1]"[SourceCodePro-ExtraLightIt.otf]:mode=node;script=latn;language=DFLT;
++tlig;+onum;"
+. - 'italic small caps'  (m/itsc) with NFSS spec.: 
+. - 'bold italic' (bx/it) with NFSS spec.:
+. <->s*[1]"[SourceCodePro-BlackIt.otf]:mode=node;script=latn;language=DFLT;+tlig
+;+onum;"
+. - 'bold italic small caps'  (bx/itsc) with NFSS spec.: 
+.................................................
+luaotfload | aux : font no 31 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : no font with id 31
+luaotfload | aux : font no 32 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : no font with id 32
+luaotfload | aux : font no 33 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : no font with id 33
+luaotfload | aux : font no 34 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : no font with id 34
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'SourceCodePro(5)' created for font 'SourceCodePro' with options
+. [Ligatures = TeX,Numbers = OldStyle,Scale = 1,Extension = .otf,Numbers
+. =,UprightFont = *-Regular,ItalicFont = *-RegularIt,BoldFont =
+. *-Bold,BoldItalicFont = *-BoldIt].
+.  
+.  This font family consists of the following NFSS series/shapes:
+.  
+. - 'normal' (m/n) with NFSS spec.:
+. <->s*[1]"[SourceCodePro-Regular.otf]:mode=node;script=latn;language=DFLT;+tlig
+;+onum;"
+. - 'small caps'  (m/sc) with NFSS spec.: 
+. - 'bold' (bx/n) with NFSS spec.:
+. <->s*[1]"[SourceCodePro-Bold.otf]:mode=node;script=latn;language=DFLT;+tlig;+o
+num;"
+. - 'bold small caps'  (bx/sc) with NFSS spec.: 
+. - 'italic' (m/it) with NFSS spec.:
+. <->s*[1]"[SourceCodePro-RegularIt.otf]:mode=node;script=latn;language=DFLT;+tl
+ig;+onum;"
+. - 'italic small caps'  (m/itsc) with NFSS spec.: 
+. - 'bold italic' (bx/it) with NFSS spec.:
+. <->s*[1]"[SourceCodePro-BoldIt.otf]:mode=node;script=latn;language=DFLT;+tlig;
++onum;"
+. - 'bold italic small caps'  (bx/itsc) with NFSS spec.: 
+.................................................
 )
-(/usr/share/texmf-dist/tex/latex/ly1/ly1enc.def
-File: ly1enc.def 2009/07/22 v0.7 TeX 'n ANSI encoding (DPC/KB)
-Now handling font encoding LY1 ...
-... processing UTF-8 mapping file for font encoding LY1
-
-(/usr/share/texmf-dist/tex/latex/base/ly1enc.dfu
-File: ly1enc.dfu 2018/04/05 v1.2c UTF-8 support for inputenc
-   defining Unicode char U+00A0 (decimal 160)
-   defining Unicode char U+00A1 (decimal 161)
-   defining Unicode char U+00A2 (decimal 162)
-   defining Unicode char U+00A3 (decimal 163)
-   defining Unicode char U+00A4 (decimal 164)
-   defining Unicode char U+00A5 (decimal 165)
-   defining Unicode char U+00A6 (decimal 166)
-   defining Unicode char U+00A7 (decimal 167)
-   defining Unicode char U+00AA (decimal 170)
-   defining Unicode char U+00AB (decimal 171)
-   defining Unicode char U+00AD (decimal 173)
-   defining Unicode char U+00AE (decimal 174)
-   defining Unicode char U+00B0 (decimal 176)
-   defining Unicode char U+00B5 (decimal 181)
-   defining Unicode char U+00B6 (decimal 182)
-   defining Unicode char U+00B7 (decimal 183)
-   defining Unicode char U+00BA (decimal 186)
-   defining Unicode char U+00BB (decimal 187)
-   defining Unicode char U+00BC (decimal 188)
-   defining Unicode char U+00BD (decimal 189)
-   defining Unicode char U+00BE (decimal 190)
-   defining Unicode char U+00BF (decimal 191)
-   defining Unicode char U+00C0 (decimal 192)
-   defining Unicode char U+00C1 (decimal 193)
-   defining Unicode char U+00C2 (decimal 194)
-   defining Unicode char U+00C3 (decimal 195)
-   defining Unicode char U+00C4 (decimal 196)
-   defining Unicode char U+00C5 (decimal 197)
-   defining Unicode char U+00C6 (decimal 198)
-   defining Unicode char U+00C7 (decimal 199)
-   defining Unicode char U+00C8 (decimal 200)
-   defining Unicode char U+00C9 (decimal 201)
-   defining Unicode char U+00CA (decimal 202)
-   defining Unicode char U+00CB (decimal 203)
-   defining Unicode char U+00CC (decimal 204)
-   defining Unicode char U+00CD (decimal 205)
-   defining Unicode char U+00CE (decimal 206)
-   defining Unicode char U+00CF (decimal 207)
-   defining Unicode char U+00D0 (decimal 208)
-   defining Unicode char U+00D1 (decimal 209)
-   defining Unicode char U+00D2 (decimal 210)
-   defining Unicode char U+00D3 (decimal 211)
-   defining Unicode char U+00D4 (decimal 212)
-   defining Unicode char U+00D5 (decimal 213)
-   defining Unicode char U+00D6 (decimal 214)
-   defining Unicode char U+00D8 (decimal 216)
-   defining Unicode char U+00D9 (decimal 217)
-   defining Unicode char U+00DA (decimal 218)
-   defining Unicode char U+00DB (decimal 219)
-   defining Unicode char U+00DC (decimal 220)
-   defining Unicode char U+00DD (decimal 221)
-   defining Unicode char U+00DE (decimal 222)
-   defining Unicode char U+00DF (decimal 223)
-   defining Unicode char U+00E0 (decimal 224)
-   defining Unicode char U+00E1 (decimal 225)
-   defining Unicode char U+00E2 (decimal 226)
-   defining Unicode char U+00E3 (decimal 227)
-   defining Unicode char U+00E4 (decimal 228)
-   defining Unicode char U+00E5 (decimal 229)
-   defining Unicode char U+00E6 (decimal 230)
-   defining Unicode char U+00E7 (decimal 231)
-   defining Unicode char U+00E8 (decimal 232)
-   defining Unicode char U+00E9 (decimal 233)
-   defining Unicode char U+00EA (decimal 234)
-   defining Unicode char U+00EB (decimal 235)
-   defining Unicode char U+00EC (decimal 236)
-   defining Unicode char U+00ED (decimal 237)
-   defining Unicode char U+00EE (decimal 238)
-   defining Unicode char U+00EF (decimal 239)
-   defining Unicode char U+00F0 (decimal 240)
-   defining Unicode char U+00F1 (decimal 241)
-   defining Unicode char U+00F2 (decimal 242)
-   defining Unicode char U+00F3 (decimal 243)
-   defining Unicode char U+00F4 (decimal 244)
-   defining Unicode char U+00F5 (decimal 245)
-   defining Unicode char U+00F6 (decimal 246)
-   defining Unicode char U+00F8 (decimal 248)
-   defining Unicode char U+00F9 (decimal 249)
-   defining Unicode char U+00FA (decimal 250)
-   defining Unicode char U+00FB (decimal 251)
-   defining Unicode char U+00FC (decimal 252)
-   defining Unicode char U+00FD (decimal 253)
-   defining Unicode char U+00FE (decimal 254)
-   defining Unicode char U+00FF (decimal 255)
-   defining Unicode char U+0131 (decimal 305)
-   defining Unicode char U+0141 (decimal 321)
-   defining Unicode char U+0142 (decimal 322)
-   defining Unicode char U+0152 (decimal 338)
-   defining Unicode char U+0153 (decimal 339)
-   defining Unicode char U+0160 (decimal 352)
-   defining Unicode char U+0161 (decimal 353)
-   defining Unicode char U+0174 (decimal 372)
-   defining Unicode char U+0175 (decimal 373)
-   defining Unicode char U+0176 (decimal 374)
-   defining Unicode char U+0177 (decimal 375)
-   defining Unicode char U+0178 (decimal 376)
-   defining Unicode char U+017D (decimal 381)
-   defining Unicode char U+017E (decimal 382)
-   defining Unicode char U+0192 (decimal 402)
-   defining Unicode char U+0218 (decimal 536)
-   defining Unicode char U+0219 (decimal 537)
-   defining Unicode char U+021A (decimal 538)
-   defining Unicode char U+021B (decimal 539)
-   defining Unicode char U+02C6 (decimal 710)
-   defining Unicode char U+02DC (decimal 732)
-   defining Unicode char U+2013 (decimal 8211)
-   defining Unicode char U+2014 (decimal 8212)
-   defining Unicode char U+201C (decimal 8220)
-   defining Unicode char U+201D (decimal 8221)
-   defining Unicode char U+2020 (decimal 8224)
-   defining Unicode char U+2021 (decimal 8225)
-   defining Unicode char U+2022 (decimal 8226)
-   defining Unicode char U+2026 (decimal 8230)
-   defining Unicode char U+2030 (decimal 8240)
-   defining Unicode char U+2039 (decimal 8249)
-   defining Unicode char U+203A (decimal 8250)
-   defining Unicode char U+2122 (decimal 8482)
-))
-(/usr/share/texmf-dist/tex/latex/base/t1enc.def
-File: t1enc.def 2017/04/05 v2.0i Standard LaTeX file
-LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
-)
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 105.
-
-(/usr/share/texmf-dist/tex/latex/psnfss/t1ptm.fd
-File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
-))
-(/usr/share/texmf-dist/tex/latex/mweights/mweights.sty
-Package: mweights 2017/03/30 (Bob Tennent) Support package for multiple-weight 
-font packages. 
-LaTeX Info: Redefining \bfseries on input line 22.
-LaTeX Info: Redefining \mdseries on input line 30.
-LaTeX Info: Redefining \rmfamily on input line 38.
-LaTeX Info: Redefining \sffamily on input line 66.
-LaTeX Info: Redefining \ttfamily on input line 94.
-))
 (/usr/share/texmf-dist/tex/latex/doublestroke/dsfont.sty
 Package: dsfont 1995/08/01 v0.1 Double stroke roman fonts
 )
-\c@proposition=\count508
+\c@proposition=\count516
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
 
@@ -2012,39 +2553,34 @@ File: german.lbx 2018/03/04 v3.11 biblatex localization (PK/MW)
 Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 (biblatex)                Loading 'csquotes' recommended.
 
-\@quotelevel=\count509
-\@quotereset=\count510
+\@quotelevel=\count517
+\@quotereset=\count518
 (./FAU-Beamer.aux)
-\openout1 = `FAU-Beamer.aux'.
+\openout1 = FAU-Beamer.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 116.
-LaTeX Font Info:    ... okay on input line 116.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 116.
-LaTeX Font Info:    ... okay on input line 116.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 116.
-LaTeX Font Info:    ... okay on input line 116.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 116.
-LaTeX Font Info:    ... okay on input line 116.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 116.
-LaTeX Font Info:    ... okay on input line 116.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 116.
-LaTeX Font Info:    ... okay on input line 116.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 116.
-LaTeX Font Info:    ... okay on input line 116.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 116.
-LaTeX Font Info:    ... okay on input line 116.
-LaTeX Font Info:    Checking defaults for LY1/ptm/m/n on input line 116.
-LaTeX Font Info:    Try loading font information for LY1+ptm on input line 116.
-
- (/usr/share/texmf-dist/tex/latex/ly1/ly1ptm.fd
-File: ly1ptm.fd 2001/02/01 font definitions for LY1/ptm using Berry names.
-)
-LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
 
 *geometry* driver: auto-detecting
-*geometry* detected driver: pdftex
+*geometry* detected driver: luatex
 *geometry* verbose mode - [ preamble ] result:
-* driver: pdftex
+* driver: luatex
 * paper: custom
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
@@ -2077,37 +2613,37 @@ LaTeX Font Info:    ... okay on input line 116.
 
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count511
-\scratchdimen=\dimen365
+\scratchcounter=\count519
+\scratchdimen=\dimen368
 \scratchbox=\box88
-\nofMPsegments=\count512
-\nofMParguments=\count513
-\everyMPshowfont=\toks57
-\MPscratchCnt=\count514
-\MPscratchDim=\dimen366
-\MPnumerator=\count515
-\makeMPintoPDFobject=\count516
-\everyMPtoPDFconversion=\toks58
+\nofMPsegments=\count520
+\nofMParguments=\count521
+\everyMPshowfont=\toks58
+\MPscratchCnt=\count522
+\MPscratchDim=\dimen369
+\MPnumerator=\count523
+\makeMPintoPDFobject=\count524
+\everyMPtoPDFconversion=\toks59
 ) (/usr/share/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
 (/usr/share/texmf-dist/tex/latex/oberdiek/grfext.sty
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 )
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-38.
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 43
+8.
 Package grfext Info: Graphics extension search list:
-(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG
+,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 
 (/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+
 ))
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box89
-Package hyperref Info: Link coloring OFF on input line 116.
+Package hyperref Info: Link coloring OFF on input line 120.
 
 (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -2115,77 +2651,61 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/share/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count517
+\c@section@level=\count525
 )
-LaTeX Info: Redefining \ref on input line 116.
-LaTeX Info: Redefining \pageref on input line 116.
-LaTeX Info: Redefining \nameref on input line 116.
+LaTeX Info: Redefining \ref on input line 120.
+LaTeX Info: Redefining \pageref on input line 120.
+LaTeX Info: Redefining \nameref on input line 120.
 
 (./FAU-Beamer.out) (./FAU-Beamer.out)
 \@outlinefile=\write7
-\openout7 = `FAU-Beamer.out'.
 
+\openout7 = FAU-Beamer.out
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 116.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 120.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 116.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 120.
 \symnumbers=\mathgroup11
 \sympureletters=\mathgroup12
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/cmr/m/n on input line 116.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 116.
+(Font)                  OT1/cmss/m/n --> TU/lmr/m/n on input line 120.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 120.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> T1/cmss/bx/n on input line 116.
+(Font)                  OT1/cmr/bx/n --> TU/lmss/bx/n on input line 120.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> T1/cmss/bx/n on input line 116.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 116.
+(Font)                  OT1/cmr/bx/n --> TU/lmss/bx/n on input line 120.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 120.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/cmss/m/n on input line 116.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 120.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> T1/cmss/m/n on input line 116.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 116.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/m/n on input line 120.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 120.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> T1/cmss/m/it on input line 116.
+(Font)                  OT1/cmr/m/it --> TU/lmss/m/it on input line 120.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> T1/cmss/m/it on input line 116.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 116.
+(Font)                  OT1/cmr/bx/it --> TU/lmss/m/it on input line 120.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 120.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> T1/SourceCodePro-TOsF/m/n on input lin
-e 116.
+(Font)                  OT1/cmtt/m/n --> TU/SourceCodePro(0)/m/n on input line 1
+20.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> T1/SourceCodePro-TOsF/m/n on input lin
-e 116.
+(Font)                  OT1/cmtt/m/n --> TU/SourceCodePro(0)/m/n on input line 1
+20.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  T1/cmss/m/n --> T1/cmss/bx/n on input line 116.
+(Font)                  TU/lmss/m/n --> TU/lmss/bx/n on input line 120.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T1/cmss/m/it --> T1/cmss/bx/it on input line 116.
+(Font)                  TU/lmss/m/it --> TU/lmss/bx/it on input line 120.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/bx/n --> T1/cmr/bx/n on input line 116.
+(Font)                  OT1/cmss/bx/n --> TU/lmr/bx/n on input line 120.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  T1/cmss/bx/n --> T1/cmss/bx/n on input line 116.
+(Font)                  TU/lmss/bx/n --> TU/lmss/bx/n on input line 120.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  T1/cmss/m/n --> T1/cmss/bx/n on input line 116.
+(Font)                  TU/lmss/m/n --> TU/lmss/bx/n on input line 120.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  T1/cmss/m/it --> T1/cmss/bx/it on input line 116.
+(Font)                  TU/lmss/m/it --> TU/lmss/bx/it on input line 120.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  T1/SourceCodePro-TOsF/m/n --> T1/SourceCodePro-TOsF/bx/
-n on input line 116.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 116.
-LaTeX Font Info:    Encoding `T1' has changed to `OT1' for symbol font
-(Font)              `pureletters' in the math version `normal' on input line 11
-6.
-LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
-(Font)                  T1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 11
-6.
-LaTeX Font Info:    Encoding `T1' has changed to `OT1' for symbol font
-(Font)              `pureletters' in the math version `bold' on input line 116.
-
-LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T1/cmss/bx/it --> OT1/mathkerncmss/m/sl on input line 1
-16.
-LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on inp
-ut line 116.
+(Font)                  TU/SourceCodePro(0)/m/n --> TU/SourceCodePro(0)/bx/n on 
+input line 120.
 
 (/usr/share/texmf-dist/tex/latex/translator/translator-basic-dictionary-English
 .dict
@@ -2211,216 +2731,185 @@ Dictionary: translator-numbers-dictionary, Language: English
 sh.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 116.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 120.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 116.
+(Font)                  OT1/cmss/m/n --> OT1/lmr/m/n on input line 120.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmr/m/n on input line 116.
+(Font)                  OT1/cmss/bx/n --> OT1/lmr/m/n on input line 120.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 116.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 116.
+(Font)                  OT1/lmr/m/n --> OT1/lmr/bx/n on input line 120.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 120.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  T1/cmss/bx/n --> OT1/cmr/bx/n on input line 116.
+(Font)                  TU/lmss/bx/n --> OT1/lmr/bx/n on input line 120.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  T1/cmss/bx/n --> OT1/cmr/bx/n on input line 116.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 116.
+(Font)                  TU/lmss/bx/n --> OT1/lmr/bx/n on input line 120.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 120.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  T1/cmss/m/n --> OT1/cmss/m/n on input line 116.
+(Font)                  TU/lmss/m/n --> OT1/lmss/m/n on input line 120.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  T1/cmss/bx/n --> OT1/cmss/m/n on input line 116.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 116.
+(Font)                  TU/lmss/bx/n --> OT1/lmss/m/n on input line 120.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 120.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  T1/cmss/m/it --> OT1/cmr/m/it on input line 116.
+(Font)                  TU/lmss/m/it --> OT1/lmr/m/it on input line 120.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  T1/cmss/bx/it --> OT1/cmr/m/it on input line 116.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 116.
+(Font)                  TU/lmss/bx/it --> OT1/lmr/m/it on input line 120.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 120.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  T1/SourceCodePro-TOsF/m/n --> OT1/SourceCodePro-TOsF/m/
-n on input line 116.
+(Font)                  TU/SourceCodePro(0)/m/n --> OT1/SourceCodePro(0)/m/n on 
+input line 120.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  T1/SourceCodePro-TOsF/bx/n --> OT1/SourceCodePro-TOsF/m
-/n on input line 116.
+(Font)                  TU/SourceCodePro(0)/bx/n --> OT1/SourceCodePro(0)/m/n on
+ input line 120.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 116.
+(Font)                  OT1/lmss/m/n --> OT1/lmss/bx/n on input line 120.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/m/it --> OT1/cmr/bx/it on input line 116.
-Now handling font encoding TS1 ...
-... processing UTF-8 mapping file for font encoding TS1
- (/usr/share/texmf-dist/tex/latex/base/ts1enc.dfu
-File: ts1enc.dfu 2018/04/05 v1.2c UTF-8 support for inputenc
-   defining Unicode char U+00A2 (decimal 162)
-   defining Unicode char U+00A3 (decimal 163)
-   defining Unicode char U+00A4 (decimal 164)
-   defining Unicode char U+00A5 (decimal 165)
-   defining Unicode char U+00A6 (decimal 166)
-   defining Unicode char U+00A7 (decimal 167)
-   defining Unicode char U+00A8 (decimal 168)
-   defining Unicode char U+00A9 (decimal 169)
-   defining Unicode char U+00AA (decimal 170)
-   defining Unicode char U+00AC (decimal 172)
-   defining Unicode char U+00AE (decimal 174)
-   defining Unicode char U+00AF (decimal 175)
-   defining Unicode char U+00B0 (decimal 176)
-   defining Unicode char U+00B1 (decimal 177)
-   defining Unicode char U+00B2 (decimal 178)
-   defining Unicode char U+00B3 (decimal 179)
-   defining Unicode char U+00B4 (decimal 180)
-   defining Unicode char U+00B5 (decimal 181)
-   defining Unicode char U+00B6 (decimal 182)
-   defining Unicode char U+00B7 (decimal 183)
-   defining Unicode char U+00B9 (decimal 185)
-   defining Unicode char U+00BA (decimal 186)
-   defining Unicode char U+00BC (decimal 188)
-   defining Unicode char U+00BD (decimal 189)
-   defining Unicode char U+00BE (decimal 190)
-   defining Unicode char U+00D7 (decimal 215)
-   defining Unicode char U+00F7 (decimal 247)
-   defining Unicode char U+0192 (decimal 402)
-   defining Unicode char U+02C7 (decimal 711)
-   defining Unicode char U+02D8 (decimal 728)
-   defining Unicode char U+02DD (decimal 733)
-   defining Unicode char U+0E3F (decimal 3647)
-   defining Unicode char U+2016 (decimal 8214)
-   defining Unicode char U+2020 (decimal 8224)
-   defining Unicode char U+2021 (decimal 8225)
-   defining Unicode char U+2022 (decimal 8226)
-   defining Unicode char U+2030 (decimal 8240)
-   defining Unicode char U+2031 (decimal 8241)
-   defining Unicode char U+203B (decimal 8251)
-   defining Unicode char U+203D (decimal 8253)
-   defining Unicode char U+2044 (decimal 8260)
-   defining Unicode char U+204E (decimal 8270)
-   defining Unicode char U+2052 (decimal 8274)
-   defining Unicode char U+20A1 (decimal 8353)
-   defining Unicode char U+20A4 (decimal 8356)
-   defining Unicode char U+20A6 (decimal 8358)
-   defining Unicode char U+20A9 (decimal 8361)
-   defining Unicode char U+20AB (decimal 8363)
-   defining Unicode char U+20AC (decimal 8364)
-   defining Unicode char U+20B1 (decimal 8369)
-   defining Unicode char U+2103 (decimal 8451)
-   defining Unicode char U+2116 (decimal 8470)
-   defining Unicode char U+2117 (decimal 8471)
-   defining Unicode char U+211E (decimal 8478)
-   defining Unicode char U+2120 (decimal 8480)
-   defining Unicode char U+2122 (decimal 8482)
-   defining Unicode char U+2126 (decimal 8486)
-   defining Unicode char U+2127 (decimal 8487)
-   defining Unicode char U+212E (decimal 8494)
-   defining Unicode char U+2190 (decimal 8592)
-   defining Unicode char U+2191 (decimal 8593)
-   defining Unicode char U+2192 (decimal 8594)
-   defining Unicode char U+2193 (decimal 8595)
-   defining Unicode char U+2329 (decimal 9001)
-   defining Unicode char U+232A (decimal 9002)
-   defining Unicode char U+2422 (decimal 9250)
-   defining Unicode char U+25E6 (decimal 9702)
-   defining Unicode char U+25EF (decimal 9711)
-   defining Unicode char U+266A (decimal 9834)
-   defining Unicode char U+FEFF (decimal 65279)
-)
-(/usr/share/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
+(Font)                  OT1/lmr/m/it --> OT1/lmr/bx/it on input line 120.
+ (/usr/share/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
 File: siunitx-abbreviations.cfg 2017/11/26 v2.7k siunitx: Abbreviated units
 )
 
-Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
-ick labels; missing features). Consider writing \pgfplotsset{compat=1.16} into 
-your preamble.
- on input line 116.
+Package pgfplots Warning: running in backwards compatibility mode (unsuitable ti
+ck labels; missing features). Consider writing \pgfplotsset{compat=1.16} into yo
+ur preamble.
+ on input line 120.
 
-Package biblatex Info: Input encoding 'utf8' detected.
+.................................................
+. fontspec info: "setup-math"
+. 
+. Adjusting the maths setup (use [no-math] to avoid this).
+.................................................
+\symlegacymaths=\mathgroup13
+LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 120.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 120.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 120.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 120.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 120.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 120.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 120.
+LaTeX Font Info:    Redeclaring math accent \check on input line 120.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 120.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 120.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 120.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 120.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `normal' on input line 120.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/lmr/m/n --> TU/lmr/m/n on input line 120.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `bold' on input line 120.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/lmr/bx/n --> TU/lmr/m/n on input line 120.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 120.
+LaTeX Font Info:    Redeclaring math alphabet \mathrm on input line 120.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/lmr/m/it --> TU/lmr/m/it on input line 120.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/lmr/bx/n --> TU/lmr/bx/n on input line 120.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/lmss/m/n --> TU/lmss/m/n on input line 120.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/SourceCodePro(0)/m/n --> TU/SourceCodePro(0)/m/n on 
+input line 120.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  TU/lmr/m/n --> TU/lmr/bx/n on input line 120.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/lmr/bx/it --> TU/lmr/bx/it on input line 120.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/lmss/bx/n --> TU/lmss/bx/n on input line 120.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/SourceCodePro(0)/m/n --> TU/SourceCodePro(0)/bx/n on
+ input line 120.
+Package biblatex Info: LuaTeX detected.
+(biblatex)             Assuming input encoding 'utf8'.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
 Package biblatex Info: Input encoding 'utf8' specified.
 Package biblatex Info: Data encoding 'utf8' specified.
 (biblatex)             No need to reencode data.
-\openout6 = `FAU-Beamer-blx.bib'.
 
+\openout6 = FAU-Beamer-blx.bib
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'FAU-Beamer.bbl' found.
 (./FAU-Beamer.bbl)
-Package biblatex Info: Reference section=0 on input line 116.
-Package biblatex Info: Reference segment=0 on input line 116.
- (./FAU-Beamer.nav)
-LaTeX Font Info:    Try loading font information for U+eur on input line 116.
-
-(/usr/share/texmf-dist/tex/latex/amsfonts/ueur.fd
+Package biblatex Info: Reference section=0 on input line 120.
+Package biblatex Info: Reference segment=0 on input line 120.
+ (./FAU-Beamer.nav)(load luc: /home/lume/.texlive2018/texmf-var/luatex-cache/gen
+eric/fonts/otl/lmsans8-regular.luc)(load luc: /home/lume/.texlive2018/texmf-var/
+luatex-cache/generic/fonts/otl/lmroman8-regular.luc)(load luc: /home/lume/.texli
+ve2018/texmf-var/luatex-cache/generic/fonts/otl/lmroman6-regular.luc)
+LaTeX Font Info:    Try loading font information for U+eur on input line 120.
+ (/usr/share/texmf-dist/tex/latex/amsfonts/ueur.fd
 File: ueur.fd 2013/01/14 v3.01 Euler Roman
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 116.
+LaTeX Font Info:    Try loading font information for U+msa on input line 120.
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 116.
+LaTeX Font Info:    Try loading font information for U+msb on input line 120.
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+euf on input line 116.
+LaTeX Font Info:    Try loading font information for U+euf on input line 120.
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 )
-LaTeX Font Info:    Try loading font information for U+eus on input line 116.
+LaTeX Font Info:    Try loading font information for U+eus on input line 120.
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/ueus.fd
 File: ueus.fd 2013/01/14 v3.01 Euler Script
 )
-LaTeX Font Info:    Try loading font information for U+euex on input line 116.
+LaTeX Font Info:    Try loading font information for U+euex on input line 120.
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/ueuex.fd
 File: ueuex.fd 2013/01/14 v3.01 Euler extra symbols
 )
-LaTeX Font Info:    Try loading font information for U+wasy on input line 116.
+LaTeX Font Info:    Try loading font information for U+wasy on input line 120.
 
 (/usr/share/texmf-dist/tex/latex/wasysym/uwasy.fd
 File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
 )
-LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input 
-line 116.
-
-(/usr/share/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
-File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
-thkerncmss.
-)
-LaTeX Font Info:    Try loading font information for OT1+SourceCodePro-TOsF on 
-input line 116.
-
-(/usr/share/texmf-dist/tex/latex/sourcecodepro/OT1SourceCodePro-TOsF.fd
-File: OT1SourceCodePro-TOsF.fd 2015/10/08 (autoinst) Font definitions for OT1/S
-ourceCodePro-TOsF.
-)
-LaTeX Font Info:    Font shape `OT1/SourceCodePro-TOsF/m/n' will be
-(Font)              scaled to size 10.95pt on input line 116.
-LaTeX Font Info:    Font shape `OT1/SourceCodePro-TOsF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 116.
-LaTeX Font Info:    Font shape `OT1/SourceCodePro-TOsF/m/n' will be
-(Font)              scaled to size 6.0pt on input line 116.
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <8> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 120.
+(load luc: /home/lume/.texlive2018/texmf-var/luatex-cache/generic/fonts/otl/lmsa
+ns8-oblique.luc)
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <6> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 120.
+LaTeX Font Info:    Font shape `TU/SourceCodePro(0)/m/n' will be
+(Font)              scaled to size 10.95pt on input line 120.
+LaTeX Font Info:    Font shape `TU/SourceCodePro(0)/m/n' will be
+(Font)              scaled to size 8.0pt on input line 120.
+LaTeX Font Info:    Font shape `TU/SourceCodePro(0)/m/n' will be
+(Font)              scaled to size 6.0pt on input line 120.
+(load luc: /home/lume/.texlive2018/texmf-var/luatex-cache/generic/fonts/otl/lmsa
+ns12-regular.luc)
 <siemens.jpg, id=37, 96.36pt x 37.0986pt>
 File: siemens.jpg Graphic file (type jpg)
 <use siemens.jpg>
-Package pdftex.def Info: siemens.jpg  used on input line 129.
-(pdftex.def)             Requested size: 71.13188pt x 27.38573pt.
+Package luatex.def Info: siemens.jpg  used on input line 133.
+(luatex.def)             Requested size: 71.13188pt x 27.38573pt.
 <cs6.png, id=38, 112.42pt x 65.24374pt>
 File: cs6.png Graphic file (type png)
 <use cs6.png>
-Package pdftex.def Info: cs6.png  used on input line 129.
-(pdftex.def)             Requested size: 56.9055pt x 33.02597pt.
-<FAU-logo.pdf, id=40, 120.50948pt x 51.07231pt>
+Package luatex.def Info: cs6.png  used on input line 133.
+(luatex.def)             Requested size: 56.9055pt x 33.02597pt.
+<FAU-logo.pdf, id=39, 120.50948pt x 51.07231pt>
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package pdftex.def Info: FAU-logo.pdf  used on input line 129.
-(pdftex.def)             Requested size: 36.98866pt x 15.6756pt.
+Package luatex.def Info: FAU-logo.pdf  used on input line 133.
+(luatex.def)             Requested size: 36.98866pt x 15.6756pt.
+ [1
 
-[1
-
-{/usr/share/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./siemens.jpg> <./cs
-6.png> <./FAU-logo.pdf>] (./FAU-Beamer.toc)
+{/usr/share/texmf-var/fonts/map/pdftex/updmap/pdftex.map}<./siemens.jpg><./cs6.p
+ng><./FAU-logo.pdf>] (./FAU-Beamer.toc)
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package pdftex.def Info: FAU-logo.pdf  used on input line 134.
-(pdftex.def)             Requested size: 29.99857pt x 12.99948pt.
+Package luatex.def Info: FAU-logo.pdf  used on input line 138.
+(luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 [][] 
@@ -2428,11 +2917,12 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 
 [2
 
-]
+](load luc: /home/lume/.texlive2018/texmf-var/luatex-cache/generic/fonts/otl/lms
+ans17-regular.luc)
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package pdftex.def Info: FAU-logo.pdf  used on input line 136.
-(pdftex.def)             Requested size: 29.99857pt x 12.99948pt.
+Package luatex.def Info: FAU-logo.pdf  used on input line 140.
+(luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 [][] 
@@ -2441,23 +2931,15 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 [3
 
 ]
-
-LaTeX Font Warning: Font shape `T1/cmss/m/n' in size <13> not available
-(Font)              size <12> substituted on input line 150.
-
 <pointcloud.pdf, id=77, 241.63568pt x 173.55281pt>
 File: pointcloud.pdf Graphic file (type pdf)
 <use pointcloud.pdf>
-Package pdftex.def Info: pointcloud.pdf  used on input line 150.
-(pdftex.def)             Requested size: 113.81102pt x 81.74194pt.
-
-LaTeX Font Warning: Font shape `T1/cmss/bx/n' in size <13> not available
-(Font)              size <12> substituted on input line 150.
-
+Package luatex.def Info: pointcloud.pdf  used on input line 154.
+(luatex.def)             Requested size: 113.81102pt x 81.74194pt.
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package pdftex.def Info: FAU-logo.pdf  used on input line 150.
-(pdftex.def)             Requested size: 29.99857pt x 12.99948pt.
+Package luatex.def Info: FAU-logo.pdf  used on input line 154.
+(luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 [][] 
@@ -2465,13 +2947,18 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 
 [4
 
- <./pointcloud.pdf>]
-LaTeX Font Info:    Font shape `OT1/SourceCodePro-TOsF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 163.
+<./pointcloud.pdf>](load luc: /home/lume/.texlive2018/texmf-var/luatex-cache/gen
+eric/fonts/otl/lmroman12-regular.luc)
+LaTeX Font Info:    Font shape `TU/SourceCodePro(0)/m/n' will be
+(Font)              scaled to size 12.0pt on input line 167.
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <12> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 167.
+(load luc: /home/lume/.texlive2018/texmf-var/luatex-cache/generic/fonts/otl/lmsa
+ns12-oblique.luc)
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package pdftex.def Info: FAU-logo.pdf  used on input line 163.
-(pdftex.def)             Requested size: 29.99857pt x 12.99948pt.
+Package luatex.def Info: FAU-logo.pdf  used on input line 167.
+(luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 [][] 
@@ -2482,8 +2969,8 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 ]
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package pdftex.def Info: FAU-logo.pdf  used on input line 179.
-(pdftex.def)             Requested size: 29.99857pt x 12.99948pt.
+Package luatex.def Info: FAU-logo.pdf  used on input line 183.
+(luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 [][] 
@@ -2492,71 +2979,74 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 [6
 
 ]
-<figure1_a.pdf, id=2561, 138.34686pt x 198.47148pt>
+<figure1_a.pdf, id=2558, 138.34686pt x 198.47148pt>
 File: figure1_a.pdf Graphic file (type pdf)
 <use figure1_a.pdf>
-Package pdftex.def Info: figure1_a.pdf  used on input line 197.
-(pdftex.def)             Requested size: 113.81102pt x 163.27461pt.
+Package luatex.def Info: figure1_a.pdf  used on input line 201.
+(luatex.def)             Requested size: 113.81102pt x 163.27461pt.
 
-Overfull \hbox (6.2579pt too wide) in paragraph at lines 197--197
+Overfull \hbox (6.2579pt too wide) in paragraph at lines 201--201
 [][] 
  []
 
-LaTeX Font Info:    Calculating math sizes for size <13> on input line 197.
-
-LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <13> not available
-(Font)              size <12> substituted on input line 197.
-
-
-LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <6.5> not available
-(Font)              size <6> substituted on input line 197.
-
+LaTeX Font Info:    Calculating math sizes for size <13> on input line 201.
+(load luc: /home/lume/.texlive2018/texmf-var/luatex-cache/generic/fonts/otl/lmro
+man9-regular.luc)(load luc: /home/lume/.texlive2018/texmf-var/luatex-cache/gener
+ic/fonts/otl/lmroman7-regular.luc)
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <13> not available
-(Font)              size <12> substituted on input line 197.
+(Font)              size <12> substituted on input line 201.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <6.5> not available
-(Font)              size <6> substituted on input line 197.
+(Font)              size <6> substituted on input line 201.
 
+(load luc: /home/lume/.texlive2018/texmf-var/luatex-cache/generic/fonts/otl/lmsa
+ns9-regular.luc)
+LaTeX Font Info:    Font shape `TU/SourceCodePro(0)/m/n' will be
+(Font)              scaled to size 13.0pt on input line 201.
+LaTeX Font Info:    Font shape `TU/SourceCodePro(0)/m/n' will be
+(Font)              scaled to size 9.09996pt on input line 201.
+LaTeX Font Info:    Font shape `TU/SourceCodePro(0)/m/n' will be
+(Font)              scaled to size 6.5pt on input line 201.
 
-LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <13> not available
-(Font)              size <12> substituted on input line 197.
-
-
-LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <6.5> not available
-(Font)              size <6> substituted on input line 197.
-
-LaTeX Font Info:    Font shape `OT1/SourceCodePro-TOsF/m/n' will be
-(Font)              scaled to size 13.0pt on input line 197.
-LaTeX Font Info:    Font shape `OT1/SourceCodePro-TOsF/m/n' will be
-(Font)              scaled to size 9.09996pt on input line 197.
-LaTeX Font Info:    Font shape `OT1/SourceCodePro-TOsF/m/n' will be
-(Font)              scaled to size 6.5pt on input line 197.
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <13> not available
-(Font)              size <12> substituted on input line 197.
+(Font)              size <12> substituted on input line 201.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <6.5> not available
-(Font)              size <6> substituted on input line 197.
+(Font)              size <6> substituted on input line 201.
 
 
 LaTeX Font Warning: Font shape `U/wasy/m/n' in size <13> not available
-(Font)              size <12> substituted on input line 197.
+(Font)              size <12> substituted on input line 201.
 
 
 LaTeX Font Warning: Font shape `U/wasy/m/n' in size <6.5> not available
-(Font)              size <6> substituted on input line 197.
+(Font)              size <6> substituted on input line 201.
+
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <13> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 201.
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <9.09996> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 201.
+(load luc: /home/lume/.texlive2018/texmf-var/luatex-cache/generic/fonts/otl/lmsa
+ns9-oblique.luc)
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <6.5> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 201.
 
 
-LaTeX Font Warning: Font shape `T1/cmss/m/n' in size <6.5> not available
-(Font)              size <6> substituted on input line 197.
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <13> not available
+(Font)              size <12> substituted on input line 201.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <6.5> not available
+(Font)              size <6> substituted on input line 201.
 
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package pdftex.def Info: FAU-logo.pdf  used on input line 197.
-(pdftex.def)             Requested size: 29.99857pt x 12.99948pt.
+Package luatex.def Info: FAU-logo.pdf  used on input line 201.
+(luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 [][] 
@@ -2564,27 +3054,26 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 
 [7
 
- <./figure1_a.pdf>]
-<figure1_c.pdf, id=2684, 138.34686pt x 198.47148pt>
+<./figure1_a.pdf>]
+<figure1_c.pdf, id=2680, 138.34686pt x 198.47148pt>
 File: figure1_c.pdf Graphic file (type pdf)
 <use figure1_c.pdf>
-Package pdftex.def Info: figure1_c.pdf  used on input line 218.
-(pdftex.def)             Requested size: 113.81102pt x 163.27461pt.
+Package luatex.def Info: figure1_c.pdf  used on input line 222.
+(luatex.def)             Requested size: 113.81102pt x 163.27461pt.
 
-Overfull \hbox (6.2579pt too wide) in paragraph at lines 218--218
+Overfull \hbox (6.2579pt too wide) in paragraph at lines 222--222
 [][] 
  []
 
 
-Overfull \hbox (19.18916pt too wide) detected at line 218
-[]\U/euf/m/n/13 (\OT1/mathkerncmss/m/sl/13 x\U/euf/m/n/13 ) = [] \U/eur/m/n/13 
-:
+Overfull \hbox (22.4732pt too wide) detected at line 222
+[]\U/euf/m/n/13 (\TU/lmss/m/sl/13 x\U/euf/m/n/13 ) = [] \U/eur/m/n/13 :
  []
 
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package pdftex.def Info: FAU-logo.pdf  used on input line 218.
-(pdftex.def)             Requested size: 29.99857pt x 12.99948pt.
+Package luatex.def Info: FAU-logo.pdf  used on input line 222.
+(luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 [][] 
@@ -2592,32 +3081,40 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 
 [8
 
- <./figure1_c.pdf>]
-<figure1_d.pdf, id=2723, 138.34686pt x 198.47148pt>
+<./figure1_c.pdf>]
+<figure1_d.pdf, id=2720, 138.34686pt x 198.47148pt>
 File: figure1_d.pdf Graphic file (type pdf)
 <use figure1_d.pdf>
-Package pdftex.def Info: figure1_d.pdf  used on input line 235.
-(pdftex.def)             Requested size: 113.81102pt x 163.27461pt.
+Package luatex.def Info: figure1_d.pdf  used on input line 239.
+(luatex.def)             Requested size: 113.81102pt x 163.27461pt.
 
-Overfull \hbox (6.2579pt too wide) in paragraph at lines 235--235
+Overfull \hbox (6.2579pt too wide) in paragraph at lines 239--239
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 235--235
+Underfull \hbox (badness 10000) in paragraph at lines 239--239
 
  []
 
-LaTeX Font Info:    Font shape `OT1/SourceCodePro-TOsF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 235.
-LaTeX Font Info:    Font shape `OT1/SourceCodePro-TOsF/m/n' will be
-(Font)              scaled to size 7.0pt on input line 235.
-LaTeX Font Info:    Font shape `OT1/SourceCodePro-TOsF/m/n' will be
-(Font)              scaled to size 5.0pt on input line 235.
+(load luc: /home/lume/.texlive2018/texmf-var/luatex-cache/generic/fonts/otl/lmro
+man5-regular.luc)
+LaTeX Font Info:    Font shape `TU/SourceCodePro(0)/m/n' will be
+(Font)              scaled to size 10.0pt on input line 239.
+LaTeX Font Info:    Font shape `TU/SourceCodePro(0)/m/n' will be
+(Font)              scaled to size 7.0pt on input line 239.
+LaTeX Font Info:    Font shape `TU/SourceCodePro(0)/m/n' will be
+(Font)              scaled to size 5.0pt on input line 239.
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <10> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 239.
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <7> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 239.
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <5> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 239.
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package pdftex.def Info: FAU-logo.pdf  used on input line 235.
-(pdftex.def)             Requested size: 29.99857pt x 12.99948pt.
+Package luatex.def Info: FAU-logo.pdf  used on input line 239.
+(luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 [][] 
@@ -2625,11 +3122,11 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 
 [9
 
- <./figure1_d.pdf>]
+<./figure1_d.pdf>]
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package pdftex.def Info: FAU-logo.pdf  used on input line 249.
-(pdftex.def)             Requested size: 29.99857pt x 12.99948pt.
+Package luatex.def Info: FAU-logo.pdf  used on input line 253.
+(luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 [][] 
@@ -2640,8 +3137,8 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 ]
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package pdftex.def Info: FAU-logo.pdf  used on input line 252.
-(pdftex.def)             Requested size: 29.99857pt x 12.99948pt.
+Package luatex.def Info: FAU-logo.pdf  used on input line 256.
+(luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 [][] 
@@ -2650,14 +3147,10 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 [11
 
 ]
-
-LaTeX Font Warning: Font shape `T1/cmss/m/it' in size <13> not available
-(Font)              size <12> substituted on input line 262.
-
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package pdftex.def Info: FAU-logo.pdf  used on input line 262.
-(pdftex.def)             Requested size: 29.99857pt x 12.99948pt.
+Package luatex.def Info: FAU-logo.pdf  used on input line 266.
+(luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 [][] 
@@ -2668,8 +3161,8 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 ]
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package pdftex.def Info: FAU-logo.pdf  used on input line 274.
-(pdftex.def)             Requested size: 29.99857pt x 12.99948pt.
+Package luatex.def Info: FAU-logo.pdf  used on input line 278.
+(luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 [][] 
@@ -2678,15 +3171,15 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 [13
 
 ]
-<simplicialcomplexes.pdf, id=2788, 855.33517pt x 173.55283pt>
+<simplicialcomplexes.pdf, id=2787, 855.33517pt x 173.55283pt>
 File: simplicialcomplexes.pdf Graphic file (type pdf)
 <use simplicialcomplexes.pdf>
-Package pdftex.def Info: simplicialcomplexes.pdf  used on input line 289.
-(pdftex.def)             Requested size: 398.3386pt x 80.82568pt.
+Package luatex.def Info: simplicialcomplexes.pdf  used on input line 293.
+(luatex.def)             Requested size: 398.3386pt x 80.82568pt.
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package pdftex.def Info: FAU-logo.pdf  used on input line 289.
-(pdftex.def)             Requested size: 29.99857pt x 12.99948pt.
+Package luatex.def Info: FAU-logo.pdf  used on input line 293.
+(luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 [][] 
@@ -2694,11 +3187,11 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 
 [14
 
- <./simplicialcomplexes.pdf>]
+<./simplicialcomplexes.pdf>]
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package pdftex.def Info: FAU-logo.pdf  used on input line 302.
-(pdftex.def)             Requested size: 29.99857pt x 12.99948pt.
+Package luatex.def Info: FAU-logo.pdf  used on input line 306.
+(luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 [][] 
@@ -2709,8 +3202,8 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 ]
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package pdftex.def Info: FAU-logo.pdf  used on input line 322.
-(pdftex.def)             Requested size: 29.99857pt x 12.99948pt.
+Package luatex.def Info: FAU-logo.pdf  used on input line 326.
+(luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 [][] 
@@ -2722,12 +3215,12 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 <chain-complex.pdf, id=10410, 160.80615pt x 71.36116pt>
 File: chain-complex.pdf Graphic file (type pdf)
 <use chain-complex.pdf>
-Package pdftex.def Info: chain-complex.pdf  used on input line 348.
-(pdftex.def)             Requested size: 278.83578pt x 123.75798pt.
+Package luatex.def Info: chain-complex.pdf  used on input line 352.
+(luatex.def)             Requested size: 278.83578pt x 123.75798pt.
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package pdftex.def Info: FAU-logo.pdf  used on input line 348.
-(pdftex.def)             Requested size: 29.99857pt x 12.99948pt.
+Package luatex.def Info: FAU-logo.pdf  used on input line 352.
+(luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 [][] 
@@ -2735,11 +3228,11 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 
 [17
 
- <./chain-complex.pdf>]
+<./chain-complex.pdf>]
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package pdftex.def Info: FAU-logo.pdf  used on input line 362.
-(pdftex.def)             Requested size: 29.99857pt x 12.99948pt.
+Package luatex.def Info: FAU-logo.pdf  used on input line 366.
+(luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 [][] 
@@ -2750,8 +3243,8 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 ]
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package pdftex.def Info: FAU-logo.pdf  used on input line 370.
-(pdftex.def)             Requested size: 29.99857pt x 12.99948pt.
+Package luatex.def Info: FAU-logo.pdf  used on input line 374.
+(luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 [][] 
@@ -2762,8 +3255,8 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 ]
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package pdftex.def Info: FAU-logo.pdf  used on input line 380.
-(pdftex.def)             Requested size: 29.99857pt x 12.99948pt.
+Package luatex.def Info: FAU-logo.pdf  used on input line 384.
+(luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 [][] 
@@ -2774,8 +3267,8 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 ]
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package pdftex.def Info: FAU-logo.pdf  used on input line 390.
-(pdftex.def)             Requested size: 29.99857pt x 12.99948pt.
+Package luatex.def Info: FAU-logo.pdf  used on input line 394.
+(luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 [][] 
@@ -2786,8 +3279,8 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 ]
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package pdftex.def Info: FAU-logo.pdf  used on input line 393.
-(pdftex.def)             Requested size: 29.99857pt x 12.99948pt.
+Package luatex.def Info: FAU-logo.pdf  used on input line 397.
+(luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 [][] 
@@ -2799,17 +3292,17 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 <figure2_a.pdf, id=10469, 228.02188pt x 228.02188pt>
 File: figure2_a.pdf Graphic file (type pdf)
 <use figure2_a.pdf>
-Package pdftex.def Info: figure2_a.pdf  used on input line 410.
-(pdftex.def)             Requested size: 113.81102pt x 113.81233pt.
+Package luatex.def Info: figure2_a.pdf  used on input line 414.
+(luatex.def)             Requested size: 113.81102pt x 113.81233pt.
 
-Overfull \hbox (6.2579pt too wide) in paragraph at lines 410--410
+Overfull \hbox (6.2579pt too wide) in paragraph at lines 414--414
 [][] 
  []
 
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package pdftex.def Info: FAU-logo.pdf  used on input line 410.
-(pdftex.def)             Requested size: 29.99857pt x 12.99948pt.
+Package luatex.def Info: FAU-logo.pdf  used on input line 414.
+(luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 [][] 
@@ -2817,21 +3310,21 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 
 [23
 
- <./figure2_a.pdf>]
-<figure2_b1.pdf, id=10477, 228.02188pt x 228.02188pt>
+<./figure2_a.pdf>]
+<figure2_b1.pdf, id=10478, 228.02188pt x 228.02188pt>
 File: figure2_b1.pdf Graphic file (type pdf)
 <use figure2_b1.pdf>
-Package pdftex.def Info: figure2_b1.pdf  used on input line 428.
-(pdftex.def)             Requested size: 113.81102pt x 113.81233pt.
+Package luatex.def Info: figure2_b1.pdf  used on input line 432.
+(luatex.def)             Requested size: 113.81102pt x 113.81233pt.
 
-Overfull \hbox (6.2579pt too wide) in paragraph at lines 428--428
+Overfull \hbox (6.2579pt too wide) in paragraph at lines 432--432
 [][] 
  []
 
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package pdftex.def Info: FAU-logo.pdf  used on input line 428.
-(pdftex.def)             Requested size: 29.99857pt x 12.99948pt.
+Package luatex.def Info: FAU-logo.pdf  used on input line 432.
+(luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 [][] 
@@ -2839,21 +3332,21 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 
 [24
 
- <./figure2_b1.pdf>]
-<figure2_b2.pdf, id=15637, 228.02188pt x 228.02188pt>
+<./figure2_b1.pdf>]
+<figure2_b2.pdf, id=15638, 228.02188pt x 228.02188pt>
 File: figure2_b2.pdf Graphic file (type pdf)
 <use figure2_b2.pdf>
-Package pdftex.def Info: figure2_b2.pdf  used on input line 442.
-(pdftex.def)             Requested size: 113.81102pt x 113.81233pt.
+Package luatex.def Info: figure2_b2.pdf  used on input line 446.
+(luatex.def)             Requested size: 113.81102pt x 113.81233pt.
 
-Overfull \hbox (6.2579pt too wide) in paragraph at lines 442--442
+Overfull \hbox (6.2579pt too wide) in paragraph at lines 446--446
 [][] 
  []
 
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package pdftex.def Info: FAU-logo.pdf  used on input line 442.
-(pdftex.def)             Requested size: 29.99857pt x 12.99948pt.
+Package luatex.def Info: FAU-logo.pdf  used on input line 446.
+(luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 [][] 
@@ -2861,21 +3354,21 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 
 [25
 
- <./figure2_b2.pdf>]
+<./figure2_b2.pdf>]
 <figure2_b3.pdf, id=20798, 228.02188pt x 228.02188pt>
 File: figure2_b3.pdf Graphic file (type pdf)
 <use figure2_b3.pdf>
-Package pdftex.def Info: figure2_b3.pdf  used on input line 456.
-(pdftex.def)             Requested size: 113.81102pt x 113.81233pt.
+Package luatex.def Info: figure2_b3.pdf  used on input line 460.
+(luatex.def)             Requested size: 113.81102pt x 113.81233pt.
 
-Overfull \hbox (6.2579pt too wide) in paragraph at lines 456--456
+Overfull \hbox (6.2579pt too wide) in paragraph at lines 460--460
 [][] 
  []
 
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package pdftex.def Info: FAU-logo.pdf  used on input line 456.
-(pdftex.def)             Requested size: 29.99857pt x 12.99948pt.
+Package luatex.def Info: FAU-logo.pdf  used on input line 460.
+(luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 [][] 
@@ -2883,21 +3376,21 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 
 [26
 
- <./figure2_b3.pdf>]
+<./figure2_b3.pdf>]
 <figure2_b4.pdf, id=25959, 228.02188pt x 228.02188pt>
 File: figure2_b4.pdf Graphic file (type pdf)
 <use figure2_b4.pdf>
-Package pdftex.def Info: figure2_b4.pdf  used on input line 470.
-(pdftex.def)             Requested size: 113.81102pt x 113.81233pt.
+Package luatex.def Info: figure2_b4.pdf  used on input line 474.
+(luatex.def)             Requested size: 113.81102pt x 113.81233pt.
 
-Overfull \hbox (6.2579pt too wide) in paragraph at lines 470--470
+Overfull \hbox (6.2579pt too wide) in paragraph at lines 474--474
 [][] 
  []
 
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package pdftex.def Info: FAU-logo.pdf  used on input line 470.
-(pdftex.def)             Requested size: 29.99857pt x 12.99948pt.
+Package luatex.def Info: FAU-logo.pdf  used on input line 474.
+(luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 [][] 
@@ -2905,21 +3398,21 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 
 [27
 
- <./figure2_b4.pdf>]
+<./figure2_b4.pdf>]
 <figure2_b.pdf, id=31119, 228.02188pt x 228.02188pt>
 File: figure2_b.pdf Graphic file (type pdf)
 <use figure2_b.pdf>
-Package pdftex.def Info: figure2_b.pdf  used on input line 485.
-(pdftex.def)             Requested size: 113.81102pt x 113.81233pt.
+Package luatex.def Info: figure2_b.pdf  used on input line 489.
+(luatex.def)             Requested size: 113.81102pt x 113.81233pt.
 
-Overfull \hbox (6.2579pt too wide) in paragraph at lines 485--485
+Overfull \hbox (6.2579pt too wide) in paragraph at lines 489--489
 [][] 
  []
 
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package pdftex.def Info: FAU-logo.pdf  used on input line 485.
-(pdftex.def)             Requested size: 29.99857pt x 12.99948pt.
+Package luatex.def Info: FAU-logo.pdf  used on input line 489.
+(luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 [][] 
@@ -2927,21 +3420,21 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 
 [28
 
- <./figure2_b.pdf>]
+<./figure2_b.pdf>]
 <figure2_c.pdf, id=36279, 228.02188pt x 228.02188pt>
 File: figure2_c.pdf Graphic file (type pdf)
 <use figure2_c.pdf>
-Package pdftex.def Info: figure2_c.pdf  used on input line 502.
-(pdftex.def)             Requested size: 113.81102pt x 113.81233pt.
+Package luatex.def Info: figure2_c.pdf  used on input line 506.
+(luatex.def)             Requested size: 113.81102pt x 113.81233pt.
 
-Overfull \hbox (6.2579pt too wide) in paragraph at lines 502--502
+Overfull \hbox (6.2579pt too wide) in paragraph at lines 506--506
 [][] 
  []
 
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package pdftex.def Info: FAU-logo.pdf  used on input line 502.
-(pdftex.def)             Requested size: 29.99857pt x 12.99948pt.
+Package luatex.def Info: FAU-logo.pdf  used on input line 506.
+(luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 [][] 
@@ -2949,21 +3442,21 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 
 [29
 
- <./figure2_c.pdf>]
-<figure2_d_DEL_blank.pdf, id=41439, 228.02188pt x 228.02188pt>
+<./figure2_c.pdf>]
+<figure2_d_DEL_blank.pdf, id=41440, 228.02188pt x 228.02188pt>
 File: figure2_d_DEL_blank.pdf Graphic file (type pdf)
 <use figure2_d_DEL_blank.pdf>
-Package pdftex.def Info: figure2_d_DEL_blank.pdf  used on input line 517.
-(pdftex.def)             Requested size: 113.81102pt x 113.81233pt.
-<figure2_d_DEL.pdf, id=41440, 228.02188pt x 228.02188pt>
+Package luatex.def Info: figure2_d_DEL_blank.pdf  used on input line 521.
+(luatex.def)             Requested size: 113.81102pt x 113.81233pt.
+<figure2_d_DEL.pdf, id=41441, 228.02188pt x 228.02188pt>
 File: figure2_d_DEL.pdf Graphic file (type pdf)
 <use figure2_d_DEL.pdf>
-Package pdftex.def Info: figure2_d_DEL.pdf  used on input line 517.
-(pdftex.def)             Requested size: 113.81102pt x 113.81233pt.
+Package luatex.def Info: figure2_d_DEL.pdf  used on input line 521.
+(luatex.def)             Requested size: 113.81102pt x 113.81233pt.
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package pdftex.def Info: FAU-logo.pdf  used on input line 517.
-(pdftex.def)             Requested size: 29.99857pt x 12.99948pt.
+Package luatex.def Info: FAU-logo.pdf  used on input line 521.
+(luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 [][] 
@@ -2971,15 +3464,11 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 
 [30
 
- <./figure2_d_DEL_blank.pdf> <./figure2_d_DEL.pdf
-
-pdfTeX warning: pdflatex (file ./figure2_d_DEL.pdf): PDF inclusion: multiple pd
-fs with page group included in a single page
->]
+<./figure2_d_DEL_blank.pdf><./figure2_d_DEL.pdf>]
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package pdftex.def Info: FAU-logo.pdf  used on input line 520.
-(pdftex.def)             Requested size: 29.99857pt x 12.99948pt.
+Package luatex.def Info: FAU-logo.pdf  used on input line 524.
+(luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 [][] 
@@ -2990,8 +3479,8 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 ]
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package pdftex.def Info: FAU-logo.pdf  used on input line 530.
-(pdftex.def)             Requested size: 29.99857pt x 12.99948pt.
+Package luatex.def Info: FAU-logo.pdf  used on input line 534.
+(luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 [][] 
@@ -3002,8 +3491,8 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 ]
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package pdftex.def Info: FAU-logo.pdf  used on input line 545.
-(pdftex.def)             Requested size: 29.99857pt x 12.99948pt.
+Package luatex.def Info: FAU-logo.pdf  used on input line 549.
+(luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 [][] 
@@ -3014,8 +3503,8 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 ]
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package pdftex.def Info: FAU-logo.pdf  used on input line 561.
-(pdftex.def)             Requested size: 29.99857pt x 12.99948pt.
+Package luatex.def Info: FAU-logo.pdf  used on input line 565.
+(luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 [][] 
@@ -3026,8 +3515,8 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 ]
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package pdftex.def Info: FAU-logo.pdf  used on input line 563.
-(pdftex.def)             Requested size: 29.99857pt x 12.99948pt.
+Package luatex.def Info: FAU-logo.pdf  used on input line 567.
+(luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 [][] 
@@ -3036,15 +3525,15 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 [35
 
 ]
-<luci.pdf, id=53973, 420.93985pt x 210.95197pt>
+<luci.pdf, id=53978, 420.93985pt x 210.95197pt>
 File: luci.pdf Graphic file (type pdf)
 <use luci.pdf>
-Package pdftex.def Info: luci.pdf  used on input line 577.
-(pdftex.def)             Requested size: 113.81102pt x 57.03503pt.
+Package luatex.def Info: luci.pdf  used on input line 581.
+(luatex.def)             Requested size: 113.81102pt x 57.03503pt.
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package pdftex.def Info: FAU-logo.pdf  used on input line 577.
-(pdftex.def)             Requested size: 29.99857pt x 12.99948pt.
+Package luatex.def Info: FAU-logo.pdf  used on input line 581.
+(luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 [][] 
@@ -3052,15 +3541,15 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 
 [36
 
- <./luci.pdf>] (./figure3_a.tex)
-Overfull \hbox (58.1515pt too wide) in paragraph at lines 608--608
+<./luci.pdf>] (./figure3_a.tex)
+Overfull \hbox (7.40187pt too wide) in paragraph at lines 614--614
 [][] 
  []
 
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package pdftex.def Info: FAU-logo.pdf  used on input line 608.
-(pdftex.def)             Requested size: 29.99857pt x 12.99948pt.
+Package luatex.def Info: FAU-logo.pdf  used on input line 614.
+(luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 [][] 
@@ -3069,16 +3558,18 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 [37
 
 ] (./figure3_b.tex)
-Overfull \hbox (58.1515pt too wide) in paragraph at lines 638--638
+Overfull \hbox (7.40187pt too wide) in paragraph at lines 648--648
 [][] 
  []
 
-LaTeX Font Info:    Font shape `OT1/SourceCodePro-TOsF/m/n' will be
-(Font)              scaled to size 14.4pt on input line 638.
+LaTeX Font Info:    Font shape `TU/SourceCodePro(0)/m/n' will be
+(Font)              scaled to size 14.4pt on input line 648.
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <14.4> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 648.
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package pdftex.def Info: FAU-logo.pdf  used on input line 638.
-(pdftex.def)             Requested size: 29.99857pt x 12.99948pt.
+Package luatex.def Info: FAU-logo.pdf  used on input line 648.
+(luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 [][] 
@@ -3087,14 +3578,14 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 [38
 
 ] (./figure3_c.tex)
-Overfull \hbox (59.62337pt too wide) in paragraph at lines 668--668
+Overfull \hbox (9.06718pt too wide) in paragraph at lines 682--682
 [][] 
  []
 
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package pdftex.def Info: FAU-logo.pdf  used on input line 668.
-(pdftex.def)             Requested size: 29.99857pt x 12.99948pt.
+Package luatex.def Info: FAU-logo.pdf  used on input line 682.
+(luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 [][] 
@@ -3103,14 +3594,14 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 [39
 
 ] (./figure3_d.tex)
-Overfull \hbox (59.62337pt too wide) in paragraph at lines 699--699
+Overfull \hbox (9.06718pt too wide) in paragraph at lines 714--714
 [][] 
  []
 
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package pdftex.def Info: FAU-logo.pdf  used on input line 699.
-(pdftex.def)             Requested size: 29.99857pt x 12.99948pt.
+Package luatex.def Info: FAU-logo.pdf  used on input line 714.
+(luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 [][] 
@@ -3119,14 +3610,14 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 [40
 
 ] (./figure3_e.tex)
-Overfull \hbox (6.09392pt too wide) in paragraph at lines 733--733
+Overfull \hbox (7.40187pt too wide) in paragraph at lines 749--749
 [][] 
  []
 
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package pdftex.def Info: FAU-logo.pdf  used on input line 733.
-(pdftex.def)             Requested size: 29.99857pt x 12.99948pt.
+Package luatex.def Info: FAU-logo.pdf  used on input line 749.
+(luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 [][] 
@@ -3135,14 +3626,14 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 [41
 
 ] (./figure3_f.tex)
-Overfull \hbox (57.8738pt too wide) in paragraph at lines 763--763
+Overfull \hbox (7.40187pt too wide) in paragraph at lines 780--780
 [][] 
  []
 
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package pdftex.def Info: FAU-logo.pdf  used on input line 763.
-(pdftex.def)             Requested size: 29.99857pt x 12.99948pt.
+Package luatex.def Info: FAU-logo.pdf  used on input line 780.
+(luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 [][] 
@@ -3153,8 +3644,8 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 ]
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package pdftex.def Info: FAU-logo.pdf  used on input line 766.
-(pdftex.def)             Requested size: 29.99857pt x 12.99948pt.
+Package luatex.def Info: FAU-logo.pdf  used on input line 783.
+(luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 [][] 
@@ -3163,44 +3654,49 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 [43
 
 ]
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
+
+Package pgfplots Warning: 'fill between': Could not activate graphics layer 'pre
+ main'. Filled path will be on top of the other ones. Please ensure that 'pre ma
+in' is somewhere in the layer list (or set '/tikz/fill between/on layer='). on i
+nput line 847.
 
 
-Package pgfplots Warning: 'fill between': Could not activate graphics layer 'pr
-e main'. Filled path will be on top of the other ones. Please ensure that 'pre 
-main' is somewhere in the layer list (or set '/tikz/fill between/on layer='). o
-n input line 820.
+Package pgfplots Warning: 'fill between': Could not activate graphics layer 'pre
+ main'. Filled path will be on top of the other ones. Please ensure that 'pre ma
+in' is somewhere in the layer list (or set '/tikz/fill between/on layer='). on i
+nput line 847.
 
 
-Package pgfplots Warning: 'fill between': Could not activate graphics layer 'pr
-e main'. Filled path will be on top of the other ones. Please ensure that 'pre 
-main' is somewhere in the layer list (or set '/tikz/fill between/on layer='). o
-n input line 820.
+Package pgfplots Warning: 'fill between': Could not activate graphics layer 'pre
+ main'. Filled path will be on top of the other ones. Please ensure that 'pre ma
+in' is somewhere in the layer list (or set '/tikz/fill between/on layer='). on i
+nput line 847.
 
 
-Package pgfplots Warning: 'fill between': Could not activate graphics layer 'pr
-e main'. Filled path will be on top of the other ones. Please ensure that 'pre 
-main' is somewhere in the layer list (or set '/tikz/fill between/on layer='). o
-n input line 820.
+Package pgfplots Warning: 'fill between': Could not activate graphics layer 'pre
+ main'. Filled path will be on top of the other ones. Please ensure that 'pre ma
+in' is somewhere in the layer list (or set '/tikz/fill between/on layer='). on i
+nput line 847.
 
 
-Package pgfplots Warning: 'fill between': Could not activate graphics layer 'pr
-e main'. Filled path will be on top of the other ones. Please ensure that 'pre 
-main' is somewhere in the layer list (or set '/tikz/fill between/on layer='). o
-n input line 820.
-
-
-Overfull \hbox (60.43307pt too wide) in paragraph at lines 820--820
+Overfull \hbox (10.48123pt too wide) in paragraph at lines 847--847
 [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 847--847
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 847--847
+
  []
 
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package pdftex.def Info: FAU-logo.pdf  used on input line 820.
-(pdftex.def)             Requested size: 29.99857pt x 12.99948pt.
+Package luatex.def Info: FAU-logo.pdf  used on input line 847.
+(luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 [][] 
@@ -3208,11 +3704,15 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 
 [44
 
+Missing character: There is no ; (U+003B) in font nullfont!
+Missing character: There is no ; (U+003B) in font nullfont!
+Missing character: There is no ; (U+003B) in font nullfont!
+Missing character: There is no ; (U+003B) in font nullfont!
 ]
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package pdftex.def Info: FAU-logo.pdf  used on input line 840.
-(pdftex.def)             Requested size: 29.99857pt x 12.99948pt.
+Package luatex.def Info: FAU-logo.pdf  used on input line 867.
+(luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 [][] 
@@ -3220,21 +3720,23 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 
 [45
 
+] [46
+
 ]
 \tf@nav=\write8
-\openout8 = `FAU-Beamer.nav'.
 
+\openout8 = FAU-Beamer.nav
 \tf@toc=\write9
-\openout9 = `FAU-Beamer.toc'.
 
+\openout9 = FAU-Beamer.toc
 \tf@snm=\write10
-\openout10 = `FAU-Beamer.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 841.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 841.
+\openout10 = FAU-Beamer.snm
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 877.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 877.
  (./FAU-Beamer.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 841.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 841.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 877.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 877.
 Package rerunfilecheck Info: File `FAU-Beamer.out' has not changed.
 (rerunfilecheck)             Checksum: 84949CE7F274749E102C5D5665CB8756;763.
 
@@ -3243,45 +3745,48 @@ LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
 Package logreq Info: Writing requests to 'FAU-Beamer.run.xml'.
-\openout1 = `FAU-Beamer.run.xml'.
 
- ) 
-Here is how much of TeX's memory you used:
- 57490 strings out of 492649
- 1272259 string characters out of 6118254
- 2526375 words of memory out of 5000000
- 60196 multiletter control sequences out of 15000+600000
- 577336 words of font info for 174 fonts, out of 8000000 for 9000
- 1143 hyphenation exceptions out of 8191
- 73i,17n,109p,10382b,2267s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/font
-s/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-ssi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb></u
-sr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texmf
--dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb></usr/share/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmsy9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/euler/eue
-x10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></u
-sr/share/texmf-dist/fonts/type1/public/amsfonts/euler/eufm7.pfb></usr/share/tex
-mf-dist/fonts/type1/public/amsfonts/euler/eurm10.pfb></usr/share/texmf-dist/fon
-ts/type1/public/amsfonts/euler/eusm10.pfb></usr/share/texmf-dist/fonts/type1/pu
-blic/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-s
-uper/sfsi1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss0600.p
-fb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss0900.pfb></usr/share/
-texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb></usr/share/texmf-dist/font
-s/type1/public/cm-super/sfss1095.pfb></usr/share/texmf-dist/fonts/type1/public/
-cm-super/sfss1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss14
-40.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss2074.pfb></usr/sh
-are/texmf-dist/fonts/type1/public/cm-super/sfsx0600.pfb></usr/share/texmf-dist/
-fonts/type1/public/cm-super/sfsx1000.pfb></usr/share/texmf-dist/fonts/type1/pub
-lic/cm-super/sfsx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sf
-sx1440.pfb>
-Output written on FAU-Beamer.pdf (45 pages, 6667763 bytes).
-PDF statistics:
- 63243 PDF objects out of 66169 (max. 8388607)
- 41863 compressed objects within 419 object streams
- 97 named destinations out of 1000 (max. 500000)
- 186 words of extra memory for PDF output out of 10000 (max. 10000000)
+\openout1 = FAU-Beamer.run.xml
+)
+
+Here is how much of LuaTeX's memory you used:
+ 62542 strings out of 494413
+ 156259,2848258 words of node,token memory allocated
+ 2303 words of node memory still in use:
+   19 hlist, 6 vlist, 4 rule, 8 disc, 4 local_par, 51 glue, 7 kern, 13 penalty, 
+112 glyph, 51 attribute, 78 glue_spec, 51 attribute_list, 3 write, 2 pdf_start_l
+ink, 2 pdf_end_link, 2 pdf_action, 4 pdf_colorstack nodes
+   avail lists: 1:17,2:20295,3:9583,4:1530,5:189,6:21,7:6034,8:59,9:288,10:19,11
+:126
+ 63661 multiletter control sequences out of 65536+600000
+ 217 fonts using 24333335 bytes
+ 73i,17n,109p,799b,2269s stack positions out of 5000i,500n,10000p,200000b,100000s
+</usr/share/texmf-dist/fonts/opentype/public/fontawesome/FontAwesome.otf></usr/s
+hare/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/texmf
+-dist/fonts/opentype/public/lm/lmsans8-oblique.otf></usr/share/texmf-dist/fonts/
+opentype/public/lm/lmsans9-regular.otf></usr/share/texmf-dist/fonts/opentype/pub
+lic/lm/lmsans10-oblique.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmsa
+ns9-oblique.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmroman12-regula
+r.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmsans12-oblique.otf></usr
+/share/texmf-dist/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texm
+f-dist/fonts/opentype/public/lm/lmsans17-regular.otf></usr/share/texmf-dist/font
+s/opentype/public/lm/lmsans8-regular.otf></usr/share/texmf-dist/fonts/opentype/p
+ublic/lm/lmsans10-regular.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lm
+sans10-bold.otf></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
+></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmsy9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/euler/euex
+10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/euler/euex9.pfb></usr/
+share/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/share/texmf-
+dist/fonts/type1/public/amsfonts/euler/eufm7.pfb></usr/share/texmf-dist/fonts/ty
+pe1/public/amsfonts/euler/eurm10.pfb></usr/share/texmf-dist/fonts/type1/public/a
+msfonts/euler/eusm10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symb
+ols/msbm10.pfb>
+Output written on FAU-Beamer.pdf (46 pages, 6233916 bytes).
+
+PDF statistics: 63272 PDF objects out of 66169 (max. 8388607)
+ 41867 compressed objects within 419 object streams
+ 99 named destinations out of 1000 (max. 131072)
+ 64 words of extra memory for PDF output out of 10000 (max. 100000000)
 
