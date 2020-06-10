@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2019.11.27)  10 JUN 2020 11:26
+This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2019.11.27)  10 JUN 2020 11:34
  restricted system commands enabled.
 **FAU-Beamer.tex
 (./FAU-Beamer.tex
@@ -34,7 +34,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.068 seconds
+luaotfload | main : initialization completed in 0.067 seconds
 Babel <3.18> and hyphenation patterns for 1 language(s) loaded.
 (/usr/share/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2018/02/20 v3.50 A class for typesetting presentations
@@ -3982,7 +3982,7 @@ nts/euler/eufm7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/euler/eur
 m10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/euler/eurm7.pfb></usr
 /share/texmf-dist/fonts/type1/public/amsfonts/euler/eusm10.pfb></usr/share/texmf
 -dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on FAU-Beamer.pdf (57 pages, 6319121 bytes).
+Output written on FAU-Beamer.pdf (57 pages, 6319062 bytes).
 
 PDF statistics: 63603 PDF objects out of 66169 (max. 8388607)
  42103 compressed objects within 422 object streams
