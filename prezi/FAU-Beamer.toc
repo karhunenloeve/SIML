@@ -3,7 +3,7 @@
 \babel@toc {english}{}
 \beamer@sectionintoc {1}{Introduction}{3}{0}{1}
 \beamer@sectionintoc {2}{Persistent Homology}{11}{0}{2}
-\beamer@sectionintoc {3}{Natural Neighbor Interpolation}{22}{0}{3}
-\beamer@sectionintoc {4}{The Collapsing Sequence}{31}{0}{4}
-\beamer@sectionintoc {5}{Results}{35}{0}{5}
-\beamer@sectionintoc {6}{Summary}{43}{0}{6}
+\beamer@sectionintoc {3}{Natural Neighbor Interpolation}{33}{0}{3}
+\beamer@sectionintoc {4}{The Collapsing Sequence}{42}{0}{4}
+\beamer@sectionintoc {5}{Results}{46}{0}{5}
+\beamer@sectionintoc {6}{Summary}{54}{0}{6}
