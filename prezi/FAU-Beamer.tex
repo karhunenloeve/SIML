@@ -113,7 +113,7 @@ backend=bibtex
 \defbibheading{bibliography}[\refname]{}
 
 \definecolor{azure}{rgb}{0.0, 0.5, 1.0}
-\title{\textbf{Stop Interpolation Topologically}}
+\title{\textbf{Stop interpolation Topologically}}
 \author{Luciano Melodia}
 \institute[Lehrstuhl für Informatik 6]{}
 
@@ -166,6 +166,24 @@ backend=bibtex
     The topology of the sublevel sets of a manifold $\mathbb{M}$ underlying a data set can be used to distinguish data up to some equivalence relation.
 \end{frame}
 
+\begin{frame}
+    \frametitle{
+    Simplices
+    \par\hspace{-0.73cm}}
+    \Fontvi
+    Given a set $X = \{x_0, \cdots, x_k\} \subset \mathbb{R}^d$ of $k+1$ points that do not lie on a hyperplane with dimension less than $d$, the $k$-dimensional simplex $\sigma$ spanned by $X$ is the set of convex combinations, such that
+    \begin{equation*}
+      \sum_{i=0}^{k} \lambda_i x_i \quad \text{with} \quad \sum_{i=0}^{k} \lambda_i = 1 \quad \text{and} \quad \lambda_i \geq 0.
+    \end{equation*}
+\end{frame}
+
+\begin{frame}
+    \frametitle{
+    Simplicial complexes
+    \par\hspace{-0.73cm}}
+    \Fontvi
+
+\end{frame}
 
 \begin{frame}
     \frametitle{
@@ -263,18 +281,6 @@ backend=bibtex
     Persistent homology is the study of \textbf{$k$-dimensional abelian groups} attached to a topological space. They are studied algebraically and behave \emph{similar} to the topological space itself under change revealing properties of the original space they are attached to by their \emph{invariants}. \\[0.5cm]
 
     \small{The connection of abelian groups by a boundary homomorphism allows to investigate all $k$-dimensions at once. The induced object is a chain complex.}
-\end{frame}
-
-
-\begin{frame}
-    \frametitle{
-    Simplices
-    \par\hspace{-0.73cm}}
-    \Fontvi
-    Given a set $X = \{x_0, \cdots, x_k\} \subset \mathbb{R}^d$ of $k+1$ points that do not lie on a hyperplane with dimension less than $d$, the $k$-dimensional simplex $\sigma$ spanned by $X$ is the set of convex combinations, such that
-    \begin{equation*}
-      \sum_{i=0}^{k} \lambda_i x_i \quad \text{with} \quad \sum_{i=0}^{k} \lambda_i = 1 \quad \text{and} \quad \lambda_i \geq 0.
-    \end{equation*}
 \end{frame}
 
 \begin{frame}
@@ -519,7 +525,7 @@ backend=bibtex
     \end{equation*}
 \end{frame}
 
-\section{Natural Neighbor Interpolation}
+\section{Natural neighbor interpolation}
 \begin{frame}
     \frametitle{
     Step 1: Voronoi diagram
@@ -978,7 +984,7 @@ backend=bibtex
     \Fontvi
     \textbf{What do we have achieved?}
     \begin{itemize}
-        \item Connection of Collapsing Theorem to Voronoi Interpolation.
+        \item Connection of Collapsing Theorem to Voronoi interpolation.
         \item A mathematical stopping condition for interpolation techniques.
         \item A hypothesis test for persistence diagrams.
     \end{itemize}

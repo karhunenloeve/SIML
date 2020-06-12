@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2019.11.27)  10 JUN 2020 11:34
+This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2019.11.27)  12 JUN 2020 13:26
  restricted system commands enabled.
 **FAU-Beamer.tex
 (./FAU-Beamer.tex
@@ -34,7 +34,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.067 seconds
+luaotfload | main : initialization completed in 0.070 seconds
 Babel <3.18> and hyphenation patterns for 1 language(s) loaded.
 (/usr/share/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2018/02/20 v3.50 A class for typesetting presentations
@@ -2967,9 +2967,63 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 [5
 
 ]
+LaTeX Font Info:    Calculating math sizes for size <13> on input line 178.
+(load luc: /home/lume/.texlive2018/texmf-var/luatex-cache/generic/fonts/otl/lmro
+man9-regular.luc)(load luc: /home/lume/.texlive2018/texmf-var/luatex-cache/gener
+ic/fonts/otl/lmroman7-regular.luc)
+
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <13> not available
+(Font)              size <12> substituted on input line 178.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <6.5> not available
+(Font)              size <6> substituted on input line 178.
+
+(load luc: /home/lume/.texlive2018/texmf-var/luatex-cache/generic/fonts/otl/lmsa
+ns9-regular.luc)
+LaTeX Font Info:    Font shape `TU/SourceCodePro(0)/m/n' will be
+(Font)              scaled to size 13.0pt on input line 178.
+LaTeX Font Info:    Font shape `TU/SourceCodePro(0)/m/n' will be
+(Font)              scaled to size 9.09996pt on input line 178.
+LaTeX Font Info:    Font shape `TU/SourceCodePro(0)/m/n' will be
+(Font)              scaled to size 6.5pt on input line 178.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <13> not available
+(Font)              size <12> substituted on input line 178.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <6.5> not available
+(Font)              size <6> substituted on input line 178.
+
+
+LaTeX Font Warning: Font shape `U/wasy/m/n' in size <13> not available
+(Font)              size <12> substituted on input line 178.
+
+
+LaTeX Font Warning: Font shape `U/wasy/m/n' in size <6.5> not available
+(Font)              size <6> substituted on input line 178.
+
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <13> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 178.
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <9.09996> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 178.
+(load luc: /home/lume/.texlive2018/texmf-var/luatex-cache/generic/fonts/otl/lmsa
+ns9-oblique.luc)
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <6.5> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 178.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <13> not available
+(Font)              size <12> substituted on input line 178.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <6.5> not available
+(Font)              size <6> substituted on input line 178.
+
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package luatex.def Info: FAU-logo.pdf  used on input line 183.
+Package luatex.def Info: FAU-logo.pdf  used on input line 178.
 (luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
@@ -2979,70 +3033,18 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 [6
 
 ]
-<figure1_a.pdf, id=2558, 138.34686pt x 198.47148pt>
-File: figure1_a.pdf Graphic file (type pdf)
-<use figure1_a.pdf>
-Package luatex.def Info: figure1_a.pdf  used on input line 201.
-(luatex.def)             Requested size: 113.81102pt x 163.27461pt.
+File: FAU-logo.pdf Graphic file (type pdf)
+<use FAU-logo.pdf>
+Package luatex.def Info: FAU-logo.pdf  used on input line 186.
+(luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
-Overfull \hbox (6.2579pt too wide) in paragraph at lines 201--201
+Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 [][] 
  []
 
-LaTeX Font Info:    Calculating math sizes for size <13> on input line 201.
-(load luc: /home/lume/.texlive2018/texmf-var/luatex-cache/generic/fonts/otl/lmro
-man9-regular.luc)(load luc: /home/lume/.texlive2018/texmf-var/luatex-cache/gener
-ic/fonts/otl/lmroman7-regular.luc)
+[7
 
-LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <13> not available
-(Font)              size <12> substituted on input line 201.
-
-
-LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <6.5> not available
-(Font)              size <6> substituted on input line 201.
-
-(load luc: /home/lume/.texlive2018/texmf-var/luatex-cache/generic/fonts/otl/lmsa
-ns9-regular.luc)
-LaTeX Font Info:    Font shape `TU/SourceCodePro(0)/m/n' will be
-(Font)              scaled to size 13.0pt on input line 201.
-LaTeX Font Info:    Font shape `TU/SourceCodePro(0)/m/n' will be
-(Font)              scaled to size 9.09996pt on input line 201.
-LaTeX Font Info:    Font shape `TU/SourceCodePro(0)/m/n' will be
-(Font)              scaled to size 6.5pt on input line 201.
-
-
-LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <13> not available
-(Font)              size <12> substituted on input line 201.
-
-
-LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <6.5> not available
-(Font)              size <6> substituted on input line 201.
-
-
-LaTeX Font Warning: Font shape `U/wasy/m/n' in size <13> not available
-(Font)              size <12> substituted on input line 201.
-
-
-LaTeX Font Warning: Font shape `U/wasy/m/n' in size <6.5> not available
-(Font)              size <6> substituted on input line 201.
-
-LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <13> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 201.
-LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <9.09996> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 201.
-(load luc: /home/lume/.texlive2018/texmf-var/luatex-cache/generic/fonts/otl/lmsa
-ns9-oblique.luc)
-LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <6.5> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 201.
-
-
-LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <13> not available
-(Font)              size <12> substituted on input line 201.
-
-
-LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <6.5> not available
-(Font)              size <6> substituted on input line 201.
-
+]
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
 Package luatex.def Info: FAU-logo.pdf  used on input line 201.
@@ -3052,68 +3054,22 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 [][] 
  []
 
-[7
-
-<./figure1_a.pdf>]
-<figure1_c.pdf, id=2680, 138.34686pt x 198.47148pt>
-File: figure1_c.pdf Graphic file (type pdf)
-<use figure1_c.pdf>
-Package luatex.def Info: figure1_c.pdf  used on input line 222.
-(luatex.def)             Requested size: 113.81102pt x 163.27461pt.
-
-Overfull \hbox (6.2579pt too wide) in paragraph at lines 222--222
-[][] 
- []
-
-
-Overfull \hbox (22.4732pt too wide) detected at line 222
-[]\U/euf/m/n/13 (\TU/lmss/m/sl/13 x\U/euf/m/n/13 ) = [] \U/eur/m/n/13 :
- []
-
-File: FAU-logo.pdf Graphic file (type pdf)
-<use FAU-logo.pdf>
-Package luatex.def Info: FAU-logo.pdf  used on input line 222.
-(luatex.def)             Requested size: 29.99857pt x 12.99948pt.
-
-Overfull \hbox (28.99857pt too wide) has occurred while \output is active
-[][] 
- []
-
 [8
 
-<./figure1_c.pdf>]
-<figure1_d.pdf, id=2720, 138.34686pt x 198.47148pt>
-File: figure1_d.pdf Graphic file (type pdf)
-<use figure1_d.pdf>
-Package luatex.def Info: figure1_d.pdf  used on input line 239.
+]
+<figure1_a.pdf, id=2574, 138.34686pt x 198.47148pt>
+File: figure1_a.pdf Graphic file (type pdf)
+<use figure1_a.pdf>
+Package luatex.def Info: figure1_a.pdf  used on input line 219.
 (luatex.def)             Requested size: 113.81102pt x 163.27461pt.
 
-Overfull \hbox (6.2579pt too wide) in paragraph at lines 239--239
+Overfull \hbox (6.2579pt too wide) in paragraph at lines 219--219
 [][] 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 239--239
-
- []
-
-(load luc: /home/lume/.texlive2018/texmf-var/luatex-cache/generic/fonts/otl/lmro
-man5-regular.luc)
-LaTeX Font Info:    Font shape `TU/SourceCodePro(0)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 239.
-LaTeX Font Info:    Font shape `TU/SourceCodePro(0)/m/n' will be
-(Font)              scaled to size 7.0pt on input line 239.
-LaTeX Font Info:    Font shape `TU/SourceCodePro(0)/m/n' will be
-(Font)              scaled to size 5.0pt on input line 239.
-LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <10> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 239.
-LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <7> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 239.
-LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <5> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 239.
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package luatex.def Info: FAU-logo.pdf  used on input line 239.
+Package luatex.def Info: FAU-logo.pdf  used on input line 219.
 (luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
@@ -3122,10 +3078,25 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 
 [9
 
-<./figure1_d.pdf>]
+<./figure1_a.pdf>]
+<figure1_c.pdf, id=2691, 138.34686pt x 198.47148pt>
+File: figure1_c.pdf Graphic file (type pdf)
+<use figure1_c.pdf>
+Package luatex.def Info: figure1_c.pdf  used on input line 240.
+(luatex.def)             Requested size: 113.81102pt x 163.27461pt.
+
+Overfull \hbox (6.2579pt too wide) in paragraph at lines 240--240
+[][] 
+ []
+
+
+Overfull \hbox (22.4732pt too wide) detected at line 240
+[]\U/euf/m/n/13 (\TU/lmss/m/sl/13 x\U/euf/m/n/13 ) = [] \U/eur/m/n/13 :
+ []
+
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package luatex.def Info: FAU-logo.pdf  used on input line 253.
+Package luatex.def Info: FAU-logo.pdf  used on input line 240.
 (luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
@@ -3134,10 +3105,39 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 
 [10
 
-]
+<./figure1_c.pdf>]
+<figure1_d.pdf, id=2731, 138.34686pt x 198.47148pt>
+File: figure1_d.pdf Graphic file (type pdf)
+<use figure1_d.pdf>
+Package luatex.def Info: figure1_d.pdf  used on input line 257.
+(luatex.def)             Requested size: 113.81102pt x 163.27461pt.
+
+Overfull \hbox (6.2579pt too wide) in paragraph at lines 257--257
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 257--257
+
+ []
+
+(load luc: /home/lume/.texlive2018/texmf-var/luatex-cache/generic/fonts/otl/lmro
+man5-regular.luc)
+LaTeX Font Info:    Font shape `TU/SourceCodePro(0)/m/n' will be
+(Font)              scaled to size 10.0pt on input line 257.
+LaTeX Font Info:    Font shape `TU/SourceCodePro(0)/m/n' will be
+(Font)              scaled to size 7.0pt on input line 257.
+LaTeX Font Info:    Font shape `TU/SourceCodePro(0)/m/n' will be
+(Font)              scaled to size 5.0pt on input line 257.
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <10> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 257.
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <7> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 257.
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <5> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 257.
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package luatex.def Info: FAU-logo.pdf  used on input line 256.
+Package luatex.def Info: FAU-logo.pdf  used on input line 257.
 (luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
@@ -3146,10 +3146,10 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 
 [11
 
-]
+<./figure1_d.pdf>]
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package luatex.def Info: FAU-logo.pdf  used on input line 266.
+Package luatex.def Info: FAU-logo.pdf  used on input line 271.
 (luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
@@ -3161,7 +3161,7 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 ]
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package luatex.def Info: FAU-logo.pdf  used on input line 278.
+Package luatex.def Info: FAU-logo.pdf  used on input line 274.
 (luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
@@ -3171,14 +3171,9 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 [13
 
 ]
-<simplicialcomplexes.pdf, id=2787, 855.33517pt x 173.55283pt>
-File: simplicialcomplexes.pdf Graphic file (type pdf)
-<use simplicialcomplexes.pdf>
-Package luatex.def Info: simplicialcomplexes.pdf  used on input line 293.
-(luatex.def)             Requested size: 398.3386pt x 80.82568pt.
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package luatex.def Info: FAU-logo.pdf  used on input line 293.
+Package luatex.def Info: FAU-logo.pdf  used on input line 284.
 (luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
@@ -3187,10 +3182,15 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 
 [14
 
-<./simplicialcomplexes.pdf>]
+]
+<simplicialcomplexes.pdf, id=2792, 855.33517pt x 173.55283pt>
+File: simplicialcomplexes.pdf Graphic file (type pdf)
+<use simplicialcomplexes.pdf>
+Package luatex.def Info: simplicialcomplexes.pdf  used on input line 299.
+(luatex.def)             Requested size: 398.3386pt x 80.82568pt.
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package luatex.def Info: FAU-logo.pdf  used on input line 306.
+Package luatex.def Info: FAU-logo.pdf  used on input line 299.
 (luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
@@ -3199,10 +3199,10 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 
 [15
 
-]
+<./simplicialcomplexes.pdf>]
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package luatex.def Info: FAU-logo.pdf  used on input line 326.
+Package luatex.def Info: FAU-logo.pdf  used on input line 312.
 (luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
@@ -3212,14 +3212,9 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 [16
 
 ]
-<chain-complex.pdf, id=10410, 160.80615pt x 71.36116pt>
-File: chain-complex.pdf Graphic file (type pdf)
-<use chain-complex.pdf>
-Package luatex.def Info: chain-complex.pdf  used on input line 352.
-(luatex.def)             Requested size: 278.83578pt x 123.75798pt.
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package luatex.def Info: FAU-logo.pdf  used on input line 352.
+Package luatex.def Info: FAU-logo.pdf  used on input line 332.
 (luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
@@ -3228,10 +3223,15 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 
 [17
 
-<./chain-complex.pdf>]
+]
+<chain-complex.pdf, id=10415, 160.80615pt x 71.36116pt>
+File: chain-complex.pdf Graphic file (type pdf)
+<use chain-complex.pdf>
+Package luatex.def Info: chain-complex.pdf  used on input line 358.
+(luatex.def)             Requested size: 278.83578pt x 123.75798pt.
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package luatex.def Info: FAU-logo.pdf  used on input line 366.
+Package luatex.def Info: FAU-logo.pdf  used on input line 358.
 (luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
@@ -3240,10 +3240,10 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 
 [18
 
-]
+<./chain-complex.pdf>]
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package luatex.def Info: FAU-logo.pdf  used on input line 374.
+Package luatex.def Info: FAU-logo.pdf  used on input line 372.
 (luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
@@ -3253,14 +3253,9 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 [19
 
 ]
-<persf1.pdf, id=10452, 239.28459pt x 99.34029pt>
-File: persf1.pdf Graphic file (type pdf)
-<use persf1.pdf>
-Package luatex.def Info: persf1.pdf  used on input line 385.
-(luatex.def)             Requested size: 239.284pt x 99.34003pt.
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package luatex.def Info: FAU-logo.pdf  used on input line 385.
+Package luatex.def Info: FAU-logo.pdf  used on input line 380.
 (luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
@@ -3269,15 +3264,15 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 
 [20
 
-<./persf1.pdf>]
-<persf2.pdf, id=10474, 239.28459pt x 102.99861pt>
-File: persf2.pdf Graphic file (type pdf)
-<use persf2.pdf>
-Package luatex.def Info: persf2.pdf  used on input line 396.
-(luatex.def)             Requested size: 239.284pt x 102.99835pt.
+]
+<persf1.pdf, id=10457, 239.28459pt x 99.34029pt>
+File: persf1.pdf Graphic file (type pdf)
+<use persf1.pdf>
+Package luatex.def Info: persf1.pdf  used on input line 391.
+(luatex.def)             Requested size: 239.284pt x 99.34003pt.
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package luatex.def Info: FAU-logo.pdf  used on input line 396.
+Package luatex.def Info: FAU-logo.pdf  used on input line 391.
 (luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
@@ -3286,15 +3281,15 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 
 [21
 
-<./persf2.pdf>]
-<persf3.pdf, id=10500, 239.28459pt x 102.99861pt>
-File: persf3.pdf Graphic file (type pdf)
-<use persf3.pdf>
-Package luatex.def Info: persf3.pdf  used on input line 407.
+<./persf1.pdf>]
+<persf2.pdf, id=10480, 239.28459pt x 102.99861pt>
+File: persf2.pdf Graphic file (type pdf)
+<use persf2.pdf>
+Package luatex.def Info: persf2.pdf  used on input line 402.
 (luatex.def)             Requested size: 239.284pt x 102.99835pt.
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package luatex.def Info: FAU-logo.pdf  used on input line 407.
+Package luatex.def Info: FAU-logo.pdf  used on input line 402.
 (luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
@@ -3303,15 +3298,15 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 
 [22
 
-<./persf3.pdf>]
-<persf4.pdf, id=10522, 239.28365pt x 103.00023pt>
-File: persf4.pdf Graphic file (type pdf)
-<use persf4.pdf>
-Package luatex.def Info: persf4.pdf  used on input line 418.
-(luatex.def)             Requested size: 239.28305pt x 102.99995pt.
+<./persf2.pdf>]
+<persf3.pdf, id=10505, 239.28459pt x 102.99861pt>
+File: persf3.pdf Graphic file (type pdf)
+<use persf3.pdf>
+Package luatex.def Info: persf3.pdf  used on input line 413.
+(luatex.def)             Requested size: 239.284pt x 102.99835pt.
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package luatex.def Info: FAU-logo.pdf  used on input line 418.
+Package luatex.def Info: FAU-logo.pdf  used on input line 413.
 (luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
@@ -3320,15 +3315,15 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 
 [23
 
-<./persf4.pdf>]
-<persf5.pdf, id=10535, 239.28458pt x 102.9986pt>
-File: persf5.pdf Graphic file (type pdf)
-<use persf5.pdf>
-Package luatex.def Info: persf5.pdf  used on input line 429.
-(luatex.def)             Requested size: 239.28398pt x 102.99834pt.
+<./persf3.pdf>]
+<persf4.pdf, id=10527, 239.28365pt x 103.00023pt>
+File: persf4.pdf Graphic file (type pdf)
+<use persf4.pdf>
+Package luatex.def Info: persf4.pdf  used on input line 424.
+(luatex.def)             Requested size: 239.28305pt x 102.99995pt.
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package luatex.def Info: FAU-logo.pdf  used on input line 429.
+Package luatex.def Info: FAU-logo.pdf  used on input line 424.
 (luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
@@ -3337,15 +3332,15 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 
 [24
 
-<./persf5.pdf>]
-<persf6.pdf, id=10567, 239.28459pt x 103.08067pt>
-File: persf6.pdf Graphic file (type pdf)
-<use persf6.pdf>
-Package luatex.def Info: persf6.pdf  used on input line 440.
-(luatex.def)             Requested size: 239.284pt x 103.08041pt.
+<./persf4.pdf>]
+<persf5.pdf, id=10540, 239.28458pt x 102.9986pt>
+File: persf5.pdf Graphic file (type pdf)
+<use persf5.pdf>
+Package luatex.def Info: persf5.pdf  used on input line 435.
+(luatex.def)             Requested size: 239.28398pt x 102.99834pt.
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package luatex.def Info: FAU-logo.pdf  used on input line 440.
+Package luatex.def Info: FAU-logo.pdf  used on input line 435.
 (luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
@@ -3354,15 +3349,15 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 
 [25
 
-<./persf6.pdf>]
-<persf7.pdf, id=10595, 239.28459pt x 102.86005pt>
-File: persf7.pdf Graphic file (type pdf)
-<use persf7.pdf>
-Package luatex.def Info: persf7.pdf  used on input line 451.
-(luatex.def)             Requested size: 239.284pt x 102.85979pt.
+<./persf5.pdf>]
+<persf6.pdf, id=10572, 239.28459pt x 103.08067pt>
+File: persf6.pdf Graphic file (type pdf)
+<use persf6.pdf>
+Package luatex.def Info: persf6.pdf  used on input line 446.
+(luatex.def)             Requested size: 239.284pt x 103.08041pt.
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package luatex.def Info: FAU-logo.pdf  used on input line 451.
+Package luatex.def Info: FAU-logo.pdf  used on input line 446.
 (luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
@@ -3371,15 +3366,15 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 
 [26
 
-<./persf7.pdf>]
-<persf8.pdf, id=10617, 239.28459pt x 103.08095pt>
-File: persf8.pdf Graphic file (type pdf)
-<use persf8.pdf>
-Package luatex.def Info: persf8.pdf  used on input line 462.
-(luatex.def)             Requested size: 239.284pt x 103.08069pt.
+<./persf6.pdf>]
+<persf7.pdf, id=10600, 239.28459pt x 102.86005pt>
+File: persf7.pdf Graphic file (type pdf)
+<use persf7.pdf>
+Package luatex.def Info: persf7.pdf  used on input line 457.
+(luatex.def)             Requested size: 239.284pt x 102.85979pt.
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package luatex.def Info: FAU-logo.pdf  used on input line 462.
+Package luatex.def Info: FAU-logo.pdf  used on input line 457.
 (luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
@@ -3388,15 +3383,15 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 
 [27
 
-<./persf8.pdf>]
-<persf9.pdf, id=10642, 239.28459pt x 102.99861pt>
-File: persf9.pdf Graphic file (type pdf)
-<use persf9.pdf>
-Package luatex.def Info: persf9.pdf  used on input line 473.
-(luatex.def)             Requested size: 239.284pt x 102.99835pt.
+<./persf7.pdf>]
+<persf8.pdf, id=10622, 239.28459pt x 103.08095pt>
+File: persf8.pdf Graphic file (type pdf)
+<use persf8.pdf>
+Package luatex.def Info: persf8.pdf  used on input line 468.
+(luatex.def)             Requested size: 239.284pt x 103.08069pt.
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package luatex.def Info: FAU-logo.pdf  used on input line 473.
+Package luatex.def Info: FAU-logo.pdf  used on input line 468.
 (luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
@@ -3405,15 +3400,15 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 
 [28
 
-<./persf9.pdf>]
-<persf10.pdf, id=10664, 239.28459pt x 102.99861pt>
-File: persf10.pdf Graphic file (type pdf)
-<use persf10.pdf>
-Package luatex.def Info: persf10.pdf  used on input line 484.
+<./persf8.pdf>]
+<persf9.pdf, id=10647, 239.28459pt x 102.99861pt>
+File: persf9.pdf Graphic file (type pdf)
+<use persf9.pdf>
+Package luatex.def Info: persf9.pdf  used on input line 479.
 (luatex.def)             Requested size: 239.284pt x 102.99835pt.
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package luatex.def Info: FAU-logo.pdf  used on input line 484.
+Package luatex.def Info: FAU-logo.pdf  used on input line 479.
 (luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
@@ -3422,15 +3417,15 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 
 [29
 
-<./persf10.pdf>]
-<persf11.pdf, id=10693, 236.83064pt x 99.34029pt>
-File: persf11.pdf Graphic file (type pdf)
-<use persf11.pdf>
-Package luatex.def Info: persf11.pdf  used on input line 495.
-(luatex.def)             Requested size: 236.83005pt x 99.34003pt.
+<./persf9.pdf>]
+<persf10.pdf, id=10669, 239.28459pt x 102.99861pt>
+File: persf10.pdf Graphic file (type pdf)
+<use persf10.pdf>
+Package luatex.def Info: persf10.pdf  used on input line 490.
+(luatex.def)             Requested size: 239.284pt x 102.99835pt.
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package luatex.def Info: FAU-logo.pdf  used on input line 495.
+Package luatex.def Info: FAU-logo.pdf  used on input line 490.
 (luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
@@ -3439,15 +3434,15 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 
 [30
 
-<./persf11.pdf>]
-<persf12.pdf, id=10715, 236.988pt x 99.34029pt>
-File: persf12.pdf Graphic file (type pdf)
-<use persf12.pdf>
-Package luatex.def Info: persf12.pdf  used on input line 506.
-(luatex.def)             Requested size: 236.98741pt x 99.34003pt.
+<./persf10.pdf>]
+<persf11.pdf, id=10698, 236.83064pt x 99.34029pt>
+File: persf11.pdf Graphic file (type pdf)
+<use persf11.pdf>
+Package luatex.def Info: persf11.pdf  used on input line 501.
+(luatex.def)             Requested size: 236.83005pt x 99.34003pt.
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package luatex.def Info: FAU-logo.pdf  used on input line 506.
+Package luatex.def Info: FAU-logo.pdf  used on input line 501.
 (luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
@@ -3456,15 +3451,15 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 
 [31
 
-<./persf12.pdf>]
-<persf13.pdf, id=10741, 236.988pt x 99.34029pt>
-File: persf13.pdf Graphic file (type pdf)
-<use persf13.pdf>
-Package luatex.def Info: persf13.pdf  used on input line 520.
+<./persf11.pdf>]
+<persf12.pdf, id=10721, 236.988pt x 99.34029pt>
+File: persf12.pdf Graphic file (type pdf)
+<use persf12.pdf>
+Package luatex.def Info: persf12.pdf  used on input line 512.
 (luatex.def)             Requested size: 236.98741pt x 99.34003pt.
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package luatex.def Info: FAU-logo.pdf  used on input line 520.
+Package luatex.def Info: FAU-logo.pdf  used on input line 512.
 (luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
@@ -3473,10 +3468,15 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 
 [32
 
-<./persf13.pdf>]
+<./persf12.pdf>]
+<persf13.pdf, id=10746, 236.988pt x 99.34029pt>
+File: persf13.pdf Graphic file (type pdf)
+<use persf13.pdf>
+Package luatex.def Info: persf13.pdf  used on input line 526.
+(luatex.def)             Requested size: 236.98741pt x 99.34003pt.
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package luatex.def Info: FAU-logo.pdf  used on input line 522.
+Package luatex.def Info: FAU-logo.pdf  used on input line 526.
 (luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
@@ -3485,20 +3485,10 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 
 [33
 
-]
-<figure2_a.pdf, id=10791, 228.02188pt x 228.02188pt>
-File: figure2_a.pdf Graphic file (type pdf)
-<use figure2_a.pdf>
-Package luatex.def Info: figure2_a.pdf  used on input line 539.
-(luatex.def)             Requested size: 113.81102pt x 113.81233pt.
-
-Overfull \hbox (6.2579pt too wide) in paragraph at lines 539--539
-[][] 
- []
-
+<./persf13.pdf>]
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package luatex.def Info: FAU-logo.pdf  used on input line 539.
+Package luatex.def Info: FAU-logo.pdf  used on input line 528.
 (luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
@@ -3507,20 +3497,20 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 
 [34
 
-<./figure2_a.pdf>]
-<figure2_b1.pdf, id=10800, 228.02188pt x 228.02188pt>
-File: figure2_b1.pdf Graphic file (type pdf)
-<use figure2_b1.pdf>
-Package luatex.def Info: figure2_b1.pdf  used on input line 557.
+]
+<figure2_a.pdf, id=10796, 228.02188pt x 228.02188pt>
+File: figure2_a.pdf Graphic file (type pdf)
+<use figure2_a.pdf>
+Package luatex.def Info: figure2_a.pdf  used on input line 545.
 (luatex.def)             Requested size: 113.81102pt x 113.81233pt.
 
-Overfull \hbox (6.2579pt too wide) in paragraph at lines 557--557
+Overfull \hbox (6.2579pt too wide) in paragraph at lines 545--545
 [][] 
  []
 
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package luatex.def Info: FAU-logo.pdf  used on input line 557.
+Package luatex.def Info: FAU-logo.pdf  used on input line 545.
 (luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
@@ -3529,20 +3519,20 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 
 [35
 
-<./figure2_b1.pdf>]
-<figure2_b2.pdf, id=15960, 228.02188pt x 228.02188pt>
-File: figure2_b2.pdf Graphic file (type pdf)
-<use figure2_b2.pdf>
-Package luatex.def Info: figure2_b2.pdf  used on input line 571.
+<./figure2_a.pdf>]
+<figure2_b1.pdf, id=10805, 228.02188pt x 228.02188pt>
+File: figure2_b1.pdf Graphic file (type pdf)
+<use figure2_b1.pdf>
+Package luatex.def Info: figure2_b1.pdf  used on input line 563.
 (luatex.def)             Requested size: 113.81102pt x 113.81233pt.
 
-Overfull \hbox (6.2579pt too wide) in paragraph at lines 571--571
+Overfull \hbox (6.2579pt too wide) in paragraph at lines 563--563
 [][] 
  []
 
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package luatex.def Info: FAU-logo.pdf  used on input line 571.
+Package luatex.def Info: FAU-logo.pdf  used on input line 563.
 (luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
@@ -3551,20 +3541,20 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 
 [36
 
-<./figure2_b2.pdf>]
-<figure2_b3.pdf, id=21121, 228.02188pt x 228.02188pt>
-File: figure2_b3.pdf Graphic file (type pdf)
-<use figure2_b3.pdf>
-Package luatex.def Info: figure2_b3.pdf  used on input line 585.
+<./figure2_b1.pdf>]
+<figure2_b2.pdf, id=15966, 228.02188pt x 228.02188pt>
+File: figure2_b2.pdf Graphic file (type pdf)
+<use figure2_b2.pdf>
+Package luatex.def Info: figure2_b2.pdf  used on input line 577.
 (luatex.def)             Requested size: 113.81102pt x 113.81233pt.
 
-Overfull \hbox (6.2579pt too wide) in paragraph at lines 585--585
+Overfull \hbox (6.2579pt too wide) in paragraph at lines 577--577
 [][] 
  []
 
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package luatex.def Info: FAU-logo.pdf  used on input line 585.
+Package luatex.def Info: FAU-logo.pdf  used on input line 577.
 (luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
@@ -3573,20 +3563,20 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 
 [37
 
-<./figure2_b3.pdf>]
-<figure2_b4.pdf, id=26281, 228.02188pt x 228.02188pt>
-File: figure2_b4.pdf Graphic file (type pdf)
-<use figure2_b4.pdf>
-Package luatex.def Info: figure2_b4.pdf  used on input line 599.
+<./figure2_b2.pdf>]
+<figure2_b3.pdf, id=21126, 228.02188pt x 228.02188pt>
+File: figure2_b3.pdf Graphic file (type pdf)
+<use figure2_b3.pdf>
+Package luatex.def Info: figure2_b3.pdf  used on input line 591.
 (luatex.def)             Requested size: 113.81102pt x 113.81233pt.
 
-Overfull \hbox (6.2579pt too wide) in paragraph at lines 599--599
+Overfull \hbox (6.2579pt too wide) in paragraph at lines 591--591
 [][] 
  []
 
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package luatex.def Info: FAU-logo.pdf  used on input line 599.
+Package luatex.def Info: FAU-logo.pdf  used on input line 591.
 (luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
@@ -3595,20 +3585,20 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 
 [38
 
-<./figure2_b4.pdf>]
-<figure2_b.pdf, id=31441, 228.02188pt x 228.02188pt>
-File: figure2_b.pdf Graphic file (type pdf)
-<use figure2_b.pdf>
-Package luatex.def Info: figure2_b.pdf  used on input line 614.
+<./figure2_b3.pdf>]
+<figure2_b4.pdf, id=26286, 228.02188pt x 228.02188pt>
+File: figure2_b4.pdf Graphic file (type pdf)
+<use figure2_b4.pdf>
+Package luatex.def Info: figure2_b4.pdf  used on input line 605.
 (luatex.def)             Requested size: 113.81102pt x 113.81233pt.
 
-Overfull \hbox (6.2579pt too wide) in paragraph at lines 614--614
+Overfull \hbox (6.2579pt too wide) in paragraph at lines 605--605
 [][] 
  []
 
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package luatex.def Info: FAU-logo.pdf  used on input line 614.
+Package luatex.def Info: FAU-logo.pdf  used on input line 605.
 (luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
@@ -3617,20 +3607,20 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 
 [39
 
-<./figure2_b.pdf>]
-<figure2_c.pdf, id=36601, 228.02188pt x 228.02188pt>
-File: figure2_c.pdf Graphic file (type pdf)
-<use figure2_c.pdf>
-Package luatex.def Info: figure2_c.pdf  used on input line 631.
+<./figure2_b4.pdf>]
+<figure2_b.pdf, id=31446, 228.02188pt x 228.02188pt>
+File: figure2_b.pdf Graphic file (type pdf)
+<use figure2_b.pdf>
+Package luatex.def Info: figure2_b.pdf  used on input line 620.
 (luatex.def)             Requested size: 113.81102pt x 113.81233pt.
 
-Overfull \hbox (6.2579pt too wide) in paragraph at lines 631--631
+Overfull \hbox (6.2579pt too wide) in paragraph at lines 620--620
 [][] 
  []
 
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package luatex.def Info: FAU-logo.pdf  used on input line 631.
+Package luatex.def Info: FAU-logo.pdf  used on input line 620.
 (luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
@@ -3639,20 +3629,20 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 
 [40
 
-<./figure2_c.pdf>]
-<figure2_d_DEL_blank.pdf, id=41762, 228.02188pt x 228.02188pt>
-File: figure2_d_DEL_blank.pdf Graphic file (type pdf)
-<use figure2_d_DEL_blank.pdf>
-Package luatex.def Info: figure2_d_DEL_blank.pdf  used on input line 646.
+<./figure2_b.pdf>]
+<figure2_c.pdf, id=36606, 228.02188pt x 228.02188pt>
+File: figure2_c.pdf Graphic file (type pdf)
+<use figure2_c.pdf>
+Package luatex.def Info: figure2_c.pdf  used on input line 637.
 (luatex.def)             Requested size: 113.81102pt x 113.81233pt.
-<figure2_d_DEL.pdf, id=41763, 228.02188pt x 228.02188pt>
-File: figure2_d_DEL.pdf Graphic file (type pdf)
-<use figure2_d_DEL.pdf>
-Package luatex.def Info: figure2_d_DEL.pdf  used on input line 646.
-(luatex.def)             Requested size: 113.81102pt x 113.81233pt.
+
+Overfull \hbox (6.2579pt too wide) in paragraph at lines 637--637
+[][] 
+ []
+
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package luatex.def Info: FAU-logo.pdf  used on input line 646.
+Package luatex.def Info: FAU-logo.pdf  used on input line 637.
 (luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
@@ -3661,10 +3651,20 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 
 [41
 
-<./figure2_d_DEL_blank.pdf><./figure2_d_DEL.pdf>]
+<./figure2_c.pdf>]
+<figure2_d_DEL_blank.pdf, id=41768, 228.02188pt x 228.02188pt>
+File: figure2_d_DEL_blank.pdf Graphic file (type pdf)
+<use figure2_d_DEL_blank.pdf>
+Package luatex.def Info: figure2_d_DEL_blank.pdf  used on input line 652.
+(luatex.def)             Requested size: 113.81102pt x 113.81233pt.
+<figure2_d_DEL.pdf, id=41769, 228.02188pt x 228.02188pt>
+File: figure2_d_DEL.pdf Graphic file (type pdf)
+<use figure2_d_DEL.pdf>
+Package luatex.def Info: figure2_d_DEL.pdf  used on input line 652.
+(luatex.def)             Requested size: 113.81102pt x 113.81233pt.
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package luatex.def Info: FAU-logo.pdf  used on input line 649.
+Package luatex.def Info: FAU-logo.pdf  used on input line 652.
 (luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
@@ -3673,10 +3673,10 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 
 [42
 
-]
+<./figure2_d_DEL_blank.pdf><./figure2_d_DEL.pdf>]
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package luatex.def Info: FAU-logo.pdf  used on input line 659.
+Package luatex.def Info: FAU-logo.pdf  used on input line 655.
 (luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
@@ -3688,7 +3688,7 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 ]
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package luatex.def Info: FAU-logo.pdf  used on input line 674.
+Package luatex.def Info: FAU-logo.pdf  used on input line 665.
 (luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
@@ -3700,7 +3700,7 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 ]
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package luatex.def Info: FAU-logo.pdf  used on input line 690.
+Package luatex.def Info: FAU-logo.pdf  used on input line 680.
 (luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
@@ -3712,7 +3712,7 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 ]
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package luatex.def Info: FAU-logo.pdf  used on input line 692.
+Package luatex.def Info: FAU-logo.pdf  used on input line 696.
 (luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
@@ -3722,14 +3722,9 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 [46
 
 ]
-<luci.pdf, id=54301, 420.93985pt x 210.95197pt>
-File: luci.pdf Graphic file (type pdf)
-<use luci.pdf>
-Package luatex.def Info: luci.pdf  used on input line 706.
-(luatex.def)             Requested size: 113.81102pt x 57.03503pt.
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package luatex.def Info: FAU-logo.pdf  used on input line 706.
+Package luatex.def Info: FAU-logo.pdf  used on input line 698.
 (luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
@@ -3738,14 +3733,15 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 
 [47
 
-<./luci.pdf>] (./figure3_a.tex)
-Overfull \hbox (7.40187pt too wide) in paragraph at lines 739--739
-[][] 
- []
-
+]
+<luci.pdf, id=54306, 420.93985pt x 210.95197pt>
+File: luci.pdf Graphic file (type pdf)
+<use luci.pdf>
+Package luatex.def Info: luci.pdf  used on input line 712.
+(luatex.def)             Requested size: 113.81102pt x 57.03503pt.
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package luatex.def Info: FAU-logo.pdf  used on input line 739.
+Package luatex.def Info: FAU-logo.pdf  used on input line 712.
 (luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
@@ -3754,18 +3750,14 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 
 [48
 
-] (./figure3_b.tex)
-Overfull \hbox (7.40187pt too wide) in paragraph at lines 773--773
+<./luci.pdf>] (./figure3_a.tex)
+Overfull \hbox (7.40187pt too wide) in paragraph at lines 745--745
 [][] 
  []
 
-LaTeX Font Info:    Font shape `TU/SourceCodePro(0)/m/n' will be
-(Font)              scaled to size 14.4pt on input line 773.
-LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <14.4> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 773.
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package luatex.def Info: FAU-logo.pdf  used on input line 773.
+Package luatex.def Info: FAU-logo.pdf  used on input line 745.
 (luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
@@ -3774,14 +3766,18 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 
 [49
 
-] (./figure3_c.tex)
-Overfull \hbox (9.06718pt too wide) in paragraph at lines 807--807
+] (./figure3_b.tex)
+Overfull \hbox (7.40187pt too wide) in paragraph at lines 779--779
 [][] 
  []
 
+LaTeX Font Info:    Font shape `TU/SourceCodePro(0)/m/n' will be
+(Font)              scaled to size 14.4pt on input line 779.
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <14.4> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 779.
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package luatex.def Info: FAU-logo.pdf  used on input line 807.
+Package luatex.def Info: FAU-logo.pdf  used on input line 779.
 (luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
@@ -3790,14 +3786,14 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 
 [50
 
-] (./figure3_d.tex)
-Overfull \hbox (9.06718pt too wide) in paragraph at lines 839--839
+] (./figure3_c.tex)
+Overfull \hbox (9.06718pt too wide) in paragraph at lines 813--813
 [][] 
  []
 
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package luatex.def Info: FAU-logo.pdf  used on input line 839.
+Package luatex.def Info: FAU-logo.pdf  used on input line 813.
 (luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
@@ -3806,14 +3802,14 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 
 [51
 
-] (./figure3_e.tex)
-Overfull \hbox (7.40187pt too wide) in paragraph at lines 874--874
+] (./figure3_d.tex)
+Overfull \hbox (9.06718pt too wide) in paragraph at lines 845--845
 [][] 
  []
 
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package luatex.def Info: FAU-logo.pdf  used on input line 874.
+Package luatex.def Info: FAU-logo.pdf  used on input line 845.
 (luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
@@ -3822,14 +3818,14 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 
 [52
 
-] (./figure3_f.tex)
-Overfull \hbox (7.40187pt too wide) in paragraph at lines 905--905
+] (./figure3_e.tex)
+Overfull \hbox (7.40187pt too wide) in paragraph at lines 880--880
 [][] 
  []
 
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package luatex.def Info: FAU-logo.pdf  used on input line 905.
+Package luatex.def Info: FAU-logo.pdf  used on input line 880.
 (luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
@@ -3838,10 +3834,14 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 
 [53
 
-]
+] (./figure3_f.tex)
+Overfull \hbox (7.40187pt too wide) in paragraph at lines 911--911
+[][] 
+ []
+
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package luatex.def Info: FAU-logo.pdf  used on input line 908.
+Package luatex.def Info: FAU-logo.pdf  used on input line 911.
 (luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
@@ -3851,48 +3851,9 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 [54
 
 ]
-
-Package pgfplots Warning: 'fill between': Could not activate graphics layer 'pre
- main'. Filled path will be on top of the other ones. Please ensure that 'pre ma
-in' is somewhere in the layer list (or set '/tikz/fill between/on layer='). on i
-nput line 972.
-
-
-Package pgfplots Warning: 'fill between': Could not activate graphics layer 'pre
- main'. Filled path will be on top of the other ones. Please ensure that 'pre ma
-in' is somewhere in the layer list (or set '/tikz/fill between/on layer='). on i
-nput line 972.
-
-
-Package pgfplots Warning: 'fill between': Could not activate graphics layer 'pre
- main'. Filled path will be on top of the other ones. Please ensure that 'pre ma
-in' is somewhere in the layer list (or set '/tikz/fill between/on layer='). on i
-nput line 972.
-
-
-Package pgfplots Warning: 'fill between': Could not activate graphics layer 'pre
- main'. Filled path will be on top of the other ones. Please ensure that 'pre ma
-in' is somewhere in the layer list (or set '/tikz/fill between/on layer='). on i
-nput line 972.
-
-
-Overfull \hbox (10.48123pt too wide) in paragraph at lines 972--972
-[][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 972--972
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 972--972
-
- []
-
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package luatex.def Info: FAU-logo.pdf  used on input line 972.
+Package luatex.def Info: FAU-logo.pdf  used on input line 914.
 (luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
@@ -3901,14 +3862,49 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 
 [55
 
-Missing character: There is no ; (U+003B) in font nullfont!
-Missing character: There is no ; (U+003B) in font nullfont!
-Missing character: There is no ; (U+003B) in font nullfont!
-Missing character: There is no ; (U+003B) in font nullfont!
 ]
+
+Package pgfplots Warning: 'fill between': Could not activate graphics layer 'pre
+ main'. Filled path will be on top of the other ones. Please ensure that 'pre ma
+in' is somewhere in the layer list (or set '/tikz/fill between/on layer='). on i
+nput line 978.
+
+
+Package pgfplots Warning: 'fill between': Could not activate graphics layer 'pre
+ main'. Filled path will be on top of the other ones. Please ensure that 'pre ma
+in' is somewhere in the layer list (or set '/tikz/fill between/on layer='). on i
+nput line 978.
+
+
+Package pgfplots Warning: 'fill between': Could not activate graphics layer 'pre
+ main'. Filled path will be on top of the other ones. Please ensure that 'pre ma
+in' is somewhere in the layer list (or set '/tikz/fill between/on layer='). on i
+nput line 978.
+
+
+Package pgfplots Warning: 'fill between': Could not activate graphics layer 'pre
+ main'. Filled path will be on top of the other ones. Please ensure that 'pre ma
+in' is somewhere in the layer list (or set '/tikz/fill between/on layer='). on i
+nput line 978.
+
+
+Overfull \hbox (10.48123pt too wide) in paragraph at lines 978--978
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 978--978
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 978--978
+
+ []
+
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
-Package luatex.def Info: FAU-logo.pdf  used on input line 992.
+Package luatex.def Info: FAU-logo.pdf  used on input line 978.
 (luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
 Overfull \hbox (28.99857pt too wide) has occurred while \output is active
@@ -3917,7 +3913,23 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 
 [56
 
-] [57
+Missing character: There is no ; (U+003B) in font nullfont!
+Missing character: There is no ; (U+003B) in font nullfont!
+Missing character: There is no ; (U+003B) in font nullfont!
+Missing character: There is no ; (U+003B) in font nullfont!
+]
+File: FAU-logo.pdf Graphic file (type pdf)
+<use FAU-logo.pdf>
+Package luatex.def Info: FAU-logo.pdf  used on input line 998.
+(luatex.def)             Requested size: 29.99857pt x 12.99948pt.
+
+Overfull \hbox (28.99857pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[57
+
+] [58
 
 ]
 \tf@nav=\write8
@@ -3929,13 +3941,13 @@ Overfull \hbox (28.99857pt too wide) has occurred while \output is active
 \tf@snm=\write10
 
 \openout10 = FAU-Beamer.snm
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1002.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1002.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1008.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1008.
  (./FAU-Beamer.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1002.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1002.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1008.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1008.
 Package rerunfilecheck Info: File `FAU-Beamer.out' has not changed.
-(rerunfilecheck)             Checksum: 84949CE7F274749E102C5D5665CB8756;763.
+(rerunfilecheck)             Checksum: 58F47F6F02A1D398EEEA384F545C23B2;763.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -3947,13 +3959,13 @@ Package logreq Info: Writing requests to 'FAU-Beamer.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 62734 strings out of 494413
+ 62740 strings out of 494413
  156259,2848258 words of node,token memory allocated
  2374 words of node memory still in use:
    19 hlist, 6 vlist, 4 rule, 9 disc, 4 local_par, 51 glue, 7 kern, 13 penalty, 
 120 glyph, 52 attribute, 78 glue_spec, 52 attribute_list, 3 write, 2 pdf_start_l
 ink, 2 pdf_end_link, 2 pdf_action, 4 pdf_colorstack nodes
-   avail lists: 1:18,2:20295,3:9583,4:1530,5:188,6:21,7:6026,8:59,9:288,10:19,11
+   avail lists: 1:16,2:20295,3:9583,4:1530,5:188,6:21,7:6026,8:59,9:288,10:19,11
 :125
  63735 multiletter control sequences out of 65536+600000
  217 fonts using 24333335 bytes
@@ -3961,9 +3973,9 @@ ink, 2 pdf_end_link, 2 pdf_action, 4 pdf_colorstack nodes
 </usr/share/texmf-dist/fonts/opentype/public/fontawesome/FontAwesome.otf></usr/s
 hare/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/texmf
 -dist/fonts/opentype/public/lm/lmsans8-oblique.otf></usr/share/texmf-dist/fonts/
-opentype/public/lm/lmsans9-regular.otf></usr/share/texmf-dist/fonts/opentype/pub
-lic/lm/lmsans10-oblique.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmsa
-ns9-oblique.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmroman12-regula
+opentype/public/lm/lmsans10-oblique.otf></usr/share/texmf-dist/fonts/opentype/pu
+blic/lm/lmsans9-oblique.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmsa
+ns9-regular.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmroman12-regula
 r.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmsans12-oblique.otf></usr
 /share/texmf-dist/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texm
 f-dist/fonts/opentype/public/lm/lmsans17-regular.otf></usr/share/texmf-dist/font
@@ -3982,10 +3994,10 @@ nts/euler/eufm7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/euler/eur
 m10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/euler/eurm7.pfb></usr
 /share/texmf-dist/fonts/type1/public/amsfonts/euler/eusm10.pfb></usr/share/texmf
 -dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on FAU-Beamer.pdf (57 pages, 6319062 bytes).
+Output written on FAU-Beamer.pdf (58 pages, 6319554 bytes).
 
-PDF statistics: 63603 PDF objects out of 66169 (max. 8388607)
- 42103 compressed objects within 422 object streams
- 121 named destinations out of 1000 (max. 131072)
+PDF statistics: 63608 PDF objects out of 66169 (max. 8388607)
+ 42107 compressed objects within 422 object streams
+ 123 named destinations out of 1000 (max. 131072)
  64 words of extra memory for PDF output out of 10000 (max. 100000000)
 
