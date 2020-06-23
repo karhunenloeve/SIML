@@ -148,9 +148,9 @@ backend=bibtex
     \centering
     \includegraphics[width=4cm]{pointcloud.pdf}
     \\[0.5cm] 
-    Taking into account the topology of data is beneficial for interpolation. \\
-    Data lies on some \textbf{compact topological manifold}, \\
-    which is given by the mutual arrangement of points in a data set.
+    This set of points forms some shape, I would say the shape of an \textbf{annulus}. \\
+    We want to augment the dataset and accurately represent its shape. \\
+    How can we guarantee to maintain shape during interpolation?
 \end{frame}
 
 \begin{frame}
@@ -182,7 +182,16 @@ backend=bibtex
     Simplicial complexes
     \par\hspace{-0.73cm}}
     \Fontvi
-
+    A \textbf{simplicial complex} $K$ is a collection of simplices such that:
+    \begin{itemize}
+        \item Any face of a simplex of $K$ is a simplex of $K$.
+        \item Any intersection of two simplices in $K$ is either empty or a common face of both.
+    \end{itemize}
+    \vspace{0.5cm}
+    \centering
+    \includegraphics[width=3cm]{rips_correct.pdf}\hspace{2cm}
+    \includegraphics[width=3cm]{rips_false.pdf}\\
+    {\small Valid} \hspace{4cm} {\small Invalid}
 \end{frame}
 
 \begin{frame}
