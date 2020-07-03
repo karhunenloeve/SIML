@@ -14,7 +14,6 @@
 \usepackage{pifont}
 \usepackage{wasysym}
 \usepackage{etoolbox}
-\usepackage{tkz-euclide}
 \usepackage[percent]{overpic}
 \usepackage{mathtools}
 \usepackage{fontspec}
@@ -37,7 +36,6 @@ backend=bibtex
 \definecolor{lightgold}{RGB}{251, 202, 3}
 \usepgfplotslibrary{fillbetween}
 \usetikzlibrary{calc,arrows,decorations.pathmorphing,backgrounds,fit,positioning,shapes.symbols,chains}
-\usetkzobj{all}
 \hypersetup{
     unicode=true,
     pdfencoding=unicode,
@@ -287,9 +285,9 @@ backend=bibtex
     \par\hspace{-0.73cm}
     \small{A brief description}}
     \Fontvi
-    Persistent homology is the study of \textbf{$k$-dimensional abelian groups} attached to a topological space. They are studied algebraically and behave \emph{similar} to the topological space itself under change revealing properties of the original space they are attached to by their \emph{invariants}. \\[0.5cm]
+    Persistent homology is the study of \textbf{$k$-dimensional abelian groups} attached to a topological space. They are studied algebraically and behave \emph{similarly} to the topological space itself under change revealing properties of the original space they are attached to by their \emph{invariants}. \\[0.5cm]
 
-    \small{The connection of abelian groups by a boundary homomorphism allows to investigate all $k$-dimensions at once. The induced object is a chain complex.}
+    \small{The connection of abelian groups by a boundary homomorphism allows one to investigate all $k$-dimensions at once. The induced object is a chain complex.}
 \end{frame}
 
 \begin{frame}
@@ -655,7 +653,7 @@ backend=bibtex
     \hspace{1cm}
     \includegraphics[width=4cm]{figure2_d_DEL.pdf}\\[0.2cm]
 
-    The Delaunay complex is spanned connecting each point to its neighbors.\\
+    The Delaunay complex is spanned, connecting each point to its neighbors.\\
     \small{It is always well defined and does not create simplicial complexes which \\
     can only be embedded into higher dimensions than the point set.}
 \end{frame}
@@ -712,7 +710,7 @@ backend=bibtex
     \Fontvi
     \begin{itemize}
         \item Investigation of $83$ handwritings from different people.
-        \item Per user are $45$ signatures, which show the same writing.
+        \item $45$ signatures are recorded per user, which show the same letters.
         \item Each iteration we double the amount of data points.
         \item We insert the new points random uniformly within the convex hull.
     \end{itemize}
@@ -915,7 +913,7 @@ backend=bibtex
         \end{tikzpicture}
     \end{minipage} \quad
     \begin{minipage}{.55\textwidth}
-    The first Wasserstein metric behaves similar to a $1$-norm and is not as coarse as the Bottleneck metric, which behaves like a $\infty$-norm.
+    The first Wasserstein metric behaves similarly to a $1$-norm and is not as coarse as the Bottleneck metric, which behaves like a $\infty$-norm.
     \end{minipage}
 \end{frame}
 

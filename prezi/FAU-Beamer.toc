@@ -1,6 +1,5 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {english}{}
-\babel@toc {english}{}
 \beamer@sectionintoc {1}{Introduction}{3}{0}{1}
 \beamer@sectionintoc {2}{Persistent Homology}{13}{0}{2}
 \beamer@sectionintoc {3}{Natural neighbor interpolation}{34}{0}{3}
