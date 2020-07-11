@@ -30,7 +30,7 @@
 
 15. These areas define the new Voronoi region of the point. 
 
-16. EMPTY
+16.
 
 17. The coordinates of the new point are weighted using these defined Voronoi regions. However, a problem is the implicit truncation to calculate the Voronoi regions. This is an artificial embedding that does not reflect the intrinsic geometry, nor topology of the data.
 
