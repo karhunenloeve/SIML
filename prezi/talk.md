@@ -22,26 +22,16 @@
 
 11. Within this method the Voronoi diagram is constructed by forming the set of points closest to each of the points in the data set, called Voronoi regions.
 
-12. We randomly add a point to the convex hull of the original set of points.
+12. The coordinates of the new point are weighted using these defined Voronoi regions. However, a problem is the implicit truncation to calculate the Voronoi regions. This is an artificial embedding that does not reflect the intrinsic geometry, nor topology of the data.
 
-13. Iteratively, the points of the neighboring Voronoi regions are connected to the added point.
+13. The Voronoi diagram is a complex, but not simplicial. We provide another theoretical result. Dual to the Voronoi diagram is the Delaunay Complex. Ideally, if we could calculate the homology groups of the chain complex on the Delaunay complex, we would not need any additional computations. 
 
-14. The perpendicular bisecting this connection defines an area stolen by the new point.
+14. We combine our approach with a result from Bauer and Edelsbrunner. The Cech-complex, a simplicial complex which provides the most accurate approximation of the topology of the data space, is said to be homotopy equivalent to the Delaunay complex. If this is the case, we may use the Delaunay complex without restrictions. Indeed, the Cech complex collapses to the Delaunay complex up to simple-homotopy equivalence, preserving homology groups.
 
-15. These areas define the new Voronoi region of the point. 
+15. We use a record of handwritings that contain loops. The points of each handwriting are doubled for each interpolation step. 
 
-16.
+16. We randomly insert the points equally distributed into the existing convex hull. Then we apply the interpolation algorithm. The ranks of the homology groups are recorded with their time of origin and time of death in the so-called persistence diagram. Using a hypothesis test based on the Wasserstein metric, we decide for each manuscript in each iteration whether the persistence diagrams correspond to the same distribution. Let me briefly remind you that the latter approximate the topology of the space underlying the data.
 
-17. The coordinates of the new point are weighted using these defined Voronoi regions. However, a problem is the implicit truncation to calculate the Voronoi regions. This is an artificial embedding that does not reflect the intrinsic geometry, nor topology of the data.
+17. Elementary statistics show the success. The point in time when new structures can be created (due to constraining to Euclidean space during Voronoi interpolation) can be determined. 
 
-18. The Voronoi diagram is a complex, but not simplicial. We provide another theoretical result. Dual to the Voronoi diagram is the Delaunay Complex. Ideally, if we could calculate the homology groups of the chain complex on the Delaunay complex, we would not need any additional computations. 
-
-19. We combine our approach with a result from Bauer and Edelsbrunner. The Cech-complex, a simplicial complex which provides the most accurate approximation of the topology of the data space, is said to be homotopy equivalent to the Delaunay complex. If this is the case, we may use the Delaunay complex without restrictions. Indeed, the Cech complex collapses to the Delaunay complex up to simple-homotopy equivalence, preserving homology groups.
-
-20. We use a record of handwritings that contain loops. The points of each handwriting are doubled for each interpolation step. 
-
-21. We randomly insert the points equally distributed into the existing convex hull. Then we apply the interpolation algorithm. The ranks of the homology groups are recorded with their time of origin and time of death in the so-called persistence diagram. Using a hypothesis test based on the Wasserstein metric, we decide for each manuscript in each iteration whether the persistence diagrams correspond to the same distribution. Let me briefly remind you that the latter approximate the topology of the space underlying the data.
-
-22. Elementary statistics show the success. The point in time when new structures can be created (due to constraining to Euclidean space during Voronoi interpolation) can be determined. 
-
-23. In summary, what have we achieved? We have combined the collapse sequence with the Voronoi interpolation. We introduced a mathematical stop criterion on a topological basis and specified a suitable hypothesis test. This has resulted in open questions. How should one deal with points that are not in general position? Which embedding should one choose for the Voronoid diagrams in the interpolation? How can one make this choice? And in which cases of this choice of clipping are the homology groups correctly approximated?
+18. In summary, what have we achieved? We have combined the collapse sequence with the Voronoi interpolation. We introduced a mathematical stop criterion on a topological basis and specified a suitable hypothesis test. This has resulted in open questions. How should one deal with points that are not in general position? Which embedding should one choose for the Voronoid diagrams in the interpolation? How can one make this choice? And in which cases of this choice of clipping are the homology groups correctly approximated?
