@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2019.11.27)  15 JUL 2020 10:53
+This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2019.11.27)  15 JUL 2020 11:13
  restricted system commands enabled.
 **FAU-Beamer_kurz.tex
 (./FAU-Beamer_kurz.tex
@@ -34,7 +34,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.083 seconds
+luaotfload | main : initialization completed in 0.075 seconds
 Babel <3.18> and hyphenation patterns for 1 language(s) loaded.
 (/usr/share/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2018/02/20 v3.50 A class for typesetting presentations
@@ -2417,9 +2417,9 @@ Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 
 \@quotelevel=\count495
 \@quotereset=\count496
-No file FAU-Beamer_kurz.aux.
-
+(./FAU-Beamer_kurz.aux)
 \openout1 = FAU-Beamer_kurz.aux
+
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 118.
 LaTeX Font Info:    ... okay on input line 118.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 118.
@@ -2438,6 +2438,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 118.
 LaTeX Font Info:    ... okay on input line 118.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 118.
 LaTeX Font Info:    ... okay on input line 118.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: luatex
 *geometry* verbose mode - [ preamble ] result:
@@ -2517,6 +2518,8 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 118.
 LaTeX Info: Redefining \pageref on input line 118.
 LaTeX Info: Redefining \nameref on input line 118.
+
+(./FAU-Beamer_kurz.out) (./FAU-Beamer_kurz.out)
 \@outlinefile=\write8
 
 \openout8 = FAU-Beamer_kurz.out
@@ -2694,11 +2697,10 @@ Package biblatex Info: ... file 'FAU-Beamer_kurz.bbl' not found.
 No file FAU-Beamer_kurz.bbl.
 Package biblatex Info: Reference section=0 on input line 118.
 Package biblatex Info: Reference segment=0 on input line 118.
-No file FAU-Beamer_kurz.nav.
-(load luc: /home/lume/.texlive2018/texmf-var/luatex-cache/generic/fonts/otl/lmsa
-ns8-regular.luc)(load luc: /home/lume/.texlive2018/texmf-var/luatex-cache/generi
-c/fonts/otl/lmroman8-regular.luc)(load luc: /home/lume/.texlive2018/texmf-var/lu
-atex-cache/generic/fonts/otl/lmroman6-regular.luc)
+(./FAU-Beamer_kurz.nav)(load luc: /home/lume/.texlive2018/texmf-var/luatex-cache
+/generic/fonts/otl/lmsans8-regular.luc)(load luc: /home/lume/.texlive2018/texmf-
+var/luatex-cache/generic/fonts/otl/lmroman8-regular.luc)(load luc: /home/lume/.t
+exlive2018/texmf-var/luatex-cache/generic/fonts/otl/lmroman6-regular.luc)
 LaTeX Font Info:    Try loading font information for U+eur on input line 118.
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/ueur.fd
@@ -2748,17 +2750,17 @@ LaTeX Font Info:    Font shape `TU/SourceCodePro(0)/m/n' will be
 (Font)              scaled to size 6.0pt on input line 118.
 (load luc: /home/lume/.texlive2018/texmf-var/luatex-cache/generic/fonts/otl/lmsa
 ns12-regular.luc)
-<siemens.jpg, id=13, 96.36pt x 37.0986pt>
+<siemens.jpg, id=25, 96.36pt x 37.0986pt>
 File: siemens.jpg Graphic file (type jpg)
 <use siemens.jpg>
 Package luatex.def Info: siemens.jpg  used on input line 131.
 (luatex.def)             Requested size: 71.13188pt x 27.38573pt.
-<cs6.png, id=14, 112.42pt x 65.24374pt>
+<cs6.png, id=26, 112.42pt x 65.24374pt>
 File: cs6.png Graphic file (type png)
 <use cs6.png>
 Package luatex.def Info: cs6.png  used on input line 131.
 (luatex.def)             Requested size: 56.9055pt x 33.02597pt.
-<FAU-logo.pdf, id=15, 120.50948pt x 51.07231pt>
+<FAU-logo.pdf, id=27, 120.50948pt x 51.07231pt>
 File: FAU-logo.pdf Graphic file (type pdf)
 <use FAU-logo.pdf>
 Package luatex.def Info: FAU-logo.pdf  used on input line 131.
@@ -2767,12 +2769,21 @@ Package luatex.def Info: FAU-logo.pdf  used on input line 131.
 
 {/usr/share/texmf-dist/fonts/map/pdftex/updmap/pdftex.map}<./siemens.jpg><./cs6.
 png><./FAU-logo.pdf>] Excluding 'comment' comment.
-<pointcloud.pdf, id=27, 241.63568pt x 173.55281pt>
+<pointcloud.pdf, id=39, 241.63568pt x 173.55281pt>
 File: pointcloud.pdf Graphic file (type pdf)
 <use pointcloud.pdf>
 Package luatex.def Info: pointcloud.pdf  used on input line 153.
 (luatex.def)             Requested size: 113.81102pt x 81.74194pt.
- [2
+File: FAU-logo.pdf Graphic file (type pdf)
+<use FAU-logo.pdf>
+Package luatex.def Info: FAU-logo.pdf  used on input line 153.
+(luatex.def)             Requested size: 29.99857pt x 12.99948pt.
+
+Overfull \hbox (28.99857pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[2
 
 <./pointcloud.pdf>] Excluding 'comment' comment.
 LaTeX Font Info:    Calculating math sizes for size <13> on input line 179.
@@ -2832,24 +2843,52 @@ LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <13> not available
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <6.5> not available
 (Font)              size <6> substituted on input line 179.
 
+File: FAU-logo.pdf Graphic file (type pdf)
+<use FAU-logo.pdf>
+Package luatex.def Info: FAU-logo.pdf  used on input line 179.
+(luatex.def)             Requested size: 29.99857pt x 12.99948pt.
+
+Overfull \hbox (28.99857pt too wide) has occurred while \output is active
+[][] 
+ []
+
 [3
 
 ]
-<rips_correct.pdf, id=2509, 400.49625pt x 389.20406pt>
+<rips_correct.pdf, id=2521, 400.49625pt x 389.20406pt>
 File: rips_correct.pdf Graphic file (type pdf)
 <use rips_correct.pdf>
 Package luatex.def Info: rips_correct.pdf  used on input line 196.
 (luatex.def)             Requested size: 85.35826pt x 82.94676pt.
-<rips_false.pdf, id=2510, 400.49625pt x 389.20406pt>
+<rips_false.pdf, id=2522, 400.49625pt x 389.20406pt>
 File: rips_false.pdf Graphic file (type pdf)
 <use rips_false.pdf>
 Package luatex.def Info: rips_false.pdf  used on input line 196.
 (luatex.def)             Requested size: 85.35826pt x 82.94676pt.
- [4
+File: FAU-logo.pdf Graphic file (type pdf)
+<use FAU-logo.pdf>
+Package luatex.def Info: FAU-logo.pdf  used on input line 196.
+(luatex.def)             Requested size: 29.99857pt x 12.99948pt.
+
+Overfull \hbox (28.99857pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[4
 
 <./rips_correct.pdf><./rips_false.pdf>] Excluding 'comment' comment.(load luc: /
 home/lume/.texlive2018/texmf-var/luatex-cache/generic/fonts/otl/lmsans17-regular
-.luc) [5
+.luc)
+File: FAU-logo.pdf Graphic file (type pdf)
+<use FAU-logo.pdf>
+Package luatex.def Info: FAU-logo.pdf  used on input line 286.
+(luatex.def)             Requested size: 29.99857pt x 12.99948pt.
+
+Overfull \hbox (28.99857pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[5
 
 ](load luc: /home/lume/.texlive2018/texmf-var/luatex-cache/generic/fonts/otl/lmr
 oman5-regular.luc)
@@ -2865,27 +2904,84 @@ LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <7> not available
 (Font)              Font shape `TU/lmss/m/sl' tried instead on input line 296.
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <5> not available
 (Font)              Font shape `TU/lmss/m/sl' tried instead on input line 296.
- [6
+File: FAU-logo.pdf Graphic file (type pdf)
+<use FAU-logo.pdf>
+Package luatex.def Info: FAU-logo.pdf  used on input line 296.
+(luatex.def)             Requested size: 29.99857pt x 12.99948pt.
+
+Overfull \hbox (28.99857pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[6
 
 ]
-<simplicialcomplexes.pdf, id=2553, 855.33517pt x 173.55283pt>
+<simplicialcomplexes.pdf, id=2564, 855.33517pt x 173.55283pt>
 File: simplicialcomplexes.pdf Graphic file (type pdf)
 <use simplicialcomplexes.pdf>
 Package luatex.def Info: simplicialcomplexes.pdf  used on input line 311.
 (luatex.def)             Requested size: 398.3386pt x 80.82568pt.
- [7
+File: FAU-logo.pdf Graphic file (type pdf)
+<use FAU-logo.pdf>
+Package luatex.def Info: FAU-logo.pdf  used on input line 311.
+(luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
-<./simplicialcomplexes.pdf>] [8
+Overfull \hbox (28.99857pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[7
+
+<./simplicialcomplexes.pdf>]
+File: FAU-logo.pdf Graphic file (type pdf)
+<use FAU-logo.pdf>
+Package luatex.def Info: FAU-logo.pdf  used on input line 324.
+(luatex.def)             Requested size: 29.99857pt x 12.99948pt.
+
+Overfull \hbox (28.99857pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[8
+
+] Excluding 'comment' comment.
+File: FAU-logo.pdf Graphic file (type pdf)
+<use FAU-logo.pdf>
+Package luatex.def Info: FAU-logo.pdf  used on input line 385.
+(luatex.def)             Requested size: 29.99857pt x 12.99948pt.
+
+Overfull \hbox (28.99857pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[9
 
 ]
-Excluding 'comment' comment. [9
+File: FAU-logo.pdf Graphic file (type pdf)
+<use FAU-logo.pdf>
+Package luatex.def Info: FAU-logo.pdf  used on input line 393.
+(luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
-] [10
+Overfull \hbox (28.99857pt too wide) has occurred while \output is active
+[][] 
+ []
 
-] Excluding 'comment' comment. [11
+[10
+
+] Excluding 'comment' comment.
+File: FAU-logo.pdf Graphic file (type pdf)
+<use FAU-logo.pdf>
+Package luatex.def Info: FAU-logo.pdf  used on input line 543.
+(luatex.def)             Requested size: 29.99857pt x 12.99948pt.
+
+Overfull \hbox (28.99857pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[11
 
 ]
-<figure2_a.pdf, id=10191, 228.02188pt x 228.02188pt>
+<figure2_a.pdf, id=10201, 228.02188pt x 228.02188pt>
 File: figure2_a.pdf Graphic file (type pdf)
 <use figure2_a.pdf>
 Package luatex.def Info: figure2_a.pdf  used on input line 561.
@@ -2895,10 +2991,19 @@ Overfull \hbox (6.2579pt too wide) in paragraph at lines 561--561
 [][] 
  []
 
+File: FAU-logo.pdf Graphic file (type pdf)
+<use FAU-logo.pdf>
+Package luatex.def Info: FAU-logo.pdf  used on input line 561.
+(luatex.def)             Requested size: 29.99857pt x 12.99948pt.
+
+Overfull \hbox (28.99857pt too wide) has occurred while \output is active
+[][] 
+ []
+
 [12
 
 <./figure2_a.pdf>] Excluding 'comment' comment.
-<figure2_c.pdf, id=10200, 228.02188pt x 228.02188pt>
+<figure2_c.pdf, id=10210, 228.02188pt x 228.02188pt>
 File: figure2_c.pdf Graphic file (type pdf)
 <use figure2_c.pdf>
 Package luatex.def Info: figure2_c.pdf  used on input line 653.
@@ -2908,33 +3013,80 @@ Overfull \hbox (6.2579pt too wide) in paragraph at lines 653--653
 [][] 
  []
 
+File: FAU-logo.pdf Graphic file (type pdf)
+<use FAU-logo.pdf>
+Package luatex.def Info: FAU-logo.pdf  used on input line 653.
+(luatex.def)             Requested size: 29.99857pt x 12.99948pt.
+
+Overfull \hbox (28.99857pt too wide) has occurred while \output is active
+[][] 
+ []
+
 [13
 
 <./figure2_c.pdf>]
-<figure2_d_DEL_blank.pdf, id=15362, 228.02188pt x 228.02188pt>
+<figure2_d_DEL_blank.pdf, id=15372, 228.02188pt x 228.02188pt>
 File: figure2_d_DEL_blank.pdf Graphic file (type pdf)
 <use figure2_d_DEL_blank.pdf>
 Package luatex.def Info: figure2_d_DEL_blank.pdf  used on input line 668.
 (luatex.def)             Requested size: 113.81102pt x 113.81233pt.
-<figure2_d_DEL.pdf, id=15363, 228.02188pt x 228.02188pt>
+<figure2_d_DEL.pdf, id=15373, 228.02188pt x 228.02188pt>
 File: figure2_d_DEL.pdf Graphic file (type pdf)
 <use figure2_d_DEL.pdf>
 Package luatex.def Info: figure2_d_DEL.pdf  used on input line 668.
 (luatex.def)             Requested size: 113.81102pt x 113.81233pt.
- [14
+File: FAU-logo.pdf Graphic file (type pdf)
+<use FAU-logo.pdf>
+Package luatex.def Info: FAU-logo.pdf  used on input line 668.
+(luatex.def)             Requested size: 29.99857pt x 12.99948pt.
+
+Overfull \hbox (28.99857pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[14
 
 <./figure2_d_DEL_blank.pdf><./figure2_d_DEL.pdf>]
-Excluding 'comment' comment. [15
+Excluding 'comment' comment.
+File: FAU-logo.pdf Graphic file (type pdf)
+<use FAU-logo.pdf>
+Package luatex.def Info: FAU-logo.pdf  used on input line 697.
+(luatex.def)             Requested size: 29.99857pt x 12.99948pt.
 
-] Excluding 'comment' comment. [16
+Overfull \hbox (28.99857pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[15
+
+] Excluding 'comment' comment.
+File: FAU-logo.pdf Graphic file (type pdf)
+<use FAU-logo.pdf>
+Package luatex.def Info: FAU-logo.pdf  used on input line 716.
+(luatex.def)             Requested size: 29.99857pt x 12.99948pt.
+
+Overfull \hbox (28.99857pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[16
 
 ]
-<luci.pdf, id=27885, 420.93985pt x 210.95197pt>
+<luci.pdf, id=27894, 420.93985pt x 210.95197pt>
 File: luci.pdf Graphic file (type pdf)
 <use luci.pdf>
 Package luatex.def Info: luci.pdf  used on input line 730.
 (luatex.def)             Requested size: 113.81102pt x 57.03503pt.
- [17
+File: FAU-logo.pdf Graphic file (type pdf)
+<use FAU-logo.pdf>
+Package luatex.def Info: FAU-logo.pdf  used on input line 730.
+(luatex.def)             Requested size: 29.99857pt x 12.99948pt.
+
+Overfull \hbox (28.99857pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[17
 
 <./luci.pdf>] Excluding 'comment' comment.
 
@@ -2976,13 +3128,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 996--996
 
  []
 
+File: FAU-logo.pdf Graphic file (type pdf)
+<use FAU-logo.pdf>
+Package luatex.def Info: FAU-logo.pdf  used on input line 996.
+(luatex.def)             Requested size: 29.99857pt x 12.99948pt.
+
+Overfull \hbox (28.99857pt too wide) has occurred while \output is active
+[][] 
+ []
+
 [18
 
 Missing character: There is no ; (U+003B) in font nullfont!
 Missing character: There is no ; (U+003B) in font nullfont!
 Missing character: There is no ; (U+003B) in font nullfont!
 Missing character: There is no ; (U+003B) in font nullfont!
-] [19
+]
+File: FAU-logo.pdf Graphic file (type pdf)
+<use FAU-logo.pdf>
+Package luatex.def Info: FAU-logo.pdf  used on input line 1016.
+(luatex.def)             Requested size: 29.99857pt x 12.99948pt.
+
+Overfull \hbox (28.99857pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[19
 
 ] [20
 
@@ -3001,26 +3172,12 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 1026.
  (./FAU-Beamer_kurz.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1026.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1026.
+Package rerunfilecheck Info: File `FAU-Beamer_kurz.out' has not changed.
+(rerunfilecheck)             Checksum: 75A16719245D522D15E22C0F31187C3F;418.
 
-
-Package rerunfilecheck Warning: File `FAU-Beamer_kurz.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `FAU-Beamer_kurz.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  75A16719245D522D15E22C0F31187C3F;418.
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
-
-
-LaTeX Warning: There were undefined references.
-
-
-Package biblatex Warning: Please (re)run BibTeX on the file(s):
-(biblatex)                FAU-Beamer_kurz
-(biblatex)                and rerun LaTeX afterwards.
 
 Package logreq Info: Writing requests to 'FAU-Beamer_kurz.run.xml'.
 
@@ -3028,15 +3185,15 @@ Package logreq Info: Writing requests to 'FAU-Beamer_kurz.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 58778 strings out of 494413
+ 58928 strings out of 494413
  100000,1977958 words of node,token memory allocated
  2333 words of node memory still in use:
    19 hlist, 6 vlist, 4 rule, 9 disc, 4 local_par, 51 glue, 7 kern, 13 penalty, 
 120 glyph, 43 attribute, 77 glue_spec, 43 attribute_list, 3 write, 2 pdf_start_l
 ink, 2 pdf_end_link, 2 pdf_action, 4 pdf_colorstack nodes
-   avail lists: 1:5,2:2266,3:1567,4:288,5:185,6:21,7:1592,8:59,9:253,10:19,11:12
+   avail lists: 1:5,2:2286,3:1567,4:288,5:187,6:21,7:1592,8:59,9:263,10:19,11:12
 5
- 60529 multiletter control sequences out of 65536+600000
+ 60587 multiletter control sequences out of 65536+600000
  191 fonts using 21998479 bytes
  73i,17n,109p,804b,2269s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/share/texmf-dist/fonts/opentype/public/fontawesome/FontAwesome.otf></usr/s
@@ -3058,10 +3215,10 @@ ts/euler/eufm10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/euler/euf
 m7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/euler/eurm10.pfb></usr
 /share/texmf-dist/fonts/type1/public/amsfonts/euler/eusm10.pfb></usr/share/texmf
 -dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on FAU-Beamer_kurz.pdf (20 pages, 3657536 bytes).
+Output written on FAU-Beamer_kurz.pdf (20 pages, 3658390 bytes).
 
-PDF statistics: 37124 PDF objects out of 38293 (max. 8388607)
- 24596 compressed objects within 246 object streams
+PDF statistics: 37135 PDF objects out of 38293 (max. 8388607)
+ 24606 compressed objects within 247 object streams
  44 named destinations out of 1000 (max. 131072)
- 16 words of extra memory for PDF output out of 10000 (max. 100000000)
+ 40 words of extra memory for PDF output out of 10000 (max. 100000000)
 
