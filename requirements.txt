@@ -75,7 +75,7 @@ statsmodels==0.10.1
 style==1.1.0
 tadasets==0.0.4
 tensorboard==2.1.1
-tensorflow==2.1.0
+tensorflow==2.1.2
 tensorflow-estimator==2.1.0
 termcolor==1.1.0
 tikzplotlib==0.9.1
