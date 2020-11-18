@@ -61,3 +61,24 @@ For some of the packages written in `C++` with corresponding python bindings we 
 - PPoffice: Ant-Colony TSP-Solver, [https://github.com/ppoffice/ant-colony-tsp](https://github.com/ppoffice/ant-colony-tsp).
 - Stwisdom: Optimizers, [https://github.com/stwisdom/urnn/blob/master/](https://github.com/stwisdom/urnn/blob/master/).
 - Submanifolds Neural Persistence, [https://github.com/BorgwardtLab/Neural-Persistence](https://github.com/BorgwardtLab/Neural-Persistence).
+
+## Citation
+    @inproceedings{iwcia/MelodiaL20,
+      author    = {Luciano Melodia and
+                   Richard Lenz},
+      editor    = {Tibor Lukic and
+                   Reneta P. Barneva and
+                   Valentin E. Brimkov and
+                   Lidija Comic and
+                   Natasa Sladoje},
+      title     = {Persistent Homology as Stopping-Criterion for Voronoi Interpolation},
+      booktitle = {Combinatorial Image Analysis - 20th International Workshop, {IWCIA}
+                   2020, Novi Sad, Serbia, July 16-18, 2020, Proceedings},
+      series    = {Lecture Notes in Computer Science},
+      volume    = {12148},
+      pages     = {29--44},
+      publisher = {Springer},
+      year      = {2020},
+      url       = {https://doi.org/10.1007/978-3-030-51002-2\_3},
+      doi       = {10.1007/978-3-030-51002-2\_3},
+    }
