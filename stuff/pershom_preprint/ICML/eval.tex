@@ -1,0 +1,56 @@
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+  width=6cm,
+  height=3.5cm,
+  axis lines=left,
+  axis line style={black},
+  x tick label style={/pgf/number format/1000 sep=},
+  enlargelimits=0.1,
+  legend style={
+  at={(1.1,0.4)},
+  anchor=west,
+  draw=none,
+  legend columns=2},
+  xtick={1,2,3,4,5,6},
+  xticklabels={$t_0$,$t_1$,$t_2$,$t_3$, $t_4$, $t_5$},
+  legend entries={
+                  $\mu_X$,
+                  $\tilde{\mu}_X$,
+                  $\sigma_X$,
+                  $\tilde{\sigma}_X$,
+                  $\frac{\sigma_X}{\mu_X}$,
+                  $\frac{\tilde{\sigma}_X}{\tilde{\mu}_X}$,
+                  $w_1$,
+                  $\tilde{w}_1$
+                  }
+]
+\addplot+[lightcandy, mark=*,mark options={fill=lightcandy}, name path = A]
+  coordinates {(1,0.47674345652) (2,0.47113643671) (3,0.49324005108) (4,0.55145091018) (5,0.66325900145) (6,0.66354515531)};
+\addplot+[darkcandy, mark=*,mark options={fill=darkcandy}, name path = B]
+  coordinates {(1,0.47674345652) (2,0.46940951352) (3,0.54412739748) (4,0.60964375921) (5,0.69168695173) (6,0.69141828315)};
+\tikzfillbetween[of=A and B]{lightcandy, opacity=0.1};
+
+\addplot+[darkblue, mark options={fill=darkblue}, name path = C]
+  coordinates {(1,0.54345721917324) (2,0.57432907917) (3,0.61705207247) (4,0.62769015889) (5,0.70765198197) (6,0.76579081942)};
+\addplot+[lightblue, mark options={fill=lightblue}, name path = D]
+  coordinates {(1,0.54345721917) (2,0.6619320595) (3,0.72084605177) (4,0.73278177799) (5,0.88376578507) (6,0.97348897936)};
+\tikzfillbetween[of=C and D]{darkblue, opacity=0.1};
+
+\addplot+[darkgold, mark options={fill=lightgold}, name path = E]
+  coordinates {(1,0.83014734374) (2,0.83006981543) (3,0.82656304895) (4,0.82549085249) (5,0.81767813098) (6,0.80872008382)};
+\addplot+[lightgold, mark options={fill=darkgold}, name path = F]
+  coordinates {(1,0.83014734374) (2,0.8294138344) (3,0.82359613361) (4,0.82219526757) (5,0.81153011173) (6,0.79843199462)};
+\tikzfillbetween[of=E and F]{lightgold, opacity=0.1};
+
+\addplot+[gray, mark options={fill=gray}, name path = G]
+  coordinates {(1,0.29684777643) (2,0.29639759279) (3,0.3249275297) (4,0.33224579279) (5,0.37080154515) (6,0.41272653753)};
+\addplot+[black, mark options={fill=black}, name path = H]
+  coordinates {(1,0.29684777643) (2,0.29584317733) (3,0.3789881125) (4,0.32746485752) (5,0.39234811315) (6,0.44149606376)};
+\tikzfillbetween[of=G and H]{gray, opacity=0.1};
+\end{axis}
+\end{tikzpicture}
+\caption{The Wasserstein distance is computed with respect to the original data. $\tilde{\sigma}$ is the variance of all samples interpolated with topological stop. Analogous to this also all other statistics marked with $\sim$. The statistics are scaled to ensure best possible readability.}
+\label{fig:evaluation}
+\end{figure}
