@@ -1,20 +1,11 @@
-# ∂SIML
+# Signature Inference and Machine Learning
 [![License](https://img.shields.io/:license-mit-blue.svg)](https://badges.mit-license.org)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/python/black)
 
-This repository **SIML** (**S**ignature **I**nference & **M**achine **L**earning) offers all functionalities and experiments for the paper *Persistent Homology as Stopping-Criterion for Voronoi Interpolation*. The functions are annotated. The repository is no longer maintained and is used for prototypical implementation of the project. It has been archived since publication. If you use the project, or share this project, please quote us as follows:
++ [This is the link to the arxiv article.](http://arxiv.org/abs/1911.02922)
++ [This is the link to slides for the talk given at the IWCIA.](https://karhunenloeve.github.io/SIML/docs/FAU-Beamer.pdf)
 
-    @article{1911.02922,
-	  author    = {Luciano Melodia and
-	               Richard Lenz},
-	  title     = {Persistent Homology as Stopping-Criterion for Voronoi Interpolation},
-	  journal   = {CoRR},
-	  volume    = {abs/1911.02922},
-	  year      = {2019},
-	  url       = {http://arxiv.org/abs/1911.02922},
-	  archivePrefix = {arXiv},
-	  eprint    = {1911.02922}
-	}
+This repository **SIML** (**S**ignature **I**nference & **M**achine **L**earning) offers all functionalities and experiments for the paper *Persistent Homology as Stopping-Criterion for Voronoi Interpolation*. The functions are annotated. The repository is no longer maintained and is used for prototypical implementation of the project. It has been archived since publication. If you use the project, or share this project, please quote us as follows according to [DBLP (Natural Neighbor)](https://dblp.uni-trier.de/search?q=Persistent%20Homology%20as%20Stopping-Criterion%20for%20Natural%20Neighbor%20Interpolation) of [DBLP (Voronoi)](https://dblp.uni-trier.de/search?q=Persistent%20Homology%20as%20Stopping-Criterion%20for%Voronoi%20Interpolation).
 
 ## Persistent Homology as Stopping for Voronoi Interpolation
 In this study the Voronoi interpolation is used to interpolate a set of points  drawn from a topological space with higher homology groups on its filtration. The technique is based on Voronoi tesselation, which induces a natural dual map to the Delaunay triangulation. Advantage is taken from this fact calculating the persistent homology on it after each iteration to capture the changing topology of the data. The boundary points are identified as critical. The Bottleneck and Wasserstein distance serve as a measure of quality between the original point set and the interpolation. If the norm of two distances exceeds a heuristically determined threshold, the algorithm terminates. We give the theoretical basis for this approach and justify its validity with numerical experiments.
@@ -70,3 +61,24 @@ For some of the packages written in `C++` with corresponding python bindings we 
 - PPoffice: Ant-Colony TSP-Solver, [https://github.com/ppoffice/ant-colony-tsp](https://github.com/ppoffice/ant-colony-tsp).
 - Stwisdom: Optimizers, [https://github.com/stwisdom/urnn/blob/master/](https://github.com/stwisdom/urnn/blob/master/).
 - Submanifolds Neural Persistence, [https://github.com/BorgwardtLab/Neural-Persistence](https://github.com/BorgwardtLab/Neural-Persistence).
+
+## Citation
+    @inproceedings{iwcia/MelodiaL20,
+      author    = {Luciano Melodia and
+                   Richard Lenz},
+      editor    = {Tibor Lukic and
+                   Reneta P. Barneva and
+                   Valentin E. Brimkov and
+                   Lidija Comic and
+                   Natasa Sladoje},
+      title     = {Persistent Homology as Stopping-Criterion for Voronoi Interpolation},
+      booktitle = {Combinatorial Image Analysis - 20th International Workshop, {IWCIA}
+                   2020, Novi Sad, Serbia, July 16-18, 2020, Proceedings},
+      series    = {Lecture Notes in Computer Science},
+      volume    = {12148},
+      pages     = {29--44},
+      publisher = {Springer},
+      year      = {2020},
+      url       = {https://doi.org/10.1007/978-3-030-51002-2\_3},
+      doi       = {10.1007/978-3-030-51002-2\_3},
+    }

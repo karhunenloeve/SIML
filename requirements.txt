@@ -11,7 +11,7 @@ chardet==3.0.4
 Click==7.0
 conda==4.8.2
 conda-package-handling==1.6.0
-cryptography==2.8
+cryptography==3.2
 cycler==0.10.0
 Cython==0.29.13
 gast==0.2.2
@@ -75,7 +75,7 @@ statsmodels==0.10.1
 style==1.1.0
 tadasets==0.0.4
 tensorboard==2.1.1
-tensorflow==2.1.0
+tensorflow==2.1.2
 tensorflow-estimator==2.1.0
 termcolor==1.1.0
 tikzplotlib==0.9.1
