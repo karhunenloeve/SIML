@@ -3,7 +3,7 @@
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/python/black)
 
 + [This is the link to the arxiv article.](http://arxiv.org/abs/1911.02922)
-+ [This is the link to slides for the talk given at the IWCIA.](https://karhunenloeve.github.io/SIML/docs/FAU-Beamer.pdf)
++ [This is the link to slides for the talk given at the IWCIA.](https://raw.githubusercontent.com/karhunenloeve/SIML/main/docs/FAU-Beamer.pdf)
 
 This repository **SIML** (**S**ignature **I**nference & **M**achine **L**earning) offers all functionalities and experiments for the paper *Persistent Homology as Stopping-Criterion for Voronoi Interpolation*. The functions are annotated. The repository is no longer maintained and is used for prototypical implementation of the project. It has been archived since publication. If you use the project, or share this project, please quote us as follows according to [DBLP (Natural Neighbor)](https://dblp.uni-trier.de/search?q=Persistent%20Homology%20as%20Stopping-Criterion%20for%20Natural%20Neighbor%20Interpolation) of [DBLP (Voronoi)](https://dblp.uni-trier.de/search?q=Persistent%20Homology%20as%20Stopping-Criterion%20for%Voronoi%20Interpolation).
 
